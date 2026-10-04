@@ -542,7 +542,7 @@ function showComparisonMap(items){
   else{insight.innerHTML="<strong>Geographic context:</strong> these events do not yet have precise enough location data for a meaningful map comparison.";}
   if(plotted.length>1){
     const lines=document.createElementNS(ns,"g");lines.setAttribute("class","compare-map-connections");
-    for(let i=1;i<plotted.length;i++){const a=plotted[i-1].place,b=plotted[i].place,line=document.createElementNS(ns,"line");line.setAttribute("x1",a.lon+180);line.setAttribute("y1",90-a.lat);line.setAttribute("x2",b.lon+180);line.setAttribute("y2",90-b.lat);line.setAttribute("class","compare-map-connection");lines.appendChild(line);}dots.appendChild(lines);
+    for(let i=1;i<plotted.length;i++){const a=plotted[0].place,b=plotted[i].place,line=document.createElementNS(ns,"line");line.setAttribute("x1",a.lon+180);line.setAttribute("y1",90-a.lat);line.setAttribute("x2",b.lon+180);line.setAttribute("y2",90-b.lat);line.setAttribute("class","compare-map-connection");lines.appendChild(line);}dots.appendChild(lines);
   }
   plotted.forEach(({kind,label,event,place})=>{
     const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g"),halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle"),title=document.createElementNS(ns,"title");
