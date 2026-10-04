@@ -279,7 +279,16 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Council of Chalcedon",url:"https://www.britannica.com/event/Council-of-Chalcedon"}]
   },
   {
-    year:529, depth:5450, title:"Justinian closes the Athenian philosophical schools", location:"Athens, Byzantine Empire",
+    year:451, depth:5450, title:"Oriental Orthodox churches diverge after Chalcedon", location:"Eastern Roman Empire and Near East",
+    story:"The Council of Chalcedon's definition of Christ's nature was rejected by churches that became the Armenian Apostolic, Coptic, Syriac, Ethiopian and other Oriental Orthodox traditions. Imperial attempts to enforce doctrinal unity produced recurring conflict and repression.",
+    context:"Intra-Christian schism / imperial coercion",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Intra-Christian schism / imperial coercion",Evidence:"The theological division is extensively documented. Modern dialogue has shown that historical terminology sometimes exaggerated differences between traditions."},
+    sourceStatus:"The theological division is extensively documented. Modern dialogue has shown that historical terminology sometimes exaggerated differences between traditions.",
+    sources:[{label:"Britannica — Council of Chalcedon",url:"https://www.britannica.com/event/Council-of-Chalcedon"}]
+  },
+  {
+    year:529, depth:5620, title:"Justinian closes the Athenian philosophical schools", location:"Athens, Byzantine Empire",
     story:"Emperor Justinian's policies restricted non-Christian teaching and are traditionally associated with the closure of the Neoplatonic philosophical school at Athens, symbolizing the shrinking institutional space for traditional pagan intellectual life in the Christian empire.",
     context:"Christian imperial policy / religious restriction",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -288,7 +297,7 @@ const events = [
     sources:[{label:"Britannica — Justinian I",url:"https://www.britannica.com/biography/Justinian-I"}]
   },
   {
-    year:532, depth:5620, title:"Nika revolt and massacre in Constantinople", location:"Constantinople",
+    year:532, depth:5790, title:"Nika revolt and massacre in Constantinople", location:"Constantinople",
     story:"Factional unrest erupted into a major revolt against Emperor Justinian I. Imperial troops crushed the uprising in the Hippodrome, killing thousands in the capital of the Christian Byzantine Empire.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -297,7 +306,7 @@ const events = [
     sources:[{label:"Britannica — Nika riots",url:"https://www.britannica.com/event/Nika-riots"}]
   },
   {
-    year:554, depth:5790, title:"Justinian's wars reshape Christian Mediterranean", location:"Italy and Mediterranean",
+    year:554, depth:5960, title:"Justinian's wars reshape Christian Mediterranean", location:"Italy and Mediterranean",
     story:"Emperor Justinian's armies reconquered large parts of the former western Roman Empire. The wars devastated Italy and other regions even as Justinian promoted imperial Christian orthodoxy and monumental church building.",
     context:"Imperial war / Christian empire",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -306,7 +315,7 @@ const events = [
     sources:[{label:"Britannica — Justinian I",url:"https://www.britannica.com/biography/Justinian-I"}]
   },
   {
-    year:589, depth:5960, title:"Visigothic monarchy adopts Catholic Christianity", location:"Visigothic Spain",
+    year:589, depth:6130, title:"Visigothic monarchy adopts Catholic Christianity", location:"Visigothic Spain",
     story:"King Reccared converted from Arian Christianity to Catholic Christianity. The resulting Catholic monarchy increasingly linked political unity to religious conformity, with serious consequences later for Jews and dissenters.",
     context:"Christianization / coercive religious state",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -315,7 +324,7 @@ const events = [
     sources:[{label:"Britannica — Reccared",url:"https://www.britannica.com/biography/Reccared"}]
   },
   {
-    year:589, depth:6130, title:"Third Council of Toledo links Visigothic monarchy and Catholic Church", location:"Toledo, Visigothic Spain",
+    year:589, depth:6300, title:"Third Council of Toledo links Visigothic monarchy and Catholic Church", location:"Toledo, Visigothic Spain",
     story:"After King Reccared's conversion, the council formalized Catholic Christianity as central to Visigothic political unity. Later councils and kings enacted increasingly coercive measures against Jews.",
     context:"Church-state consolidation / Jewish-Christian overlap",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -324,7 +333,7 @@ const events = [
     sources:[{label:"Britannica — councils of Toledo",url:"https://www.britannica.com/place/Spain/Visigothic-Spain-to-c-500-711"}]
   },
   {
-    year:613, depth:6300, title:"Visigothic forced-baptism policy against Jews", location:"Visigothic Spain",
+    year:613, depth:6470, title:"Visigothic forced-baptism policy against Jews", location:"Visigothic Spain",
     story:"King Sisebut ordered Jews to accept baptism or leave his kingdom. Many were forcibly converted, creating communities of baptized Jews whose religious practice became the target of later church councils and royal legislation.",
     context:"Forced conversion / Christian state persecution",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -333,7 +342,7 @@ const events = [
     sources:[{label:"USHMM — Christian persecution of Jews",url:"https://www.ushmm.org/research/about-the-mandel-center/initiatives/religion-holocaust/resources/christian-persecution-of-jews-over-the-centuries"}]
   },
   {
-    year:614, depth:6470, title:"Sasanian capture of Jerusalem", location:"Jerusalem",
+    year:614, depth:6640, title:"Sasanian capture of Jerusalem", location:"Jerusalem",
     story:"Sasanian Persian forces captured Jerusalem from the Byzantine Empire during a wider war. Churches were damaged, Christian inhabitants were killed or deported, and Jewish participation on the Persian side is reported in several sources.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -342,7 +351,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Jerusalem history",url:"https://www.britannica.com/place/Jerusalem/History"}]
   },
   {
-    year:636, depth:6640, title:"Arab-Muslim conquest transforms Christian Byzantine provinces", location:"Syria and Palestine",
+    year:636, depth:6810, title:"Arab-Muslim conquest transforms Christian Byzantine provinces", location:"Syria and Palestine",
     story:"Muslim armies defeated Byzantine forces at the Battle of Yarmouk, accelerating the loss of Syria and Palestine. Large Christian populations remained and gradually adapted to rule under the new Islamic states.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -351,7 +360,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Battle of Yarmouk",url:"https://www.britannica.com/event/Battle-of-Yarmouk-636"}]
   },
   {
-    year:638, depth:6810, title:"Jerusalem surrenders to Caliph Umar", location:"Jerusalem",
+    year:638, depth:6980, title:"Jerusalem surrenders to Caliph Umar", location:"Jerusalem",
     story:"Jerusalem passed from Byzantine Christian to Muslim rule during the Arab conquests. Christian holy places and communities continued under the new political order, while later traditions associated Caliph Umar with arrangements governing Christian worship and status.",
     context:"Conquest / Christian minority transition",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -360,7 +369,16 @@ const events = [
     sources:[{label:"Britannica — Jerusalem history",url:"https://www.britannica.com/place/Jerusalem/History"}]
   },
   {
-    year:694, depth:6980, title:"Seventeenth Council of Toledo imposes extreme measures on Jews", location:"Toledo, Visigothic Spain",
+    year:640, depth:7150, title:"Coptic Christians transition from Byzantine to Muslim rule", location:"Egypt",
+    story:"Arab armies conquered Byzantine Egypt, ending imperial Christian rule. Egypt's large Coptic Christian population continued under Muslim government with protected but subordinate legal status that varied greatly across rulers and periods.",
+    context:"Conquest / Christian minority transition",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Conquest / Christian minority transition",Evidence:"The conquest is firmly historical. Conditions for Christians varied over centuries and should not be portrayed as uniformly tolerant or uniformly persecutory."},
+    sourceStatus:"The conquest is firmly historical. Conditions for Christians varied over centuries and should not be portrayed as uniformly tolerant or uniformly persecutory.",
+    sources:[{label:"Britannica — Egypt Arab conquest",url:"https://www.britannica.com/place/Egypt/From-the-Islamic-conquest-to-1250"}]
+  },
+  {
+    year:694, depth:7320, title:"Seventeenth Council of Toledo imposes extreme measures on Jews", location:"Toledo, Visigothic Spain",
     story:"Visigothic authorities accused Jews of conspiracy and ordered severe collective measures including loss of property and enslavement, one of the harshest episodes of anti-Jewish policy in the Christian Visigothic kingdom.",
     context:"Christian state persecution / Jewish-Christian overlap",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -369,7 +387,7 @@ const events = [
     sources:[{label:"USHMM — Christian persecution of Jews",url:"https://www.ushmm.org/research/about-the-mandel-center/initiatives/religion-holocaust/resources/christian-persecution-of-jews-over-the-centuries"}]
   },
   {
-    year:726, depth:7150, title:"Byzantine Iconoclasm begins", location:"Byzantine Empire",
+    year:726, depth:7490, title:"Byzantine Iconoclasm begins", location:"Byzantine Empire",
     story:"Imperial opposition to religious images triggered prolonged conflict between iconoclasts and defenders of icons. Monks and other opponents faced varying degrees of exile, confiscation and persecution.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -378,7 +396,7 @@ const events = [
     sources:[{label:"Britannica — Iconoclastic Controversy",url:"https://www.britannica.com/event/Iconoclastic-Controversy"}]
   },
   {
-    year:772, depth:7320, title:"Saxon Wars combine Frankish conquest and forced Christianization", location:"Saxony",
+    year:772, depth:7660, title:"Saxon Wars combine Frankish conquest and forced Christianization", location:"Saxony",
     story:"Charlemagne's long wars against the Saxons combined territorial conquest with compulsory Christianization. Rebellion was met with harsh penalties, deportation and episodes such as the reported execution of Saxon captives at Verden.",
     context:"Conquest / forced Christianization",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -387,7 +405,7 @@ const events = [
     sources:[{label:"Britannica — Saxon Wars",url:"https://www.britannica.com/biography/Charlemagne/King-of-the-Franks"}]
   },
   {
-    year:800, depth:7490, title:"Charlemagne crowned emperor", location:"Rome / Western Europe",
+    year:800, depth:7830, title:"Charlemagne crowned emperor", location:"Rome / Western Europe",
     story:"Pope Leo III crowned Charlemagne emperor, strengthening a model of Christian kingship that linked Latin church authority and western political power. Charlemagne's expansion also included coercive conversion during the Saxon Wars.",
     context:"Christian empire / forced conversion context",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -396,7 +414,7 @@ const events = [
     sources:[{label:"Britannica — Charlemagne",url:"https://www.britannica.com/biography/Charlemagne"}]
   },
   {
-    year:843, depth:7660, title:"Restoration of icons ends major Byzantine Iconoclasm", location:"Constantinople",
+    year:843, depth:8000, title:"Restoration of icons ends major Byzantine Iconoclasm", location:"Constantinople",
     story:"The restoration of icon veneration, celebrated in Eastern Orthodoxy as the Triumph of Orthodoxy, ended the second major period of Byzantine Iconoclasm.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -405,7 +423,7 @@ const events = [
     sources:[{label:"Britannica — Iconoclastic Controversy",url:"https://www.britannica.com/event/Iconoclastic-Controversy"}]
   },
   {
-    year:988, depth:7830, title:"Christianization of Kievan Rus'", location:"Kyiv and eastern Europe",
+    year:988, depth:8170, title:"Christianization of Kievan Rus'", location:"Kyiv and eastern Europe",
     story:"Prince Vladimir adopted Byzantine Christianity and promoted the baptism of his realm. The conversion linked Rus' politically and culturally with the Byzantine Christian world and transformed the religious landscape of eastern Europe.",
     context:"Christianization / state conversion",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -414,7 +432,16 @@ const events = [
     sources:[{label:"Britannica — Vladimir I",url:"https://www.britannica.com/biography/Vladimir-I"}]
   },
   {
-    year:1009, depth:8000, title:"Destruction of the Church of the Holy Sepulchre", location:"Jerusalem",
+    year:988, depth:8340, title:"Conversion of Vladimir reshapes eastern Christianity", location:"Kievan Rus'",
+    story:"Vladimir of Kyiv adopted Byzantine Christianity, traditionally dated to 988, helping establish the religious tradition from which Russian, Ukrainian and Belarusian Orthodox Christianity later developed.",
+    context:"State conversion / Eastern Christianity",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"State conversion / Eastern Christianity",Evidence:"The conversion is historical, while details in the Primary Chronicle combine history with literary tradition."},
+    sourceStatus:"The conversion is historical, while details in the Primary Chronicle combine history with literary tradition.",
+    sources:[{label:"Britannica — Vladimir I",url:"https://www.britannica.com/biography/Vladimir-I"}]
+  },
+  {
+    year:1009, depth:8510, title:"Destruction of the Church of the Holy Sepulchre", location:"Jerusalem",
     story:"Fatimid caliph al-Hakim ordered destruction of the Church of the Holy Sepulchre and imposed measures against Christian institutions. The church was later rebuilt under agreements with Byzantium.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -423,7 +450,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Holy Sepulchre",url:"https://www.britannica.com/place/Holy-Sepulchre"}]
   },
   {
-    year:1054, depth:8170, title:"East–West Schism", location:"Rome and Constantinople",
+    year:1054, depth:8680, title:"East–West Schism", location:"Rome and Constantinople",
     story:"Mutual excommunications in 1054 became a symbolic milestone in the widening separation between the Latin Catholic and Greek Orthodox churches. The schism developed over centuries and was not created by a single event.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -432,7 +459,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — East-West Schism",url:"https://www.britannica.com/event/East-West-Schism-1054"}]
   },
   {
-    year:1095, depth:8340, title:"Pope Urban II calls the First Crusade", location:"Clermont, France",
+    year:1095, depth:8850, title:"Pope Urban II calls the First Crusade", location:"Clermont, France",
     story:"Pope Urban II called western Christians to an armed expedition to aid eastern Christians and recover Jerusalem. The crusading movement fused pilgrimage, warfare, penitential religion and political ambitions.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -441,7 +468,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Council of Clermont",url:"https://www.britannica.com/event/Council-of-Clermont"}]
   },
   {
-    year:1096, depth:8510, title:"First Crusade massacres of Jewish communities", location:"Rhineland",
+    year:1096, depth:9020, title:"First Crusade massacres of Jewish communities", location:"Rhineland",
     story:"Crusading groups attacked Jewish communities in cities including Speyer, Worms and Mainz before departing for the eastern Mediterranean, killing Jews and forcing conversions.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -450,7 +477,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — First Crusade",url:"https://www.britannica.com/event/First-Crusade"}]
   },
   {
-    year:1097, depth:8680, title:"Siege of Antioch during the First Crusade", location:"Antioch",
+    year:1097, depth:9190, title:"Siege of Antioch during the First Crusade", location:"Antioch",
     story:"Crusader armies besieged and captured Antioch after months of hunger, disease and combat, then themselves endured a counter-siege. The campaign became a defining episode of the First Crusade.",
     context:"Crusade / siege",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -459,7 +486,7 @@ const events = [
     sources:[{label:"Britannica — First Crusade",url:"https://www.britannica.com/event/First-Crusade"}]
   },
   {
-    year:1099, depth:8850, title:"Crusaders capture Jerusalem", location:"Jerusalem",
+    year:1099, depth:9360, title:"Crusaders capture Jerusalem", location:"Jerusalem",
     story:"First Crusade armies captured Jerusalem and killed many Muslim and Jewish inhabitants. Medieval accounts describe extensive slaughter, though rhetorical exaggeration makes precise casualty numbers uncertain.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -468,7 +495,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Siege of Jerusalem",url:"https://www.britannica.com/event/Siege-of-Jerusalem-1099"}]
   },
   {
-    year:1144, depth:9020, title:"Norwich blood-libel accusation", location:"Norwich, England",
+    year:1144, depth:9530, title:"Norwich blood-libel accusation", location:"Norwich, England",
     story:"After the death of William of Norwich, Jews were falsely accused of ritual murder. The story became an influential model for the blood libel, a Christian antisemitic myth that repeatedly fueled persecution in medieval Europe.",
     context:"Christian antisemitism / blood libel",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -477,7 +504,7 @@ const events = [
     sources:[{label:"USHMM — Antisemitism",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism"}]
   },
   {
-    year:1147, depth:9190, title:"Second Crusade and Northern Crusading campaigns", location:"Europe and eastern Mediterranean",
+    year:1147, depth:9700, title:"Second Crusade and Northern Crusading campaigns", location:"Europe and eastern Mediterranean",
     story:"A new crusade followed the fall of Edessa. At the same time, crusading ideology was applied in northern Europe against non-Christian Slavic peoples, demonstrating how crusade warfare expanded beyond the Holy Land.",
     context:"Crusade / religious war",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -486,7 +513,7 @@ const events = [
     sources:[{label:"Britannica — Second Crusade",url:"https://www.britannica.com/event/Second-Crusade"}]
   },
   {
-    year:1182, depth:9360, title:"Massacre of the Latins in Constantinople", location:"Constantinople",
+    year:1182, depth:9870, title:"Massacre of the Latins in Constantinople", location:"Constantinople",
     story:"An anti-Latin uprising targeted western European Catholic residents of Constantinople. Large numbers were killed, displaced or enslaved, intensifying Catholic–Orthodox hostility before the Fourth Crusade.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -495,7 +522,7 @@ const events = [
     sources:[{label:"Britannica — Byzantine Empire",url:"https://www.britannica.com/place/Byzantine-Empire"}]
   },
   {
-    year:1187, depth:9530, title:"Saladin captures Jerusalem", location:"Jerusalem",
+    year:1187, depth:10040, title:"Saladin captures Jerusalem", location:"Jerusalem",
     story:"After defeating the Crusader army at Hattin, Saladin captured Jerusalem. Unlike the mass killing associated with the Crusader conquest of 1099, many inhabitants were ransomed or released, although enslavement occurred when ransoms could not be paid.",
     context:"Conquest / Christian-Muslim war",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -504,7 +531,7 @@ const events = [
     sources:[{label:"Britannica — Saladin",url:"https://www.britannica.com/biography/Saladin"}]
   },
   {
-    year:1190, depth:9700, title:"York massacre of Jews", location:"York, England",
+    year:1190, depth:10210, title:"York massacre of Jews", location:"York, England",
     story:"During crusading fervor and political disorder, members of York's Jewish community took refuge in Clifford's Tower. Many died by suicide or were killed after leaving the tower, and attackers destroyed debt records.",
     context:"Anti-Jewish massacre / Christian society",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -513,7 +540,7 @@ const events = [
     sources:[{label:"English Heritage — York massacre",url:"https://www.english-heritage.org.uk/visit/places/cliffords-tower-york/history-and-stories/massacre-of-the-jews/"}]
   },
   {
-    year:1204, depth:9870, title:"Fourth Crusade sacks Constantinople", location:"Constantinople",
+    year:1204, depth:10380, title:"Fourth Crusade sacks Constantinople", location:"Constantinople",
     story:"Latin crusaders captured and looted Constantinople, a Christian city and capital of the Byzantine Empire. Churches, monasteries and homes were plundered, deepening hostility between Catholic and Orthodox Christians.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -522,7 +549,16 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Sack of Constantinople",url:"https://www.britannica.com/event/Sack-of-Constantinople-1204"}]
   },
   {
-    year:1209, depth:10040, title:"Albigensian Crusade begins", location:"Southern France",
+    year:1204, depth:10550, title:"Latin rule follows the sack of Orthodox Constantinople", location:"Constantinople",
+    story:"After the Fourth Crusade captured Constantinople, Latin rulers established an empire and displaced much of the Byzantine political and ecclesiastical hierarchy. The episode deepened hostility between Latin Catholic and Greek Orthodox Christians.",
+    context:"Intra-Christian conquest / occupation",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Intra-Christian conquest / occupation",Evidence:"The conquest and Latin Empire are extensively documented. The sack became a lasting symbol of Catholic-Orthodox estrangement."},
+    sourceStatus:"The conquest and Latin Empire are extensively documented. The sack became a lasting symbol of Catholic-Orthodox estrangement.",
+    sources:[{label:"Britannica — Fourth Crusade",url:"https://www.britannica.com/event/Fourth-Crusade"}]
+  },
+  {
+    year:1209, depth:10720, title:"Albigensian Crusade begins", location:"Southern France",
     story:"Pope Innocent III backed a crusade against Cathar heresy in southern France. Campaigns involved sieges, massacres and political conquest and lasted for decades.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -531,7 +567,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Albigensian Crusade",url:"https://www.britannica.com/event/Albigensian-Crusade"}]
   },
   {
-    year:1212, depth:10210, title:"Children's Crusade movements", location:"France and German lands",
+    year:1212, depth:10890, title:"Children's Crusade movements", location:"France and German lands",
     story:"Large popular movements of young people and poor adults set out amid crusading enthusiasm, believing divine intervention could recover the Holy Land. Most never reached the eastern Mediterranean and many suffered exploitation or dispersal.",
     context:"Popular religious movement / crusading culture",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -540,7 +576,7 @@ const events = [
     sources:[{label:"Britannica — Children's Crusade",url:"https://www.britannica.com/event/Childrens-Crusade"}]
   },
   {
-    year:1215, depth:10380, title:"Fourth Lateran Council regulates Christian society and minorities", location:"Rome",
+    year:1215, depth:11060, title:"Fourth Lateran Council regulates Christian society and minorities", location:"Rome",
     story:"The Fourth Lateran Council enacted major church reforms and measures concerning heresy, crusading, Jews and Muslims. Its canons became highly influential in medieval Latin Christianity.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -549,7 +585,7 @@ const events = [
     sources:[{label:"Britannica — Fourth Lateran Council",url:"https://www.britannica.com/event/Fourth-Lateran-Council"}]
   },
   {
-    year:1231, depth:10550, title:"Papal Inquisition develops", location:"Western Europe",
+    year:1231, depth:11230, title:"Papal Inquisition develops", location:"Western Europe",
     story:"Pope Gregory IX established papal mechanisms for investigating and prosecuting heresy. Inquisitorial practice varied by region and period and included imprisonment, confiscation and, through secular authorities, execution.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -558,7 +594,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Inquisition",url:"https://www.britannica.com/topic/inquisition"}]
   },
   {
-    year:1235, depth:10720, title:"Fulda blood-libel accusations and killings", location:"Fulda, Holy Roman Empire",
+    year:1235, depth:11400, title:"Fulda blood-libel accusations and killings", location:"Fulda, Holy Roman Empire",
     story:"Jews were accused of murdering Christian children for ritual purposes after a fire killed children in Fulda. Dozens of Jews were killed before Emperor Frederick II convened an inquiry that rejected the ritual-murder accusation.",
     context:"Christian antisemitism / massacre / blood libel",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -567,7 +603,7 @@ const events = [
     sources:[{label:"USHMM — Antisemitism in history",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1244, depth:10890, title:"Fall of Jerusalem to Khwarazmian forces", location:"Jerusalem",
+    year:1244, depth:11570, title:"Fall of Jerusalem to Khwarazmian forces", location:"Jerusalem",
     story:"Khwarazmian forces allied with Egypt captured Jerusalem from Christian control, killing inhabitants and destroying religious sites amid wider Ayyubid and Crusader warfare.",
     context:"Conquest / Christian-Muslim conflict",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -576,7 +612,7 @@ const events = [
     sources:[{label:"Britannica — Crusades",url:"https://www.britannica.com/event/Crusades"}]
   },
   {
-    year:1290, depth:11060, title:"Expulsion of Jews from Christian England", location:"England",
+    year:1290, depth:11740, title:"Expulsion of Jews from Christian England", location:"England",
     story:"Edward I ordered Jews expelled from England after decades of discriminatory taxation, legal restrictions and anti-Jewish violence within a Christian monarchy.",
     context:"Christian state persecution / Jewish expulsion",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -585,7 +621,7 @@ const events = [
     sources:[{label:"Britannica — Judaism in England",url:"https://www.britannica.com/topic/Judaism"}]
   },
   {
-    year:1291, depth:11230, title:"Fall of Acre ends major Crusader rule in the Holy Land", location:"Acre",
+    year:1291, depth:11910, title:"Fall of Acre ends major Crusader rule in the Holy Land", location:"Acre",
     story:"Mamluk forces captured Acre, the principal remaining Crusader stronghold in the Levant. The defeat effectively ended large-scale Latin Christian territorial rule in the Holy Land.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -594,7 +630,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Acre",url:"https://www.britannica.com/place/Akko"}]
   },
   {
-    year:1306, depth:11400, title:"French crown expels Jews", location:"France",
+    year:1306, depth:12080, title:"French crown expels Jews", location:"France",
     story:"King Philip IV ordered Jews expelled from France and confiscated their property. The action took place within a Christian monarchy where fiscal motives, royal consolidation and religious prejudice intersected.",
     context:"Christian state expulsion / Jewish-Christian overlap",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -603,7 +639,7 @@ const events = [
     sources:[{label:"Britannica — France Jewish history",url:"https://www.britannica.com/topic/Judaism"}]
   },
   {
-    year:1348, depth:11570, title:"Black Death persecutions of Jews in Christian Europe", location:"Europe",
+    year:1348, depth:12250, title:"Black Death persecutions of Jews in Christian Europe", location:"Europe",
     story:"As plague devastated Europe, false accusations that Jews had poisoned wells helped trigger massacres and expulsions. Church authorities sometimes condemned the accusations, but local Christian mobs and authorities nevertheless carried out widespread violence.",
     context:"Anti-Jewish persecution / Christian Europe",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -612,7 +648,7 @@ const events = [
     sources:[{label:"USHMM — antisemitism history",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism"}]
   },
   {
-    year:1391, depth:11740, title:"Anti-Jewish massacres and forced conversions in Iberia", location:"Castile and Aragon",
+    year:1391, depth:12420, title:"Anti-Jewish massacres and forced conversions in Iberia", location:"Castile and Aragon",
     story:"Violence beginning in Seville spread across Iberia, killing Jews and driving many others into conversion. The resulting large converso population became central to later inquisitorial suspicion.",
     context:"Massacre / forced conversion",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -621,7 +657,7 @@ const events = [
     sources:[{label:"Britannica — Spain Jewish history",url:"https://www.britannica.com/place/Spain"}]
   },
   {
-    year:1415, depth:11910, title:"Jan Hus executed for heresy", location:"Constance",
+    year:1415, depth:12590, title:"Jan Hus executed for heresy", location:"Constance",
     story:"The Czech reformer Jan Hus was condemned by the Council of Constance and burned at the stake. His execution helped inspire the Hussite movement and subsequent wars in Bohemia.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -630,7 +666,7 @@ const events = [
     sources:[{label:"Britannica — Jan Hus",url:"https://www.britannica.com/biography/Jan-Hus"}]
   },
   {
-    year:1419, depth:12080, title:"Hussite Wars begin", location:"Bohemia",
+    year:1419, depth:12760, title:"Hussite Wars begin", location:"Bohemia",
     story:"After the death of Jan Hus and mounting religious-political conflict, Hussite forces fought crusading armies and rival Christian factions in a series of wars that devastated parts of Central Europe.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -639,7 +675,7 @@ const events = [
     sources:[{label:"Britannica — Hussite Wars",url:"https://www.britannica.com/event/Hussite-Wars"}]
   },
   {
-    year:1421, depth:12250, title:"Vienna Gesera destroys Austrian Jewish communities", location:"Vienna and Austria",
+    year:1421, depth:12930, title:"Vienna Gesera destroys Austrian Jewish communities", location:"Vienna and Austria",
     story:"Duke Albert V's government arrested Jews, confiscated property, expelled many and executed others after accusations including host desecration. The persecution culminated in the burning of more than 200 Jews in Vienna.",
     context:"Christian state persecution / Jewish-Christian overlap",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -648,7 +684,7 @@ const events = [
     sources:[{label:"Jewish Museum Vienna — Vienna Gesera",url:"https://www.jmw.at/en"}]
   },
   {
-    year:1453, depth:12420, title:"Ottoman conquest of Constantinople", location:"Constantinople",
+    year:1453, depth:13100, title:"Ottoman conquest of Constantinople", location:"Constantinople",
     story:"Ottoman forces under Mehmed II captured Constantinople, ending the Byzantine Empire. The conquest involved heavy fighting, enslavement and looting, while the city's Orthodox Christian institutions were later incorporated into the Ottoman system.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -657,7 +693,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Fall of Constantinople",url:"https://www.britannica.com/event/Fall-of-Constantinople-1453"}]
   },
   {
-    year:1478, depth:12590, title:"Spanish Inquisition established", location:"Spain",
+    year:1478, depth:13270, title:"Spanish Inquisition established", location:"Spain",
     story:"The Spanish monarchy established an inquisition initially focused heavily on converts from Judaism suspected of secretly practicing Judaism, later extending to other perceived religious offenses.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -666,7 +702,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Spanish Inquisition",url:"https://www.britannica.com/topic/Spanish-Inquisition"}]
   },
   {
-    year:1480, depth:12760, title:"Spanish Inquisition begins operating against suspected crypto-Judaism", location:"Seville and Spain",
+    year:1480, depth:13440, title:"Spanish Inquisition begins operating against suspected crypto-Judaism", location:"Seville and Spain",
     story:"The newly established Spanish Inquisition began tribunals focused heavily on conversos—baptized Christians of Jewish ancestry—suspected of secretly practicing Judaism. Imprisonment, confiscation and executions followed.",
     context:"Inquisition / Jewish-Christian overlap",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -675,7 +711,7 @@ const events = [
     sources:[{label:"Britannica — Spanish Inquisition",url:"https://www.britannica.com/topic/Spanish-Inquisition"}]
   },
   {
-    year:1492, depth:12930, title:"Expulsion of Jews from Spain under Catholic monarchs", location:"Spain",
+    year:1492, depth:13610, title:"Expulsion of Jews from Spain under Catholic monarchs", location:"Spain",
     story:"Ferdinand and Isabella ordered practicing Jews to convert or leave Spain. The decree followed the conquest of Granada and operated alongside the Inquisition's scrutiny of converts suspected of maintaining Jewish practices.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -684,7 +720,7 @@ const events = [
     sources:[{label:"Britannica — Spanish Inquisition",url:"https://www.britannica.com/topic/Spanish-Inquisition"}]
   },
   {
-    year:1497, depth:13100, title:"Forced conversion of Jews in Portugal", location:"Portugal",
+    year:1497, depth:13780, title:"Forced conversion of Jews in Portugal", location:"Portugal",
     story:"King Manuel I's policies led to the forced conversion of Portugal's Jewish population, creating a large community of New Christians later vulnerable to inquisitorial persecution.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -693,7 +729,7 @@ const events = [
     sources:[{label:"Britannica — Portugal history",url:"https://www.britannica.com/place/Portugal"}]
   },
   {
-    year:1517, depth:13270, title:"Luther's challenge begins the Protestant Reformation", location:"Holy Roman Empire",
+    year:1517, depth:13950, title:"Luther's challenge begins the Protestant Reformation", location:"Holy Roman Empire",
     story:"Martin Luther's dispute over indulgences developed into a wider challenge to papal authority and church doctrine. The Reformation fragmented western Christianity and became intertwined with political and military conflict.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -702,7 +738,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Reformation",url:"https://www.britannica.com/event/Reformation"}]
   },
   {
-    year:1524, depth:13440, title:"German Peasants' War and Reformation-era violence", location:"German lands",
+    year:1524, depth:14120, title:"German Peasants' War and Reformation-era violence", location:"German lands",
     story:"Economic grievances, local politics and religious ideas contributed to a massive uprising. Princes suppressed the revolt with extreme violence; Luther condemned the rebels in harsh terms after initially criticizing elite abuses.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -711,7 +747,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Peasants' War",url:"https://www.britannica.com/event/Peasants-War"}]
   },
   {
-    year:1534, depth:13610, title:"Anabaptist rule and siege of Münster", location:"Münster",
+    year:1534, depth:14290, title:"Anabaptist rule and siege of Münster", location:"Münster",
     story:"Radical Anabaptists seized control of Münster and established a theocratic regime. Catholic and Protestant-aligned forces besieged the city, which fell in 1535 amid severe violence and executions.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -720,7 +756,16 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Münster",url:"https://www.britannica.com/place/Munster-Germany"}]
   },
   {
-    year:1543, depth:13780, title:"Martin Luther publishes On the Jews and Their Lies", location:"German lands",
+    year:1536, depth:14460, title:"Dissolution of the Monasteries transforms English Christianity", location:"England",
+    story:"Henry VIII's government dissolved monasteries and confiscated their property after the break with Rome. Resistance such as the Pilgrimage of Grace was suppressed, and England entered decades of religious upheaval.",
+    context:"Reformation / church-state coercion",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Reformation / church-state coercion",Evidence:"The dissolution is extensively documented. Economic and political motives accompanied theological change."},
+    sourceStatus:"The dissolution is extensively documented. Economic and political motives accompanied theological change.",
+    sources:[{label:"Britannica — Dissolution of the Monasteries",url:"https://www.britannica.com/event/Dissolution-of-the-Monasteries"}]
+  },
+  {
+    year:1543, depth:14630, title:"Martin Luther publishes On the Jews and Their Lies", location:"German lands",
     story:"Late in his life, Martin Luther published a violently anti-Jewish treatise advocating the destruction of synagogues and homes and severe restrictions on Jews. His writings became part of the long history of Christian antisemitism and were later exploited by antisemites.",
     context:"Christian antisemitism / religious polemic",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -729,7 +774,7 @@ const events = [
     sources:[{label:"USHMM — History of Antisemitism",url:"https://main.ushmm.org/antisemitism/what-is-antisemitism/why-the-jews-history-of-antisemitism"}]
   },
   {
-    year:1545, depth:13950, title:"Council of Trent launches Catholic reform and Counter-Reformation", location:"Trent",
+    year:1545, depth:14800, title:"Council of Trent launches Catholic reform and Counter-Reformation", location:"Trent",
     story:"The Council of Trent clarified Catholic doctrine and reformed church discipline in response to the Protestant Reformation. Its decisions shaped Catholic identity during an era of confessional conflict.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -738,7 +783,16 @@ const events = [
     sources:[{label:"Britannica — Council of Trent",url:"https://www.britannica.com/event/Council-of-Trent"}]
   },
   {
-    year:1555, depth:14120, title:"Peace of Augsburg", location:"Holy Roman Empire",
+    year:1553, depth:14970, title:"Mary I restores Catholicism and executes Protestant heretics", location:"England",
+    story:"Queen Mary I restored papal authority and revived heresy laws. Nearly 300 Protestants were burned during her reign, becoming central to later English Protestant memory.",
+    context:"Confessional persecution / executions",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Confessional persecution / executions",Evidence:"The Marian persecutions are extensively documented. Later Protestant polemic shaped popular memory and the epithet 'Bloody Mary.'"},
+    sourceStatus:"The Marian persecutions are extensively documented. Later Protestant polemic shaped popular memory and the epithet 'Bloody Mary.'",
+    sources:[{label:"Britannica — Mary I",url:"https://www.britannica.com/biography/Mary-I"}]
+  },
+  {
+    year:1555, depth:15140, title:"Peace of Augsburg", location:"Holy Roman Empire",
     story:"The settlement temporarily reduced Catholic–Lutheran conflict by allowing territorial rulers to choose between Catholicism and Lutheranism, while excluding other confessions.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -747,7 +801,16 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Peace of Augsburg",url:"https://www.britannica.com/event/Peace-of-Augsburg"}]
   },
   {
-    year:1562, depth:14290, title:"French Wars of Religion begin", location:"France",
+    year:1559, depth:15310, title:"Elizabethan religious settlement reestablishes Protestant Church of England", location:"England",
+    story:"Elizabeth I restored royal supremacy and a Protestant religious settlement. Catholics later faced fines, restrictions and executions amid fears of rebellion, foreign invasion and plots.",
+    context:"Confessional state / Catholic repression",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Confessional state / Catholic repression",Evidence:"The settlement is directly documented. Religious policy became increasingly entangled with national security and international conflict."},
+    sourceStatus:"The settlement is directly documented. Religious policy became increasingly entangled with national security and international conflict.",
+    sources:[{label:"Britannica — Elizabeth I",url:"https://www.britannica.com/biography/Elizabeth-I"}]
+  },
+  {
+    year:1562, depth:15480, title:"French Wars of Religion begin", location:"France",
     story:"A massacre of Huguenot worshippers at Vassy helped ignite decades of civil war between Catholic and Protestant factions, intertwined with dynastic and political struggles.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -756,7 +819,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Wars of Religion",url:"https://www.britannica.com/event/Wars-of-Religion"}]
   },
   {
-    year:1568, depth:14460, title:"Dutch Revolt becomes intertwined with Catholic–Protestant conflict", location:"Low Countries",
+    year:1568, depth:15650, title:"Dutch Revolt becomes intertwined with Catholic–Protestant conflict", location:"Low Countries",
     story:"Resistance to Habsburg rule developed into a long war in which Calvinist and Catholic identities became deeply entangled with political independence, repression and international rivalry.",
     context:"Confessional war / revolution",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -765,7 +828,7 @@ const events = [
     sources:[{label:"Britannica — Eighty Years' War",url:"https://www.britannica.com/event/Eighty-Years-War"}]
   },
   {
-    year:1572, depth:14630, title:"St. Bartholomew's Day massacre", location:"France",
+    year:1572, depth:15820, title:"St. Bartholomew's Day massacre", location:"France",
     story:"Thousands of Huguenot Protestants were killed in Paris and other French cities after an attempted assassination and royal decision to eliminate Protestant leaders triggered broader mob violence.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -774,7 +837,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — St. Bartholomew's Day massacre",url:"https://www.britannica.com/event/Massacre-of-Saint-Bartholomews-Day"}]
   },
   {
-    year:1598, depth:14800, title:"Edict of Nantes grants limited toleration to French Protestants", location:"France",
+    year:1598, depth:15990, title:"Edict of Nantes grants limited toleration to French Protestants", location:"France",
     story:"Henry IV granted Huguenots substantial civil and religious protections after decades of religious war. The settlement reduced confessional violence without creating modern religious equality.",
     context:"Religious toleration / peace settlement",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -783,7 +846,16 @@ const events = [
     sources:[{label:"Britannica — Edict of Nantes",url:"https://www.britannica.com/event/Edict-of-Nantes"}]
   },
   {
-    year:1614, depth:14970, title:"Tokugawa shogunate bans Christianity in Japan", location:"Japan",
+    year:1605, depth:16160, title:"Gunpowder Plot intensifies anti-Catholic restrictions", location:"London",
+    story:"A group of English Catholics attempted to blow up Parliament and kill King James I. The failed plot reinforced suspicion of Catholics and was followed by harsher legal restrictions.",
+    context:"Religious conspiracy / political violence",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Religious conspiracy / political violence",Evidence:"The plot is firmly documented. Responsibility belonged to the conspirators and should not be generalized to English Catholics as a whole."},
+    sourceStatus:"The plot is firmly documented. Responsibility belonged to the conspirators and should not be generalized to English Catholics as a whole.",
+    sources:[{label:"Britannica — Gunpowder Plot",url:"https://www.britannica.com/event/Gunpowder-Plot"}]
+  },
+  {
+    year:1614, depth:16330, title:"Tokugawa shogunate bans Christianity in Japan", location:"Japan",
     story:"Tokugawa Ieyasu ordered missionaries expelled and Christianity prohibited. Churches were destroyed, believers pressured to renounce the faith, and subsequent governments used interrogation, torture and execution to eradicate public Christianity.",
     context:"State persecution / anti-Christian repression",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -792,7 +864,7 @@ const events = [
     sources:[{label:"Japan Agency for Cultural Affairs — Hidden Christian Sites",url:"https://www.bunka.go.jp/seisaku/bunkazai/shokai/sekai_isan/ichiran/pdf/suisensho_02.pdf"}]
   },
   {
-    year:1618, depth:15140, title:"Thirty Years' War begins", location:"Central Europe",
+    year:1618, depth:16500, title:"Thirty Years' War begins", location:"Central Europe",
     story:"A revolt in Bohemia triggered a vast war involving Catholic and Protestant states and dynastic rivalries. Fighting, famine and disease devastated parts of Central Europe.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -801,7 +873,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Thirty Years' War",url:"https://www.britannica.com/event/Thirty-Years-War"}]
   },
   {
-    year:1618, depth:15310, title:"Defenestration of Prague triggers Bohemian revolt", location:"Prague",
+    year:1618, depth:16670, title:"Defenestration of Prague triggers Bohemian revolt", location:"Prague",
     story:"Protestant nobles threw imperial officials from a castle window during a confrontation over religious rights, helping trigger the Bohemian Revolt and the Thirty Years' War.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -810,7 +882,7 @@ const events = [
     sources:[{label:"Britannica — Defenestration of Prague",url:"https://www.britannica.com/event/Defenestration-of-Prague-1618"}]
   },
   {
-    year:1631, depth:15480, title:"Sack of Protestant Magdeburg", location:"Magdeburg, Holy Roman Empire",
+    year:1631, depth:16840, title:"Sack of Protestant Magdeburg", location:"Magdeburg, Holy Roman Empire",
     story:"Imperial and Catholic League troops stormed the Protestant city of Magdeburg during the Thirty Years' War. Soldiers looted, killed civilians and burned much of the city; contemporary estimates placed the dead in the tens of thousands.",
     context:"Sectarian war / massacre",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -819,7 +891,7 @@ const events = [
     sources:[{label:"German History in Documents and Images — Sack of Magdeburg",url:"https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/a-local-apocalypse-the-sack-of-magdeburg-1631"}]
   },
   {
-    year:1637, depth:15650, title:"Shimabara-Amakusa Rebellion and destruction of Christian rebels", location:"Kyushu, Japan",
+    year:1637, depth:17010, title:"Shimabara-Amakusa Rebellion and destruction of Christian rebels", location:"Kyushu, Japan",
     story:"More than twenty thousand rebels, many of them Christians, resisted the Tokugawa shogunate amid severe taxation, local grievances and religious repression. Government armies crushed the rebellion at Hara Castle and killed almost all remaining rebels.",
     context:"Rebellion / anti-Christian repression",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -828,7 +900,7 @@ const events = [
     sources:[{label:"Japan Agency for Cultural Affairs — Hidden Christian Sites",url:"https://www.bunka.go.jp/seisaku/bunkazai/shokai/sekai_isan/ichiran/pdf/suisensho_02.pdf"}]
   },
   {
-    year:1641, depth:15820, title:"Irish Rebellion and sectarian massacres", location:"Ireland",
+    year:1641, depth:17180, title:"Irish Rebellion and sectarian massacres", location:"Ireland",
     story:"The Irish rebellion triggered killings of Protestant settlers and a brutal cycle of warfare and reprisal involving Catholic Irish forces, Protestant settlers and armies from England and Scotland.",
     context:"Sectarian rebellion / massacre",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -837,7 +909,7 @@ const events = [
     sources:[{label:"Britannica — Irish Rebellion",url:"https://www.britannica.com/event/Irish-Rebellion-1641"}]
   },
   {
-    year:1648, depth:15990, title:"Peace of Westphalia ends the Thirty Years' War", location:"Europe",
+    year:1648, depth:17350, title:"Peace of Westphalia ends the Thirty Years' War", location:"Europe",
     story:"The Westphalian settlements ended the Thirty Years' War and reshaped political and confessional arrangements in the Holy Roman Empire and Europe.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -846,7 +918,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Peace of Westphalia",url:"https://www.britannica.com/event/Peace-of-Westphalia"}]
   },
   {
-    year:1649, depth:16160, title:"Cromwellian conquest of Ireland and massacres at Drogheda and Wexford", location:"Ireland",
+    year:1649, depth:17520, title:"Cromwellian conquest of Ireland and massacres at Drogheda and Wexford", location:"Ireland",
     story:"Oliver Cromwell's parliamentary army conquered much of Ireland. The storming of Drogheda and Wexford involved mass killing, while the wider conquest brought confiscation, displacement, famine and disease to a predominantly Catholic population.",
     context:"Conquest / sectarian political violence",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -855,7 +927,7 @@ const events = [
     sources:[{label:"Britannica — Oliver Cromwell",url:"https://www.britannica.com/biography/Oliver-Cromwell"}]
   },
   {
-    year:1685, depth:16330, title:"Revocation of the Edict of Nantes", location:"France",
+    year:1685, depth:17690, title:"Revocation of the Edict of Nantes", location:"France",
     story:"Louis XIV revoked protections previously granted to French Protestants. Protestant churches were closed, worship restricted and many Huguenots fled despite restrictions on emigration.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -864,7 +936,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Edict of Nantes",url:"https://www.britannica.com/event/Edict-of-Nantes"}]
   },
   {
-    year:1685, depth:16500, title:"Dragonnades and Huguenot flight", location:"France",
+    year:1685, depth:17860, title:"Dragonnades and Huguenot flight", location:"France",
     story:"Before and after the revocation of the Edict of Nantes, French authorities quartered soldiers in Protestant homes and used coercion to pressure Huguenots to convert. Large numbers fled France despite restrictions on emigration.",
     context:"Catholic state persecution / forced conversion",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -873,7 +945,7 @@ const events = [
     sources:[{label:"Britannica — Huguenot",url:"https://www.britannica.com/topic/Huguenot"}]
   },
   {
-    year:1688, depth:16670, title:"Glorious Revolution reshapes Protestant–Catholic power in Britain", location:"England, Scotland and Ireland",
+    year:1688, depth:18030, title:"Glorious Revolution reshapes Protestant–Catholic power in Britain", location:"England, Scotland and Ireland",
     story:"The removal of the Catholic James II and accession of Protestant William and Mary transformed the constitutional and religious settlement. Conflict extended into Ireland and Scotland and reinforced restrictions on Catholics.",
     context:"Confessional political revolution",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -882,7 +954,7 @@ const events = [
     sources:[{label:"Britannica — Glorious Revolution",url:"https://www.britannica.com/event/Glorious-Revolution"}]
   },
   {
-    year:1707, depth:16840, title:"Suppression of Christianity intensifies under Tokugawa registration system", location:"Japan",
+    year:1707, depth:18200, title:"Suppression of Christianity intensifies under Tokugawa registration system", location:"Japan",
     story:"Tokugawa authorities maintained temple-registration and anti-Christian surveillance systems designed to prevent the reemergence of Christianity. Hidden Christian communities survived privately for generations.",
     context:"State religious repression",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -891,7 +963,7 @@ const events = [
     sources:[{label:"UNESCO — Hidden Christian Sites in Nagasaki",url:"https://whc.unesco.org/en/list/1495/"}]
   },
   {
-    year:1781, depth:17010, title:"Joseph II issues Patent of Toleration", location:"Habsburg Monarchy",
+    year:1781, depth:18370, title:"Joseph II issues Patent of Toleration", location:"Habsburg Monarchy",
     story:"Emperor Joseph II granted limited religious toleration to Protestants and Orthodox Christians and subsequently relaxed some restrictions affecting Jews, reflecting Enlightenment-era changes in confessional government.",
     context:"Religious toleration / reform",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -900,7 +972,16 @@ const events = [
     sources:[{label:"Britannica — Joseph II",url:"https://www.britannica.com/biography/Joseph-II"}]
   },
   {
-    year:1793, depth:17180, title:"De-Christianization during the French Revolution", location:"France",
+    year:1791, depth:18540, title:"Haitian Revolution transforms Christianity and slavery in the Atlantic", location:"Saint-Domingue / Haiti",
+    story:"Enslaved people launched the revolution that destroyed French colonial slavery and created Haiti. Catholicism, African religious traditions and revolutionary politics interacted in a conflict marked by mass violence on multiple sides.",
+    context:"Revolution / slavery / religion",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Revolution / slavery / religion",Evidence:"The revolution is extensively documented. It was fundamentally an antislavery and anticolonial revolution rather than a Christian religious war."},
+    sourceStatus:"The revolution is extensively documented. It was fundamentally an antislavery and anticolonial revolution rather than a Christian religious war.",
+    sources:[{label:"Britannica — Haitian Revolution",url:"https://www.britannica.com/topic/Haitian-Revolution"}]
+  },
+  {
+    year:1793, depth:18710, title:"De-Christianization during the French Revolution", location:"France",
     story:"During the radical phase of the French Revolution, churches were closed or repurposed, clergy were pressured to renounce their roles, religious symbols were destroyed and revolutionary cults promoted.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -909,7 +990,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — dechristianization",url:"https://www.britannica.com/event/French-Revolution"}]
   },
   {
-    year:1794, depth:17350, title:"Reign of Terror executes clergy and religious opponents", location:"France",
+    year:1794, depth:18880, title:"Reign of Terror executes clergy and religious opponents", location:"France",
     story:"During the radical French Revolution, refractory clergy and other perceived enemies of the revolutionary state were imprisoned, deported or executed amid a much broader political Terror.",
     context:"Revolutionary repression / anti-clerical violence",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -918,7 +999,7 @@ const events = [
     sources:[{label:"Britannica — Reign of Terror",url:"https://www.britannica.com/event/Reign-of-Terror"}]
   },
   {
-    year:1821, depth:17520, title:"Greek War of Independence brings Christian-Muslim communal violence", location:"Ottoman Greece",
+    year:1821, depth:19050, title:"Greek War of Independence brings Christian-Muslim communal violence", location:"Ottoman Greece",
     story:"The Greek revolt against Ottoman rule mobilized Orthodox Christian identity alongside nationalism. Massacres and reprisals targeted Muslim, Christian and Jewish civilians in different places during the war.",
     context:"National revolution / communal violence",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -927,7 +1008,7 @@ const events = [
     sources:[{label:"Britannica — Greek Independence",url:"https://www.britannica.com/event/War-of-Greek-Independence"}]
   },
   {
-    year:1844, depth:17690, title:"Edict of Toleration eases Ottoman penalties around conversion", location:"Ottoman Empire",
+    year:1844, depth:19220, title:"Edict of Toleration eases Ottoman penalties around conversion", location:"Ottoman Empire",
     story:"Under European diplomatic pressure and Tanzimat reforms, Ottoman policy moved toward greater formal protection for Christian subjects and away from capital punishment associated with apostasy, though equality remained incomplete.",
     context:"Religious reform / minority rights",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -936,7 +1017,7 @@ const events = [
     sources:[{label:"Britannica — Tanzimat",url:"https://www.britannica.com/event/Tanzimat"}]
   },
   {
-    year:1850, depth:17860, title:"Taiping movement creates heterodox Christian-inspired civil war", location:"China",
+    year:1850, depth:19390, title:"Taiping movement creates heterodox Christian-inspired civil war", location:"China",
     story:"Hong Xiuquan's Taiping movement combined idiosyncratic interpretations of Christianity with Chinese religious and political ideas. The resulting civil war became one of the deadliest conflicts of the nineteenth century.",
     context:"Christian-inspired millenarian war",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -945,7 +1026,16 @@ const events = [
     sources:[{label:"Britannica — Taiping Rebellion",url:"https://www.britannica.com/event/Taiping-Rebellion"}]
   },
   {
-    year:1860, depth:18030, title:"Damascus massacres target Christians", location:"Damascus and Mount Lebanon",
+    year:1857, depth:19560, title:"Indian Rebellion includes attacks on missionaries and Christians", location:"North India",
+    story:"During the uprising against East India Company rule, European missionaries and some Indian Christians were killed, while British reprisals devastated Indian communities. Christian missionary expansion was sometimes associated with colonial interference.",
+    context:"Colonial rebellion / religious tension",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Colonial rebellion / religious tension",Evidence:"The rebellion had military, political, economic and religious causes. It should not be reduced to Hindu-Muslim violence against Christianity."},
+    sourceStatus:"The rebellion had military, political, economic and religious causes. It should not be reduced to Hindu-Muslim violence against Christianity.",
+    sources:[{label:"Britannica — Indian Mutiny",url:"https://www.britannica.com/event/Indian-Mutiny"}]
+  },
+  {
+    year:1860, depth:19730, title:"Damascus massacres target Christians", location:"Damascus and Mount Lebanon",
     story:"Sectarian conflict in Mount Lebanon spread to Damascus, where thousands of Christians were killed and churches destroyed. Muslim notable Abd al-Qadir and others protected many Christians during the violence.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -954,7 +1044,7 @@ const events = [
     sources:[{label:"Britannica — Lebanon history",url:"https://www.britannica.com/place/Lebanon"}]
   },
   {
-    year:1870, depth:18200, title:"Papal States fall as Italian unification reaches Rome", location:"Rome",
+    year:1870, depth:19900, title:"Papal States fall as Italian unification reaches Rome", location:"Rome",
     story:"Italian forces captured Rome and ended the temporal rule of the popes over the Papal States. The event transformed the Catholic Church's relationship to modern nationalism and secular state power.",
     context:"Church-state conflict / political transformation",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -963,7 +1053,7 @@ const events = [
     sources:[{label:"Britannica — Capture of Rome",url:"https://www.britannica.com/place/Italy/Unification"}]
   },
   {
-    year:1871, depth:18370, title:"Kulturkampf begins in the German Empire", location:"German Empire",
+    year:1871, depth:20070, title:"Kulturkampf begins in the German Empire", location:"German Empire",
     story:"Bismarck's government imposed measures restricting Catholic institutions, education and clergy during the Kulturkampf, fearing political Catholicism and papal influence in the newly unified empire.",
     context:"Church-state conflict / legal repression",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -972,7 +1062,7 @@ const events = [
     sources:[{label:"Britannica — Kulturkampf",url:"https://www.britannica.com/event/Kulturkampf"}]
   },
   {
-    year:1876, depth:18540, title:"Bulgarian April Uprising and Ottoman massacres", location:"Ottoman Bulgaria",
+    year:1876, depth:20240, title:"Bulgarian April Uprising and Ottoman massacres", location:"Ottoman Bulgaria",
     story:"Ottoman forces and irregulars crushed the Bulgarian April Uprising. Mass killing of predominantly Orthodox Christian civilians, especially at Batak, caused international outrage and became a major European political issue.",
     context:"Massacre / imperial repression",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -981,7 +1071,7 @@ const events = [
     sources:[{label:"Britannica — April Uprising",url:"https://www.britannica.com/event/April-Uprising"}]
   },
   {
-    year:1881, depth:18710, title:"Russian pogrom wave unfolds in predominantly Christian empire", location:"Russian Empire",
+    year:1881, depth:20410, title:"Russian pogrom wave unfolds in predominantly Christian empire", location:"Russian Empire",
     story:"Following the assassination of Alexander II, pogroms struck Jewish communities across parts of the Russian Empire. Religious anti-Judaism mixed with economic resentment, rumor, nationalism and modern antisemitism.",
     context:"Pogrom / Jewish-Christian historical overlap",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -990,7 +1080,16 @@ const events = [
     sources:[{label:"USHMM — Antisemitism",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism"}]
   },
   {
-    year:1894, depth:18880, title:"Hamidian massacres devastate Armenian Christian communities", location:"Ottoman Empire",
+    year:1885, depth:20580, title:"Mahdist capture of Khartoum changes Christian mission presence in Sudan", location:"Sudan",
+    story:"Mahdist forces captured Khartoum and overthrew the Turco-Egyptian regime. Christian missionaries were expelled or restricted during the Mahdist state, within a wider anti-imperial and Islamic revolutionary movement.",
+    context:"Religious-political revolution / mission suppression",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Religious-political revolution / mission suppression",Evidence:"The Mahdist revolt was primarily a political and religious movement against foreign-backed rule; Christian missions were one part of the wider conflict."},
+    sourceStatus:"The Mahdist revolt was primarily a political and religious movement against foreign-backed rule; Christian missions were one part of the wider conflict.",
+    sources:[{label:"Britannica — Mahdist state",url:"https://www.britannica.com/place/Sudan/The-Mahdiyah"}]
+  },
+  {
+    year:1894, depth:20750, title:"Hamidian massacres devastate Armenian Christian communities", location:"Ottoman Empire",
     story:"Mass killings of Armenians occurred across the Ottoman Empire during the reign of Sultan Abdülhamid II. The violence killed large numbers and foreshadowed later destruction of Ottoman Armenian communities.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -999,7 +1098,7 @@ const events = [
     sources:[{label:"Britannica — Hamidian massacres",url:"https://www.britannica.com/topic/Hamidian-massacres"}]
   },
   {
-    year:1899, depth:19050, title:"Boxer movement turns against Chinese Christians", location:"Northern China",
+    year:1899, depth:20920, title:"Boxer movement turns against Chinese Christians", location:"Northern China",
     story:"Before the siege of foreign legations in 1900, Boxer groups increasingly targeted Chinese converts to Christianity as agents of foreign influence, destroying churches and killing believers.",
     context:"Anti-Christian violence / anti-foreign uprising",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1008,7 +1107,16 @@ const events = [
     sources:[{label:"Britannica — Boxer Rebellion",url:"https://www.britannica.com/event/Boxer-Rebellion"}]
   },
   {
-    year:1900, depth:19220, title:"Boxer Rebellion killings of Chinese Christians and missionaries", location:"Northern China",
+    year:1899, depth:21090, title:"Philippine-American War affects Catholic communities", location:"Philippines",
+    story:"War between Filipino independence forces and the United States unfolded in a predominantly Catholic society emerging from Spanish colonial rule. Church property, clergy and political influence became contested within a broader colonial war.",
+    context:"Colonial war / church-state transition",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Colonial war / church-state transition",Evidence:"The war was primarily about sovereignty and empire rather than theology, but it transformed the political position of the Catholic Church in the Philippines."},
+    sourceStatus:"The war was primarily about sovereignty and empire rather than theology, but it transformed the political position of the Catholic Church in the Philippines.",
+    sources:[{label:"Britannica — Philippine-American War",url:"https://www.britannica.com/event/Philippine-American-War"}]
+  },
+  {
+    year:1900, depth:21260, title:"Boxer Rebellion killings of Chinese Christians and missionaries", location:"Northern China",
     story:"Boxer fighters and some Qing officials attacked Chinese Christians and foreign missionaries during the anti-foreign uprising. Catholic, Protestant and Orthodox communities suffered killings, while the subsequent foreign intervention inflicted major violence on Chinese civilians.",
     context:"Anti-Christian violence / rebellion / imperial intervention",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -1017,7 +1125,7 @@ const events = [
     sources:[{label:"Library of Congress — Boxer Rebellion contemporary volume",url:"https://www.loc.gov/item/01030713/"}]
   },
   {
-    year:1909, depth:19390, title:"Adana massacres", location:"Adana region, Ottoman Empire",
+    year:1909, depth:21430, title:"Adana massacres", location:"Adana region, Ottoman Empire",
     story:"Violence in and around Adana killed large numbers of Armenians, most of them Christians, amid political instability following the Young Turk Revolution.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1026,7 +1134,7 @@ const events = [
     sources:[{label:"Britannica — Adana",url:"https://www.britannica.com/place/Adana-Turkey"}]
   },
   {
-    year:1910, depth:19560, title:"World Missionary Conference signals modern ecumenical movement", location:"Edinburgh",
+    year:1910, depth:21600, title:"World Missionary Conference signals modern ecumenical movement", location:"Edinburgh",
     story:"Protestant missionary leaders met in Edinburgh to discuss cooperation across denominations. Although not a conflict event, the conference became an important precursor to the modern ecumenical movement after centuries of Christian division.",
     context:"Ecumenism / institutional change",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1035,7 +1143,7 @@ const events = [
     sources:[{label:"Britannica — ecumenism",url:"https://www.britannica.com/topic/ecumenism"}]
   },
   {
-    year:1915, depth:19730, title:"Armenian genocide and destruction of ancient Christian communities", location:"Ottoman Empire",
+    year:1915, depth:21770, title:"Armenian genocide and destruction of ancient Christian communities", location:"Ottoman Empire",
     story:"Ottoman authorities deported and killed Armenians on a massive scale during World War I. Assyrian/Syriac and other Christian communities also suffered mass killing and displacement in overlapping campaigns.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1044,7 +1152,7 @@ const events = [
     sources:[{label:"United States Holocaust Memorial Museum — Armenian genocide",url:"https://encyclopedia.ushmm.org/content/en/article/the-armenian-genocide-1915-16-overview"}]
   },
   {
-    year:1915, depth:19900, title:"Assyrian genocide / Sayfo", location:"Ottoman Empire and Persia",
+    year:1915, depth:21940, title:"Assyrian genocide / Sayfo", location:"Ottoman Empire and Persia",
     story:"Assyrian and Syriac Christian communities suffered mass killing, deportation and displacement during World War I, particularly in southeastern Anatolia and adjacent regions.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1053,7 +1161,7 @@ const events = [
     sources:[{label:"Britannica — Assyrian",url:"https://www.britannica.com/topic/Assyrian"}]
   },
   {
-    year:1917, depth:20070, title:"Russian Revolution begins decades of Soviet anti-religious repression", location:"Russian Empire / Soviet Union",
+    year:1917, depth:22110, title:"Russian Revolution begins decades of Soviet anti-religious repression", location:"Russian Empire / Soviet Union",
     story:"The Bolshevik revolution was followed by state campaigns against organized religion. Churches were confiscated or destroyed, clergy and believers were arrested or executed, and religious education was heavily restricted.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1062,7 +1170,16 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Russian Orthodox Church",url:"https://www.britannica.com/topic/Russian-Orthodox-church"}]
   },
   {
-    year:1922, depth:20240, title:"Destruction and flight of Greek Orthodox communities in Asia Minor", location:"Anatolia and Smyrna",
+    year:1917, depth:22280, title:"Bolshevik government begins confiscation and restriction of church property", location:"Russia",
+    story:"After the Russian Revolution, the Bolshevik state separated church and state, confiscated property and increasingly targeted clergy and religious institutions. The Russian Orthodox Church became a major focus of repression.",
+    context:"Communist anti-religious repression",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Communist anti-religious repression",Evidence:"Soviet religious repression is extensively documented. Intensity changed over time and affected Orthodox, Catholic, Protestant, Jewish, Muslim and other religious communities."},
+    sourceStatus:"Soviet religious repression is extensively documented. Intensity changed over time and affected Orthodox, Catholic, Protestant, Jewish, Muslim and other religious communities.",
+    sources:[{label:"Britannica — Russian Orthodox Church",url:"https://www.britannica.com/topic/Russian-Orthodox-Church"}]
+  },
+  {
+    year:1922, depth:22450, title:"Destruction and flight of Greek Orthodox communities in Asia Minor", location:"Anatolia and Smyrna",
     story:"The Greco-Turkish War culminated in catastrophic population displacement and the burning of Smyrna. Greek Orthodox and Armenian Christian populations were killed or expelled amid the collapse of centuries-old communities.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1071,7 +1188,16 @@ const events = [
     sources:[{label:"Britannica — Greco-Turkish wars",url:"https://www.britannica.com/event/Greco-Turkish-wars"}]
   },
   {
-    year:1926, depth:20410, title:"Cristero War begins in Mexico", location:"Mexico",
+    year:1922, depth:22620, title:"Soviet campaign seizes church valuables", location:"Soviet Russia",
+    story:"The Soviet government confiscated church valuables during famine relief campaigns. Resistance led to arrests, trials and executions of clergy and believers, deepening the confrontation between the communist state and religious institutions.",
+    context:"Communist repression / church-state conflict",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Communist repression / church-state conflict",Evidence:"The confiscation campaign and trials are well documented. Famine relief, political control and anti-religious ideology all shaped policy."},
+    sourceStatus:"The confiscation campaign and trials are well documented. Famine relief, political control and anti-religious ideology all shaped policy.",
+    sources:[{label:"Britannica — Russian Orthodox Church",url:"https://www.britannica.com/topic/Russian-Orthodox-Church"}]
+  },
+  {
+    year:1926, depth:22790, title:"Cristero War begins in Mexico", location:"Mexico",
     story:"Armed Catholic rebels fought the Mexican government after enforcement of anticlerical provisions sharply restricted church activity. Both government forces and rebels committed abuses during the conflict.",
     context:"Church-state war / anticlerical repression",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1080,7 +1206,7 @@ const events = [
     sources:[{label:"Britannica — Cristero Rebellion",url:"https://www.britannica.com/event/Cristero-Rebellion"}]
   },
   {
-    year:1927, depth:20580, title:"Soviet League of Militant Atheists expands anti-religious campaign", location:"Soviet Union",
+    year:1927, depth:22960, title:"Soviet League of Militant Atheists expands anti-religious campaign", location:"Soviet Union",
     story:"The Soviet state intensified organized atheist propaganda and campaigns against churches, clergy and religious practice. The late 1920s and 1930s brought closures, arrests and destruction of religious institutions.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1089,7 +1215,16 @@ const events = [
     sources:[{label:"Britannica — Soviet Union religion",url:"https://www.britannica.com/place/Soviet-Union"}]
   },
   {
-    year:1933, depth:20750, title:"Simele massacre of Assyrian Christians", location:"Northern Iraq",
+    year:1931, depth:23130, title:"Soviet destruction of Cathedral of Christ the Saviour", location:"Moscow",
+    story:"Soviet authorities demolished Moscow's Cathedral of Christ the Saviour during Stalin's anti-religious campaign, intending the site for the Palace of the Soviets.",
+    context:"State atheism / destruction of religious heritage",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"State atheism / destruction of religious heritage",Evidence:"The demolition is directly documented and became a prominent symbol of Soviet anti-religious policy."},
+    sourceStatus:"The demolition is directly documented and became a prominent symbol of Soviet anti-religious policy.",
+    sources:[{label:"Britannica — Cathedral of Christ the Saviour",url:"https://www.britannica.com/topic/Cathedral-of-Christ-the-Saviour"}]
+  },
+  {
+    year:1933, depth:23300, title:"Simele massacre of Assyrian Christians", location:"Northern Iraq",
     story:"Iraqi army units and allied tribal forces killed Assyrians in Simele and surrounding villages after tensions over citizenship, arms and the position of the Assyrian minority in the new Iraqi state.",
     context:"Massacre / minority persecution",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -1098,7 +1233,7 @@ const events = [
     sources:[{label:"Britannica — Assyrians",url:"https://www.britannica.com/topic/Assyrian"}]
   },
   {
-    year:1933, depth:20920, title:"German churches confront accommodation and resistance under Nazism", location:"Germany",
+    year:1933, depth:23470, title:"German churches confront accommodation and resistance under Nazism", location:"Germany",
     story:"As the Nazi regime consolidated power, Protestant and Catholic institutions sought to protect church autonomy while many leaders accommodated the new state. The German Christian movement embraced Nazi nationalism, while the Confessing Church later resisted some state interference. Public institutional opposition to persecution of Jews remained extremely limited.",
     context:"Churches / Nazism / antisemitism",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -1107,7 +1242,7 @@ const events = [
     sources:[{label:"USHMM — German Churches and Nazi State",url:"https://encyclopedia.ushmm.org/content/en/article/the-german-churches-and-the-nazi-state"}]
   },
   {
-    year:1934, depth:21090, title:"Barmen Declaration challenges Nazi control of Protestant churches", location:"Barmen, Germany",
+    year:1934, depth:23640, title:"Barmen Declaration challenges Nazi control of Protestant churches", location:"Barmen, Germany",
     story:"Confessing Church leaders issued the Barmen Theological Declaration rejecting state domination of the church and theological distortions associated with the pro-Nazi German Christian movement.",
     context:"Church resistance / theological declaration",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -1116,7 +1251,7 @@ const events = [
     sources:[{label:"Britannica — Confessing Church",url:"https://www.britannica.com/topic/Confessing-Church"}]
   },
   {
-    year:1936, depth:21260, title:"Spanish Civil War includes mass anti-clerical and religious violence", location:"Spain",
+    year:1936, depth:23810, title:"Spanish Civil War includes mass anti-clerical and religious violence", location:"Spain",
     story:"During the Spanish Civil War, thousands of Catholic clergy and religious personnel were killed in Republican-held areas, while Nationalist forces carried out mass repression and later aligned the regime closely with Catholic institutions.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1125,7 +1260,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Spanish Civil War",url:"https://www.britannica.com/event/Spanish-Civil-War"}]
   },
   {
-    year:1937, depth:21430, title:"Mit brennender Sorge condemns Nazi violations affecting the Catholic Church", location:"Germany",
+    year:1937, depth:23980, title:"Mit brennender Sorge condemns Nazi violations affecting the Catholic Church", location:"Germany",
     story:"Pope Pius XI's encyclical, secretly distributed and read from German pulpits, condemned breaches of the concordat and aspects of Nazi racial and state ideology. Nazi authorities retaliated against church institutions.",
     context:"Church-state resistance / Nazism",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1134,7 +1269,7 @@ const events = [
     sources:[{label:"USHMM — German Churches and Nazi State",url:"https://encyclopedia.ushmm.org/content/en/article/the-german-churches-and-the-nazi-state"}]
   },
   {
-    year:1939, depth:21600, title:"Nazi persecution of churches and Christian opponents during World War II", location:"Europe",
+    year:1939, depth:24150, title:"Nazi persecution of churches and Christian opponents during World War II", location:"Europe",
     story:"Nazi policy toward Christianity varied, but the regime imprisoned clergy, suppressed church organizations and murdered Christian opponents, especially in occupied Poland and within resistance networks. Some Christians and churches also collaborated with or accommodated the regime.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1143,7 +1278,16 @@ const events = [
     sources:[{label:"USHMM — German churches and Nazi state",url:"https://encyclopedia.ushmm.org/content/en/article/the-german-churches-and-the-nazi-state"}]
   },
   {
-    year:1942, depth:21770, title:"Christian rescuers and church networks aid Jews during the Holocaust", location:"Occupied Europe",
+    year:1941, depth:24320, title:"Nazi invasion changes Soviet policy toward churches", location:"Soviet Union",
+    story:"Germany's invasion devastated religious communities along with the wider population. Stalin later relaxed some restrictions on the Russian Orthodox Church to mobilize patriotism, while Nazi occupation policies varied and included persecution and mass murder.",
+    context:"World war / church-state shift",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"World war / church-state shift",Evidence:"The wartime revival of limited Orthodox institutional activity is well documented. Nazi racial occupation policy, not religious liberation, defined the broader context."},
+    sourceStatus:"The wartime revival of limited Orthodox institutional activity is well documented. Nazi racial occupation policy, not religious liberation, defined the broader context.",
+    sources:[{label:"Britannica — Russian Orthodox Church",url:"https://www.britannica.com/topic/Russian-Orthodox-Church"}]
+  },
+  {
+    year:1942, depth:24490, title:"Christian rescuers and church networks aid Jews during the Holocaust", location:"Occupied Europe",
     story:"Individual priests, pastors, nuns, lay Christians and some church-linked networks hid Jews, provided false documents and assisted escape. Their actions existed alongside widespread Christian passivity, accommodation and collaboration across occupied Europe.",
     context:"Rescue / Holocaust / Jewish-Christian history",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -1152,7 +1296,7 @@ const events = [
     sources:[{label:"USHMM — clergy and church leaders",url:"https://encyclopedia.ushmm.org/content/en/article/the-role-of-clergy-and-church-leaders"}]
   },
   {
-    year:1945, depth:21940, title:"Ustaša persecution and Jasenovac camp end with World War II", location:"Independent State of Croatia",
+    year:1945, depth:24660, title:"Ustaša persecution and Jasenovac camp end with World War II", location:"Independent State of Croatia",
     story:"The Ustaša regime, which identified strongly with Croatian nationalism and Catholic cultural identity, murdered Serbs, Jews, Roma and political opponents. Some clergy participated while other Catholics opposed or rescued victims; the church's institutional role remains historically contested.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1161,7 +1305,7 @@ const events = [
     sources:[{label:"USHMM — Jasenovac",url:"https://encyclopedia.ushmm.org/content/en/article/jasenovac"}]
   },
   {
-    year:1947, depth:22110, title:"Seelisberg conference confronts Christian antisemitism after Holocaust", location:"Seelisberg, Switzerland",
+    year:1947, depth:24830, title:"Seelisberg conference confronts Christian antisemitism after Holocaust", location:"Seelisberg, Switzerland",
     story:"Jewish and Christian participants met to address antisemitism and Christian teaching after the Holocaust. The resulting Ten Points urged churches to reject collective Jewish guilt for Jesus's death and rethink hostile portrayals of Judaism.",
     context:"Jewish-Christian reconciliation / post-Holocaust reform",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -1170,7 +1314,7 @@ const events = [
     sources:[{label:"USHMM — Jewish-Christian relationship",url:"https://www.ushmm.org/research/about-the-mandel-center/initiatives/religion-holocaust/resources/jews-and-christians-the-unfolding-interfaith-relationship"}]
   },
   {
-    year:1948, depth:22280, title:"Communist regimes intensify church repression in Eastern Europe", location:"Eastern Europe",
+    year:1948, depth:25000, title:"Communist regimes intensify church repression in Eastern Europe", location:"Eastern Europe",
     story:"Postwar communist governments brought churches under state control, confiscated property, restricted religious education and imprisoned clergy. Policies differed among countries and changed over time.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1179,7 +1323,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Christianity",url:"https://www.britannica.com/topic/Christianity"}]
   },
   {
-    year:1948, depth:22450, title:"World Council of Churches founded", location:"Amsterdam",
+    year:1948, depth:25170, title:"World Council of Churches founded", location:"Amsterdam",
     story:"Protestant and Orthodox churches established the World Council of Churches to promote Christian unity and cooperation after the devastation of two world wars.",
     context:"Ecumenism / postwar institutional change",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1188,7 +1332,7 @@ const events = [
     sources:[{label:"World Council of Churches — history",url:"https://www.oikoumene.org/about-the-wcc/history"}]
   },
   {
-    year:1949, depth:22620, title:"Communist show trial of Cardinal Mindszenty", location:"Hungary",
+    year:1949, depth:25340, title:"Communist show trial of Cardinal Mindszenty", location:"Hungary",
     story:"Hungarian communist authorities arrested and convicted Catholic Cardinal József Mindszenty after a show trial, part of a wider campaign to subordinate churches to the state.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1197,7 +1341,7 @@ const events = [
     sources:[{label:"Britannica — József Mindszenty",url:"https://www.britannica.com/biography/Jozsef-Mindszenty"}]
   },
   {
-    year:1950, depth:22790, title:"Korean War devastates Christian communities alongside wider civilian population", location:"Korean Peninsula",
+    year:1950, depth:25510, title:"Korean War devastates Christian communities alongside wider civilian population", location:"Korean Peninsula",
     story:"War and ideological repression affected Korean Christians as churches and civilians were caught between communist and anti-communist forces. North Korea subsequently developed one of the world's most restrictive systems toward independent religious practice.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1206,7 +1350,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Korean War",url:"https://www.britannica.com/event/Korean-War"}]
   },
   {
-    year:1956, depth:22960, title:"Hungarian Revolution and renewed church-state confrontation", location:"Hungary",
+    year:1956, depth:25680, title:"Hungarian Revolution and renewed church-state confrontation", location:"Hungary",
     story:"The Hungarian uprising briefly loosened communist controls, allowing Cardinal Mindszenty to leave confinement. Soviet forces crushed the revolution and the communist state subsequently reasserted restrictions over religious institutions.",
     context:"Communist repression / revolution",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -1215,7 +1359,25 @@ const events = [
     sources:[{label:"Britannica — Hungarian Revolution",url:"https://www.britannica.com/event/Hungarian-Revolution-1956"}]
   },
   {
-    year:1962, depth:23130, title:"Second Vatican Council begins", location:"Vatican City",
+    year:1959, depth:25850, title:"Cuban Revolution begins decades of church-state tension", location:"Cuba",
+    story:"The revolutionary government nationalized church schools and restricted religious institutions as Cuba became a communist state. Relations with Catholic and Protestant communities later changed substantially over time.",
+    context:"Communist state / church restriction",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Communist state / church restriction",Evidence:"Early revolutionary policy was strongly secular and restrictive, but conditions evolved and Cuba later eased some limitations on religious practice."},
+    sourceStatus:"Early revolutionary policy was strongly secular and restrictive, but conditions evolved and Cuba later eased some limitations on religious practice.",
+    sources:[{label:"Britannica — Cuba religion",url:"https://www.britannica.com/place/Cuba/Religion"}]
+  },
+  {
+    year:1960, depth:26020, title:"Congo Crisis brings killing of missionaries and clergy", location:"Congo",
+    story:"Independence and state collapse produced widespread violence in which missionaries, clergy and Christian civilians were among many victims. The conflict mixed decolonization, secession, Cold War intervention and local struggles.",
+    context:"Postcolonial conflict / attacks on clergy",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Postcolonial conflict / attacks on clergy",Evidence:"Religious workers were targeted in some episodes, but the Congo Crisis was not fundamentally a religious war."},
+    sourceStatus:"Religious workers were targeted in some episodes, but the Congo Crisis was not fundamentally a religious war.",
+    sources:[{label:"Britannica — Congo Crisis",url:"https://www.britannica.com/place/Democratic-Republic-of-the-Congo/The-Congo-crisis"}]
+  },
+  {
+    year:1962, depth:26190, title:"Second Vatican Council begins", location:"Vatican City",
     story:"The Roman Catholic Church opened the Second Vatican Council, a global council that reexamined Catholic relations with the modern world and other religions. Its deliberations led to a major change in official Catholic teaching about Jews and Judaism.",
     context:"Church reform / interfaith relations",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -1224,7 +1386,7 @@ const events = [
     sources:[{label:"Britannica — Second Vatican Council",url:"https://www.britannica.com/event/Second-Vatican-Council"}]
   },
   {
-    year:1965, depth:23300, title:"Nostra Aetate rejects collective Jewish guilt", location:"Vatican City",
+    year:1965, depth:26360, title:"Nostra Aetate rejects collective Jewish guilt", location:"Vatican City",
     story:"The Second Vatican Council promulgated Nostra Aetate. It rejected the idea that responsibility for Jesus's death could be charged against all Jews then living or Jews today and deplored antisemitism, becoming a landmark in Catholic–Jewish relations.",
     context:"Jewish-Christian reconciliation / doctrinal change",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -1233,7 +1395,7 @@ const events = [
     sources:[{label:"Vatican — Nostra Aetate",url:"https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651028_nostra-aetate_en.html"}]
   },
   {
-    year:1966, depth:23470, title:"Chinese Cultural Revolution attacks Christian institutions", location:"China",
+    year:1966, depth:26530, title:"Chinese Cultural Revolution attacks Christian institutions", location:"China",
     story:"During the Cultural Revolution, churches were closed, religious objects destroyed and clergy and believers persecuted alongside adherents of other religions and people targeted as representatives of the old order.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1242,7 +1404,7 @@ const events = [
     sources:[{label:"Britannica — Cultural Revolution",url:"https://www.britannica.com/event/Cultural-Revolution"}]
   },
   {
-    year:1967, depth:23640, title:"Biafran War creates mass suffering among predominantly Christian Igbo", location:"Nigeria / Biafra",
+    year:1967, depth:26700, title:"Biafran War creates mass suffering among predominantly Christian Igbo", location:"Nigeria / Biafra",
     story:"The attempted secession of Biafra led to war, blockade and catastrophic famine. Many Biafrans were Christian Igbo, but the conflict was fundamentally political, ethnic and regional rather than a simple religious war.",
     context:"Civil war / humanitarian catastrophe",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1251,7 +1413,7 @@ const events = [
     sources:[{label:"Britannica — Nigerian Civil War",url:"https://www.britannica.com/topic/Nigerian-civil-war"}]
   },
   {
-    year:1972, depth:23810, title:"Bloody Sunday deepens Northern Ireland conflict", location:"Derry, Northern Ireland",
+    year:1972, depth:26870, title:"Bloody Sunday deepens Northern Ireland conflict", location:"Derry, Northern Ireland",
     story:"British soldiers shot civil-rights marchers in Derry during the Troubles. Catholic and Protestant identities structured much of Northern Ireland's communal divide, but the conflict also centered on constitutional status, nationalism, unionism and civil rights.",
     context:"Sectarian political conflict",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1260,7 +1422,7 @@ const events = [
     sources:[{label:"Britannica — Bloody Sunday",url:"https://www.britannica.com/event/Bloody-Sunday-Northern-Ireland-1972"}]
   },
   {
-    year:1975, depth:23980, title:"Lebanese Civil War begins", location:"Lebanon",
+    year:1975, depth:27040, title:"Lebanese Civil War begins", location:"Lebanon",
     story:"Lebanon's civil war involved Maronite Christian militias, Palestinian organizations, Muslim and Druze factions, Syrian forces, Israel and others. Sectarian identity interacted with political, social and regional struggles, producing massacres and displacement across communities.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1269,7 +1431,16 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Lebanese Civil War",url:"https://www.britannica.com/event/Lebanese-Civil-War"}]
   },
   {
-    year:1979, depth:24150, title:"Iranian Revolution transforms conditions for Christian minorities", location:"Iran",
+    year:1975, depth:27210, title:"Khmer Rouge persecution destroys Cambodian Christian communities", location:"Cambodia",
+    story:"The Khmer Rouge abolished organized religion and targeted clergy and believers alongside the broader mass killing of Cambodia's population. Most visible Christian institutions were destroyed and many Christians died.",
+    context:"Communist repression / genocide context",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Communist repression / genocide context",Evidence:"Christians were persecuted as part of a wider revolutionary assault on religion and society that also devastated Buddhist and Muslim communities."},
+    sourceStatus:"Christians were persecuted as part of a wider revolutionary assault on religion and society that also devastated Buddhist and Muslim communities.",
+    sources:[{label:"USHMM — Cambodia",url:"https://encyclopedia.ushmm.org/content/en/article/cambodia-1975-1979"}]
+  },
+  {
+    year:1979, depth:27380, title:"Iranian Revolution transforms conditions for Christian minorities", location:"Iran",
     story:"The Islamic Republic formally recognized some historic Christian minorities while imposing a religious legal order that sharply constrained conversion from Islam and evangelical activity. Armenian and Assyrian churches continued under regulated conditions.",
     context:"Religious restriction / minority status",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -1278,7 +1449,25 @@ const events = [
     sources:[{label:"U.S. State Department — Iran religious freedom",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/iran/"}]
   },
   {
-    year:1981, depth:24320, title:"Pope John Paul II assassination attempt", location:"Vatican City",
+    year:1979, depth:27550, title:"Archbishop Óscar Romero confronts political violence in El Salvador", location:"El Salvador",
+    story:"Archbishop Óscar Romero publicly denounced killings, disappearances and repression as El Salvador moved toward civil war, making him a leading Christian voice for human rights.",
+    context:"Church and human rights / political conflict",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Church and human rights / political conflict",Evidence:"Romero's sermons and public advocacy are extensively documented. He was assassinated the following year while celebrating Mass."},
+    sourceStatus:"Romero's sermons and public advocacy are extensively documented. He was assassinated the following year while celebrating Mass.",
+    sources:[{label:"Britannica — Oscar Romero",url:"https://www.britannica.com/biography/Oscar-Arnulfo-Romero"}]
+  },
+  {
+    year:1980, depth:27720, title:"Assassination of Archbishop Óscar Romero", location:"San Salvador, El Salvador",
+    story:"Romero was shot and killed while celebrating Mass. A UN-backed truth commission later attributed the assassination order to Major Roberto D'Aubuisson, linking the killing to right-wing death-squad violence.",
+    context:"Political assassination / church persecution",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Political assassination / church persecution",Evidence:"The assassination and attribution are extensively documented. Romero was targeted for his opposition to state-linked repression and political violence."},
+    sourceStatus:"The assassination and attribution are extensively documented. Romero was targeted for his opposition to state-linked repression and political violence.",
+    sources:[{label:"Britannica — Oscar Romero",url:"https://www.britannica.com/biography/Oscar-Arnulfo-Romero"}]
+  },
+  {
+    year:1981, depth:27890, title:"Pope John Paul II assassination attempt", location:"Vatican City",
     story:"Mehmet Ali Ağca shot and seriously wounded Pope John Paul II in St. Peter's Square. The pope survived and later publicly forgave Ağca.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1287,7 +1476,7 @@ const events = [
     sources:[{label:"Britannica — John Paul II",url:"https://www.britannica.com/biography/Saint-John-Paul-II"}]
   },
   {
-    year:1983, depth:24490, title:"Beirut barracks bombings", location:"Beirut, Lebanon",
+    year:1983, depth:28060, title:"Beirut barracks bombings", location:"Beirut, Lebanon",
     story:"Suicide bombers attacked U.S. Marine and French military barracks, killing hundreds of service members. The attacks occurred amid the Lebanese Civil War and are widely attributed to militants linked to what became Hezbollah, with Iranian support.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1296,7 +1485,16 @@ const events = [
     sources:[{label:"FBI — Beirut Marine barracks bombing",url:"https://www.fbi.gov/history/famous-cases/beirut-barracks-bombing"}]
   },
   {
-    year:1992, depth:24660, title:"Bosnian War targets Christian and Muslim communities", location:"Bosnia and Herzegovina",
+    year:1989, depth:28230, title:"Jesuit priests murdered at Central American University", location:"San Salvador, El Salvador",
+    story:"Salvadoran soldiers murdered six Jesuit priests, their housekeeper and her daughter at the University of Central America during the civil war. The priests were prominent critics of violence and advocates for negotiated peace.",
+    context:"Political massacre / clergy targeted",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Political massacre / clergy targeted",Evidence:"The massacre was investigated by the UN Truth Commission and became emblematic of attacks on church-linked human-rights advocates."},
+    sourceStatus:"The massacre was investigated by the UN Truth Commission and became emblematic of attacks on church-linked human-rights advocates.",
+    sources:[{label:"Britannica — El Salvador civil war",url:"https://www.britannica.com/place/El-Salvador/Civil-war"}]
+  },
+  {
+    year:1992, depth:28400, title:"Bosnian War targets Christian and Muslim communities", location:"Bosnia and Herzegovina",
     story:"The breakup of Yugoslavia produced war among Bosniak, Serb and Croat forces associated largely with Muslim, Orthodox and Catholic populations. Ethnic cleansing, camps, sieges and massacres affected civilians across communities, with Bosniaks suffering genocide at Srebrenica.",
     context:"Ethno-national war / religious identity",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1305,7 +1503,7 @@ const events = [
     sources:[{label:"Britannica — Bosnian War",url:"https://www.britannica.com/event/Bosnian-War"}]
   },
   {
-    year:1994, depth:24830, title:"Rwandan genocide and the role of Christian institutions", location:"Rwanda",
+    year:1994, depth:28570, title:"Rwandan genocide and the role of Christian institutions", location:"Rwanda",
     story:"During the genocide against the Tutsi, churches became sites both of refuge and massacre. Some clergy and lay Christians protected victims, while others participated in or facilitated killings. The genocide exposed the complex relationship between Christian institutions, ethnicity and political power.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1314,7 +1512,7 @@ const events = [
     sources:[{label:"United Nations — Rwanda genocide",url:"https://www.un.org/en/preventgenocide/rwanda/"}]
   },
   {
-    year:1997, depth:25000, title:"Luxor massacre includes Christian and other foreign tourists", location:"Luxor, Egypt",
+    year:1997, depth:28740, title:"Luxor massacre includes Christian and other foreign tourists", location:"Luxor, Egypt",
     story:"Islamist militants attacked tourists at the Temple of Hatshepsut, killing dozens. The attack was part of an insurgency against the Egyptian state and tourism industry rather than an exclusively anti-Christian attack.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1323,7 +1521,7 @@ const events = [
     sources:[{label:"Britannica — Egypt history",url:"https://www.britannica.com/place/Egypt"}]
   },
   {
-    year:1998, depth:25170, title:"Vatican publishes We Remember: A Reflection on the Shoah", location:"Vatican City",
+    year:1998, depth:28910, title:"Vatican publishes We Remember: A Reflection on the Shoah", location:"Vatican City",
     story:"The Vatican Commission for Religious Relations with the Jews issued a reflection on the Holocaust, condemning genocide and examining the history of Christian anti-Jewish attitudes while distinguishing modern racial antisemitism from Christian anti-Judaism.",
     context:"Holocaust remembrance / Jewish-Christian relations",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
@@ -1332,7 +1530,16 @@ const events = [
     sources:[{label:"Vatican — We Remember",url:"https://www.vatican.va/roman_curia/pontifical_councils/chrstuni/documents/rc_pc_chrstuni_doc_16031998_shoah_en.html"}]
   },
   {
-    year:1999, depth:25340, title:"East Timor church attacks amid independence violence", location:"East Timor",
+    year:1998, depth:29080, title:"Good Friday Agreement reduces Northern Ireland sectarian conflict", location:"Northern Ireland",
+    story:"The agreement created a new political framework after decades of conflict involving predominantly Catholic nationalists and Protestant unionists. It sharply reduced, though did not entirely end, sectarian violence.",
+    context:"Peace settlement / sectarian conflict",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Peace settlement / sectarian conflict",Evidence:"The agreement is directly documented and illustrates how a conflict with strong religious identities was fundamentally also constitutional and national."},
+    sourceStatus:"The agreement is directly documented and illustrates how a conflict with strong religious identities was fundamentally also constitutional and national.",
+    sources:[{label:"Britannica — Good Friday Agreement",url:"https://www.britannica.com/topic/Good-Friday-Agreement"}]
+  },
+  {
+    year:1999, depth:29250, title:"East Timor church attacks amid independence violence", location:"East Timor",
     story:"Pro-integration militias attacked civilians, churches and clergy during violence surrounding East Timor's independence referendum. Catholic institutions often sheltered displaced people and became targets.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1341,7 +1548,25 @@ const events = [
     sources:[{label:"United Nations — East Timor",url:"https://peacekeeping.un.org/mission/past/etimor/etimor.htm"}]
   },
   {
-    year:2002, depth:25510, title:"Bali bombings kill Christians, Muslims and foreign tourists", location:"Bali, Indonesia",
+    year:1999, depth:29420, title:"Maluku sectarian conflict erupts between Muslim and Christian communities", location:"Maluku Islands, Indonesia",
+    story:"Communal violence escalated between Muslim and Christian communities, killing thousands and displacing large populations. Militias, local grievances, political transition and outside fighters intensified the conflict.",
+    context:"Communal Christian-Muslim violence",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Communal Christian-Muslim violence",Evidence:"The conflict is extensively documented. Both Christian and Muslim civilians were victims and perpetrators, and political and ethnic factors accompanied religion."},
+    sourceStatus:"The conflict is extensively documented. Both Christian and Muslim civilians were victims and perpetrators, and political and ethnic factors accompanied religion.",
+    sources:[{label:"Britannica — Maluku",url:"https://www.britannica.com/place/Moluccas"}]
+  },
+  {
+    year:2000, depth:29590, title:"Kaduna sharia riots kill Christians and Muslims", location:"Kaduna, Nigeria",
+    story:"Protests and counter-protests over implementation of Islamic sharia law erupted into communal violence between Christian and Muslim residents, killing large numbers and deepening sectarian division.",
+    context:"Christian-Muslim communal violence",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Christian-Muslim communal violence",Evidence:"Casualty estimates vary. The violence involved organized and spontaneous attacks by members of both communities."},
+    sourceStatus:"Casualty estimates vary. The violence involved organized and spontaneous attacks by members of both communities.",
+    sources:[{label:"U.S. State Department — Nigeria religious freedom",url:"https://www.state.gov/reports/2000-report-on-international-religious-freedom/nigeria/"}]
+  },
+  {
+    year:2002, depth:29760, title:"Bali bombings kill Christians, Muslims and foreign tourists", location:"Bali, Indonesia",
     story:"Jemaah Islamiyah bombers attacked nightlife venues in Bali, killing more than 200 people from many countries and religious backgrounds. The attack was jihadist terrorism but was not an exclusively anti-Christian attack.",
     context:"Terrorism / jihadist attack",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -1350,7 +1575,16 @@ const events = [
     sources:[{label:"Britannica — Bali bombings",url:"https://www.britannica.com/event/Bali-Bombings-of-2002"}]
   },
   {
-    year:2003, depth:25680, title:"Iraq War and collapse of security accelerate Christian displacement", location:"Iraq",
+    year:2002, depth:29930, title:"Miss World riots in Kaduna", location:"Kaduna, Nigeria",
+    story:"Religious controversy surrounding the Miss World pageant contributed to riots in which Christian and Muslim neighborhoods and places of worship were attacked and more than 200 people were reported killed.",
+    context:"Communal religious violence",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Communal religious violence",Evidence:"The riots are well documented; responsibility and victims crossed communal lines."},
+    sourceStatus:"The riots are well documented; responsibility and victims crossed communal lines.",
+    sources:[{label:"Britannica — Nigeria religion",url:"https://www.britannica.com/place/Nigeria/Religious-freedom"}]
+  },
+  {
+    year:2003, depth:30100, title:"Iraq War and collapse of security accelerate Christian displacement", location:"Iraq",
     story:"Following the U.S.-led invasion and collapse of Iraqi state security, ancient Christian communities faced bombings, kidnappings, killings and displacement amid a much wider insurgency and sectarian war.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1359,7 +1593,16 @@ const events = [
     sources:[{label:"U.S. State Department — International Religious Freedom",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/iraq/"}]
   },
   {
-    year:2008, depth:25850, title:"Orissa anti-Christian violence", location:"Odisha, India",
+    year:2004, depth:30270, title:"Beslan school siege includes Orthodox Christian community victims", location:"Beslan, Russia",
+    story:"Militants seized a school in North Ossetia, killing more than 330 hostages, many of them children. The local population was predominantly Orthodox Christian, but the attack was part of the Chechen conflict rather than an attack on Christianity as a religion.",
+    context:"Terrorism / ethno-political conflict",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Terrorism / ethno-political conflict",Evidence:"The siege is firmly documented. Religious identities existed in the background, but the attack should not be mislabeled as anti-Christian persecution."},
+    sourceStatus:"The siege is firmly documented. Religious identities existed in the background, but the attack should not be mislabeled as anti-Christian persecution.",
+    sources:[{label:"Britannica — Beslan school attack",url:"https://www.britannica.com/event/Beslan-school-attack"}]
+  },
+  {
+    year:2008, depth:30440, title:"Orissa anti-Christian violence", location:"Odisha, India",
     story:"Following the killing of a Hindu nationalist leader, widespread communal violence struck Christian communities in Kandhamal district, killing people, burning churches and homes and displacing tens of thousands.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1368,7 +1611,7 @@ const events = [
     sources:[{label:"U.S. State Department — India religious freedom",url:"https://www.state.gov/reports/2008-report-on-international-religious-freedom/india/"}]
   },
   {
-    year:2008, depth:26020, title:"Kandhamal violence displaces Christian communities", location:"Odisha, India",
+    year:2008, depth:30610, title:"Kandhamal violence displaces Christian communities", location:"Odisha, India",
     story:"Anti-Christian violence in Kandhamal killed residents, destroyed churches and homes and displaced tens of thousands after the assassination of a Hindu nationalist leader.",
     context:"Communal violence / anti-Christian persecution",
     aftermath:"This event is presented within its political, social and religious setting. The timeline distinguishes the actions of specific institutions, rulers, states and movements from Christianity or any other religion as a whole.",
@@ -1377,7 +1620,16 @@ const events = [
     sources:[{label:"U.S. State Department — India religious freedom",url:"https://www.state.gov/reports/2008-report-on-international-religious-freedom/india/"}]
   },
   {
-    year:2010, depth:26190, title:"Baghdad church massacre", location:"Baghdad, Iraq",
+    year:2009, depth:30780, title:"Boko Haram insurgency begins large-scale violence in northeastern Nigeria", location:"Northeastern Nigeria",
+    story:"Boko Haram's insurgency expanded into mass violence against government institutions, Muslim critics, Christians, churches and civilians. Christian communities were repeatedly targeted, while Muslims constituted a large share of the movement's victims as well.",
+    context:"Jihadist insurgency / anti-Christian attacks",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Jihadist insurgency / anti-Christian attacks",Evidence:"The insurgency and deliberate attacks on Christians are extensively documented. The conflict also kills and displaces Muslim communities and should not be described as exclusively Christian-Muslim warfare."},
+    sourceStatus:"The insurgency and deliberate attacks on Christians are extensively documented. The conflict also kills and displaces Muslim communities and should not be described as exclusively Christian-Muslim warfare.",
+    sources:[{label:"Britannica — Boko Haram",url:"https://www.britannica.com/topic/Boko-Haram"}]
+  },
+  {
+    year:2010, depth:30950, title:"Baghdad church massacre", location:"Baghdad, Iraq",
     story:"Militants affiliated with al-Qaeda in Iraq seized Our Lady of Salvation Syriac Catholic Church during Mass. The hostage crisis and assault killed dozens of worshippers, clergy and security personnel.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1386,7 +1638,16 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Iraq War",url:"https://www.britannica.com/event/Iraq-War"}]
   },
   {
-    year:2011, depth:26360, title:"Alexandria church bombing", location:"Alexandria, Egypt",
+    year:2010, depth:31120, title:"Nag Hammadi shooting targets Coptic worshippers", location:"Nag Hammadi, Egypt",
+    story:"Gunmen opened fire on Coptic Christians leaving Christmas Eve Mass, killing worshippers and a Muslim guard.",
+    context:"Anti-Christian attack / sectarian violence",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Anti-Christian attack / sectarian violence",Evidence:"The attack is well documented and occurred amid recurring sectarian tensions affecting Egypt's Coptic minority."},
+    sourceStatus:"The attack is well documented and occurred amid recurring sectarian tensions affecting Egypt's Coptic minority.",
+    sources:[{label:"U.S. State Department — Egypt religious freedom",url:"https://www.state.gov/reports/2010-report-on-international-religious-freedom/egypt/"}]
+  },
+  {
+    year:2011, depth:31290, title:"Alexandria church bombing", location:"Alexandria, Egypt",
     story:"A bombing outside a Coptic church after a New Year's service killed worshippers and intensified fears among Egyptian Christians amid rising sectarian tension.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1395,7 +1656,16 @@ const events = [
     sources:[{label:"U.S. State Department — Egypt religious freedom",url:"https://www.state.gov/reports/2011-report-on-international-religious-freedom/egypt/"}]
   },
   {
-    year:2013, depth:26530, title:"Egyptian churches attacked after political upheaval", location:"Egypt",
+    year:2012, depth:31460, title:"Boko Haram church bombings intensify in Nigeria", location:"Nigeria",
+    story:"Boko Haram and associated militants carried out repeated bombings and shootings at churches and Christian worship services, while also attacking Muslim institutions and civilians who opposed the insurgency.",
+    context:"Jihadist terrorism / anti-Christian attacks",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Jihadist terrorism / anti-Christian attacks",Evidence:"Individual attacks and the broader campaign are well documented. Christian targeting was deliberate in many incidents, but the insurgency's victims were religiously diverse."},
+    sourceStatus:"Individual attacks and the broader campaign are well documented. Christian targeting was deliberate in many incidents, but the insurgency's victims were religiously diverse.",
+    sources:[{label:"U.S. State Department — Nigeria religious freedom",url:"https://www.state.gov/reports/2012-report-on-international-religious-freedom/nigeria/"}]
+  },
+  {
+    year:2013, depth:31630, title:"Egyptian churches attacked after political upheaval", location:"Egypt",
     story:"Following the removal of President Mohamed Morsi, dozens of Coptic churches and Christian institutions were attacked amid nationwide political violence. Christians also suffered killings and intimidation in subsequent extremist attacks.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1404,7 +1674,7 @@ const events = [
     sources:[{label:"U.S. State Department — Religious Freedom Egypt",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/egypt/"}]
   },
   {
-    year:2013, depth:26700, title:"Peshawar All Saints Church bombing", location:"Peshawar, Pakistan",
+    year:2013, depth:31800, title:"Peshawar All Saints Church bombing", location:"Peshawar, Pakistan",
     story:"Suicide bombers attacked worshippers leaving All Saints Church after Sunday services, killing scores in one of Pakistan's deadliest attacks on Christians.",
     context:"Terrorism / anti-Christian attack",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -1413,7 +1683,16 @@ const events = [
     sources:[{label:"U.S. State Department — Pakistan religious freedom",url:"https://www.state.gov/reports/2013-report-on-international-religious-freedom/pakistan/"}]
   },
   {
-    year:2014, depth:26870, title:"ISIS conquest devastates Christian communities in Iraq and Syria", location:"Iraq and Syria",
+    year:2013, depth:31970, title:"Maaloula battle threatens ancient Syrian Christian community", location:"Maaloula, Syria",
+    story:"Fighting between Syrian government forces and rebel groups including jihadists reached Maaloula, an ancient Christian town known for Western Aramaic. Churches and monasteries were damaged and residents displaced.",
+    context:"Civil war / Christian heritage at risk",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Civil war / Christian heritage at risk",Evidence:"The battle occurred within the wider Syrian civil war. Armed groups and front lines shifted, so responsibility for individual damage requires event-specific sourcing."},
+    sourceStatus:"The battle occurred within the wider Syrian civil war. Armed groups and front lines shifted, so responsibility for individual damage requires event-specific sourcing.",
+    sources:[{label:"Britannica — Syrian Civil War",url:"https://www.britannica.com/event/Syrian-Civil-War"}]
+  },
+  {
+    year:2014, depth:32140, title:"ISIS conquest devastates Christian communities in Iraq and Syria", location:"Iraq and Syria",
     story:"ISIS seized Mosul and large territories, ordering Christians to convert, pay a tax, leave or face violence. Churches and monasteries were seized or destroyed and ancient Christian communities fled areas where they had lived for centuries.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1422,7 +1701,7 @@ const events = [
     sources:[{label:"U.S. State Department — ISIS genocide statement",url:"https://2017-2021.state.gov/isis-genocide-declaration/"}]
   },
   {
-    year:2015, depth:27040, title:"ISIS murders 21 Coptic Christians in Libya", location:"Libya",
+    year:2015, depth:32310, title:"ISIS murders 21 Coptic Christians in Libya", location:"Libya",
     story:"ISIS militants released a video showing the murder of 21 mostly Egyptian Coptic Christian migrant workers on a Mediterranean beach. Egypt responded with air strikes against ISIS targets in Libya.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1431,7 +1710,16 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Islamic State",url:"https://www.britannica.com/topic/Islamic-State-in-Iraq-and-the-Levant"}]
   },
   {
-    year:2016, depth:27210, title:"Easter bombing in Lahore targets Christians", location:"Lahore, Pakistan",
+    year:2015, depth:32480, title:"Garissa University attack separates and kills Christian students", location:"Garissa, Kenya",
+    story:"Al-Shabaab gunmen attacked Garissa University College, killing 148 people. Survivors reported that attackers separated some victims by religion and deliberately killed Christians.",
+    context:"Jihadist terrorism / anti-Christian targeting",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Jihadist terrorism / anti-Christian targeting",Evidence:"The attack and deliberate religious targeting are extensively documented."},
+    sourceStatus:"The attack and deliberate religious targeting are extensively documented.",
+    sources:[{label:"Britannica — al-Shabaab",url:"https://www.britannica.com/topic/al-Shabaab"}]
+  },
+  {
+    year:2016, depth:32650, title:"Easter bombing in Lahore targets Christians", location:"Lahore, Pakistan",
     story:"A suicide bomber attacked Gulshan-e-Iqbal Park on Easter Sunday, killing scores of people. A Taliban splinter group said Christians celebrating Easter were the intended target, although many Muslim victims were also killed.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1440,7 +1728,7 @@ const events = [
     sources:[{label:"U.S. State Department — Terrorism 2016 Pakistan",url:"https://www.state.gov/reports/country-reports-on-terrorism-2016/"}]
   },
   {
-    year:2016, depth:27380, title:"Saint Peter and Saint Paul Church bombing in Cairo", location:"Cairo, Egypt",
+    year:2016, depth:32820, title:"Saint Peter and Saint Paul Church bombing in Cairo", location:"Cairo, Egypt",
     story:"A suicide bombing struck a chapel adjoining St. Mark's Coptic Orthodox Cathedral, killing worshippers. ISIS later claimed responsibility.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1449,7 +1737,16 @@ const events = [
     sources:[{label:"U.S. State Department — Egypt religious freedom",url:"https://www.state.gov/reports/2016-report-on-international-religious-freedom/egypt/"}]
   },
   {
-    year:2017, depth:27550, title:"Palm Sunday church bombings in Egypt", location:"Tanta and Alexandria, Egypt",
+    year:2016, depth:32990, title:"Father Jacques Hamel murdered during Mass", location:"Saint-Étienne-du-Rouvray, France",
+    story:"Two attackers affiliated with ISIS entered a Catholic church during Mass, took hostages and murdered priest Jacques Hamel before police killed the attackers.",
+    context:"Jihadist terrorism / church attack",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Jihadist terrorism / church attack",Evidence:"The attack and ISIS affiliation are firmly documented."},
+    sourceStatus:"The attack and ISIS affiliation are firmly documented.",
+    sources:[{label:"Britannica — Islamic State attacks",url:"https://www.britannica.com/topic/Islamic-State-in-Iraq-and-the-Levant"}]
+  },
+  {
+    year:2017, depth:33160, title:"Palm Sunday church bombings in Egypt", location:"Tanta and Alexandria, Egypt",
     story:"ISIS suicide bombers attacked Coptic churches during Palm Sunday services, killing worshippers and security personnel. The attacks were part of a sustained extremist campaign against Egyptian Christians.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1458,7 +1755,7 @@ const events = [
     sources:[{label:"U.S. State Department — Religious Freedom Egypt",url:"https://www.state.gov/reports/2017-report-on-international-religious-freedom/egypt/"}]
   },
   {
-    year:2017, depth:27720, title:"Minya attack on Coptic pilgrims", location:"Minya Governorate, Egypt",
+    year:2017, depth:33330, title:"Minya attack on Coptic pilgrims", location:"Minya Governorate, Egypt",
     story:"Gunmen attacked buses carrying Coptic Christians traveling to a monastery, killing dozens. ISIS claimed responsibility.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1467,7 +1764,7 @@ const events = [
     sources:[{label:"U.S. State Department — Egypt religious freedom",url:"https://www.state.gov/reports/2017-report-on-international-religious-freedom/egypt/"}]
   },
   {
-    year:2017, depth:27890, title:"Sutherland Springs church shooting", location:"Texas, United States",
+    year:2017, depth:33500, title:"Sutherland Springs church shooting", location:"Texas, United States",
     story:"A gunman opened fire during Sunday worship at First Baptist Church in Sutherland Springs, killing 26 people. Investigators found the attack arose principally from domestic and personal conflict rather than anti-Christian ideology.",
     context:"Mass shooting / church attack",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -1476,7 +1773,16 @@ const events = [
     sources:[{label:"FBI — active shooter resources",url:"https://www.fbi.gov/how-we-can-help-you/safety-resources/active-shooter-safety-resources"}]
   },
   {
-    year:2018, depth:28060, title:"Surabaya church bombings", location:"Surabaya, Indonesia",
+    year:2017, depth:33670, title:"Marawi siege devastates Christian and Muslim communities", location:"Marawi, Philippines",
+    story:"ISIS-aligned militants seized parts of Marawi, taking hostages and attacking churches as Philippine forces fought a five-month urban battle. The overwhelmingly Muslim city's civilians suffered massive displacement.",
+    context:"Jihadist insurgency / church attacks / urban war",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Jihadist insurgency / church attacks / urban war",Evidence:"Christian symbols and clergy were deliberately targeted, but most displaced residents were Muslim and the siege devastated the entire city."},
+    sourceStatus:"Christian symbols and clergy were deliberately targeted, but most displaced residents were Muslim and the siege devastated the entire city.",
+    sources:[{label:"Britannica — Marawi",url:"https://www.britannica.com/place/Marawi"}]
+  },
+  {
+    year:2018, depth:33840, title:"Surabaya church bombings", location:"Surabaya, Indonesia",
     story:"Members of one family carried out suicide bombings at three Christian churches on a Sunday morning. Indonesian authorities linked the attackers to an ISIS-inspired network.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1485,7 +1791,16 @@ const events = [
     sources:[{label:"U.S. State Department — Indonesia religious freedom",url:"https://www.state.gov/reports/2018-report-on-international-religious-freedom/indonesia/"}]
   },
   {
-    year:2019, depth:28230, title:"Easter Sunday bombings in Sri Lanka", location:"Sri Lanka",
+    year:2018, depth:34010, title:"Central African Republic church and mosque attacks deepen communal conflict", location:"Central African Republic",
+    story:"Armed groups attacked churches, mosques and civilians as conflict continued between factions often identified with Christian or Muslim communities. Religious leaders repeatedly warned against portraying the war as simply Christian versus Muslim.",
+    context:"Communal conflict / attacks on worship",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Communal conflict / attacks on worship",Evidence:"Religion overlapped with political, regional and militia identities. Christian and Muslim religious leaders also cooperated in peacebuilding."},
+    sourceStatus:"Religion overlapped with political, regional and militia identities. Christian and Muslim religious leaders also cooperated in peacebuilding.",
+    sources:[{label:"U.S. State Department — CAR religious freedom",url:"https://www.state.gov/reports/2018-report-on-international-religious-freedom/central-african-republic/"}]
+  },
+  {
+    year:2019, depth:34180, title:"Easter Sunday bombings in Sri Lanka", location:"Sri Lanka",
     story:"Coordinated suicide bombings struck churches during Easter services and luxury hotels, killing more than 250 people. Authorities attributed the attacks to local Islamist extremists inspired by ISIS.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1494,7 +1809,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Sri Lanka Easter bombings",url:"https://www.britannica.com/event/Sri-Lanka-Easter-bombings-of-2019"}]
   },
   {
-    year:2019, depth:28400, title:"Burkina Faso church attacks intensify", location:"Burkina Faso",
+    year:2019, depth:34350, title:"Burkina Faso church attacks intensify", location:"Burkina Faso",
     story:"Jihadist militants attacked churches, clergy and Christian worshippers as insurgent violence expanded across Burkina Faso. Muslim civilians and religious leaders opposing extremists were also killed in the broader conflict.",
     context:"Jihadist insurgency / anti-Christian attacks",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -1503,7 +1818,7 @@ const events = [
     sources:[{label:"U.S. State Department — Burkina Faso religious freedom",url:"https://www.state.gov/reports/2019-report-on-international-religious-freedom/burkina-faso/"}]
   },
   {
-    year:2020, depth:28570, title:"Mozambique insurgency attacks Christian and Muslim civilians", location:"Cabo Delgado, Mozambique",
+    year:2020, depth:34520, title:"Mozambique insurgency attacks Christian and Muslim civilians", location:"Cabo Delgado, Mozambique",
     story:"An ISIS-linked insurgency in northern Mozambique carried out killings, kidnappings and attacks on villages. Christian communities were among the victims, while Muslim civilians who resisted extremists were also targeted and the conflict displaced huge numbers of people.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1512,7 +1827,7 @@ const events = [
     sources:[{label:"U.S. State Department — Mozambique religious freedom",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/mozambique/"}]
   },
   {
-    year:2020, depth:28740, title:"Nice basilica attack", location:"Nice, France",
+    year:2020, depth:34690, title:"Nice basilica attack", location:"Nice, France",
     story:"An attacker killed three people inside the Notre-Dame Basilica in Nice. French authorities treated the killings as an Islamist terrorist attack.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -1521,7 +1836,16 @@ const events = [
     sources:[{label:"Britannica — France",url:"https://www.britannica.com/place/France"}]
   },
   {
-    year:2022, depth:28910, title:"Owo church massacre in Nigeria", location:"Owo, Nigeria",
+    year:2021, depth:34860, title:"Makassar cathedral bombing", location:"Makassar, Indonesia",
+    story:"Two suicide bombers attacked outside Sacred Heart of Jesus Cathedral after Palm Sunday Mass, injuring worshippers and security personnel.",
+    context:"Jihadist terrorism / church attack",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Jihadist terrorism / church attack",Evidence:"Indonesian authorities linked the attackers to a local ISIS-affiliated network. No worshippers were killed, though the bombers died and multiple people were wounded."},
+    sourceStatus:"Indonesian authorities linked the attackers to a local ISIS-affiliated network. No worshippers were killed, though the bombers died and multiple people were wounded.",
+    sources:[{label:"U.S. State Department — Indonesia religious freedom",url:"https://www.state.gov/reports/2021-report-on-international-religious-freedom/indonesia/"}]
+  },
+  {
+    year:2022, depth:35030, title:"Owo church massacre in Nigeria", location:"Owo, Nigeria",
     story:"Gunmen attacked St. Francis Catholic Church during Pentecost Mass, killing dozens of worshippers. Nigerian authorities later blamed militants associated with Islamic State West Africa Province.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1530,7 +1854,7 @@ const events = [
     sources:[{label:"U.S. State Department — Nigeria religious freedom",url:"https://www.state.gov/reports/2022-report-on-international-religious-freedom/nigeria/"}]
   },
   {
-    year:2023, depth:29080, title:"Christmas-period massacres in Plateau State", location:"Plateau State, Nigeria",
+    year:2023, depth:35200, title:"Christmas-period massacres in Plateau State", location:"Plateau State, Nigeria",
     story:"Armed groups attacked numerous villages in central Nigeria around Christmas, killing large numbers of residents, many from predominantly Christian farming communities. The violence sits within a complex conflict involving land, ethnicity, criminality, climate pressure and religious identity.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1539,7 +1863,16 @@ const events = [
     sources:[{label:"U.S. State Department — Nigeria religious freedom",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/nigeria/"}]
   },
   {
-    year:2024, depth:29250, title:"Attacks and displacement continue to affect Christian communities in the Sahel", location:"Burkina Faso, Mali, Niger and wider Sahel",
+    year:2023, depth:35370, title:"Manipur violence destroys churches amid ethnic conflict", location:"Manipur, India",
+    story:"Violence between predominantly Hindu Meitei and predominantly Christian Kuki-Zo communities killed civilians, displaced tens of thousands and destroyed hundreds of churches as well as homes and other property.",
+    context:"Ethnic conflict / anti-Christian destruction",
+    aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
+    stats:{Type:"Ethnic conflict / anti-Christian destruction",Evidence:"Religious identity strongly overlaps with ethnicity, land and political disputes. The conflict should not be reduced to a purely Hindu-Christian religious war."},
+    sourceStatus:"Religious identity strongly overlaps with ethnicity, land and political disputes. The conflict should not be reduced to a purely Hindu-Christian religious war.",
+    sources:[{label:"U.S. State Department — India religious freedom",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/india/"}]
+  },
+  {
+    year:2024, depth:35540, title:"Attacks and displacement continue to affect Christian communities in the Sahel", location:"Burkina Faso, Mali, Niger and wider Sahel",
     story:"Jihadist insurgencies continued to attack civilians, religious leaders and places of worship across the Sahel. Christian minorities were targeted in some attacks, while Muslim civilians constituted a large share of victims of the same extremist groups.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1548,7 +1881,7 @@ const events = [
     sources:[{label:"U.S. State Department — International Religious Freedom",url:"https://www.state.gov/international-religious-freedom-reports/"}]
   },
   {
-    year:2025, depth:29420, title:"Global Christian communities face war, repression and extremist violence", location:"Global",
+    year:2025, depth:35710, title:"Global Christian communities face war, repression and extremist violence", location:"Global",
     story:"By 2025, Christian communities faced very different forms of pressure depending on location: jihadist attacks in parts of Africa and the Middle East, authoritarian restrictions in some states, communal violence, and the effects of major wars. Christians were also participants in political power and armed conflicts in other settings.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1557,7 +1890,7 @@ const events = [
     sources:[{label:"U.S. State Department — International Religious Freedom",url:"https://www.state.gov/international-religious-freedom-reports/"}]
   },
   {
-    year:2026, depth:29590, title:"2026 — YOU ARE HERE", location:"Present day",
+    year:2026, depth:35880, title:"2026 — YOU ARE HERE", location:"Present day",
     story:"The Christianity timeline reaches the present. Christian communities remain the majority in some powerful states and vulnerable minorities in others; contemporary conflicts include persecution of Christians, violence among communities, and political or military action by actors identifying as Christian.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -1570,18 +1903,18 @@ const events = [
 const eras = [
   {name:"Birth & Jewish Origins of Jesus",range:"c. 6–4 BCE to c. 30 CE",start:180,end:350},
   {name:"Origins & Early Christianity",range:"c. 30–313 CE",start:350,end:3580},
-  {name:"Imperial Christianity & Late Antiquity",range:"313–476 CE",start:3580,end:5450},
-  {name:"Byzantine, Eastern & Early Medieval Christianity",range:"476–1054 CE",start:5450,end:8170},
-  {name:"Schism, Crusades & Medieval Christianity",range:"1054–1517 CE",start:8170,end:13270},
-  {name:"Reformation & Wars of Religion",range:"1517–1648 CE",start:13270,end:15990},
-  {name:"Confessional States & Modernization",range:"1648–1914 CE",start:15990,end:19730},
-  {name:"World Wars, Genocide & Totalitarianism",range:"1914–1990 CE",start:19730,end:24660},
-  {name:"Post–Cold War Christianity & Conflict",range:"1990–2010 CE",start:24660,end:26190},
-  {name:"Contemporary Persecution & Terrorism",range:"2010–2020 CE",start:26190,end:28570},
-  {name:"Present Era",range:"2020–2026 CE",start:28570,end:30110}
+  {name:"Imperial Christianity & Late Antiquity",range:"313–476 CE",start:3580,end:5620},
+  {name:"Byzantine, Eastern & Early Medieval Christianity",range:"476–1054 CE",start:5620,end:8680},
+  {name:"Schism, Crusades & Medieval Christianity",range:"1054–1517 CE",start:8680,end:13950},
+  {name:"Reformation & Wars of Religion",range:"1517–1648 CE",start:13950,end:17350},
+  {name:"Confessional States & Modernization",range:"1648–1914 CE",start:17350,end:21770},
+  {name:"World Wars, Genocide & Totalitarianism",range:"1914–1990 CE",start:21770,end:28400},
+  {name:"Post–Cold War Christianity & Conflict",range:"1990–2010 CE",start:28400,end:30950},
+  {name:"Contemporary Persecution & Terrorism",range:"2010–2020 CE",start:30950,end:34520},
+  {name:"Present Era",range:"2020–2026 CE",start:34520,end:36400}
 ];
 
-const MAX_DEPTH=30110;
+const MAX_DEPTH=36400;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
