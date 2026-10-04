@@ -170,7 +170,7 @@ function render(){
   const direction=velocity>=0?1:-1;
   const stretch=1+speed*.28;
   const squash=1-speed*.1;
-  const rotate=(depth*.035)+(direction*speed*8);
+  const rotate=Math.sin(depth/310)*11+(direction*speed*7);
   const bob=Math.sin(depth/95)*4;
 
   person.style.transform='translate(-50%,calc(-50% + '+bob+'px)) rotate('+rotate+'deg) scale('+squash+','+stretch+')';
@@ -191,9 +191,8 @@ function render(){
   mist2.style.transform='translateY('+((depth%1100)*-.18)+'px)';
 
   abyss.style.background=
-    'radial-gradient(ellipse at 50% 15%,rgba(132,204,255,'+(0.18*(1-pct/120))+'),transparent 20%),'+
-    'radial-gradient(ellipse at 50% 78%,rgba(74,47,20,.12),transparent 34%),'+
-    'linear-gradient(#161821 0%,#0c0d12 '+Math.max(18,30-pct*.12)+'%,#07070a 64%,#020203 100%)';
+    'radial-gradient(ellipse at 50% 0%,rgba(150,190,210,'+(0.14*(1-pct/110))+'),transparent 25%),'+
+    'linear-gradient(180deg,#17191d 0%,#0a0c0f 30%,#040507 64%,#010102 100%)';
 
   bottomMarker.classList.toggle("visible",pct>=94);
   document.querySelectorAll(".particles span").forEach((p,i)=>{
@@ -259,7 +258,13 @@ function restart(){
   aboutPanel.classList.add("hidden");
   document.getElementById("intro").scrollIntoView({behavior:reduced?"auto":"smooth"});
 }
-abyss.addEventListener("wheel",e=>{e.preventDefault();descend(e.deltaY)},{passive:false});
+abyss.addEventListener("wheel",e=>{
+  const goingDown=e.deltaY>0, goingUp=e.deltaY<0;
+  const atBottom=depth>=MAX_DEPTH-1, atTop=depth<=1;
+  if((goingDown&&atBottom)||(goingUp&&atTop)) return;
+  e.preventDefault();
+  descend(e.deltaY);
+},{passive:false});
 let touchY=null;
 abyss.addEventListener("touchstart",e=>{touchY=e.touches[0].clientY},{passive:true});
 abyss.addEventListener("touchmove",e=>{if(touchY===null)return;const y=e.touches[0].clientY;descend((touchY-y)*2.2);touchY=y},{passive:true});
