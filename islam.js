@@ -632,7 +632,19 @@ function openEvent(event){
   connectedBox.innerHTML="";
   connectedBox.classList.toggle("hidden",!connected.length);
   if(connected.length){
-    connectedBox.innerHTML="<h3>Connected history</h3><p>See how this same period appears in another timeline.</p>";
+    connectedBox.innerHTML="<h3>Connected history</h3><p>See how this event intersects with another historical tradition.</p>";
+    const why=document.createElement("div");why.className="overlap-explanations";
+    connected.forEach(([label,page,from])=>{
+      const kind=from==="jewish"?"Jewish":from==="christian"?"Christian":"Islamic";
+      const matched=bestComparedEvent(event,from);
+      const item=document.createElement("div");item.className="overlap-explanation "+from+"-overlap-explanation";
+      const heading=document.createElement("strong");heading.textContent="Why this overlaps "+kind+" history";
+      const p=document.createElement("p");
+      if(matched){const [type,desc]=historyConnectionType(event,matched);p.textContent=type+": "+desc+" Related event: "+matched.title+" ("+sameTimeYearLabel(matched.year)+")"+(matched.location?" in "+matched.location:"")+".";}
+      else p.textContent="This event directly intersects "+kind+" history through the people, places, institutions, or political changes described in this event.";
+      item.append(heading,p);why.appendChild(item);
+    });
+    connectedBox.appendChild(why);
     const nav=document.createElement("div");nav.className="connected-history-links";
     connected.forEach(([label,page,from])=>{
       const a=document.createElement("a");
