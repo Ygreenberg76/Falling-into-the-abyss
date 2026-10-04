@@ -2857,6 +2857,22 @@ function renderSameTimeHistory(currentEvent){
   });
   box.appendChild(grid);
 }
+const HISTORY_PATH_KEY="fallingHistoryPathV1";
+function recordHistoryPath(event){
+  let path=[];try{path=JSON.parse(sessionStorage.getItem(HISTORY_PATH_KEY)||"[]");if(!Array.isArray(path))path=[];}catch{}
+  const stop={kind:"jewish",title:event.title,year:event.year,location:event.location||"",key:eventKey(event)};
+  const last=path[path.length-1];if(!last||last.kind!==stop.kind||last.key!==stop.key)path.push(stop);
+  if(path.length>12)path=path.slice(-12);try{sessionStorage.setItem(HISTORY_PATH_KEY,JSON.stringify(path));}catch{}return path;
+}
+function renderHistoricalPath(event){
+  const path=recordHistoryPath(event);let box=document.getElementById("historicalPathBox");
+  if(!box){box=document.createElement("div");box.id="historicalPathBox";box.className="historical-path";const trail=document.getElementById("historyTrailBox");(trail||document.querySelector(".sources-card")).before(box);}
+  box.innerHTML='<div class="historical-path-heading"><small>Your historical path</small><strong>Where your journey has taken you</strong></div>';
+  const rail=document.createElement("div");rail.className="historical-path-rail";
+  path.forEach((stop,i)=>{if(i){const arrow=document.createElement("span");arrow.className="historical-path-arrow";arrow.textContent="→";rail.appendChild(arrow);}const chip=document.createElement("span");chip.className="historical-path-stop "+stop.kind+"-path-stop"+(i===path.length-1?" active":"");chip.title=stop.location||stop.title;chip.innerHTML="<small>"+sameTimeYearLabel(stop.year)+"</small><strong>"+stop.title+"</strong>";rail.appendChild(chip);});
+  box.appendChild(rail);
+  if(path.length>1){const clear=document.createElement("button");clear.type="button";clear.className="historical-path-clear";clear.textContent="Start a new path";clear.addEventListener("click",()=>{try{sessionStorage.removeItem(HISTORY_PATH_KEY);}catch{}renderHistoricalPath(event);});box.appendChild(clear);}
+}
 function renderHistoryTrail(event,connected){
   let box=document.getElementById("historyTrailBox");
   if(!box){box=document.createElement("div");box.id="historyTrailBox";box.className="history-trail";document.querySelector(".sources-card").before(box);}
@@ -2946,6 +2962,7 @@ function openEvent(event){
   });
   renderSameTimeHistory(event);
   renderHistoryTrail(event,connected);
+  renderHistoricalPath(event);
   panel.classList.remove("hidden");
   document.body.classList.add("event-open");
   document.getElementById("closeEventBtn").focus();
