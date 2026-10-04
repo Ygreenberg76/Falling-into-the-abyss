@@ -40,8 +40,14 @@
 
     <section id="abyss" class="abyss" tabindex="0" aria-label="Interactive historical abyss. Scroll to descend through history.">
       <div class="sky-opening" aria-hidden="true"></div>
-      <div class="rock rock-left" aria-hidden="true"></div>
-      <div class="rock rock-right" aria-hidden="true"></div>
+      <div class="light-shaft" aria-hidden="true"></div>
+      <div class="rock rock-far rock-far-left" aria-hidden="true"></div>
+      <div class="rock rock-far rock-far-right" aria-hidden="true"></div>
+      <div class="rock rock-mid rock-mid-left" aria-hidden="true"></div>
+      <div class="rock rock-mid rock-mid-right" aria-hidden="true"></div>
+      <div class="rock rock-near rock-left" aria-hidden="true"></div>
+      <div class="rock rock-near rock-right" aria-hidden="true"></div>
+      <div class="void-core" aria-hidden="true"></div>
       <div class="mist mist-1" aria-hidden="true"></div>
       <div class="mist mist-2" aria-hidden="true"></div>
       <div class="vignette" aria-hidden="true"></div>
@@ -72,15 +78,20 @@
       <div id="fallTrail" class="fall-trail" aria-hidden="true"></div>
 
       <div id="fallingPerson" class="person" role="img" aria-label="Silhouette of a person falling into the abyss">
-        <div class="head"></div>
-        <div class="torso"></div>
-        <div class="arm arm-left"></div>
-        <div class="arm arm-right"></div>
-        <div class="leg leg-left"></div>
-        <div class="leg leg-right"></div>
+        <svg viewBox="0 0 120 210" aria-hidden="true">
+          <g class="body">
+            <ellipse class="human-head" cx="60" cy="25" rx="15" ry="18"/>
+            <path class="human-torso" d="M46 46 Q60 38 74 46 L79 111 Q62 124 41 110 Z"/>
+            <g class="limb arm-svg arm-svg-left"><path d="M48 53 Q32 68 19 99 Q15 109 23 113 Q29 116 34 105 L57 68 Z"/></g>
+            <g class="limb arm-svg arm-svg-right"><path d="M72 53 Q90 65 103 94 Q108 105 99 110 Q92 113 87 102 L64 68 Z"/></g>
+            <g class="limb leg-svg leg-svg-left"><path d="M49 107 Q40 138 35 181 Q34 196 44 199 Q54 201 57 186 L65 118 Z"/></g>
+            <g class="limb leg-svg leg-svg-right"><path d="M70 108 Q81 140 88 178 Q91 193 101 190 Q110 187 106 172 L79 112 Z"/></g>
+          </g>
+        </svg>
       </div>
 
       <div id="eventsLayer" class="events-layer"></div>
+      <div id="bottomMarker" class="bottom-marker" aria-hidden="true"><small>2026</small><strong>YOU ARE HERE</strong></div>
       <div class="scroll-hint">Scroll ↓ to fall deeper through history</div>
     </section>
 
