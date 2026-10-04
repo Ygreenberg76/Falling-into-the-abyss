@@ -2205,7 +2205,16 @@ const events = [
     sources:[{label:"United Nations — Gaza conflict report",url:"https://digitallibrary.un.org/record/681797/files/S_2009_537-EN.pdf"}]
   },
   {
-    year:2012, depth:41830, title:"Toulouse Jewish school attack", location:"Toulouse, France",
+    year:2011, depth:41830, title:"Gilad Shalit prisoner exchange", location:"Israel / Gaza",
+    story:"After more than five years in captivity in Gaza, Israeli soldier Gilad Shalit was released in October 2011 in exchange for more than one thousand Palestinian prisoners held by Israel. The exchange demonstrated the political importance of captives and prisoners to both Israeli and Palestinian societies.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Prisoner exchange / conflict diplomacy",Evidence:"The captivity, negotiated exchange and release are firmly documented."},
+    sourceStatus:"The captivity, negotiated exchange and release are firmly documented.",
+    sources:[{label:"Encyclopaedia Britannica — Gilad Shalit",url:"https://www.britannica.com/biography/Gilad-Shalit"}]
+  },
+  {
+    year:2012, depth:42000, title:"Toulouse Jewish school attack", location:"Toulouse, France",
     story:"A gunman attacked the Ozar Hatorah Jewish school, murdering a teacher and three children.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2214,7 +2223,25 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Toulouse-and-Montauban-shootings"}]
   },
   {
-    year:2014, depth:42000, title:"Jerusalem synagogue attack", location:"Jerusalem",
+    year:2012, depth:42170, title:"Operation Pillar of Defense / November Gaza conflict", location:"Gaza Strip and Israel",
+    story:"Eight days of intense fighting began on November 14, 2012 when Israel killed Hamas military commander Ahmed Jabari. Israel carried out extensive air strikes while Hamas and other Palestinian armed groups fired rockets toward Israeli population centers, including the Tel Aviv and Jerusalem areas. An Egyptian-mediated ceasefire ended the escalation.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Gaza conflict / rockets / air strikes",Evidence:"The military actions and civilian casualties on both sides are extensively documented. UN reporting criticized indiscriminate Palestinian rocket attacks and examined civilian harm from Israeli strikes."},
+    sourceStatus:"The military actions and civilian casualties on both sides are extensively documented. UN reporting criticized indiscriminate Palestinian rocket attacks and examined civilian harm from Israeli strikes.",
+    sources:[{label:"United Nations OCHA — November 2012 hostilities",url:"https://www.un.org/unispal/document/auto-insert-201184/"}]
+  },
+  {
+    year:2012, depth:42340, title:"Palestine becomes a UN non-member observer State", location:"United Nations, New York",
+    story:"On November 29, 2012, the UN General Assembly adopted Resolution 67/19, granting Palestine non-member observer State status at the United Nations. The move did not resolve questions of sovereignty, borders or recognition but strengthened Palestine's ability to participate in international institutions.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Diplomatic status change",Evidence:"The General Assembly vote and status change are directly documented."},
+    sourceStatus:"The General Assembly vote and status change are directly documented.",
+    sources:[{label:"United Nations — Question of Palestine timeline",url:"https://www.un.org/unispal/timeline/"}]
+  },
+  {
+    year:2014, depth:42510, title:"Jerusalem synagogue attack", location:"Jerusalem",
     story:"Two Palestinian attackers armed with guns, knives and axes attacked worshippers at a synagogue in Har Nof in November 2014, killing worshippers and a police officer.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -2223,7 +2250,34 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:2015, depth:42170, title:"Hyper Cacher hostage attack", location:"Paris, France",
+    year:2014, depth:42680, title:"Kidnapping and murder of three Israeli teenagers", location:"West Bank",
+    story:"In June 2014, Israeli teenagers Eyal Yifrah, Gilad Shaar and Naftali Fraenkel were abducted and murdered in the West Bank. Israel launched a large search and arrest operation against Hamas networks. The killings and ensuing operations sharply increased Israeli-Palestinian tensions.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Kidnapping / murder / escalation",Evidence:"The abduction and murder are firmly documented. Israel attributed the attack to Hamas members; Hamas leadership initially disputed direct organizational responsibility while later praising those responsible."},
+    sourceStatus:"The abduction and murder are firmly documented. Israel attributed the attack to Hamas members; Hamas leadership initially disputed direct organizational responsibility while later praising those responsible.",
+    sources:[{label:"United Nations — Israeli letter on kidnapped teenagers",url:"https://www.un.org/unispal/document/auto-insert-186162/"}]
+  },
+  {
+    year:2014, depth:42850, title:"Murder of Palestinian teenager Mohammed Abu Khdeir", location:"East Jerusalem",
+    story:"In July 2014, Palestinian teenager Mohammed Abu Khdeir was abducted and murdered by Jewish Israelis in a revenge attack following the murder of three Israeli teenagers. His killing triggered widespread Palestinian protests and clashes with Israeli security forces.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Jewish extremist kidnapping / murder",Evidence:"The abduction, murder and revenge motive were established in Israeli criminal proceedings and are widely documented."},
+    sourceStatus:"The abduction, murder and revenge motive were established in Israeli criminal proceedings and are widely documented.",
+    sources:[{label:"UNICEF — East Jerusalem and Gaza, 2014",url:"https://www.un.org/unispal/document/auto-insert-194480/"}]
+  },
+  {
+    year:2014, depth:43020, title:"Operation Protective Edge / 2014 Gaza War", location:"Gaza Strip and Israel",
+    story:"After weeks of escalating violence, Israel launched Operation Protective Edge in July 2014 against Hamas and other armed groups in Gaza. Israel conducted air strikes and a ground offensive, while Palestinian armed groups fired thousands of rockets and mortars toward Israel and used cross-border tunnels. The war caused extensive destruction and very high Palestinian casualties, including many civilians, as well as Israeli military and civilian deaths.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Gaza war / rockets / ground operation",Evidence:"The war and major actions are extensively documented. Exact combatant-versus-civilian classifications, proportionality and allegations of violations of international humanitarian law remain contested."},
+    sourceStatus:"The war and major actions are extensively documented. Exact combatant-versus-civilian classifications, proportionality and allegations of violations of international humanitarian law remain contested.",
+    sources:[{label:"United Nations — Question of Palestine timeline",url:"https://www.un.org/unispal/timeline/"}]
+  },
+  {
+    year:2015, depth:43190, title:"Hyper Cacher hostage attack", location:"Paris, France",
     story:"A gunman attacked a kosher supermarket in Paris, killing four Jewish hostages.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2232,7 +2286,34 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Charlie-Hebdo-shooting"}]
   },
   {
-    year:2018, depth:42340, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
+    year:2015, depth:43360, title:"Duma arson attack kills Palestinian Dawabsheh family", location:"Duma, West Bank",
+    story:"In July 2015, attackers set fire to two Palestinian homes in the village of Duma and left Hebrew extremist graffiti. Eighteen-month-old Ali Dawabsheh and his parents later died from their injuries; his young brother survived. Israeli authorities prosecuted Jewish extremists in connection with the attack.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Jewish extremist terrorism / arson",Evidence:"The attack, deaths and extremist motive are firmly documented; Israeli courts later convicted a principal defendant."},
+    sourceStatus:"The attack, deaths and extremist motive are firmly documented; Israeli courts later convicted a principal defendant.",
+    sources:[{label:"U.S. State Department — Country Reports on Terrorism 2015",url:"https://2009-2017.state.gov/j/ct/rls/crt/2015/257517.htm"}]
+  },
+  {
+    year:2015, depth:43530, title:"2015–2016 Palestinian stabbing, shooting and vehicle-ramming wave", location:"Israel, Jerusalem and West Bank",
+    story:"Beginning in late 2015, numerous Palestinians carried out stabbing, shooting and vehicle-ramming attacks against Israeli civilians and security personnel. Israeli forces and civilians killed many attackers, and Palestinians were also killed during clashes and security operations. The violence was sometimes called the 'Knife Intifada,' though it lacked the centralized structure of earlier uprisings.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Terror attacks / individual violence / security response",Evidence:"The wave of attacks and fatalities is extensively documented. Motives varied and many perpetrators acted individually rather than under direct organizational command."},
+    sourceStatus:"The wave of attacks and fatalities is extensively documented. Motives varied and many perpetrators acted individually rather than under direct organizational command.",
+    sources:[{label:"U.S. State Department — Country Reports on Terrorism 2015",url:"https://2009-2017.state.gov/j/ct/rls/crt/2015/257517.htm"}]
+  },
+  {
+    year:2016, depth:43700, title:"UN Security Council Resolution 2334 on Israeli settlements", location:"United Nations",
+    story:"In December 2016, the UN Security Council adopted Resolution 2334, stating that Israeli settlements in territory occupied since 1967, including East Jerusalem, have no legal validity and constitute a major obstacle to a two-state solution. Israel rejected the resolution's position.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Diplomatic / settlement dispute",Evidence:"The Security Council resolution and Israel's rejection are directly documented."},
+    sourceStatus:"The Security Council resolution and Israel's rejection are directly documented.",
+    sources:[{label:"United Nations — Question of Palestine timeline",url:"https://www.un.org/unispal/timeline/"}]
+  },
+  {
+    year:2018, depth:43870, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
     story:"A gunman attacked worshippers at the Tree of Life synagogue complex, murdering eleven people.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2241,7 +2322,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/pennsylvania-man-sentenced-death-2018-tree-life-synagogue-shooting"}]
   },
   {
-    year:2019, depth:42510, title:"Poway synagogue shooting", location:"Poway, California, United States",
+    year:2018, depth:44040, title:"Gaza border protests and clashes", location:"Gaza–Israel border",
+    story:"Beginning in March 2018, Palestinians held large demonstrations near the Gaza perimeter fence known as the Great March of Return. Some protesters approached or damaged the fence, threw incendiary devices or explosives, while Israeli forces used live fire, tear gas and other measures. Large numbers of Palestinians were killed and wounded, including civilians.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Mass protest / border violence",Evidence:"The protests, attempted border breaches and large Palestinian casualty toll are extensively documented. The necessity and proportionality of Israeli live fire became the subject of major international legal dispute."},
+    sourceStatus:"The protests, attempted border breaches and large Palestinian casualty toll are extensively documented. The necessity and proportionality of Israeli live fire became the subject of major international legal dispute.",
+    sources:[{label:"United Nations — Question of Palestine timeline",url:"https://www.un.org/unispal/timeline/"}]
+  },
+  {
+    year:2019, depth:44210, title:"Poway synagogue shooting", location:"Poway, California, United States",
     story:"An antisemitic gunman opened fire inside Chabad of Poway on the final day of Passover, killing one worshipper and injuring three others, including a child.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -2250,7 +2340,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-sdca/pr/john-earnest-pleads-guilty-113-count-federal-hate-crime-indictment-connection-poway"}]
   },
   {
-    year:2019, depth:42680, title:"Halle synagogue attack", location:"Halle, Germany",
+    year:2019, depth:44380, title:"Halle synagogue attack", location:"Halle, Germany",
     story:"An armed extremist attempted to enter a synagogue on Yom Kippur; unable to enter, he murdered two people nearby.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2259,7 +2349,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Halle-synagogue-shooting"}]
   },
   {
-    year:2020, depth:42850, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
+    year:2020, depth:44550, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
     story:"During a Hanukkah gathering at a rabbi's home, an attacker stabbed multiple people; one victim later died from his injuries.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -2268,7 +2358,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/monsey-man-charged-federal-hate-crimes-december-2019-stabbing"}]
   },
   {
-    year:2022, depth:43020, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
+    year:2020, depth:44720, title:"Abraham Accords normalize Israel's relations with Arab states", location:"Israel, United Arab Emirates, Bahrain and region",
+    story:"In 2020, U.S.-brokered agreements established or advanced normalization between Israel and the United Arab Emirates, Bahrain, Morocco and Sudan. The agreements represented a major shift in Arab-Israeli diplomacy because normalization proceeded without a prior Israeli-Palestinian peace settlement.",
+    context:"This marker is part of the contemporary conflict chronology. It distinguishes attacks on civilians, armed-group actions, Israeli military operations, Jewish extremist violence, mass protest and diplomatic developments rather than presenting them as morally or legally identical.",
+    aftermath:"These events deepened the political division between Gaza and the West Bank, produced repeated rounds of Gaza–Israel warfare and violence in Jerusalem and the West Bank, while regional diplomacy increasingly developed on a separate track from the unresolved Israeli–Palestinian conflict.",
+    stats:{Type:"Regional normalization / diplomacy",Evidence:"The agreements and normalization steps are directly documented; implementation and the status of individual bilateral arrangements have varied."},
+    sourceStatus:"The agreements and normalization steps are directly documented; implementation and the status of individual bilateral arrangements have varied.",
+    sources:[{label:"United Nations — Question of Palestine timeline",url:"https://www.un.org/unispal/timeline/"}]
+  },
+  {
+    year:2022, depth:44890, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
     story:"An armed man took worshippers hostage at Congregation Beth Israel in January 2022. The hostages ultimately escaped or were rescued; the attacker was killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -2277,7 +2376,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-ndtx/press-release/file/1465966/dl"}]
   },
   {
-    year:2023, depth:43190, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
+    year:2023, depth:45060, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
     story:"Hamas and other armed groups attacked southern Israel on October 7, killing civilians and security personnel and taking hostages. Israel then launched a major war in Gaza with very large Palestinian civilian and combatant casualties and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2297,10 +2396,10 @@ const eras = [
   {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:19220,end:21430},
   {name:"The Holocaust",range:"1933–1945 CE",start:21430,end:27040},
   {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:27040,end:38770},
-  {name:"Contemporary Era",range:"2000–2026 CE",start:38770,end:43710}
+  {name:"Contemporary Era",range:"2000–2026 CE",start:38770,end:45580}
 ];
 
-const MAX_DEPTH=43710;
+const MAX_DEPTH=45580;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
