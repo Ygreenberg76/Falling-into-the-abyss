@@ -465,6 +465,28 @@ function openEvent(event){
   document.getElementById("eventContext").textContent=event.context;
   document.getElementById("eventAftermath").textContent=event.aftermath;
   document.getElementById("eventSourceStatus").textContent=event.sourceStatus;
+  const connected=[];
+  if(islamJewishOverlapTitles.has(event.title))connected.push(["Jewish timeline","index.html","jewish"]);
+  if(islamChristianOverlapTitles.has(event.title))connected.push(["Christianity timeline","christianity.html","christian"]);
+  let connectedBox=document.getElementById("connectedHistoryBox");
+  if(!connectedBox){
+    connectedBox=document.createElement("div");
+    connectedBox.id="connectedHistoryBox";
+    connectedBox.className="connected-history";
+    document.querySelector(".sources-card").before(connectedBox);
+  }
+  connectedBox.innerHTML="";
+  connectedBox.classList.toggle("hidden",!connected.length);
+  if(connected.length){
+    connectedBox.innerHTML="<h3>Connected history</h3><p>See how this same period appears in another timeline.</p>";
+    const nav=document.createElement("div");nav.className="connected-history-links";
+    connected.forEach(([label,page,from])=>{
+      const a=document.createElement("a");
+      a.href=page+"?year="+encodeURIComponent(event.year)+"&from="+from;
+      a.textContent="Open "+label+" →";nav.appendChild(a);
+    });
+    connectedBox.appendChild(nav);
+  }
   const sourceWrap=document.getElementById("eventSources");
   sourceWrap.innerHTML="";
   (event.sources||[]).forEach(source=>{
