@@ -2923,7 +2923,7 @@ function renderHistoryTrail(event,connected){
   const index=events.indexOf(event),row=document.createElement("div");row.className="history-trail-row";
   const add=(label,item,state)=>{
     const el=document.createElement(item?"button":"div");if(item)el.type="button";el.className="history-trail-step "+state+(item?"":" unavailable");
-    const small=document.createElement("small");small.textContent=label;const strong=document.createElement("strong");strong.textContent=item?item.title:"No event";
+    const small=document.createElement("small");small.textContent=label;const strong=document.createElement("strong");const localizedItem=item&&window.FALLING_I18N&&window.FALLING_I18N.localizeEvent?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,item):item;strong.textContent=item?(localizedItem.title||item.title):"No event";
     const date=document.createElement("span");date.textContent=item?sameTimeYearLabel(item.year):"";
     el.append(small,strong,date);if(item)el.addEventListener("click",()=>openEvent(item));row.appendChild(el);
   };
@@ -3077,7 +3077,8 @@ function applyFilters(){
   show.forEach(event=>{
     const b=document.createElement("button");b.type="button";b.className="filter-result";
     const y=event.year<0?Math.abs(event.year)+" BCE":event.year+" CE";
-    b.innerHTML="<small>"+y+" · "+event.location+"</small><strong>"+event.title+"</strong>";
+    const displayEvent=(window.FALLING_I18N&&window.FALLING_I18N.localizeEvent)?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,event):event;
+    b.innerHTML="<small>"+y+" · "+(displayEvent.location||event.location)+"</small><strong>"+(displayEvent.title||event.title)+"</strong>";
     b.addEventListener("click",()=>jumpToEvent(event));filterResults.appendChild(b);
   });
   if((q||era||type)&&!matches.length){const n=document.createElement("span");n.className="source-links";n.textContent="No matching events.";filterResults.appendChild(n)}
