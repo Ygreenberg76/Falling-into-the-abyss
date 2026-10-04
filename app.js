@@ -2688,6 +2688,23 @@ function descend(delta){
   depth=Math.max(0,Math.min(MAX_DEPTH,depth+scaled*.72));
   velocity=Math.max(-115,Math.min(115,velocity+scaled*.037));
 }
+function comparisonTargets(event){const targets=[];const overlap=historyOverlap(event);if(overlap==="christian"||overlap==="both")targets.push(["christian","Christian history","christianity.html"]);if(overlap==="islamic"||overlap==="both")targets.push(["islamic","Islamic history","islam.html"]);return targets;}
+function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
+function openComparison(event){
+  const compare=document.getElementById("comparePanel"),grid=document.getElementById("compareGrid");
+  document.getElementById("compareSubtitle").textContent=event.year+" • "+event.location;
+  grid.innerHTML="";
+  const current=document.createElement("article");current.className="compare-history-card current-history";
+  current.innerHTML='<small>Jewish history</small><h3></h3><p class="compare-location"></p><p class="compare-story"></p>';
+  current.querySelector("h3").textContent=event.title;current.querySelector(".compare-location").textContent=event.location;current.querySelector(".compare-story").textContent=event.story;grid.appendChild(current);
+  comparisonTargets(event).forEach(([kind,label,page])=>{
+    const card=document.createElement("article");card.className="compare-history-card "+kind+"-compare";
+    card.innerHTML="<small>"+label+"</small><h3>Connected event</h3><p>This event belongs to the same historical intersection. Open the related timeline to see its account, context, aftermath, sources and certainty.</p>";
+    const a=document.createElement("a");a.className="btn compare-open";a.href=page+"?year="+encodeURIComponent(event.year)+"&from=jewish&match="+eventKey(event);a.textContent="Open exact period →";card.appendChild(a);grid.appendChild(card);
+  });
+  panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
+}
+function closeComparison(){document.getElementById("comparePanel").classList.add("hidden");document.body.classList.remove("event-open");paused=false;}
 function openEvent(event){
   paused=true;velocity=0;
   document.getElementById("eventDate").textContent=event.year;
@@ -2718,6 +2735,7 @@ function openEvent(event){
       a.href=page+"?year="+encodeURIComponent(event.year)+"&from="+from;
       a.textContent="Open "+label+" →";nav.appendChild(a);
     });
+    const compareBtn=document.createElement("button");compareBtn.type="button";compareBtn.className="btn compare-history-btn";compareBtn.textContent="Compare histories";compareBtn.addEventListener("click",()=>openComparison(event));connectedBox.appendChild(compareBtn);
     connectedBox.appendChild(nav);
   }
   const sourceWrap=document.getElementById("eventSources");
@@ -2849,7 +2867,7 @@ const linkedYear=parseInt(new URLSearchParams(window.location.search).get("year"
 if(Number.isFinite(linkedYear)){
   const minYear=Math.min(...events.map(e=>e.year)),maxYear=Math.max(...events.map(e=>e.year));
   jumpToDepth(depthForYear(Math.max(minYear,Math.min(maxYear,linkedYear))));
-  const nearestIndex=events.reduce((best,e,i)=>Math.abs(e.year-linkedYear)<Math.abs(events[best].year-linkedYear)?i:best,0);
+  const linkedMatch=new URLSearchParams(window.location.search).get("match");\n  const exactIndex=linkedMatch?events.findIndex(e=>eventKey(e)===linkedMatch):-1;\n  const nearestIndex=exactIndex>=0?exactIndex:events.reduce((best,e,i)=>Math.abs(e.year-linkedYear)<Math.abs(events[best].year-linkedYear)?i:best,0);
   requestAnimationFrame(()=>{
     const marker=document.querySelectorAll(".event-marker")[nearestIndex];
     if(marker){
@@ -2873,4 +2891,5 @@ if(linkedFrom&&Number.isFinite(linkedYear)){
   }
 }
 
+document.getElementById("closeCompareBtn").addEventListener("click",closeComparison);
 makeParticles();render();rafId=requestAnimationFrame(tick);
