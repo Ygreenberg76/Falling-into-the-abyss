@@ -4,8 +4,9 @@ const yearEl=document.getElementById("yearReadout");
 const mapYear=document.getElementById("mapYear");
 const countEl=document.getElementById("mapCommunityCount");
 const dots=document.getElementById("mapDots");
+const land=document.getElementById("mapLand");
 const legend=document.getElementById("mapLegend");
-if(!yearEl||!mapYear||!countEl||!dots||!legend)return;
+if(!yearEl||!mapYear||!countEl||!dots||!legend||!land)return;
 
 const periods=[
  {from:-1800,to:-722,c:[["Canaan / Israel",31.8,35.2,5]]},
@@ -24,6 +25,35 @@ const periods=[
  {from:1946,to:1989,c:[["Israel",31.8,35,6],["United States",40.7,-74,6],["Soviet Union",55.8,37.6,4],["Western Europe",48.9,2.3,3],["North Africa",33.5,3,2],["Latin America",-34.6,-58.4,2]]},
  {from:1990,to:2026,c:[["Israel",31.8,35,7],["United States",40.7,-74,6],["France",48.9,2.3,3],["Canada",43.7,-79.4,2],["United Kingdom",51.5,-.1,2],["Russia",55.8,37.6,2],["Argentina",-34.6,-58.4,2],["Australia",-33.9,151.2,2]]}
 ];
+
+function ringPath(ring){
+ return ring.map((coord,i)=>{
+  const p=point(coord[1],coord[0]);
+  return (i?"L":"M")+p.x.toFixed(2)+" "+p.y.toFixed(2);
+ }).join(" ")+" Z";
+}
+function geometryPath(geometry){
+ if(geometry.type==="Polygon")return geometry.coordinates.map(ringPath).join(" ");
+ if(geometry.type==="MultiPolygon")return geometry.coordinates.flatMap(poly=>poly.map(ringPath)).join(" ");
+ return "";
+}
+fetch("data/ne_110m_land.geojson")
+ .then(r=>{if(!r.ok)throw new Error("land data");return r.json()})
+ .then(data=>{
+  const ns="http://www.w3.org/2000/svg";
+  const frag=document.createDocumentFragment();
+  data.features.forEach(feature=>{
+   const d=geometryPath(feature.geometry);
+   if(!d)return;
+   const path=document.createElementNS(ns,"path");
+   path.setAttribute("d",d);
+   path.setAttribute("fill-rule","evenodd");
+   frag.appendChild(path);
+  });
+  land.replaceChildren(frag);
+ })
+ .catch(()=>{});
+
 function parseYear(){
  const t=yearEl.textContent.trim();
  const n=parseInt(t.replace(/[^0-9]/g,""),10);
