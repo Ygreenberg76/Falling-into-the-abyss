@@ -5170,10 +5170,19 @@ window.HISTORY_MAP_PLACES=[
  ["ukraine",49,32],["balkans",43,21],["bosnia",44,18],["sarajevo",43.86,18.41],["kosovo",42.6,21],
  ["north africa",33,10],["morocco",32,-6],["tunisia",34,9],["libya",27,17],["ethiopia",9,40],["abyssinia",9,40],
  ["persia",32,53],["iran",32,53],["arabia",24,44],["india",22,79],["pakistan",30,70],["central asia",41,65],
- ["united states",39,-98],["new york",40.71,-74],["latin america",-15,-60],["argentina",-34.6,-58.4]
+ ["united states",39,-98],["new york",40.71,-74],["washington",38.9,-77.04],["boston",42.36,-71.06],["philadelphia",39.95,-75.17],
+ ["latin america",-15,-60],["argentina",-34.6,-58.4],["brazil",-15.8,-47.9],["mexico",19.43,-99.13],
+ ["antioch",36.2,36.16],["corinth",37.94,22.93],["ephesus",37.94,27.34],["nicea",40.43,29.72],["nicaea",40.43,29.72],
+ ["carthage",36.85,10.32],["armenia",40.2,44.5],["greece",39,22],["athens",37.98,23.73],
+ ["canaan",31.8,35.2],["samaria",32.28,35.2],["hebron",31.53,35.1],["bethlehem",31.7,35.2],
+ ["sinai",29.5,33.8],["mesopotamia",33.3,44.4],["assyria",36.4,43.1],["nineveh",36.36,43.15],["persian empire",32,53],
+ ["al-andalus",37,-4],["ottoman",41,29],["poland–lithuania",52.5,23],["poland-lithuania",52.5,23],
+ ["eastern europe",52,27],["western europe",48,5],["central europe",49,15],["europe",50,15],
+ ["south asia",25,75],["southeast asia",-3,110],["west africa",12,-2],["sub-saharan africa",0,25],
+ ["philippines",14.6,121],["south korea",37.6,127],["oceania",-25,135]
 ];
 window.findHistoryMapPlace=function(event){
- const text=((event&&event.location)||"").toLowerCase();
+ const text=[event&&event.location,event&&event.title,event&&event.context].filter(Boolean).join(" ").toLowerCase();
  for(const p of window.HISTORY_MAP_PLACES){if(text.includes(p[0]))return{name:p[0],lat:p[1],lon:p[2]};}
  return null;
 };
