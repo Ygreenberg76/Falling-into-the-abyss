@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="An interactive descent through the history of Islam, Muslim societies, conflict, schism, persecution, empire, and interfaith history." />
+  <title>Falling Into the Abyss</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="kicker">Interactive History</p>
+      <h1>Falling Into the Abyss</h1>
+      <p class="subtitle">A descent through the history of Islam, Muslim societies, conflict, schism, empire, persecution, and interfaith history—from Muhammad to the present.</p>
+    </div>
+    <div class="header-actions">
+      <a class="btn btn-ghost" href="index.html">Jewish timeline</a>
+      <a class="btn btn-ghost" href="christianity.html">Christianity timeline</a>
+      <button id="restartBtn" class="btn btn-ghost" type="button">Restart</button>
+      <button id="aboutBtn" class="btn btn-ghost" type="button">Method & Sources</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="intro">
+      <div class="intro-inner">
+        <p class="kicker">Scroll to descend</p>
+        <h2>History gets deeper as you fall.</h2>
+        <p>
+          Follow the falling figure through Muhammad and the first Muslim community, the caliphates, Sunni–Shia division, conquests, crusades, empires, colonialism, sectarian conflicts, persecution, terrorism, reform movements, and major episodes involving Muslim communities and Muslim powers.
+          Select an illuminated marker to pause the fall and explore its story, statistics,
+          historical context, and sourcing notes.
+        </p>
+        <div class="notice">
+          The experience is under active research. Modern entries are being upgraded with archival and institutional sources;
+          ancient and medieval entries are clearly labeled where surviving accounts are later, theological, or disputed.
+        </div>
+        <button id="beginBtn" class="btn btn-primary" type="button">Begin the descent</button>
+      </div>
+    </section>
+
+    <section id="abyss" class="abyss" tabindex="0" aria-label="Interactive historical abyss. Scroll to descend through history.">
+      <div class="sky-opening" aria-hidden="true"></div>
+      <div class="light-shaft" aria-hidden="true"></div>
+      <div class="rock rock-far rock-far-left" aria-hidden="true"></div>
+      <div class="rock rock-far rock-far-right" aria-hidden="true"></div>
+      <div class="rock rock-mid rock-mid-left" aria-hidden="true"></div>
+      <div class="rock rock-mid rock-mid-right" aria-hidden="true"></div>
+      <div class="rock rock-near rock-left" aria-hidden="true"></div>
+      <div class="rock rock-near rock-right" aria-hidden="true"></div>
+      <div class="void-core" aria-hidden="true"></div>
+      <div class="mist mist-1" aria-hidden="true"></div>
+      <div class="mist mist-2" aria-hidden="true"></div>
+      <div class="vignette" aria-hidden="true"></div>
+      <div id="particles" class="particles" aria-hidden="true"></div>
+
+      <div class="hud">
+        <div>
+          <span>Current year</span>
+          <strong id="yearReadout">c. 570 CE</strong>
+        </div>
+        <div class="era-hud">
+          <span>Current era</span>
+          <strong id="eraReadout">Muhammad &amp; Origins of Islam</strong>
+          <small id="eraRange">c. 570–632 CE</small>
+        </div>
+        <div>
+          <span>Depth</span>
+          <strong id="depthReadout">0%</strong>
+        </div>
+      </div>
+
+      <div class="explore-tools">
+        <button id="exploreToggle" class="explore-toggle" type="button" aria-expanded="false" aria-controls="explorePanel">Explore timeline <span>⌄</span></button>
+        <div id="explorePanel" class="explore-panel hidden">
+          <div class="explore-heading"><strong>Find an event</strong><small id="filterCount">Loading events…</small></div>
+          <label>Search
+            <input id="eventSearch" type="search" placeholder="Event, place or keyword…" autocomplete="off">
+          </label>
+          <div class="explore-grid">
+            <label>Era
+              <select id="eraFilter"><option value="">All eras</option></select>
+            </label>
+            <label>Type
+              <select id="typeFilter"><option value="">All event types</option></select>
+            </label>
+          </div>
+          <div class="year-jump">
+            <label>Jump to year
+              <input id="yearJump" type="number" min="570" max="2026" placeholder="e.g. 622">
+            </label>
+            <label class="year-era">Era
+              <select id="yearEra"><option value="CE">CE</option></select>
+            </label>
+            <button id="yearJumpBtn" class="explore-action" type="button">Go</button>
+          </div>
+          <div id="filterResults" class="filter-results" aria-live="polite"></div>
+          <button id="clearFilters" class="clear-filters" type="button">Clear filters</button>
+        </div>
+      </div>
+
+      <div class="progress-rail" aria-hidden="true">
+        <div id="progressFill"></div>
+      </div>
+
+      <div id="speedLines" class="speed-lines" aria-hidden="true">
+        <i style="left:43%;top:8%;height:120px"></i>
+        <i style="left:57%;top:18%;height:170px"></i>
+        <i style="left:49%;top:60%;height:130px"></i>
+        <i style="left:62%;top:73%;height:100px"></i>
+      </div>
+
+      <div id="fallTrail" class="fall-trail" aria-hidden="true"></div>
+
+      <div id="fallingPerson" class="person photo-person" role="img" aria-label="A person falling deeper into the abyss">
+        <img src="falling-person.png" alt="" draggable="false" />
+      </div>
+
+      <div id="eraLayer" class="era-layer" aria-hidden="true"></div>
+      <div id="eventsLayer" class="events-layer"></div>
+      <div id="bottomMarker" class="bottom-marker" aria-hidden="true"><small>2026</small><strong>YOU ARE HERE</strong></div>
+      <div class="scroll-hint">Scroll ↓ to fall deeper through history</div>
+    </section>
+
+    <section id="eventPanel" class="event-panel hidden" aria-live="polite" role="dialog" aria-modal="true" aria-labelledby="eventTitle">
+      <div class="event-panel-header">
+        <div>
+          <p id="eventDate" class="kicker"></p>
+          <h2 id="eventTitle"></h2>
+          <p id="eventLocation" class="event-location"></p>
+        </div>
+        <button id="closeEventBtn" class="btn btn-ghost" type="button">Resume fall</button>
+      </div>
+
+      <div class="event-content-grid">
+        <article>
+          <h3>What happened</h3>
+          <p id="eventStory"></p>
+
+          <h3>Historical context</h3>
+          <p id="eventContext"></p>
+
+          <h3>Aftermath</h3>
+          <p id="eventAftermath"></p>
+        </article>
+
+        <aside>
+          <div class="stats-card">
+            <h3>Statistics</h3>
+            <dl id="eventStats"></dl>
+          </div>
+          <div class="sources-card">
+            <h3>Sources & certainty</h3>
+            <p id="eventSourceStatus"></p>
+            <div id="eventSources" class="source-links"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="aboutPanel" class="about-panel hidden">
+      <div class="event-panel-header">
+        <div>
+          <p class="kicker">Method</p>
+          <h2>How this timeline will be researched</h2>
+        </div>
+        <button id="closeAboutBtn" class="btn btn-ghost" type="button">Close</button>
+      </div>
+      <p>Entries distinguish Sunni, Shia, Ibadi and other Muslim communities; caliphates, dynasties, states and political movements; and Jewish, Christian, secular and other actors where relevant. The timeline separates Islam as a religion from the actions of particular rulers, armies, governments and militant movements; identifies disputed casualty figures; and distinguishes early Islamic tradition from independently documented history.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Falling Into the Abyss • Islam timeline • Sources shown per event.</p>
+  </footer>
+
+  <script src="islam.js"></script>
+</body>
+</html>
