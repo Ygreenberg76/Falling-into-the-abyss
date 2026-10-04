@@ -1908,7 +1908,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/terrorism"}]
   },
   {
-    year:1987, depth:36220, title:"First Intifada", location:"West Bank / Gaza / Israel",
+    year:1985, depth:36220, title:"Israel withdraws from most of Lebanon and establishes a security zone", location:"Southern Lebanon",
+    story:"By 1985 Israel withdrew from most of Lebanon but retained forces in a self-declared security zone in the south, working with the South Lebanon Army. Fighting with Lebanese armed groups, increasingly including Hezbollah, continued for years.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Occupation / insurgency",Evidence:"The withdrawal and security-zone period are well documented; assessments of military necessity and the occupation's effects remain contested."},
+    sourceStatus:"The withdrawal and security-zone period are well documented; assessments of military necessity and the occupation's effects remain contested.",
+    sources:[{label:"U.S. Office of the Historian — Lebanon, 1982–1984",url:"https://history.state.gov/milestones/1981-1988/lebanon"}]
+  },
+  {
+    year:1987, depth:36390, title:"First Intifada", location:"West Bank / Gaza / Israel",
     story:"A Palestinian uprising against Israeli occupation involved demonstrations, riots, attacks and Israeli military responses, causing deaths on both sides.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1917,7 +1926,25 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:1992, depth:36390, title:"Israeli embassy bombing in Buenos Aires", location:"Buenos Aires, Argentina",
+    year:1987, depth:36560, title:"Hamas emerges during the First Intifada", location:"Gaza Strip and West Bank",
+    story:"Hamas emerged in 1987 during the First Intifada from networks associated with the Palestinian Muslim Brotherhood. It combined social and religious organization with armed opposition to Israel and later became a major rival to the secular nationalist Fatah movement.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Islamist organization / armed conflict",Evidence:"Hamas's emergence during the First Intifada is firmly documented. Its organization, tactics and political role changed substantially over subsequent decades."},
+    sourceStatus:"Hamas's emergence during the First Intifada is firmly documented. Its organization, tactics and political role changed substantially over subsequent decades.",
+    sources:[{label:"Encyclopaedia Britannica — Hamas",url:"https://www.britannica.com/topic/Hamas"}]
+  },
+  {
+    year:1991, depth:36730, title:"Madrid Peace Conference", location:"Madrid, Spain",
+    story:"Israel, neighboring Arab states and a joint Jordanian-Palestinian delegation met at the Madrid Peace Conference in October 1991. The conference did not itself produce a final settlement, but it opened direct bilateral and multilateral negotiations and helped establish the diplomatic track that preceded Oslo.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Peace diplomacy",Evidence:"The conference and participating delegations are directly documented in diplomatic records."},
+    sourceStatus:"The conference and participating delegations are directly documented in diplomatic records.",
+    sources:[{label:"U.S. Office of the Historian — Madrid Conference",url:"https://history.state.gov/milestones/1989-1992/madrid-conference"}]
+  },
+  {
+    year:1992, depth:36900, title:"Israeli embassy bombing in Buenos Aires", location:"Buenos Aires, Argentina",
     story:"A suicide bombing destroyed the Israeli embassy in Buenos Aires in March 1992, killing 29 people and injuring hundreds.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1926,7 +1953,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/1992-Buenos-Aires-embassy-bombing"}]
   },
   {
-    year:1994, depth:36560, title:"AMIA bombing", location:"Buenos Aires, Argentina",
+    year:1993, depth:37070, title:"Oslo Accord and mutual Israel–PLO recognition", location:"Oslo / Washington, D.C.",
+    story:"Secret Israeli-PLO negotiations produced the 1993 Declaration of Principles. Israel recognized the PLO as the representative of the Palestinian people, while the PLO recognized Israel's right to exist in peace and renounced terrorism. The agreement envisioned Palestinian self-government and later negotiations over permanent-status issues.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Peace agreement / Palestinian self-government",Evidence:"The agreement and mutual recognition are directly documented. Oslo left borders, Jerusalem, refugees, settlements and other final-status questions unresolved."},
+    sourceStatus:"The agreement and mutual recognition are directly documented. Oslo left borders, Jerusalem, refugees, settlements and other final-status questions unresolved.",
+    sources:[{label:"U.S. Office of the Historian — Oslo Accords",url:"https://history.state.gov/milestones/1993-2000/oslo"}]
+  },
+  {
+    year:1994, depth:37240, title:"AMIA bombing", location:"Buenos Aires, Argentina",
     story:"A bombing destroyed the AMIA Jewish community center, killing 85 people and injuring hundreds.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1935,7 +1971,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/AMIA-bombing"}]
   },
   {
-    year:1994, depth:36730, title:"Tel Aviv bus 5 bombing", location:"Tel Aviv, Israel",
+    year:1994, depth:37410, title:"Tel Aviv bus 5 bombing", location:"Tel Aviv, Israel",
     story:"A Hamas suicide bomber attacked a city bus in Tel Aviv in October 1994, killing 22 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1944,7 +1980,43 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/news/cabinet-communique-29-jan-2006/en/English_SiteTransfer_DOCUMENTS_Profile-of-the-Hamas-movement_ITIC.pdf"}]
   },
   {
-    year:1996, depth:36900, title:"Jerusalem bus 18 bombings", location:"Jerusalem, Israel",
+    year:1994, depth:37580, title:"Cave of the Patriarchs massacre", location:"Hebron, West Bank",
+    story:"On February 25, 1994, Baruch Goldstein, an Israeli Jewish extremist, opened fire on Muslim worshippers at the Ibrahimi Mosque/Cave of the Patriarchs in Hebron, killing 29 Palestinians and wounding many others before he was killed. The massacre intensified Israeli-Palestinian tensions during the Oslo process.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Jewish extremist mass shooting",Evidence:"The perpetrator, location and killing of 29 Palestinian worshippers are firmly documented."},
+    sourceStatus:"The perpetrator, location and killing of 29 Palestinian worshippers are firmly documented.",
+    sources:[{label:"Encyclopaedia Britannica — Hebron",url:"https://www.britannica.com/place/Hebron-city-West-Bank"}]
+  },
+  {
+    year:1994, depth:37750, title:"Israel–Jordan Peace Treaty", location:"Arava/Wadi Araba border",
+    story:"Israel and Jordan signed a peace treaty in October 1994, formally ending the state of war between them and establishing diplomatic relations. Jordan became the second Arab country, after Egypt, to sign a peace treaty with Israel.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Peace treaty",Evidence:"The treaty and diplomatic recognition are directly documented."},
+    sourceStatus:"The treaty and diplomatic recognition are directly documented.",
+    sources:[{label:"U.S. Office of the Historian — Oslo peace process",url:"https://history.state.gov/milestones/1993-2000/oslo"}]
+  },
+  {
+    year:1995, depth:37920, title:"Oslo II divides West Bank administrative control", location:"West Bank",
+    story:"The 1995 Israeli-Palestinian Interim Agreement, commonly called Oslo II, divided the West Bank into Areas A, B and C with different arrangements for Palestinian civil authority and Israeli security or administrative control. The framework was intended to be interim pending final-status negotiations.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Interim agreement / territorial administration",Evidence:"The agreement and administrative divisions are directly documented; their later political and legal consequences remain deeply contested."},
+    sourceStatus:"The agreement and administrative divisions are directly documented; their later political and legal consequences remain deeply contested.",
+    sources:[{label:"U.S. Office of the Historian — Oslo Accords",url:"https://history.state.gov/milestones/1993-2000/oslo"}]
+  },
+  {
+    year:1995, depth:38090, title:"Assassination of Yitzhak Rabin", location:"Tel Aviv, Israel",
+    story:"On November 4, 1995, Israeli Prime Minister Yitzhak Rabin was assassinated after a peace rally by Yigal Amir, an Israeli Jewish extremist who opposed the Oslo Accords. Rabin's murder shocked Israeli society and damaged the political momentum behind the peace process.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Political assassination / Jewish extremism",Evidence:"The assassination, perpetrator and anti-Oslo motive are firmly documented."},
+    sourceStatus:"The assassination, perpetrator and anti-Oslo motive are firmly documented.",
+    sources:[{label:"U.S. Office of the Historian — Oslo Accords",url:"https://history.state.gov/milestones/1993-2000/oslo"}]
+  },
+  {
+    year:1996, depth:38260, title:"Jerusalem bus 18 bombings", location:"Jerusalem, Israel",
     story:"Two suicide bombings on Jerusalem bus route 18 in 1996 killed dozens of civilians during a wave of Hamas attacks.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1953,7 +2025,25 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/news/cabinet-communique-29-jan-2006/en/English_SiteTransfer_DOCUMENTS_Profile-of-the-Hamas-movement_ITIC.pdf"}]
   },
   {
-    year:2000, depth:37070, title:"Second Intifada", location:"Israel / West Bank / Gaza",
+    year:1996, depth:38430, title:"Hamas suicide-bombing campaign undermines Oslo process", location:"Jerusalem, Tel Aviv and other Israeli cities",
+    story:"A series of Hamas suicide bombings in 1996 killed Israeli civilians and intensified fear and political opposition to the Oslo process. The attacks followed earlier Hamas bombings and came amid a wider cycle of Israeli-Palestinian violence.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Terrorism / suicide bombings",Evidence:"The attacks and Hamas responsibility for major bombings are extensively documented. Individual attacks are represented separately elsewhere in the timeline where appropriate."},
+    sourceStatus:"The attacks and Hamas responsibility for major bombings are extensively documented. Individual attacks are represented separately elsewhere in the timeline where appropriate.",
+    sources:[{label:"U.S. Office of the Historian — Oslo Accords",url:"https://history.state.gov/milestones/1993-2000/oslo"}]
+  },
+  {
+    year:1998, depth:38600, title:"Wye River Memorandum", location:"Maryland, United States",
+    story:"Israeli Prime Minister Benjamin Netanyahu and PLO Chairman Yasser Arafat negotiated the Wye River Memorandum under U.S. mediation. It called for further Israeli redeployments from parts of the West Bank and Palestinian security commitments, but implementation disputes soon stalled the process.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Peace diplomacy / interim agreement",Evidence:"The agreement and subsequent implementation disputes are directly documented."},
+    sourceStatus:"The agreement and subsequent implementation disputes are directly documented.",
+    sources:[{label:"U.S. Office of the Historian — Oslo Accords",url:"https://history.state.gov/milestones/1993-2000/oslo"}]
+  },
+  {
+    year:2000, depth:38770, title:"Second Intifada", location:"Israel / West Bank / Gaza",
     story:"The Second Intifada brought suicide bombings and other attacks against Israelis alongside major Israeli military operations; thousands of Palestinians and Israelis were killed.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1962,7 +2052,25 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2001, depth:37240, title:"Dolphinarium discotheque bombing", location:"Tel Aviv, Israel",
+    year:2000, depth:38940, title:"Israel withdraws from southern Lebanon", location:"Southern Lebanon",
+    story:"In May 2000, Israel withdrew its forces from southern Lebanon, ending the security-zone presence maintained since the 1980s. Hezbollah portrayed the withdrawal as a victory, while disputes over the border area and subsequent attacks continued.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Military withdrawal / Lebanon conflict",Evidence:"The withdrawal is firmly documented; disputes over Shebaa Farms and the meaning of the withdrawal persisted."},
+    sourceStatus:"The withdrawal is firmly documented; disputes over Shebaa Farms and the meaning of the withdrawal persisted.",
+    sources:[{label:"U.S. Office of the Historian — Oslo era",url:"https://history.state.gov/milestones/1993-2000/oslo"}]
+  },
+  {
+    year:2000, depth:39110, title:"Camp David summit fails to reach final Israeli–Palestinian agreement", location:"Camp David, Maryland, United States",
+    story:"U.S. President Bill Clinton convened Israeli Prime Minister Ehud Barak and PLO Chairman Yasser Arafat in July 2000 for final-status negotiations. The summit ended without agreement over major issues including borders, Jerusalem and Palestinian refugees.",
+    context:"This marker is part of the period linking the Lebanon conflict, the First Intifada and the Oslo peace process. The timeline includes Palestinian attacks, Israeli military policy, Jewish extremist violence and diplomatic efforts in the same chronology.",
+    aftermath:"The period produced both unprecedented Israeli–Palestinian recognition and continuing violence. Unresolved final-status issues, extremist attacks and political breakdown contributed to the collapse of the peace process and renewed large-scale violence in 2000.",
+    stats:{Type:"Failed peace negotiation",Evidence:"The summit and unresolved issues are firmly documented. Accounts differ substantially over why negotiations failed and how responsibility should be apportioned."},
+    sourceStatus:"The summit and unresolved issues are firmly documented. Accounts differ substantially over why negotiations failed and how responsibility should be apportioned.",
+    sources:[{label:"U.S. Office of the Historian — Oslo Accords",url:"https://history.state.gov/milestones/1993-2000/oslo"}]
+  },
+  {
+    year:2001, depth:39280, title:"Dolphinarium discotheque bombing", location:"Tel Aviv, Israel",
     story:"A suicide bomber attacked young people waiting outside the Dolphinarium nightclub in June 2001; 21 Israeli civilians were killed, most of them teenagers.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1971,7 +2079,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/palestinian-violence-and-terrorism-since-september-2000/en/English_SiteTransfer_DOCUMENTS_Leading-Palestinian-Terrorist-Organizations-Aug-2004.pdf"}]
   },
   {
-    year:2001, depth:37410, title:"Sbarro restaurant bombing", location:"Jerusalem, Israel",
+    year:2001, depth:39450, title:"Sbarro restaurant bombing", location:"Jerusalem, Israel",
     story:"A suicide bomber attacked the crowded Sbarro restaurant in Jerusalem in August 2001, killing 15 civilians.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1980,7 +2088,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/palestinian-violence-and-terrorism-since-september-2000/en/English_SiteTransfer_DOCUMENTS_Leading-Palestinian-Terrorist-Organizations-Aug-2004.pdf"}]
   },
   {
-    year:2002, depth:37580, title:"Passover massacre", location:"Netanya, Israel",
+    year:2002, depth:39620, title:"Passover massacre", location:"Netanya, Israel",
     story:"A suicide bomber attacked a Passover seder at the Park Hotel in Netanya during the Second Intifada, killing civilians and injuring many others.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1989,7 +2097,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2003, depth:37750, title:"Maxim restaurant bombing", location:"Haifa, Israel",
+    year:2003, depth:39790, title:"Maxim restaurant bombing", location:"Haifa, Israel",
     story:"A suicide bomber attacked the Maxim restaurant in Haifa in October 2003, killing 21 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1998,7 +2106,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/saving-lives-israel-s-anti-terrorist-fence-answers-to-questions-jan-2004/en/English_SiteTransfer_DOCUMENTS_PDF_19279_2.pdf"}]
   },
   {
-    year:2008, depth:37920, title:"Mumbai Chabad House attack", location:"Mumbai, India",
+    year:2008, depth:39960, title:"Mumbai Chabad House attack", location:"Mumbai, India",
     story:"During the coordinated Mumbai attacks, terrorists seized the Chabad Jewish center at Nariman House and murdered hostages there.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2007,7 +2115,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Mumbai-terrorist-attacks-of-2008"}]
   },
   {
-    year:2012, depth:38090, title:"Toulouse Jewish school attack", location:"Toulouse, France",
+    year:2012, depth:40130, title:"Toulouse Jewish school attack", location:"Toulouse, France",
     story:"A gunman attacked the Ozar Hatorah Jewish school, murdering a teacher and three children.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2016,7 +2124,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Toulouse-and-Montauban-shootings"}]
   },
   {
-    year:2014, depth:38260, title:"Jerusalem synagogue attack", location:"Jerusalem",
+    year:2014, depth:40300, title:"Jerusalem synagogue attack", location:"Jerusalem",
     story:"Two Palestinian attackers armed with guns, knives and axes attacked worshippers at a synagogue in Har Nof in November 2014, killing worshippers and a police officer.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -2025,7 +2133,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:2015, depth:38430, title:"Hyper Cacher hostage attack", location:"Paris, France",
+    year:2015, depth:40470, title:"Hyper Cacher hostage attack", location:"Paris, France",
     story:"A gunman attacked a kosher supermarket in Paris, killing four Jewish hostages.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2034,7 +2142,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Charlie-Hebdo-shooting"}]
   },
   {
-    year:2018, depth:38600, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
+    year:2018, depth:40640, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
     story:"A gunman attacked worshippers at the Tree of Life synagogue complex, murdering eleven people.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2043,7 +2151,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/pennsylvania-man-sentenced-death-2018-tree-life-synagogue-shooting"}]
   },
   {
-    year:2019, depth:38770, title:"Poway synagogue shooting", location:"Poway, California, United States",
+    year:2019, depth:40810, title:"Poway synagogue shooting", location:"Poway, California, United States",
     story:"An antisemitic gunman opened fire inside Chabad of Poway on the final day of Passover, killing one worshipper and injuring three others, including a child.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -2052,7 +2160,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-sdca/pr/john-earnest-pleads-guilty-113-count-federal-hate-crime-indictment-connection-poway"}]
   },
   {
-    year:2019, depth:38940, title:"Halle synagogue attack", location:"Halle, Germany",
+    year:2019, depth:40980, title:"Halle synagogue attack", location:"Halle, Germany",
     story:"An armed extremist attempted to enter a synagogue on Yom Kippur; unable to enter, he murdered two people nearby.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2061,7 +2169,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Halle-synagogue-shooting"}]
   },
   {
-    year:2020, depth:39110, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
+    year:2020, depth:41150, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
     story:"During a Hanukkah gathering at a rabbi's home, an attacker stabbed multiple people; one victim later died from his injuries.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -2070,7 +2178,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/monsey-man-charged-federal-hate-crimes-december-2019-stabbing"}]
   },
   {
-    year:2022, depth:39280, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
+    year:2022, depth:41320, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
     story:"An armed man took worshippers hostage at Congregation Beth Israel in January 2022. The hostages ultimately escaped or were rescued; the attacker was killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -2079,7 +2187,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-ndtx/press-release/file/1465966/dl"}]
   },
   {
-    year:2023, depth:39450, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
+    year:2023, depth:41490, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
     story:"Hamas and other armed groups attacked southern Israel on October 7, killing civilians and security personnel and taking hostages. Israel then launched a major war in Gaza with very large Palestinian civilian and combatant casualties and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2098,11 +2206,11 @@ const eras = [
   {name:"Early Modern Jewish Diaspora",range:"1492–1881 CE",start:17010,end:19220},
   {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:19220,end:21430},
   {name:"The Holocaust",range:"1933–1945 CE",start:21430,end:27040},
-  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:27040,end:37070},
-  {name:"Contemporary Era",range:"2000–2026 CE",start:37070,end:39970}
+  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:27040,end:38770},
+  {name:"Contemporary Era",range:"2000–2026 CE",start:38770,end:42010}
 ];
 
-const MAX_DEPTH=39970;
+const MAX_DEPTH=42010;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
