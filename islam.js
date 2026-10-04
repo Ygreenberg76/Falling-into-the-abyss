@@ -488,16 +488,19 @@ function restart(){
   aboutPanel.classList.add("hidden");
   document.getElementById("intro").scrollIntoView({behavior:reduced?"auto":"smooth"});
 }
+/* Keep the falling interaction, but never trap normal browser scrolling. */
 abyss.addEventListener("wheel",e=>{
-  const goingDown=e.deltaY>0, goingUp=e.deltaY<0;
-  const atBottom=depth>=MAX_DEPTH-1, atTop=depth<=1;
-  if((goingDown&&atBottom)||(goingUp&&atTop)) return;
-  e.preventDefault();
+  if(panel&&!panel.classList.contains("hidden")) return;
   descend(e.deltaY);
-},{passive:false});
+},{passive:true});
 let touchY=null;
 abyss.addEventListener("touchstart",e=>{touchY=e.touches[0].clientY},{passive:true});
-abyss.addEventListener("touchmove",e=>{if(touchY===null)return;const y=e.touches[0].clientY;descend((touchY-y)*2.2);touchY=y},{passive:true});
+abyss.addEventListener("touchmove",e=>{
+  if(touchY===null)return;
+  const y=e.touches[0].clientY;
+  descend((touchY-y)*2.2);
+  touchY=y;
+},{passive:true});
 abyss.addEventListener("touchend",()=>touchY=null,{passive:true});
 abyss.addEventListener("keydown",e=>{
   if(["ArrowDown","PageDown"," "].includes(e.key)){e.preventDefault();descend(230)}
