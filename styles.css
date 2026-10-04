@@ -436,3 +436,11 @@ body.event-open{overflow:hidden}
 .compare-source-status{margin-top:14px;padding-top:12px;border-top:1px solid rgba(216,199,173,.16)}
 .compare-source-status strong{display:block;margin-bottom:5px;color:#d8c9b6;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
 .compare-source-status p{margin:0}
+
+
+/* Shared-history atlas markers */
+.compare-map-marker .compare-map-halo{fill:currentColor;opacity:.22;stroke:currentColor;stroke-width:.7;vector-effect:non-scaling-stroke}
+.compare-map-marker .compare-map-core{fill:currentColor;stroke:#f5eadb;stroke-width:.65;vector-effect:non-scaling-stroke}
+.jewish-map-marker{color:#d4a85f}.christian-map-marker{color:#6da8df}.islamic-map-marker{color:#63b980}
+.compare-map-legend{font-weight:800!important;border-color:rgba(255,255,255,.18)!important}
+.jewish-map-legend{color:#e0b873!important}.christian-map-legend{color:#8dc1ef!important}.islamic-map-legend{color:#82d09d!important}
