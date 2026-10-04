@@ -302,3 +302,18 @@ body.event-open{overflow:hidden}
 .event-marker.christian-overlap small{color:#ffd08b}
 .christian-overlap-badge{border-color:rgba(255,190,92,.72);background:rgba(153,93,22,.24);color:#ffd08b!important}
 .event-marker.jewish-overlap.christian-overlap{border-color:rgba(191,142,255,.82);box-shadow:0 0 24px rgba(174,117,255,.2),0 9px 28px rgba(0,0,0,.38)}
+
+
+/* Jewish timeline: historical diaspora map */
+.diaspora-map{position:absolute;z-index:41;right:18px;top:112px;width:min(340px,31vw);padding:12px;border:1px solid rgba(216,199,173,.25);border-radius:12px;background:rgba(7,7,9,.86);box-shadow:0 16px 45px rgba(0,0,0,.42);backdrop-filter:blur(10px);pointer-events:none}
+.diaspora-map-head{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:7px}
+.diaspora-map-head div{display:grid}.diaspora-map-head small{color:#b9a98e;font-size:9px;letter-spacing:.15em;text-transform:uppercase}.diaspora-map-head strong{font-size:17px;color:#f0ebe3}.diaspora-map-head>span{font-size:10px;color:#cdbda4}
+.world-map{display:block;width:100%;height:auto;border-radius:8px;background:radial-gradient(ellipse at 55% 48%,rgba(61,67,70,.34),rgba(8,9,11,.7));border:1px solid rgba(255,255,255,.06)}
+.map-land{fill:#34332f;stroke:#686157;stroke-width:.65;vector-effect:non-scaling-stroke}
+.map-community{fill:#e8c978;stroke:#fff1bd;stroke-width:.8;filter:drop-shadow(0 0 3px rgba(236,194,89,.8));transition:r .2s ease,opacity .2s ease}
+.map-community-core{fill:#fff5cc}
+.diaspora-map-legend{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px;min-height:18px}
+.diaspora-map-legend span{padding:2px 5px;border-radius:999px;background:rgba(216,199,173,.1);color:#d8c9af;font-size:9px;white-space:nowrap}
+.diaspora-map-note{margin:7px 0 0;color:#88838a;font-size:9px;line-height:1.35}
+@media(max-width:1000px){.diaspora-map{width:min(285px,29vw)}}
+@media(max-width:760px){.diaspora-map{top:auto;right:10px;bottom:48px;width:min(260px,64vw);padding:8px}.diaspora-map-head strong{font-size:14px}.diaspora-map-legend{display:none}.diaspora-map-note{font-size:8px}}
