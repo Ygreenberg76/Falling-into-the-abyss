@@ -1557,7 +1557,25 @@ const events = [
     sources:[{label:"United Nations Peacemaker — 1949 Armistice Agreements",url:"https://peacemaker.un.org/israel-jordan-generalarmistice49"}]
   },
   {
-    year:1954, depth:29590, title:"Ma'ale Akrabim bus massacre", location:"Negev, Israel",
+    year:1951, depth:29590, title:"Post-armistice infiltration and border violence", location:"Israel and neighboring armistice lines",
+    story:"After the 1949 armistices, Israel's borders remained unstable. Palestinian refugees and other infiltrators crossed armistice lines for varied reasons including return to former homes, recovery of property, smuggling and armed attacks. Israeli civilians and soldiers were killed in some incursions, while Israeli border enforcement and retaliatory actions also killed Palestinians.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Border conflict / infiltration",Evidence:"The pattern of infiltration and border violence is well documented. Motives and the proportion of armed versus non-armed crossings varied greatly and should not be treated as one category."},
+    sourceStatus:"The pattern of infiltration and border violence is well documented. Motives and the proportion of armed versus non-armed crossings varied greatly and should not be treated as one category.",
+    sources:[{label:"U.S. Office of the Historian — Arab-Israeli dispute",url:"https://history.state.gov/historicaldocuments/frus1952-54v09p1"}]
+  },
+  {
+    year:1953, depth:29760, title:"Qibya raid", location:"Qibya, Jordanian West Bank",
+    story:"On October 14–15, 1953, Israeli forces carried out a retaliatory raid on the West Bank village of Qibya after earlier attacks inside Israel. Houses were demolished and dozens of Palestinian Arab civilians were killed. The United Nations Security Council strongly censured the action.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Israeli reprisal / civilian deaths",Evidence:"The Israeli raid and civilian deaths are firmly documented. UN Security Council Resolution 101 identified it as retaliatory action by armed forces of Israel and found it inconsistent with the armistice obligations."},
+    sourceStatus:"The Israeli raid and civilian deaths are firmly documented. UN Security Council Resolution 101 identified it as retaliatory action by armed forces of Israel and found it inconsistent with the armistice obligations.",
+    sources:[{label:"United Nations — Security Council Resolution 101",url:"https://www.un.org/unispal/document/auto-insert-179237/"}]
+  },
+  {
+    year:1954, depth:29930, title:"Ma'ale Akrabim bus massacre", location:"Negev, Israel",
     story:"Gunmen ambushed an Israeli passenger bus at Ma'ale Akrabim in March 1954, killing passengers and leaving only a few survivors.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1566,7 +1584,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1955, depth:29760, title:"Patish wedding attack", location:"Patish, Israel",
+    year:1955, depth:30100, title:"Patish wedding attack", location:"Patish, Israel",
     story:"Attackers threw grenades and opened fire on a crowded wedding celebration in March 1955, killing a young woman and wounding 18 people.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1575,7 +1593,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:29930, title:"Kfar Chabad synagogue attack", location:"Kfar Chabad, Israel",
+    year:1955, depth:30270, title:"Gaza raid and escalation of Israel–Egypt border conflict", location:"Gaza Strip",
+    story:"In February 1955, Israeli forces raided an Egyptian military installation in Gaza after continuing border incidents. The operation killed Egyptian soldiers and helped accelerate a cycle of confrontation between Egypt and Israel. Egypt subsequently expanded organization and sponsorship of Palestinian fedayeen raids.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Military reprisal / border escalation",Evidence:"The raid and subsequent escalation are well documented; historians differ over how much weight to assign the raid among the causes of Egypt's changing military policy."},
+    sourceStatus:"The raid and subsequent escalation are well documented; historians differ over how much weight to assign the raid among the causes of Egypt's changing military policy.",
+    sources:[{label:"U.S. Office of the Historian — Arab-Israeli dispute",url:"https://history.state.gov/historicaldocuments/frus1955-57v14"}]
+  },
+  {
+    year:1956, depth:30440, title:"Kfar Chabad synagogue attack", location:"Kfar Chabad, Israel",
     story:"Gunmen opened fire on a synagogue containing children and teenagers in April 1956, killing three children and a youth worker and injuring others.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1584,7 +1611,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:30100, title:"Ramat Rachel shooting", location:"Ramat Rachel, Israel",
+    year:1956, depth:30610, title:"Ramat Rachel shooting", location:"Ramat Rachel, Israel",
     story:"Gunfire from a Jordanian position killed four archaeologists and wounded sixteen people at Ramat Rachel in September 1956.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1593,7 +1620,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:30270, title:"Suez Crisis / Sinai War", location:"Egypt / Sinai / Israel",
+    year:1956, depth:30780, title:"Suez Crisis / Sinai War", location:"Egypt / Sinai / Israel",
     story:"Israel invaded Egypt's Sinai Peninsula in coordination with the Anglo-French intervention after Egypt nationalized the Suez Canal.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1602,7 +1629,61 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/milestones/1953-1960/suez"}]
   },
   {
-    year:1967, depth:30440, title:"Six-Day War", location:"Israel / Egypt / Jordan / Syria",
+    year:1956, depth:30950, title:"Fedayeen raids and Israeli reprisals before the Sinai War", location:"Israel, Gaza Strip and neighboring borders",
+    story:"During the mid-1950s, Palestinian fedayeen operating especially from Egyptian-controlled Gaza carried out raids and attacks inside Israel. Israel responded with increasingly large military reprisal operations. The cycle killed civilians and soldiers on both sides and contributed to the security crisis preceding the 1956 war.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Cross-border attacks / military reprisals",Evidence:"The cycle of fedayeen attacks and Israeli reprisals is extensively documented; individual incidents differed in perpetrators, targets and casualties."},
+    sourceStatus:"The cycle of fedayeen attacks and Israeli reprisals is extensively documented; individual incidents differed in perpetrators, targets and casualties.",
+    sources:[{label:"U.S. Office of the Historian — Suez Crisis",url:"https://history.state.gov/milestones/1953-1960/suez"}]
+  },
+  {
+    year:1956, depth:31120, title:"Kafr Qasim massacre", location:"Kafr Qasim, Israel",
+    story:"On October 29, 1956, Israeli Border Police killed 48 Arab citizens of Israel and one unborn child after villagers returned home unaware that a wartime curfew had been moved earlier. Israeli courts later convicted several members of the unit, and the case became a landmark in Israeli law concerning manifestly illegal orders.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Massacre / state security forces",Evidence:"The killings, victims and subsequent Israeli trials are firmly documented."},
+    sourceStatus:"The killings, victims and subsequent Israeli trials are firmly documented.",
+    sources:[{label:"Israel State Archives — Kafr Qasim",url:"https://catalog.archives.gov.il/en/chapter/kafr-qasim-massacre/"}]
+  },
+  {
+    year:1956, depth:31290, title:"Coordinated Israeli, British and French attack on Egypt", location:"Sinai Peninsula and Suez Canal",
+    story:"On October 29, 1956, Israel invaded Egypt's Sinai Peninsula under a secret plan coordinated with Britain and France. Britain and France then intervened around the Suez Canal. International pressure, particularly from the United States and United Nations, ultimately forced the attacking powers to withdraw.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Interstate war / coordinated intervention",Evidence:"The secret Sèvres coordination and military sequence are extensively documented in diplomatic archives."},
+    sourceStatus:"The secret Sèvres coordination and military sequence are extensively documented in diplomatic archives.",
+    sources:[{label:"U.S. Office of the Historian — Suez Crisis",url:"https://history.state.gov/milestones/1953-1960/suez"}]
+  },
+  {
+    year:1964, depth:31460, title:"Creation of the Palestine Liberation Organization", location:"Jerusalem / Arab League context",
+    story:"The Palestine Liberation Organization was established in 1964 as an umbrella political organization claiming to represent the Palestinian people. Its creation reflected the growing institutionalization of Palestinian nationalism; armed organizations such as Fatah developed separately and later became dominant within the PLO.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Political organization / conflict development",Evidence:"The PLO's establishment in 1964 is firmly documented; its political program and relationship to different Arab governments changed over time."},
+    sourceStatus:"The PLO's establishment in 1964 is firmly documented; its political program and relationship to different Arab governments changed over time.",
+    sources:[{label:"Encyclopaedia Britannica — PLO",url:"https://www.britannica.com/topic/Palestine-Liberation-Organization"}]
+  },
+  {
+    year:1965, depth:31630, title:"Fatah begins armed operations against Israel", location:"Israel and neighboring states",
+    story:"Fatah announced the beginning of its armed struggle at the start of 1965 and carried out sabotage and infiltration attempts against Israel. The organization later became the dominant faction of the PLO.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Guerrilla campaign / armed conflict",Evidence:"Fatah's public launch of armed operations in 1965 is well documented; accounts differ on the operational success of the earliest attacks."},
+    sourceStatus:"Fatah's public launch of armed operations in 1965 is well documented; accounts differ on the operational success of the earliest attacks.",
+    sources:[{label:"Encyclopaedia Britannica — Fatah",url:"https://www.britannica.com/topic/Fatah"}]
+  },
+  {
+    year:1966, depth:31800, title:"Samu raid", location:"Samu, Jordanian West Bank",
+    story:"In November 1966, Israeli forces launched a large retaliatory raid against the West Bank village of Samu after a land-mine incident killed Israeli soldiers. The raid led to fighting with Jordanian forces and significant destruction in the village, sharply worsening Israeli-Jordanian tensions before the Six-Day War.",
+    context:"This marker is part of the post-1949 Arab–Israeli border conflict. It distinguishes Palestinian infiltration and armed attacks, Israeli military reprisals, violence against civilians and broader interstate tensions rather than assigning every incident to a single cause.",
+    aftermath:"Repeated attacks and reprisals hardened borders, increased regional military competition and contributed to the escalation that culminated in the 1956 Sinai/Suez War and, after further tensions, the 1967 Six-Day War.",
+    stats:{Type:"Israeli reprisal / border battle",Evidence:"The operation and battle are well documented in diplomatic and military records; assessments of its strategic effect differ."},
+    sourceStatus:"The operation and battle are well documented in diplomatic and military records; assessments of its strategic effect differ.",
+    sources:[{label:"U.S. Foreign Relations — Arab-Israeli dispute",url:"https://history.state.gov/historicaldocuments/frus1964-68v18"}]
+  },
+  {
+    year:1967, depth:31970, title:"Six-Day War", location:"Israel / Egypt / Jordan / Syria",
     story:"Israel fought Egypt, Jordan and Syria in June 1967 and captured the Sinai, Gaza Strip, West Bank, East Jerusalem and Golan Heights.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1611,7 +1692,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/historicaldocuments/frus1964-68v14/d217"}]
   },
   {
-    year:1968, depth:30610, title:"El Al Flight 253 attack in Athens", location:"Athens, Greece",
+    year:1968, depth:32140, title:"El Al Flight 253 attack in Athens", location:"Athens, Greece",
     story:"Palestinian militants attacked an El Al aircraft at Athens airport in December 1968, killing an Israeli passenger and injuring others.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1620,7 +1701,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1970, depth:30780, title:"Avivim school bus massacre", location:"Avivim, Israel",
+    year:1970, depth:32310, title:"Avivim school bus massacre", location:"Avivim, Israel",
     story:"Militants fired on an Israeli school bus near the Lebanese border in May 1970, killing children and adults and wounding others.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1629,7 +1710,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1972, depth:30950, title:"Lod Airport massacre", location:"Lod Airport, Israel",
+    year:1972, depth:32480, title:"Lod Airport massacre", location:"Lod Airport, Israel",
     story:"Gunmen from the Japanese Red Army, acting with a Palestinian militant organization, attacked passengers at Lod Airport in May 1972.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1638,7 +1719,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1972, depth:31120, title:"Munich Olympics attack", location:"Munich, West Germany",
+    year:1972, depth:32650, title:"Munich Olympics attack", location:"Munich, West Germany",
     story:"Members of Black September took Israeli Olympic team members hostage; eleven Israeli athletes and coaches were killed during the attack and failed rescue.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1647,7 +1728,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Munich-Massacre"}]
   },
   {
-    year:1973, depth:31290, title:"Yom Kippur / October War", location:"Israel / Egypt / Syria",
+    year:1973, depth:32820, title:"Yom Kippur / October War", location:"Israel / Egypt / Syria",
     story:"Egypt and Syria launched a surprise attack on Israeli positions on October 6, 1973, beginning a major regional war.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1656,7 +1737,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/historicaldocuments/frus1969-76v36/d209"}]
   },
   {
-    year:1974, depth:31460, title:"Kiryat Shmona massacre", location:"Kiryat Shmona, Israel",
+    year:1974, depth:32990, title:"Kiryat Shmona massacre", location:"Kiryat Shmona, Israel",
     story:"Palestinian militants infiltrated Kiryat Shmona in April 1974 and murdered civilians, including children.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1665,7 +1746,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1974, depth:31630, title:"Ma'alot massacre", location:"Ma'alot, Israel",
+    year:1974, depth:33160, title:"Ma'alot massacre", location:"Ma'alot, Israel",
     story:"Three Palestinian militants seized schoolchildren and other hostages in May 1974. During the attempted rescue, the attackers fired on the children and threw grenades; many hostages were killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1674,7 +1755,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1975, depth:31800, title:"Savoy Hotel attack", location:"Tel Aviv, Israel",
+    year:1975, depth:33330, title:"Savoy Hotel attack", location:"Tel Aviv, Israel",
     story:"Fatah militants seized the Savoy Hotel in March 1975. Eight hostages and three Israeli soldiers were killed during the incident and rescue operation.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1683,7 +1764,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/Exhib/malons/Pages/default.aspx"}]
   },
   {
-    year:1976, depth:31970, title:"Entebbe hijacking and hostage crisis", location:"Entebbe, Uganda",
+    year:1976, depth:33500, title:"Entebbe hijacking and hostage crisis", location:"Entebbe, Uganda",
     story:"PFLP-linked and German militants hijacked an Air France flight and diverted it to Entebbe. Israeli and Jewish passengers were separated from many other hostages before an Israeli commando rescue.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1692,7 +1773,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1978, depth:32140, title:"Coastal Road massacre", location:"Israel",
+    year:1978, depth:33670, title:"Coastal Road massacre", location:"Israel",
     story:"Palestinian militants attacked civilians traveling on Israel's Coastal Road, killing dozens and triggering a major Israeli military response in Lebanon.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1701,7 +1782,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Israel/War-in-Lebanon"}]
   },
   {
-    year:1980, depth:32310, title:"Paris synagogue bombing", location:"Paris, France",
+    year:1980, depth:33840, title:"Paris synagogue bombing", location:"Paris, France",
     story:"A bomb exploded outside the Rue Copernic synagogue in Paris in October 1980, killing four people and injuring dozens.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1710,7 +1791,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/anti-Semitism"}]
   },
   {
-    year:1982, depth:32480, title:"1982 Lebanon War", location:"Lebanon / Israel",
+    year:1982, depth:34010, title:"1982 Lebanon War", location:"Lebanon / Israel",
     story:"Israel invaded Lebanon amid conflict with the PLO and cross-border attacks. The war involved Israeli, Palestinian, Lebanese and Syrian forces and caused extensive civilian suffering.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1719,7 +1800,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Lebanon-War"}]
   },
   {
-    year:1982, depth:32650, title:"Great Synagogue of Rome attack", location:"Rome, Italy",
+    year:1982, depth:34180, title:"Great Synagogue of Rome attack", location:"Rome, Italy",
     story:"Gunmen attacked worshippers leaving the Great Synagogue of Rome in October 1982, killing a two-year-old child and wounding dozens.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1728,7 +1809,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/anti-Semitism"}]
   },
   {
-    year:1985, depth:32820, title:"Rome and Vienna airport attacks", location:"Rome, Italy / Vienna, Austria",
+    year:1985, depth:34350, title:"Rome and Vienna airport attacks", location:"Rome, Italy / Vienna, Austria",
     story:"Gunmen attacked El Al ticket counters at airports in Rome and Vienna in December 1985, killing and wounding travelers.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1737,7 +1818,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/terrorism"}]
   },
   {
-    year:1987, depth:32990, title:"First Intifada", location:"West Bank / Gaza / Israel",
+    year:1987, depth:34520, title:"First Intifada", location:"West Bank / Gaza / Israel",
     story:"A Palestinian uprising against Israeli occupation involved demonstrations, riots, attacks and Israeli military responses, causing deaths on both sides.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1746,7 +1827,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:1992, depth:33160, title:"Israeli embassy bombing in Buenos Aires", location:"Buenos Aires, Argentina",
+    year:1992, depth:34690, title:"Israeli embassy bombing in Buenos Aires", location:"Buenos Aires, Argentina",
     story:"A suicide bombing destroyed the Israeli embassy in Buenos Aires in March 1992, killing 29 people and injuring hundreds.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1755,7 +1836,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/1992-Buenos-Aires-embassy-bombing"}]
   },
   {
-    year:1994, depth:33330, title:"AMIA bombing", location:"Buenos Aires, Argentina",
+    year:1994, depth:34860, title:"AMIA bombing", location:"Buenos Aires, Argentina",
     story:"A bombing destroyed the AMIA Jewish community center, killing 85 people and injuring hundreds.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1764,7 +1845,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/AMIA-bombing"}]
   },
   {
-    year:1994, depth:33500, title:"Tel Aviv bus 5 bombing", location:"Tel Aviv, Israel",
+    year:1994, depth:35030, title:"Tel Aviv bus 5 bombing", location:"Tel Aviv, Israel",
     story:"A Hamas suicide bomber attacked a city bus in Tel Aviv in October 1994, killing 22 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1773,7 +1854,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/news/cabinet-communique-29-jan-2006/en/English_SiteTransfer_DOCUMENTS_Profile-of-the-Hamas-movement_ITIC.pdf"}]
   },
   {
-    year:1996, depth:33670, title:"Jerusalem bus 18 bombings", location:"Jerusalem, Israel",
+    year:1996, depth:35200, title:"Jerusalem bus 18 bombings", location:"Jerusalem, Israel",
     story:"Two suicide bombings on Jerusalem bus route 18 in 1996 killed dozens of civilians during a wave of Hamas attacks.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1782,7 +1863,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/news/cabinet-communique-29-jan-2006/en/English_SiteTransfer_DOCUMENTS_Profile-of-the-Hamas-movement_ITIC.pdf"}]
   },
   {
-    year:2000, depth:33840, title:"Second Intifada", location:"Israel / West Bank / Gaza",
+    year:2000, depth:35370, title:"Second Intifada", location:"Israel / West Bank / Gaza",
     story:"The Second Intifada brought suicide bombings and other attacks against Israelis alongside major Israeli military operations; thousands of Palestinians and Israelis were killed.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1791,7 +1872,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2001, depth:34010, title:"Dolphinarium discotheque bombing", location:"Tel Aviv, Israel",
+    year:2001, depth:35540, title:"Dolphinarium discotheque bombing", location:"Tel Aviv, Israel",
     story:"A suicide bomber attacked young people waiting outside the Dolphinarium nightclub in June 2001; 21 Israeli civilians were killed, most of them teenagers.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1800,7 +1881,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/palestinian-violence-and-terrorism-since-september-2000/en/English_SiteTransfer_DOCUMENTS_Leading-Palestinian-Terrorist-Organizations-Aug-2004.pdf"}]
   },
   {
-    year:2001, depth:34180, title:"Sbarro restaurant bombing", location:"Jerusalem, Israel",
+    year:2001, depth:35710, title:"Sbarro restaurant bombing", location:"Jerusalem, Israel",
     story:"A suicide bomber attacked the crowded Sbarro restaurant in Jerusalem in August 2001, killing 15 civilians.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1809,7 +1890,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/palestinian-violence-and-terrorism-since-september-2000/en/English_SiteTransfer_DOCUMENTS_Leading-Palestinian-Terrorist-Organizations-Aug-2004.pdf"}]
   },
   {
-    year:2002, depth:34350, title:"Passover massacre", location:"Netanya, Israel",
+    year:2002, depth:35880, title:"Passover massacre", location:"Netanya, Israel",
     story:"A suicide bomber attacked a Passover seder at the Park Hotel in Netanya during the Second Intifada, killing civilians and injuring many others.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1818,7 +1899,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2003, depth:34520, title:"Maxim restaurant bombing", location:"Haifa, Israel",
+    year:2003, depth:36050, title:"Maxim restaurant bombing", location:"Haifa, Israel",
     story:"A suicide bomber attacked the Maxim restaurant in Haifa in October 2003, killing 21 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1827,7 +1908,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/saving-lives-israel-s-anti-terrorist-fence-answers-to-questions-jan-2004/en/English_SiteTransfer_DOCUMENTS_PDF_19279_2.pdf"}]
   },
   {
-    year:2008, depth:34690, title:"Mumbai Chabad House attack", location:"Mumbai, India",
+    year:2008, depth:36220, title:"Mumbai Chabad House attack", location:"Mumbai, India",
     story:"During the coordinated Mumbai attacks, terrorists seized the Chabad Jewish center at Nariman House and murdered hostages there.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1836,7 +1917,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Mumbai-terrorist-attacks-of-2008"}]
   },
   {
-    year:2012, depth:34860, title:"Toulouse Jewish school attack", location:"Toulouse, France",
+    year:2012, depth:36390, title:"Toulouse Jewish school attack", location:"Toulouse, France",
     story:"A gunman attacked the Ozar Hatorah Jewish school, murdering a teacher and three children.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1845,7 +1926,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Toulouse-and-Montauban-shootings"}]
   },
   {
-    year:2014, depth:35030, title:"Jerusalem synagogue attack", location:"Jerusalem",
+    year:2014, depth:36560, title:"Jerusalem synagogue attack", location:"Jerusalem",
     story:"Two Palestinian attackers armed with guns, knives and axes attacked worshippers at a synagogue in Har Nof in November 2014, killing worshippers and a police officer.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1854,7 +1935,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:2015, depth:35200, title:"Hyper Cacher hostage attack", location:"Paris, France",
+    year:2015, depth:36730, title:"Hyper Cacher hostage attack", location:"Paris, France",
     story:"A gunman attacked a kosher supermarket in Paris, killing four Jewish hostages.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1863,7 +1944,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Charlie-Hebdo-shooting"}]
   },
   {
-    year:2018, depth:35370, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
+    year:2018, depth:36900, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
     story:"A gunman attacked worshippers at the Tree of Life synagogue complex, murdering eleven people.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1872,7 +1953,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/pennsylvania-man-sentenced-death-2018-tree-life-synagogue-shooting"}]
   },
   {
-    year:2019, depth:35540, title:"Poway synagogue shooting", location:"Poway, California, United States",
+    year:2019, depth:37070, title:"Poway synagogue shooting", location:"Poway, California, United States",
     story:"An antisemitic gunman opened fire inside Chabad of Poway on the final day of Passover, killing one worshipper and injuring three others, including a child.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1881,7 +1962,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-sdca/pr/john-earnest-pleads-guilty-113-count-federal-hate-crime-indictment-connection-poway"}]
   },
   {
-    year:2019, depth:35710, title:"Halle synagogue attack", location:"Halle, Germany",
+    year:2019, depth:37240, title:"Halle synagogue attack", location:"Halle, Germany",
     story:"An armed extremist attempted to enter a synagogue on Yom Kippur; unable to enter, he murdered two people nearby.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1890,7 +1971,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Halle-synagogue-shooting"}]
   },
   {
-    year:2020, depth:35880, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
+    year:2020, depth:37410, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
     story:"During a Hanukkah gathering at a rabbi's home, an attacker stabbed multiple people; one victim later died from his injuries.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1899,7 +1980,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/monsey-man-charged-federal-hate-crimes-december-2019-stabbing"}]
   },
   {
-    year:2022, depth:36050, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
+    year:2022, depth:37580, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
     story:"An armed man took worshippers hostage at Congregation Beth Israel in January 2022. The hostages ultimately escaped or were rescued; the attacker was killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1908,7 +1989,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-ndtx/press-release/file/1465966/dl"}]
   },
   {
-    year:2023, depth:36220, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
+    year:2023, depth:37750, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
     story:"Hamas and other armed groups attacked southern Israel on October 7, killing civilians and security personnel and taking hostages. Israel then launched a major war in Gaza with very large Palestinian civilian and combatant casualties and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1927,11 +2008,11 @@ const eras = [
   {name:"Early Modern Jewish Diaspora",range:"1492–1881 CE",start:17010,end:19220},
   {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:19220,end:21430},
   {name:"The Holocaust",range:"1933–1945 CE",start:21430,end:27040},
-  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:27040,end:33840},
-  {name:"Contemporary Era",range:"2000–2026 CE",start:33840,end:36740}
+  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:27040,end:35370},
+  {name:"Contemporary Era",range:"2000–2026 CE",start:35370,end:38270}
 ];
 
-const MAX_DEPTH=36740;
+const MAX_DEPTH=38270;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
