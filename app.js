@@ -2725,6 +2725,26 @@ function renderCompareCard(kind,label,event,page,fromKind){
   const a=document.createElement("a");a.className="btn compare-open";a.href=page+"?year="+encodeURIComponent(event.year)+"&from="+fromKind+"&match="+eventKey(event);a.textContent="Open in "+label+" →";card.appendChild(a);
   return card;
 }
+function historyConnectionType(a,b){
+  const text=[a.title,a.story,a.context,a.aftermath,b.title,b.story,b.context,b.aftermath].filter(Boolean).join(" ").toLowerCase();
+  const sameYear=Math.abs((a.year||0)-(b.year||0))<=2;
+  const words=s=>new Set((s||"").toLowerCase().replace(/[^a-z0-9\s]/g," ").split(/\s+/).filter(w=>w.length>4));
+  const aw=words(a.title),bw=words(b.title);let shared=0;aw.forEach(w=>{if(bw.has(w))shared++;});
+  if(sameYear&&shared>=1)return["Shared Event","These entries describe the same or closely connected historical moment from different historical traditions."];
+  if(/war|battle|conquest|crusad|massacre|persecution|revolt|expulsion|siege|conflict/.test(text))return["Conflict","The histories intersect through conflict, political violence, persecution, conquest, or competing control of people and territory."];
+  if(/empire|emperor|caliph|sultan|kingdom|roman|byzantine|ottoman|rule|dynasty|province/.test(text))return["Empire & Rule","The connection is political: both histories were shaped by the same empire, ruler, government, or change in territorial control."];
+  if(/diaspora|migration|migrat|exile|expel|refugee|settle|dispers|immigra/.test(text))return["Migration & Diaspora","The connection involves the movement or displacement of communities, linking religious history across different regions."];
+  if(/church|rabbi|synagogue|mosque|theology|doctrine|scripture|council|reform|religious|faith|conversion|prophet/.test(text))return["Religious Development","The events connect through the development of religious belief, institutions, scripture, leadership, or practice."];
+  if(/trade|culture|translation|learning|philosoph|science|language|exchange|scholar/.test(text))return["Cultural Exchange","The histories intersect through ideas, scholarship, language, commerce, or cultural contact between communities."];
+  return["Different Perspectives","These events are historically close enough to compare, showing how different communities experienced or interpreted the same broader period."];
+}
+function renderHistoryConnection(items){
+ const box=document.getElementById("compareHistoryConnection");if(!box)return;box.innerHTML="";
+ if(items.length<2){box.classList.add("hidden");return;}box.classList.remove("hidden");
+ const base=items[0],parts=[];
+ items.slice(1).forEach(other=>{const [type,desc]=historyConnectionType(base.event,other.event);parts.push('<div class="history-connection-item"><span class="history-connection-type">'+type+'</span><strong>'+base.label+' ↔ '+other.label+'</strong><p>'+desc+'</p></div>');});
+ box.innerHTML='<div class="history-connection-heading"><small>Historical connection</small><strong>Why these histories are connected</strong></div>'+parts.join("");
+}
 function showComparisonMap(items){
   const dots=document.getElementById("compareAtlasDots"),land=document.getElementById("compareAtlasLand"),legend=document.getElementById("compareAtlasLegend"),insight=document.getElementById("compareAtlasInsight");
   if(!dots||!land||!legend||!insight||!window.findHistoryMapPlace)return;
@@ -2778,7 +2798,7 @@ function openComparison(event){
     grid.appendChild(renderCompareCard(kind,label,matched,page,"jewish"));
     if(matched)mapItems.push({kind,label,event:matched});
   });
-  showComparisonMap(mapItems);panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
+  renderHistoryConnection(mapItems);showComparisonMap(mapItems);panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
 }
 function closeComparison(){document.getElementById("comparePanel").classList.add("hidden");document.body.classList.remove("event-open");restoreTimelineMap();paused=false;}
 function openEvent(event){
