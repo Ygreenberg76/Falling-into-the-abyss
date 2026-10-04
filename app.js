@@ -990,7 +990,25 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Damascus Affair",url:"https://www.britannica.com/event/Damascus-Affair"}]
   },
   {
-    year:1881, depth:18880, title:"Russian Empire pogrom wave", location:"Russian Empire",
+    year:1859, depth:18880, title:"Odessa anti-Jewish riot of 1859", location:"Odessa, Russian Empire",
+    story:"Anti-Jewish violence broke out in Odessa around Easter. Greek sailors and local Greeks were prominent among the attackers. Religious hostility mixed with growing economic rivalry in the Black Sea port.",
+    context:"This marker distinguishes the specific local or political setting from other episodes of anti-Jewish violence and avoids assuming that all pogroms had the same perpetrators, causes or government role.",
+    aftermath:"The violence contributed to Jewish self-defense, political organization, migration and changing attitudes toward security and emancipation.",
+    stats:{Type:"Pogrom / persecution",Evidence:"Well documented; historians emphasize local Greek-Jewish tensions and economic competition rather than treating it as identical to the later imperial pogrom waves."},
+    sourceStatus:"Well documented; historians emphasize local Greek-Jewish tensions and economic competition rather than treating it as identical to the later imperial pogrom waves.",
+    sources:[{label:"YIVO Encyclopedia — Odessa",url:"https://encyclopedia.yivo.org/article.aspx/odessa"}]
+  },
+  {
+    year:1871, depth:19050, title:"Odessa pogrom of 1871", location:"Odessa, Russian Empire",
+    story:"Several days of anti-Jewish violence in Odessa damaged Jewish homes and businesses. Greeks participated prominently, but Russians also joined the attacks. Historians regard 1871 as an important precursor to the broader pogrom era that followed.",
+    context:"This marker distinguishes the specific local or political setting from other episodes of anti-Jewish violence and avoids assuming that all pogroms had the same perpetrators, causes or government role.",
+    aftermath:"The violence contributed to Jewish self-defense, political organization, migration and changing attitudes toward security and emancipation.",
+    stats:{Type:"Pogrom / persecution",Evidence:"Well documented in official reports and historical scholarship; motivations included religious, ethnic and economic tensions."},
+    sourceStatus:"Well documented in official reports and historical scholarship; motivations included religious, ethnic and economic tensions.",
+    sources:[{label:"YIVO Encyclopedia — Pogroms",url:"https://encyclopedia.yivo.org/article.aspx/pogroms"}]
+  },
+  {
+    year:1881, depth:19220, title:"Russian Empire pogrom wave", location:"Russian Empire",
     story:"After Tsar Alexander II's assassination, extensive anti-Jewish riots swept southern and western parts of the Russian Empire from 1881 to 1884.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -999,7 +1017,25 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1903, depth:19050, title:"Kishinev pogrom", location:"Kishinev, Russian Empire",
+    year:1881, depth:19390, title:"Pogrom wave after the assassination of Alexander II", location:"Southern Russian Empire / Pale of Settlement",
+    story:"After Tsar Alexander II was assassinated, rumors and accusations helped trigger a wave of anti-Jewish violence across many communities in the southern Russian Empire. Looting, assaults and destruction spread through the Pale of Settlement.",
+    context:"This marker distinguishes the specific local or political setting from other episodes of anti-Jewish violence and avoids assuming that all pogroms had the same perpetrators, causes or government role.",
+    aftermath:"The violence contributed to Jewish self-defense, political organization, migration and changing attitudes toward security and emancipation.",
+    stats:{Type:"Pogrom / persecution",Evidence:"The widespread wave is extensively documented. Older claims that the central government directly organized every pogrom are not supported by modern scholarship, although official antisemitism and failures of protection shaped the environment."},
+    sourceStatus:"The widespread wave is extensively documented. Older claims that the central government directly organized every pogrom are not supported by modern scholarship, although official antisemitism and failures of protection shaped the environment.",
+    sources:[{label:"YIVO Encyclopedia — Pogroms",url:"https://encyclopedia.yivo.org/article.aspx/pogroms"}]
+  },
+  {
+    year:1882, depth:19560, title:"May Laws intensify restrictions on Russian Jews", location:"Russian Empire",
+    story:"In the aftermath of the 1881 pogrom wave, the imperial government imposed temporary regulations known as the May Laws, restricting where many Jews could settle and conduct business. They were discriminatory state measures rather than a violent attack, but they form part of the political aftermath of the pogroms.",
+    context:"This marker distinguishes the specific local or political setting from other episodes of anti-Jewish violence and avoids assuming that all pogroms had the same perpetrators, causes or government role.",
+    aftermath:"The violence contributed to Jewish self-defense, political organization, migration and changing attitudes toward security and emancipation.",
+    stats:{Type:"Pogrom / persecution",Evidence:"Imperial legislation is securely documented."},
+    sourceStatus:"Imperial legislation is securely documented.",
+    sources:[{label:"YIVO Encyclopedia — Pogroms",url:"https://encyclopedia.yivo.org/article.aspx/pogroms"}]
+  },
+  {
+    year:1903, depth:19730, title:"Kishinev pogrom", location:"Kishinev, Russian Empire",
     story:"Three days of anti-Jewish violence killed nearly 50 Jews, wounded hundreds, and destroyed or looted hundreds of homes and businesses.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1008,7 +1044,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/blood-libel"}]
   },
   {
-    year:1905, depth:19220, title:"Odessa pogrom", location:"Odessa, Russian Empire",
+    year:1905, depth:19900, title:"Odessa pogrom", location:"Odessa, Russian Empire",
     story:"During revolutionary unrest, Odessa experienced one of the deadliest pogroms of 1905, with extensive killing, injury and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1017,7 +1053,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1918, depth:19390, title:"Civil War pogroms in Ukraine and neighboring regions", location:"Ukraine / Belarus / Galicia",
+    year:1905, depth:20070, title:"Odessa pogrom during the Russian Revolution", location:"Odessa, Russian Empire",
+    story:"During the revolutionary crisis of 1905, Odessa experienced its most destructive anti-Jewish pogrom. Hundreds of Jews were killed and many more were injured; Jewish self-defense groups also fought attackers.",
+    context:"This marker distinguishes the specific local or political setting from other episodes of anti-Jewish violence and avoids assuming that all pogroms had the same perpetrators, causes or government role.",
+    aftermath:"The violence contributed to Jewish self-defense, political organization, migration and changing attitudes toward security and emancipation.",
+    stats:{Type:"Pogrom / persecution",Evidence:"Extensively documented; exact death and injury totals vary among contemporary and later sources."},
+    sourceStatus:"Extensively documented; exact death and injury totals vary among contemporary and later sources.",
+    sources:[{label:"Yad Vashem — Odessa",url:"https://collections.yadvashem.org/en/untold-stories/community/14621585-Odessa"}]
+  },
+  {
+    year:1918, depth:20240, title:"Civil War pogroms in Ukraine and neighboring regions", location:"Ukraine / Belarus / Galicia",
     story:"During the post-1917 civil wars, forces from several political and military camps carried out pogroms that killed tens of thousands of Jews.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1026,7 +1071,25 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1920, depth:19560, title:"Nebi Musa riots", location:"Jerusalem",
+    year:1919, depth:20410, title:"Proskurov pogrom", location:"Proskurov, Ukraine",
+    story:"During the Ukrainian revolutionary and civil-war period, troops killed Jewish civilians in Proskurov in one of the most notorious pogroms of 1919. It occurred amid a much larger wave of anti-Jewish mass violence involving multiple armed forces and political factions.",
+    context:"This marker distinguishes the specific local or political setting from other episodes of anti-Jewish violence and avoids assuming that all pogroms had the same perpetrators, causes or government role.",
+    aftermath:"The violence contributed to Jewish self-defense, political organization, migration and changing attitudes toward security and emancipation.",
+    stats:{Type:"Pogrom / persecution",Evidence:"The massacre is well documented; casualty estimates differ among sources."},
+    sourceStatus:"The massacre is well documented; casualty estimates differ among sources.",
+    sources:[{label:"YIVO Encyclopedia — Pogroms",url:"https://encyclopedia.yivo.org/article.aspx/pogroms"}]
+  },
+  {
+    year:1919, depth:20580, title:"Ukrainian Civil War pogrom wave", location:"Ukraine and neighboring regions",
+    story:"During the wars following the Russian Revolution, Jewish communities were subjected to a vast wave of pogroms by forces associated with several competing armies and irregular formations. Tens of thousands of Jews were killed across the broader period, though totals remain debated.",
+    context:"This marker distinguishes the specific local or political setting from other episodes of anti-Jewish violence and avoids assuming that all pogroms had the same perpetrators, causes or government role.",
+    aftermath:"The violence contributed to Jewish self-defense, political organization, migration and changing attitudes toward security and emancipation.",
+    stats:{Type:"Pogrom / persecution",Evidence:"The scale of mass violence is firmly established; attribution and aggregate casualty estimates vary by study."},
+    sourceStatus:"The scale of mass violence is firmly established; attribution and aggregate casualty estimates vary by study.",
+    sources:[{label:"YIVO Encyclopedia — Pogroms",url:"https://encyclopedia.yivo.org/article.aspx/pogroms"}]
+  },
+  {
+    year:1920, depth:20750, title:"Nebi Musa riots", location:"Jerusalem",
     story:"Violence during the Nebi Musa festival included attacks on Jerusalem's Jewish community amid escalating Arab–Jewish political tensions under the British Mandate.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1035,7 +1098,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/World-War-I-and-after"}]
   },
   {
-    year:1921, depth:19730, title:"Jaffa riots", location:"Jaffa and surrounding area",
+    year:1921, depth:20920, title:"Jaffa riots", location:"Jaffa and surrounding area",
     story:"Arab–Jewish violence in Jaffa and nearby areas killed and injured members of both communities and deepened Mandate-era tensions.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1044,7 +1107,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/World-War-I-and-after"}]
   },
   {
-    year:1929, depth:19900, title:"Hebron massacre and 1929 Palestine riots", location:"Hebron and Mandatory Palestine",
+    year:1929, depth:21090, title:"Hebron massacre and 1929 Palestine riots", location:"Hebron and Mandatory Palestine",
     story:"During widespread 1929 violence, Arab attackers killed 67 Jews in Hebron; Jews were also attacked elsewhere, while Arabs were killed in clashes and by British forces.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1053,7 +1116,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Hebron-city-West-Bank"}]
   },
   {
-    year:1929, depth:20070, title:"Safed massacre during the 1929 riots", location:"Safed, Mandatory Palestine",
+    year:1929, depth:21260, title:"Safed massacre during the 1929 riots", location:"Safed, Mandatory Palestine",
     story:"During the 1929 Palestine disturbances, Arab attackers killed Jewish residents of Safed and burned and looted Jewish homes.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1062,7 +1125,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/World-War-I-and-after"}]
   },
   {
-    year:1936, depth:20240, title:"1936–1939 Arab Revolt: attacks on Jewish civilians", location:"Mandatory Palestine",
+    year:1936, depth:21430, title:"1936–1939 Arab Revolt: attacks on Jewish civilians", location:"Mandatory Palestine",
     story:"The Arab Revolt against British rule and mass Jewish immigration included attacks on Jewish civilians and communities, alongside British counterinsurgency and Jewish armed responses.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1071,7 +1134,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/The-Arab-Revolt"}]
   },
   {
-    year:1938, depth:20410, title:"Kristallnacht / November Pogrom", location:"Germany and Austria",
+    year:1938, depth:21600, title:"Kristallnacht / November Pogrom", location:"Germany and Austria",
     story:"Nazi leaders unleashed nationwide anti-Jewish violence: synagogues burned, businesses and homes were destroyed, Jews were killed and about 26,000 Jewish men were imprisoned in concentration camps.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1080,7 +1143,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/kristallnacht"}]
   },
   {
-    year:1941, depth:20580, title:"Farhud", location:"Baghdad, Iraq",
+    year:1941, depth:21770, title:"Farhud", location:"Baghdad, Iraq",
     story:"Anti-Jewish violence in Baghdad on June 1–2, 1941 killed and injured Jews and involved widespread looting and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1089,7 +1152,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/the-farhud"}]
   },
   {
-    year:1941, depth:20750, title:"Iași pogrom", location:"Iași, Romania",
+    year:1941, depth:21940, title:"Iași pogrom", location:"Iași, Romania",
     story:"Romanian authorities and military units, assisted at times by German soldiers, murdered at least 8,000 Jews during the June 1941 pogrom and related death transports.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1098,7 +1161,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1941, depth:20920, title:"Lviv pogrom", location:"Lviv, German-occupied Ukraine",
+    year:1941, depth:22110, title:"Lviv pogrom", location:"Lviv, German-occupied Ukraine",
     story:"Following the German occupation of Lviv, German forces, Ukrainian nationalist activists, militia members and local civilians participated in anti-Jewish humiliation, beatings and killings.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1107,7 +1170,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/the-lwow-pogrom-of-july-1-1941"}]
   },
   {
-    year:1941, depth:21090, title:"Jedwabne massacre", location:"Jedwabne, German-occupied Poland",
+    year:1941, depth:22280, title:"Jedwabne massacre", location:"Jedwabne, German-occupied Poland",
     story:"Hundreds of Jewish residents of Jedwabne were murdered by Polish neighbors in July 1941 in the presence of German police; aspects of German instigation remain historically examined.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1116,7 +1179,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1941, depth:21260, title:"Ponary mass killings begin", location:"Near Vilna (Vilnius), Lithuania",
+    year:1941, depth:22450, title:"Ponary mass killings begin", location:"Near Vilna (Vilnius), Lithuania",
     story:"German SS and police units with Lithuanian collaborators murdered Jews from Vilna and surrounding areas at Ponary. Tens of thousands of Jews were ultimately killed at the site.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1125,7 +1188,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://wwv.yadvashem.org/yv/en/exhibitions/music/vilna-ghetto.asp"}]
   },
   {
-    year:1941, depth:21430, title:"Chełmno killing center begins mass murder", location:"Chełmno, German-occupied Poland",
+    year:1941, depth:22620, title:"Chełmno killing center begins mass murder", location:"Chełmno, German-occupied Poland",
     story:"Mass murder began at Chełmno in December 1941 using gas vans. Nazi Germany murdered at least 152,000 Jews there.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1134,7 +1197,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/chelmno"}]
   },
   {
-    year:1941, depth:21600, title:"Holocaust mass shootings and extermination", location:"German-occupied Europe",
+    year:1941, depth:22790, title:"Holocaust mass shootings and extermination", location:"German-occupied Europe",
     story:"Nazi Germany and its allies and collaborators systematically murdered approximately six million European Jews through shootings, killing centers, ghettos, starvation, forced labor and other methods.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1143,7 +1206,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust"}]
   },
   {
-    year:1941, depth:21770, title:"Rumbula massacre", location:"Near Riga, German-occupied Latvia",
+    year:1941, depth:22960, title:"Rumbula massacre", location:"Near Riga, German-occupied Latvia",
     story:"German SS and police and Latvian auxiliaries murdered approximately 25,000 Jews from the Riga ghetto and about 1,000 German Jews in the Rumbula forest in late 1941.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1152,7 +1215,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/riga"}]
   },
   {
-    year:1941, depth:21940, title:"Babi Yar massacre", location:"Kyiv, German-occupied Ukraine",
+    year:1941, depth:23130, title:"Babi Yar massacre", location:"Kyiv, German-occupied Ukraine",
     story:"On September 29–30, 1941, Einsatzgruppe C personnel and collaborators murdered 33,771 Jewish men, women and children at the Babi Yar ravine.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1161,7 +1224,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://wwv.yadvashem.org/yv/en/exhibitions/communities/kiev/babi-yar.asp"}]
   },
   {
-    year:1942, depth:22110, title:"Belzec killing center", location:"Bełżec, German-occupied Poland",
+    year:1942, depth:23300, title:"Belzec killing center", location:"Bełżec, German-occupied Poland",
     story:"Belzec became an Operation Reinhard killing center. Approximately 435,000 Jews were murdered there, overwhelmingly in gas chambers.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1170,7 +1233,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/belzec"}]
   },
   {
-    year:1942, depth:22280, title:"Sobibor killing center", location:"Sobibór, German-occupied Poland",
+    year:1942, depth:23470, title:"Sobibor killing center", location:"Sobibór, German-occupied Poland",
     story:"Sobibor was established as an Operation Reinhard killing center. At least 167,000 Jews were murdered there.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1179,7 +1242,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/sobibor"}]
   },
   {
-    year:1942, depth:22450, title:"Treblinka II killing center", location:"Treblinka, German-occupied Poland",
+    year:1942, depth:23640, title:"Treblinka II killing center", location:"Treblinka, German-occupied Poland",
     story:"Treblinka II operated as an Operation Reinhard killing center. Nazi personnel murdered an estimated 925,000 Jews there.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1188,7 +1251,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/treblinka"}]
   },
   {
-    year:1942, depth:22620, title:"Auschwitz-Birkenau mass murder of Jews", location:"Auschwitz-Birkenau, German-occupied Poland",
+    year:1942, depth:23810, title:"Auschwitz-Birkenau mass murder of Jews", location:"Auschwitz-Birkenau, German-occupied Poland",
     story:"Auschwitz-Birkenau became the largest Nazi concentration and killing complex. Approximately one million Jews were murdered in the Auschwitz camp complex.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1197,7 +1260,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/auschwitz"}]
   },
   {
-    year:1942, depth:22790, title:"Great Action: deportation of Warsaw Jews to Treblinka", location:"Warsaw, German-occupied Poland",
+    year:1942, depth:23980, title:"Great Action: deportation of Warsaw Jews to Treblinka", location:"Warsaw, German-occupied Poland",
     story:"From July to September 1942, German authorities deported about 265,000 Jews from the Warsaw ghetto to Treblinka and killed approximately 35,000 Jews in the ghetto during the operation.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1206,7 +1269,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
   },
   {
-    year:1943, depth:22960, title:"Warsaw Ghetto Uprising", location:"Warsaw, German-occupied Poland",
+    year:1943, depth:24150, title:"Warsaw Ghetto Uprising", location:"Warsaw, German-occupied Poland",
     story:"Jewish fighters resisted the final German deportation operation beginning April 19, 1943. At least 7,000 Jews died fighting or in hiding as German forces destroyed the ghetto.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1215,7 +1278,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
   },
   {
-    year:1943, depth:23130, title:"Operation Harvest Festival", location:"Lublin district, German-occupied Poland",
+    year:1943, depth:24320, title:"Operation Harvest Festival", location:"Lublin district, German-occupied Poland",
     story:"German SS and police murdered tens of thousands of Jewish forced laborers in the Lublin district during Operation Harvest Festival in November 1943.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1224,7 +1287,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
   },
   {
-    year:1946, depth:23300, title:"Kielce pogrom", location:"Kielce, Poland",
+    year:1946, depth:24490, title:"Kielce pogrom", location:"Kielce, Poland",
     story:"A mob, joined by some police and soldiers, killed Jewish Holocaust survivors and other Jews in Kielce; at least 42 Jews were murdered.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1233,7 +1296,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1947, depth:23470, title:"Fajja bus attacks", location:"Near Petah Tikva, Mandatory Palestine",
+    year:1947, depth:24660, title:"Fajja bus attacks", location:"Near Petah Tikva, Mandatory Palestine",
     story:"On November 30, 1947, the day after the UN partition vote, Arab gunmen attacked Jewish buses, among the opening incidents of the civil-war phase of the 1947–49 conflict.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1242,7 +1305,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/The-1948-war"}]
   },
   {
-    year:1947, depth:23640, title:"1947–1949 Palestine war / Arab–Israeli War", location:"Mandatory Palestine / Israel",
+    year:1947, depth:24830, title:"1947–1949 Palestine war / Arab–Israeli War", location:"Mandatory Palestine / Israel",
     story:"Fighting followed the UN partition vote; after Israel declared independence in May 1948, neighboring Arab armies entered the war. Jewish and Arab civilians and combatants suffered major losses and displacement.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1251,7 +1314,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/milestones/1945-1952/arab-israeli-war"}]
   },
   {
-    year:1948, depth:23810, title:"Hadassah medical convoy massacre", location:"Jerusalem",
+    year:1948, depth:25000, title:"Hadassah medical convoy massacre", location:"Jerusalem",
     story:"An Arab force ambushed a convoy carrying medical personnel and supplies to Hadassah Hospital and Hebrew University on Mount Scopus in April 1948; 78 Jews were killed.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1260,7 +1323,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Jerusalem"}]
   },
   {
-    year:1954, depth:23980, title:"Ma'ale Akrabim bus massacre", location:"Negev, Israel",
+    year:1954, depth:25170, title:"Ma'ale Akrabim bus massacre", location:"Negev, Israel",
     story:"Gunmen ambushed an Israeli passenger bus at Ma'ale Akrabim in March 1954, killing passengers and leaving only a few survivors.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1269,7 +1332,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1955, depth:24150, title:"Patish wedding attack", location:"Patish, Israel",
+    year:1955, depth:25340, title:"Patish wedding attack", location:"Patish, Israel",
     story:"Attackers threw grenades and opened fire on a crowded wedding celebration in March 1955, killing a young woman and wounding 18 people.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1278,7 +1341,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:24320, title:"Kfar Chabad synagogue attack", location:"Kfar Chabad, Israel",
+    year:1956, depth:25510, title:"Kfar Chabad synagogue attack", location:"Kfar Chabad, Israel",
     story:"Gunmen opened fire on a synagogue containing children and teenagers in April 1956, killing three children and a youth worker and injuring others.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1287,7 +1350,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:24490, title:"Ramat Rachel shooting", location:"Ramat Rachel, Israel",
+    year:1956, depth:25680, title:"Ramat Rachel shooting", location:"Ramat Rachel, Israel",
     story:"Gunfire from a Jordanian position killed four archaeologists and wounded sixteen people at Ramat Rachel in September 1956.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -1296,7 +1359,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:24660, title:"Suez Crisis / Sinai War", location:"Egypt / Sinai / Israel",
+    year:1956, depth:25850, title:"Suez Crisis / Sinai War", location:"Egypt / Sinai / Israel",
     story:"Israel invaded Egypt's Sinai Peninsula in coordination with the Anglo-French intervention after Egypt nationalized the Suez Canal.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1305,7 +1368,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/milestones/1953-1960/suez"}]
   },
   {
-    year:1967, depth:24830, title:"Six-Day War", location:"Israel / Egypt / Jordan / Syria",
+    year:1967, depth:26020, title:"Six-Day War", location:"Israel / Egypt / Jordan / Syria",
     story:"Israel fought Egypt, Jordan and Syria in June 1967 and captured the Sinai, Gaza Strip, West Bank, East Jerusalem and Golan Heights.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1314,7 +1377,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/historicaldocuments/frus1964-68v14/d217"}]
   },
   {
-    year:1968, depth:25000, title:"El Al Flight 253 attack in Athens", location:"Athens, Greece",
+    year:1968, depth:26190, title:"El Al Flight 253 attack in Athens", location:"Athens, Greece",
     story:"Palestinian militants attacked an El Al aircraft at Athens airport in December 1968, killing an Israeli passenger and injuring others.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1323,7 +1386,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1970, depth:25170, title:"Avivim school bus massacre", location:"Avivim, Israel",
+    year:1970, depth:26360, title:"Avivim school bus massacre", location:"Avivim, Israel",
     story:"Militants fired on an Israeli school bus near the Lebanese border in May 1970, killing children and adults and wounding others.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1332,7 +1395,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1972, depth:25340, title:"Lod Airport massacre", location:"Lod Airport, Israel",
+    year:1972, depth:26530, title:"Lod Airport massacre", location:"Lod Airport, Israel",
     story:"Gunmen from the Japanese Red Army, acting with a Palestinian militant organization, attacked passengers at Lod Airport in May 1972.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1341,7 +1404,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1972, depth:25510, title:"Munich Olympics attack", location:"Munich, West Germany",
+    year:1972, depth:26700, title:"Munich Olympics attack", location:"Munich, West Germany",
     story:"Members of Black September took Israeli Olympic team members hostage; eleven Israeli athletes and coaches were killed during the attack and failed rescue.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1350,7 +1413,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Munich-Massacre"}]
   },
   {
-    year:1973, depth:25680, title:"Yom Kippur / October War", location:"Israel / Egypt / Syria",
+    year:1973, depth:26870, title:"Yom Kippur / October War", location:"Israel / Egypt / Syria",
     story:"Egypt and Syria launched a surprise attack on Israeli positions on October 6, 1973, beginning a major regional war.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1359,7 +1422,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/historicaldocuments/frus1969-76v36/d209"}]
   },
   {
-    year:1974, depth:25850, title:"Kiryat Shmona massacre", location:"Kiryat Shmona, Israel",
+    year:1974, depth:27040, title:"Kiryat Shmona massacre", location:"Kiryat Shmona, Israel",
     story:"Palestinian militants infiltrated Kiryat Shmona in April 1974 and murdered civilians, including children.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1368,7 +1431,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1974, depth:26020, title:"Ma'alot massacre", location:"Ma'alot, Israel",
+    year:1974, depth:27210, title:"Ma'alot massacre", location:"Ma'alot, Israel",
     story:"Three Palestinian militants seized schoolchildren and other hostages in May 1974. During the attempted rescue, the attackers fired on the children and threw grenades; many hostages were killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1377,7 +1440,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1975, depth:26190, title:"Savoy Hotel attack", location:"Tel Aviv, Israel",
+    year:1975, depth:27380, title:"Savoy Hotel attack", location:"Tel Aviv, Israel",
     story:"Fatah militants seized the Savoy Hotel in March 1975. Eight hostages and three Israeli soldiers were killed during the incident and rescue operation.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1386,7 +1449,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/Exhib/malons/Pages/default.aspx"}]
   },
   {
-    year:1976, depth:26360, title:"Entebbe hijacking and hostage crisis", location:"Entebbe, Uganda",
+    year:1976, depth:27550, title:"Entebbe hijacking and hostage crisis", location:"Entebbe, Uganda",
     story:"PFLP-linked and German militants hijacked an Air France flight and diverted it to Entebbe. Israeli and Jewish passengers were separated from many other hostages before an Israeli commando rescue.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1395,7 +1458,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1978, depth:26530, title:"Coastal Road massacre", location:"Israel",
+    year:1978, depth:27720, title:"Coastal Road massacre", location:"Israel",
     story:"Palestinian militants attacked civilians traveling on Israel's Coastal Road, killing dozens and triggering a major Israeli military response in Lebanon.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1404,7 +1467,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Israel/War-in-Lebanon"}]
   },
   {
-    year:1980, depth:26700, title:"Paris synagogue bombing", location:"Paris, France",
+    year:1980, depth:27890, title:"Paris synagogue bombing", location:"Paris, France",
     story:"A bomb exploded outside the Rue Copernic synagogue in Paris in October 1980, killing four people and injuring dozens.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1413,7 +1476,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/anti-Semitism"}]
   },
   {
-    year:1982, depth:26870, title:"1982 Lebanon War", location:"Lebanon / Israel",
+    year:1982, depth:28060, title:"1982 Lebanon War", location:"Lebanon / Israel",
     story:"Israel invaded Lebanon amid conflict with the PLO and cross-border attacks. The war involved Israeli, Palestinian, Lebanese and Syrian forces and caused extensive civilian suffering.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1422,7 +1485,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Lebanon-War"}]
   },
   {
-    year:1982, depth:27040, title:"Great Synagogue of Rome attack", location:"Rome, Italy",
+    year:1982, depth:28230, title:"Great Synagogue of Rome attack", location:"Rome, Italy",
     story:"Gunmen attacked worshippers leaving the Great Synagogue of Rome in October 1982, killing a two-year-old child and wounding dozens.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1431,7 +1494,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/anti-Semitism"}]
   },
   {
-    year:1985, depth:27210, title:"Rome and Vienna airport attacks", location:"Rome, Italy / Vienna, Austria",
+    year:1985, depth:28400, title:"Rome and Vienna airport attacks", location:"Rome, Italy / Vienna, Austria",
     story:"Gunmen attacked El Al ticket counters at airports in Rome and Vienna in December 1985, killing and wounding travelers.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1440,7 +1503,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/terrorism"}]
   },
   {
-    year:1987, depth:27380, title:"First Intifada", location:"West Bank / Gaza / Israel",
+    year:1987, depth:28570, title:"First Intifada", location:"West Bank / Gaza / Israel",
     story:"A Palestinian uprising against Israeli occupation involved demonstrations, riots, attacks and Israeli military responses, causing deaths on both sides.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1449,7 +1512,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:1992, depth:27550, title:"Israeli embassy bombing in Buenos Aires", location:"Buenos Aires, Argentina",
+    year:1992, depth:28740, title:"Israeli embassy bombing in Buenos Aires", location:"Buenos Aires, Argentina",
     story:"A suicide bombing destroyed the Israeli embassy in Buenos Aires in March 1992, killing 29 people and injuring hundreds.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1458,7 +1521,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/1992-Buenos-Aires-embassy-bombing"}]
   },
   {
-    year:1994, depth:27720, title:"AMIA bombing", location:"Buenos Aires, Argentina",
+    year:1994, depth:28910, title:"AMIA bombing", location:"Buenos Aires, Argentina",
     story:"A bombing destroyed the AMIA Jewish community center, killing 85 people and injuring hundreds.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1467,7 +1530,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/AMIA-bombing"}]
   },
   {
-    year:1994, depth:27890, title:"Tel Aviv bus 5 bombing", location:"Tel Aviv, Israel",
+    year:1994, depth:29080, title:"Tel Aviv bus 5 bombing", location:"Tel Aviv, Israel",
     story:"A Hamas suicide bomber attacked a city bus in Tel Aviv in October 1994, killing 22 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1476,7 +1539,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/news/cabinet-communique-29-jan-2006/en/English_SiteTransfer_DOCUMENTS_Profile-of-the-Hamas-movement_ITIC.pdf"}]
   },
   {
-    year:1996, depth:28060, title:"Jerusalem bus 18 bombings", location:"Jerusalem, Israel",
+    year:1996, depth:29250, title:"Jerusalem bus 18 bombings", location:"Jerusalem, Israel",
     story:"Two suicide bombings on Jerusalem bus route 18 in 1996 killed dozens of civilians during a wave of Hamas attacks.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1485,7 +1548,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/news/cabinet-communique-29-jan-2006/en/English_SiteTransfer_DOCUMENTS_Profile-of-the-Hamas-movement_ITIC.pdf"}]
   },
   {
-    year:2000, depth:28230, title:"Second Intifada", location:"Israel / West Bank / Gaza",
+    year:2000, depth:29420, title:"Second Intifada", location:"Israel / West Bank / Gaza",
     story:"The Second Intifada brought suicide bombings and other attacks against Israelis alongside major Israeli military operations; thousands of Palestinians and Israelis were killed.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1494,7 +1557,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2001, depth:28400, title:"Dolphinarium discotheque bombing", location:"Tel Aviv, Israel",
+    year:2001, depth:29590, title:"Dolphinarium discotheque bombing", location:"Tel Aviv, Israel",
     story:"A suicide bomber attacked young people waiting outside the Dolphinarium nightclub in June 2001; 21 Israeli civilians were killed, most of them teenagers.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1503,7 +1566,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/palestinian-violence-and-terrorism-since-september-2000/en/English_SiteTransfer_DOCUMENTS_Leading-Palestinian-Terrorist-Organizations-Aug-2004.pdf"}]
   },
   {
-    year:2001, depth:28570, title:"Sbarro restaurant bombing", location:"Jerusalem, Israel",
+    year:2001, depth:29760, title:"Sbarro restaurant bombing", location:"Jerusalem, Israel",
     story:"A suicide bomber attacked the crowded Sbarro restaurant in Jerusalem in August 2001, killing 15 civilians.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1512,7 +1575,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/palestinian-violence-and-terrorism-since-september-2000/en/English_SiteTransfer_DOCUMENTS_Leading-Palestinian-Terrorist-Organizations-Aug-2004.pdf"}]
   },
   {
-    year:2002, depth:28740, title:"Passover massacre", location:"Netanya, Israel",
+    year:2002, depth:29930, title:"Passover massacre", location:"Netanya, Israel",
     story:"A suicide bomber attacked a Passover seder at the Park Hotel in Netanya during the Second Intifada, killing civilians and injuring many others.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1521,7 +1584,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2003, depth:28910, title:"Maxim restaurant bombing", location:"Haifa, Israel",
+    year:2003, depth:30100, title:"Maxim restaurant bombing", location:"Haifa, Israel",
     story:"A suicide bomber attacked the Maxim restaurant in Haifa in October 2003, killing 21 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1530,7 +1593,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/saving-lives-israel-s-anti-terrorist-fence-answers-to-questions-jan-2004/en/English_SiteTransfer_DOCUMENTS_PDF_19279_2.pdf"}]
   },
   {
-    year:2008, depth:29080, title:"Mumbai Chabad House attack", location:"Mumbai, India",
+    year:2008, depth:30270, title:"Mumbai Chabad House attack", location:"Mumbai, India",
     story:"During the coordinated Mumbai attacks, terrorists seized the Chabad Jewish center at Nariman House and murdered hostages there.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1539,7 +1602,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Mumbai-terrorist-attacks-of-2008"}]
   },
   {
-    year:2012, depth:29250, title:"Toulouse Jewish school attack", location:"Toulouse, France",
+    year:2012, depth:30440, title:"Toulouse Jewish school attack", location:"Toulouse, France",
     story:"A gunman attacked the Ozar Hatorah Jewish school, murdering a teacher and three children.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1548,7 +1611,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Toulouse-and-Montauban-shootings"}]
   },
   {
-    year:2014, depth:29420, title:"Jerusalem synagogue attack", location:"Jerusalem",
+    year:2014, depth:30610, title:"Jerusalem synagogue attack", location:"Jerusalem",
     story:"Two Palestinian attackers armed with guns, knives and axes attacked worshippers at a synagogue in Har Nof in November 2014, killing worshippers and a police officer.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1557,7 +1620,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:2015, depth:29590, title:"Hyper Cacher hostage attack", location:"Paris, France",
+    year:2015, depth:30780, title:"Hyper Cacher hostage attack", location:"Paris, France",
     story:"A gunman attacked a kosher supermarket in Paris, killing four Jewish hostages.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1566,7 +1629,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Charlie-Hebdo-shooting"}]
   },
   {
-    year:2018, depth:29760, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
+    year:2018, depth:30950, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
     story:"A gunman attacked worshippers at the Tree of Life synagogue complex, murdering eleven people.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1575,7 +1638,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/pennsylvania-man-sentenced-death-2018-tree-life-synagogue-shooting"}]
   },
   {
-    year:2019, depth:29930, title:"Poway synagogue shooting", location:"Poway, California, United States",
+    year:2019, depth:31120, title:"Poway synagogue shooting", location:"Poway, California, United States",
     story:"An antisemitic gunman opened fire inside Chabad of Poway on the final day of Passover, killing one worshipper and injuring three others, including a child.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1584,7 +1647,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-sdca/pr/john-earnest-pleads-guilty-113-count-federal-hate-crime-indictment-connection-poway"}]
   },
   {
-    year:2019, depth:30100, title:"Halle synagogue attack", location:"Halle, Germany",
+    year:2019, depth:31290, title:"Halle synagogue attack", location:"Halle, Germany",
     story:"An armed extremist attempted to enter a synagogue on Yom Kippur; unable to enter, he murdered two people nearby.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1593,7 +1656,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Halle-synagogue-shooting"}]
   },
   {
-    year:2020, depth:30270, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
+    year:2020, depth:31460, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
     story:"During a Hanukkah gathering at a rabbi's home, an attacker stabbed multiple people; one victim later died from his injuries.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1602,7 +1665,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/monsey-man-charged-federal-hate-crimes-december-2019-stabbing"}]
   },
   {
-    year:2022, depth:30440, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
+    year:2022, depth:31630, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
     story:"An armed man took worshippers hostage at Congregation Beth Israel in January 2022. The hostages ultimately escaped or were rescued; the attacker was killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1611,7 +1674,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-ndtx/press-release/file/1465966/dl"}]
   },
   {
-    year:2023, depth:30610, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
+    year:2023, depth:31800, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
     story:"Hamas and other armed groups attacked southern Israel on October 7, killing civilians and security personnel and taking hostages. Israel then launched a major war in Gaza with very large Palestinian civilian and combatant casualties and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1627,14 +1690,14 @@ const eras = [
   {name:"Roman & Byzantine Period",range:"70–622 CE",start:8000,end:10890},
   {name:"Early Islamic Period",range:"622–1096 CE",start:10890,end:12760},
   {name:"Crusades & Medieval Period",range:"1096–1492 CE",start:12760,end:17010},
-  {name:"Early Modern Jewish Diaspora",range:"1492–1881 CE",start:17010,end:18880},
-  {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:18880,end:20240},
-  {name:"The Holocaust",range:"1933–1945 CE",start:20240,end:23300},
-  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:23300,end:28230},
-  {name:"Contemporary Era",range:"2000–2026 CE",start:28230,end:31130}
+  {name:"Early Modern Jewish Diaspora",range:"1492–1881 CE",start:17010,end:19220},
+  {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:19220,end:21430},
+  {name:"The Holocaust",range:"1933–1945 CE",start:21430,end:24490},
+  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:24490,end:29420},
+  {name:"Contemporary Era",range:"2000–2026 CE",start:29420,end:32320}
 ];
 
-const MAX_DEPTH=31130;
+const MAX_DEPTH=32320;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
