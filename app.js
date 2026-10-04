@@ -2512,6 +2512,7 @@ let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
 const person=document.getElementById("fallingPerson");
+const personLight=document.getElementById("personLight");
 const eventsLayer=document.getElementById("eventsLayer");
 const yearReadout=document.getElementById("yearReadout");
 const eraReadout=document.getElementById("eraReadout");
@@ -2643,6 +2644,13 @@ function render(){
   const perspectiveScale=(1.02-depthT*.28)+speed*.025;
   person.style.transform='translate(-50%,calc(-50% + '+bob+'px)) rotate('+rotate+'deg) scale('+perspectiveScale+')';
   person.style.opacity=Math.max(.72,1-depthT*.18);
+  if(personLight){
+    const lightStrength=Math.max(0,1-depthT);
+    const lightScale=.72+lightStrength*.38+speed*.035;
+    personLight.style.opacity=(.055+Math.pow(lightStrength,1.35)*.82).toFixed(3);
+    personLight.style.transform='translate(-50%,-50%) scale('+lightScale.toFixed(3)+')';
+    personLight.style.filter='blur('+(13+depthT*13).toFixed(1)+'px)';
+  }
 
   const wallSway=Math.sin(depth/420)*5;
   rockLeft.style.transform='translate3d('+(-wallSway)+'px,'+((depth%760)*-.24)+'px,35px) scale(1.035)';
