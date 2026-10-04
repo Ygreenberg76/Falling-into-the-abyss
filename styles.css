@@ -250,3 +250,16 @@ body.event-open{overflow:hidden}
 .event-marker .dot{display:none}
 .event-marker small{font-size:11px;color:#c7b596}.event-marker strong{font-weight:600;text-shadow:0 2px 5px #000}
 .particles span{background:#817567;opacity:.18}
+
+/* Historical era navigation */
+.hud{gap:10px;align-items:flex-start}
+.hud .era-hud{margin-inline:auto;text-align:center;min-width:min(330px,42vw);border-color:rgba(210,190,155,.22);background:rgba(7,6,6,.68)}
+.hud .era-hud strong{display:block;font-size:clamp(14px,2vw,20px);letter-spacing:.05em}
+.hud .era-hud small{display:block;margin-top:2px;color:#b9a98e;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+.era-layer{position:absolute;inset:0;z-index:13;pointer-events:none;overflow:hidden}
+.era-transition{position:absolute;left:50%;width:min(72%,720px);transform:translate(-50%,-50%);text-align:center;opacity:0;transition:opacity .15s linear}
+.era-transition::before,.era-transition::after{content:"";display:block;width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(213,194,160,.34),transparent)}
+.era-transition .era-kicker{display:block;margin:14px 0 5px;color:#bba98a;font-size:10px;letter-spacing:.32em;text-transform:uppercase}
+.era-transition strong{display:block;color:#eee8df;font-family:Georgia,"Times New Roman",serif;font-size:clamp(24px,4vw,46px);font-weight:500;letter-spacing:.04em;text-shadow:0 4px 18px #000,0 0 30px rgba(205,186,153,.12)}
+.era-transition small{display:block;margin:5px 0 14px;color:#a89b88;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:760px){.hud{right:34px;flex-wrap:wrap}.hud .era-hud{order:3;width:100%;min-width:0}.hud strong{font-size:20px}.era-transition{width:82%}}
