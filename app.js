@@ -2587,9 +2587,9 @@ function historyOverlap(event){
   return christian&&islamic?"both":christian?"christian":islamic?"islamic":"";
 }
 function overlapBadge(kind){
-  if(kind==="christian")return '<em class="history-overlap overlap-christian">Christian history overlap</em>';
-  if(kind==="islamic")return '<em class="history-overlap overlap-islamic">Islamic history overlap</em>';
-  if(kind==="both")return '<em class="history-overlap overlap-both">Christian + Islamic overlap</em>';
+  if(kind==="christian")return '<em class="overlap-badge christian-overlap-badge">Christian history overlap</em>';
+  if(kind==="islamic")return '<em class="overlap-badge islam-overlap-badge">Islamic history overlap</em>';
+  if(kind==="both")return '<em class="overlap-badge christian-overlap-badge">Christian history overlap</em><em class="overlap-badge islam-overlap-badge">Islamic history overlap</em>';
   return "";
 }
 const markerEls=events.map((event,index)=>{
@@ -2597,7 +2597,9 @@ const markerEls=events.map((event,index)=>{
   btn.type="button";
   btn.className="event-marker";
   const overlap=historyOverlap(event);
-  if(overlap) btn.classList.add("has-history-overlap","overlap-"+overlap);
+  if(overlap==="christian") btn.classList.add("christian-overlap");
+  if(overlap==="islamic") btn.classList.add("islam-overlap");
+  if(overlap==="both") btn.classList.add("christian-overlap","islam-overlap");
   btn.setAttribute("aria-label",event.year+" — "+event.title+". Open event details.");
   if(index%2===0) btn.style.left="7%"; else btn.style.right="7%";
   btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small><strong>'+event.title+'</strong>'+overlapBadge(overlap)+'</span>';
