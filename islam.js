@@ -68,6 +68,77 @@ const eras=[{name:"Muhammad & Origins of Islam",range:"c. 570–632 CE",start:18
 const MAX_DEPTH=11410;
 const islamJewishOverlapTitles=new Set(["Battle of the Trench and Banu Qurayza episode","Muslim capture of Jerusalem","Dome of the Rock completed","Crusaders capture Jerusalem","Arab-Israeli war and Palestinian Nakba","Six-Day War and Jerusalem holy sites","First Intifada","Hamas founded","October 7 attack and Gaza war","Gaza war and regional escalation"]);
 const islamChristianOverlapTitles=new Set(["Battle of Yarmouk","Muslim capture of Jerusalem","Dome of the Rock completed","Muslim conquest of Iberia begins","Al-Hakim orders destruction of Holy Sepulchre","Battle of Manzikert","Crusaders capture Jerusalem","Saladin recovers Jerusalem","Mamluks capture Acre","Ottoman conquest of Constantinople","Fall of Granada","First Ottoman siege of Vienna","Battle of Lepanto","Second Ottoman siege of Vienna","Ottoman Empire enters World War I","British capture Jerusalem","Six-Day War and Jerusalem holy sites","ISIS murders 21 Coptic Christians in Libya"]);
+const abyss=document.getElementById("abyss");
+const person=document.getElementById("fallingPerson");
+const eventsLayer=document.getElementById("eventsLayer");
+const yearReadout=document.getElementById("yearReadout");
+const eraReadout=document.getElementById("eraReadout");
+const eraRange=document.getElementById("eraRange");
+const eraLayer=document.getElementById("eraLayer");
+const depthReadout=document.getElementById("depthReadout");
+const progressFill=document.getElementById("progressFill");
+const speedLines=document.getElementById("speedLines");
+const fallTrail=document.getElementById("fallTrail");
+const rockLeft=document.querySelector(".rock-left");
+const rockRight=document.querySelector(".rock-right");
+const rockFarLeft=document.querySelector(".rock-far-left");
+const rockFarRight=document.querySelector(".rock-far-right");
+const rockMidLeft=document.querySelector(".rock-mid-left");
+const rockMidRight=document.querySelector(".rock-mid-right");
+const bottomMarker=document.getElementById("bottomMarker");
+const skyOpening=document.querySelector(".sky-opening");
+const lightShaft=document.querySelector(".light-shaft");
+const mist1=document.querySelector(".mist-1");
+const mist2=document.querySelector(".mist-2");
+const panel=document.getElementById("eventPanel");
+const aboutPanel=document.getElementById("aboutPanel");
+
+function makeParticles(){
+  const wrap=document.getElementById("particles");
+  for(let i=0;i<46;i++){
+    const s=document.createElement("span");
+    s.style.left=(8+Math.random()*84)+"%";
+    s.style.top=(Math.random()*100)+"%";
+    s.style.opacity=(.08+Math.random()*.25).toFixed(2);
+    s.style.transform="scale("+(0.6+Math.random()*1.5)+")";
+    wrap.appendChild(s);
+  }
+}
+function yearAt(d){
+  const points=[{depth:0,year:570},...events.map(e=>({depth:e.depth,year:e.year})),{depth:MAX_DEPTH,year:2026}];
+  let a=points[0],b=points[1];
+  for(let i=1;i<points.length;i++){
+    if(d<=points[i].depth){b=points[i];a=points[i-1];break}
+  }
+  const span=Math.max(1,b.depth-a.depth);
+  const t=Math.max(0,Math.min(1,(d-a.depth)/span));
+  return Math.round(a.year+(b.year-a.year)*t);
+}
+function currentEraAt(d){
+  return eras.find(era=>d>=era.start&&d<era.end)||eras[eras.length-1];
+}
+const eraEls=eras.map((era,index)=>{
+  const el=document.createElement("div");
+  el.className="era-transition";
+  el.innerHTML='<span class="era-kicker">Entering historical era</span><strong>'+era.name+'</strong><small>'+era.range+'</small>';
+  eraLayer.appendChild(el);
+  return el;
+});
+function renderEras(){
+  const center=abyss.clientHeight/2;
+  const active=currentEraAt(depth);
+  eraReadout.textContent=active.name;
+  eraRange.textContent=active.range;
+  eras.forEach((era,index)=>{
+    const boundary=index===0?0:era.start;
+    const y=center+(boundary-depth);
+    const el=eraEls[index];
+    el.style.top=y+"px";
+    const distance=Math.abs(y-center);
+    el.style.opacity=(y>-100&&y<abyss.clientHeight+100)?Math.max(.12,1-distance/(abyss.clientHeight*.7)):0;
+  });
+}
+const jewishOverlapTitles=new Set(["Birth of Jesus (Yeshua)","Crucifixion of Jesus","Emergence of the early Christian movement","Council of Jerusalem and the Jewish–Gentile question","Destruction of Jerusalem reshapes Jewish and Christian communities","First Crusade massacres of Jewish communities","Crusaders capture Jerusalem","Fourth Lateran Council regulates Christian society and minorities","Spanish Inquisition established","Expulsion of Jews from Spain under Catholic monarchs","Forced conversion of Jews in Portugal","Nazi persecution of churches and Christian opponents during World War II","Ustaša persecution and Jasenovac camp end with World War II","Martyrdom of Stephen in the New Testament tradition","Execution of James son of Zebedee in Acts","Death of James, brother of Jesus","Visigothic monarchy adopts Catholic Christianity","Expulsion of Jews from Christian England","Black Death persecutions of Jews in Christian Europe","Anti-Jewish massacres and forced conversions in Iberia","Bar Kokhba revolt accelerates Jewish–Christian separation","Norwich blood-libel accusation","Fulda blood-libel accusations and killings","Martin Luther publishes On the Jews and Their Lies","German churches confront accommodation and resistance under Nazism","Christian rescuers and church networks aid Jews during the Holocaust","Seelisberg conference confronts Christian antisemitism after Holocaust","Second Vatican Council begins","Nostra Aetate rejects collective Jewish guilt","Vatican publishes We Remember: A Reflection on the Shoah","Third Council of Toledo links Visigothic monarchy and Catholic Church","Visigothic forced-baptism policy against Jews","Seventeenth Council of Toledo imposes extreme measures on Jews","York massacre of Jews","French crown expels Jews","Vienna Gesera destroys Austrian Jewish communities","Spanish Inquisition begins operating against suspected crypto-Judaism","Russian pogrom wave unfolds in predominantly Christian empire","Anti-Jewish violence erupts at Richard I's coronation","Strasbourg massacre during Black Death persecutions","Balfour Declaration creates new Christian-Jewish political intersection","Dutch churches publicly protest deportation of Jews","Bulgarian Orthodox leaders oppose deportation of Bulgarian Jews","Creation of Israel transforms ancient Christian communities in the Holy Land","Gaza war devastates historic Palestinian Christian community","Gaza and regional war continue to affect Christian holy sites and communities"]);
 const markerEls=events.map((event,index)=>{
   const btn=document.createElement("button");
   btn.type="button";
