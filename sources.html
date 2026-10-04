@@ -27,7 +27,7 @@ async function loadTimelineSources(){
   try{
     const texts=await Promise.all(TIMELINE_SOURCE_FILES.map(async file=>{const r=await fetch(file,{cache:"no-cache"});if(!r.ok)throw new Error(file+" "+r.status);return r.text()}));
     const found=new Set();
-    texts.forEach(text=>{for(const match of text.matchAll(/url:"(https?:\\/\\/[^"]+)"/g))found.add(match[1])});
+    texts.forEach(text=>{for(const match of text.matchAll(/url:"(https?:\/\/[^"]+)"/g))found.add(match[1])});
     const groups=renderSourceGroups([...found]);
     q.addEventListener("input",()=>applySourceSearch(groups));
   }catch(error){
