@@ -1731,7 +1731,9 @@ function openEvent(event){
   sourceWrap.innerHTML="";
   (event.sources||[]).forEach(source=>{
     const a=document.createElement("a");
-    a.href=source.url;a.target="_blank";a.rel="noopener noreferrer";\n    let domain="";try{domain=new URL(source.url).hostname.replace(/^www\\./,"")}catch{}\n    a.textContent=source.label+(domain&&!source.label.toLowerCase().includes(domain.toLowerCase())?" — "+domain:"");
+    a.href=source.url;a.target="_blank";a.rel="noopener noreferrer";
+    let domain="";try{domain=new URL(source.url).hostname.replace(/^www\\./,"")}catch{}
+    a.textContent=source.label+(domain&&!source.label.toLowerCase().includes(domain.toLowerCase())?" — "+domain:"");
     sourceWrap.appendChild(a);
   });
   if(!(event.sources||[]).length){
