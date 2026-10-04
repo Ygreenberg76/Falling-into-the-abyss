@@ -2595,33 +2595,25 @@ function renderCompareCard(kind,label,event,page,fromKind){
   return card;
 }
 function showComparisonMap(items){
-  const dots=document.getElementById("mapDots"),legend=document.getElementById("mapLegend"),mapYear=document.getElementById("mapYear"),count=document.getElementById("mapCommunityCount");
-  if(!dots||!legend||!window.findHistoryMapPlace)return;
-  const previousDots=Array.from(dots.childNodes).map(n=>n.cloneNode(true));
-  const previousLegend=Array.from(legend.childNodes).map(n=>n.cloneNode(true));
+  const dots=document.getElementById("compareMapDots"),legend=document.getElementById("mapLegend"),mapYear=document.getElementById("mapYear"),count=document.getElementById("mapCommunityCount");
+  if(!dots||!window.findHistoryMapPlace)return;
+  dots.replaceChildren();
   const ns="http://www.w3.org/2000/svg";let shown=0;
   const plotted=[];
   items.forEach(item=>{const place=window.findHistoryMapPlace(item.event);if(place)plotted.push({...item,place});});
-  if(!plotted.length){
-    if(mapYear)mapYear.textContent="Shared history • map context";
-    if(count)count.textContent="No precise event coordinates";
-    return;
-  }
-  window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:true}}));
-  dots.replaceChildren();legend.replaceChildren();
   plotted.forEach(({kind,label,event,place})=>{
     const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g");
     g.setAttribute("class","compare-map-marker "+kind+"-map-marker");
     const halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle");
     halo.setAttribute("cx",x);halo.setAttribute("cy",y);halo.setAttribute("r","6");halo.setAttribute("class","compare-map-halo");
     core.setAttribute("cx",x);core.setAttribute("cy",y);core.setAttribute("r","2.3");core.setAttribute("class","compare-map-core");
-    g.append(halo,core);dots.appendChild(g);
-    const tag=document.createElement("span");tag.className="compare-map-legend "+kind+"-map-legend";tag.textContent=label+": "+event.location;legend.appendChild(tag);shown++;
+    g.append(halo,core);dots.appendChild(g);shown++;
   });
+  window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:true,items:plotted}}));
   if(mapYear)mapYear.textContent="Shared history";
-  if(count)count.textContent=shown+" event location"+(shown===1?"":"s");
+  if(count)count.textContent=shown?shown+" event location"+(shown===1?"":"s"):"Historical centers";
 }
-function restoreTimelineMap(){window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:false}}));}
+function restoreTimelineMap(){const layer=document.getElementById("compareMapDots");if(layer)layer.replaceChildren();window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:false}}));}
 function comparisonTargets(event){const targets=[];if(jewishOverlapTitles.has(event.title))targets.push(["jewish","Jewish history","index.html"]);return targets;}
 function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
 function openComparison(event){
