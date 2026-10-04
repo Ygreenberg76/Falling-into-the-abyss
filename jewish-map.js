@@ -4,8 +4,9 @@ const yearEl=document.getElementById("yearReadout");
 const mapYear=document.getElementById("mapYear");
 const countEl=document.getElementById("mapCommunityCount");
 const dots=document.getElementById("mapDots");
+const flows=document.getElementById("mapFlows");
 const legend=document.getElementById("mapLegend");
-if(!yearEl||!mapYear||!countEl||!dots||!legend)return;
+if(!yearEl||!mapYear||!countEl||!dots||!legend||!flows)return;
 
 const periods=[
  {from:-1800,to:-722,c:[["Canaan / Israel",31.8,35.2,5]]},
@@ -24,6 +25,35 @@ const periods=[
  {from:1946,to:1989,c:[["Israel",31.8,35,6],["United States",40.7,-74,6],["Soviet Union",55.8,37.6,4],["Western Europe",48.9,2.3,3],["North Africa",33.5,3,2],["Latin America",-34.6,-58.4,2]]},
  {from:1990,to:2026,c:[["Israel",31.8,35,7],["United States",40.7,-74,6],["France",48.9,2.3,3],["Canada",43.7,-79.4,2],["United Kingdom",51.5,-.1,2],["Russia",55.8,37.6,2],["Argentina",-34.6,-58.4,2],["Australia",-33.9,151.2,2]]}
 ];
+
+const migrations=[
+ {from:-586,to:-539,type:"forced",label:"Babylonian Exile",routes:[[31.8,35.2,32.5,44.5]]},
+ {from:70,to:250,type:"dispersal",label:"Roman-era dispersal",routes:[[31.8,35.2,41.9,12.5],[31.8,35.2,31.2,29.9],[31.8,35.2,39,32.5]]},
+ {from:1492,to:1550,type:"forced",label:"Expulsion from Iberia",routes:[[40,-4,41,29],[40,-4,33.5,3],[40,-4,42,12.5],[40,-4,52.1,5.3]]},
+ {from:1881,to:1924,type:"migration",label:"Eastern European emigration",routes:[[52,27,40.7,-74],[52,27,32,35.2]]},
+ {from:1933,to:1945,type:"forced",label:"Flight and forced displacement under Nazi persecution",routes:[[50,15,40.7,-74],[50,15,32,35.2], [50,15,-23.5,-46.6]]},
+ {from:1948,to:1975,type:"migration",label:"Post-1948 migration from Middle East and North Africa",routes:[[33.5,3,31.8,35],[33,44,31.8,35],[33.5,3,48.9,2.3]]},
+ {from:1989,to:2005,type:"migration",label:"Post-Soviet emigration",routes:[[55.8,37.6,31.8,35],[55.8,37.6,40.7,-74]]}
+];
+function curvePath(a,b){
+ const p1=point(a[0],a[1]),p2=point(b[0],b[1]);
+ const mx=(p1.x+p2.x)/2,my=(p1.y+p2.y)/2-Math.min(18,Math.abs(p2.x-p1.x)*.12+5);
+ return "M"+p1.x+" "+p1.y+" Q"+mx+" "+my+" "+p2.x+" "+p2.y;
+}
+function drawFlows(year){
+ flows.replaceChildren();
+ const ns="http://www.w3.org/2000/svg";
+ migrations.filter(m=>year>=m.from&&year<=m.to).forEach(m=>{
+  m.routes.forEach(r=>{
+   const path=document.createElementNS(ns,"path");
+   path.setAttribute("d",curvePath([r[0],r[1]],[r[2],r[3]]));
+   path.setAttribute("class","map-flow map-flow-"+m.type);
+   const title=document.createElementNS(ns,"title");title.textContent=m.label;path.appendChild(title);
+   flows.appendChild(path);
+  });
+ });
+}
+
 function parseYear(){
  const t=yearEl.textContent.trim();
  const n=parseInt(t.replace(/[^0-9]/g,""),10);
@@ -35,6 +65,7 @@ let lastKey="";
 function draw(){
  const year=parseYear(); if(year===null)return;
  mapYear.textContent=year<0?Math.abs(year)+" BCE":year+" CE";
+ drawFlows(year);
  const p=periods.find(x=>year>=x.from&&year<=x.to)||periods[periods.length-1];
  const key=p.from+":"+p.to;if(key===lastKey)return;lastKey=key;
  dots.replaceChildren();legend.replaceChildren();
