@@ -464,3 +464,10 @@ body.event-open{overflow:hidden}
 .compare-atlas-map svg{width:100%;height:100%;display:block}
 .compare-atlas .diaspora-map-legend{margin-top:10px}
 @media(max-width:700px){.compare-atlas-head{align-items:flex-start;flex-direction:column}.compare-atlas-map{height:200px;min-height:200px}}
+
+/* Comparison atlas is an in-flow map, not the absolute overlay used by the main timeline atlas. */
+.compare-atlas-map{position:relative;isolation:isolate}
+.compare-atlas-map .world-map,
+.compare-atlas-map .world-map-overlay{position:relative!important;inset:auto!important;display:block!important;width:100%!important;height:100%!important;max-width:100%;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;overflow:hidden!important;z-index:1}
+.compare-atlas-map .map-graticule,.compare-atlas-map .map-land,.compare-atlas-map #compareAtlasDots{pointer-events:none}
+.compare-history-grid{position:relative;z-index:2}
