@@ -2604,9 +2604,18 @@ const markerEls=events.map((event,index)=>{
   if(index%2===0) btn.style.left="7%"; else btn.style.right="7%";
   btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small><strong>'+event.title+'</strong>'+overlapBadge(overlap)+'</span>';
   btn.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();openEvent(event)});
+  wireOverlapLinks(btn,event);
   eventsLayer.appendChild(btn);
   return btn;
 });
+function wireOverlapLinks(btn,event){
+  const links=[["christian-overlap-badge","christianity.html"],["islam-overlap-badge","islam.html"]];
+  links.forEach(([cls,page])=>btn.querySelectorAll("."+cls).forEach(badge=>{
+    badge.dataset.historyLink="true";
+    badge.title="Open this year in the related history timeline";
+    badge.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();window.location.href=page+"?year="+encodeURIComponent(event.year)});
+  }));
+}
 function renderEvents(){
   const center=abyss.clientHeight/2;
   events.forEach((event,index)=>{
@@ -2813,5 +2822,10 @@ document.getElementById("clearFilters").addEventListener("click",()=>{
   eventSearch.value="";eraFilter.value="";typeFilter.value="";yearJump.value="";yearEra.value="CE";applyFilters();
 });
 applyFilters();
+const linkedYear=parseInt(new URLSearchParams(window.location.search).get("year"),10);
+if(Number.isFinite(linkedYear)){
+  const minYear=Math.min(...events.map(e=>e.year)),maxYear=Math.max(...events.map(e=>e.year));
+  jumpToDepth(depthForYear(Math.max(minYear,Math.min(maxYear,linkedYear))));
+}
 
 makeParticles();render();rafId=requestAnimationFrame(tick);
