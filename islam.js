@@ -414,10 +414,11 @@ function render(){
   person.style.opacity=Math.max(.72,1-depthT*.18);
   if(personLight){
     const lightStrength=Math.max(0,1-depthT);
-    const lightScale=.72+lightStrength*.38+speed*.035;
-    personLight.style.opacity=(.055+Math.pow(lightStrength,1.35)*.82).toFixed(3);
+    const lightFade=Math.pow(lightStrength,2.15);
+    const lightScale=.18+lightFade*.98;
+    personLight.style.opacity=(lightFade*.92).toFixed(3);
     personLight.style.transform='translate(-50%,-50%) scale('+lightScale.toFixed(3)+')';
-    personLight.style.filter='blur('+(13+depthT*13).toFixed(1)+'px)';
+    personLight.style.filter='blur('+(10+depthT*30).toFixed(1)+'px)';
   }
 
   const wallSway=Math.sin(depth/420)*5;
