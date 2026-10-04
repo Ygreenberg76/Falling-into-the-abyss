@@ -521,3 +521,14 @@ button.history-trail-step{cursor:pointer}button.history-trail-step:hover{transfo
 .history-trail-branches{display:grid;gap:7px;margin-top:9px}.history-trail-branch{display:grid;grid-template-columns:minmax(110px,.8fr) 1.5fr auto;gap:9px;align-items:center;padding:9px 11px;border:1px solid rgba(255,255,255,.12);border-radius:10px;text-decoration:none;color:inherit;background:rgba(255,255,255,.03)}
 .history-trail-branch:hover{background:rgba(255,255,255,.07)}.history-trail-branch.jewish-trail-branch{border-left:3px solid #77cfff}.history-trail-branch.christian-trail-branch{border-left:3px solid #ffc46b}.history-trail-branch.islamic-trail-branch{border-left:3px solid #65e3a5}
 @media(max-width:680px){.history-trail-row{grid-template-columns:1fr}.history-trail-branch{grid-template-columns:1fr}.history-trail-step.current{order:-1}}
+
+
+/* Historical journey path */
+.historical-path{margin:14px 0;padding:12px 14px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:linear-gradient(100deg,rgba(255,255,255,.035),rgba(255,255,255,.015))}
+.historical-path-heading{display:flex;flex-direction:column;gap:2px;margin-bottom:10px}.historical-path-heading small{text-transform:uppercase;letter-spacing:.12em;font-size:9px;color:#999}.historical-path-heading strong{font-size:13px}
+.historical-path-rail{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:3px 1px 7px;scrollbar-width:thin}
+.historical-path-stop{flex:0 0 auto;max-width:170px;padding:7px 9px;border:1px solid rgba(255,255,255,.13);border-radius:999px;background:rgba(255,255,255,.035)}
+.historical-path-stop small{display:block;font-size:8px;opacity:.7}.historical-path-stop strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px;font-weight:650}
+.historical-path-stop.jewish-path-stop{border-color:rgba(119,207,255,.58)}.historical-path-stop.christian-path-stop{border-color:rgba(255,196,107,.58)}.historical-path-stop.islamic-path-stop{border-color:rgba(101,227,165,.58)}
+.historical-path-stop.active{box-shadow:0 0 15px rgba(255,255,255,.1);background:rgba(255,255,255,.09)}
+.historical-path-arrow{flex:0 0 auto;color:#777;font-size:12px}.historical-path-clear{margin-top:5px;padding:0;border:0;background:none;color:#999;font:inherit;font-size:9px;text-decoration:underline;cursor:pointer}.historical-path-clear:hover{color:#ddd}
