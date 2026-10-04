@@ -172,14 +172,10 @@ function render(){
   const direction=velocity>=0?1:-1;
   const rotate=Math.sin(depth/360)*8+(direction*speed*5);
   const bob=Math.sin(depth/105)*5;
-  const perspectiveScale=1+speed*.035;
+  const depthT=pct/100;
+  const perspectiveScale=(1.02-depthT*.28)+speed*.025;
   person.style.transform='translate(-50%,calc(-50% + '+bob+'px)) rotate('+rotate+'deg) scale('+perspectiveScale+')';
-  const armSwing=Math.sin(depth/95)*5+direction*speed*9;
-  const legSwing=Math.cos(depth/125)*4+speed*7;
-  document.querySelector(".real-arm-left").style.transform='rotate('+armSwing+'deg)';
-  document.querySelector(".real-arm-right").style.transform='rotate('+(-armSwing*.65)+'deg)';
-  document.querySelector(".real-leg-left").style.transform='rotate('+(-legSwing*.55)+'deg)';
-  document.querySelector(".real-leg-right").style.transform='rotate('+legSwing+'deg)';
+  person.style.opacity=Math.max(.72,1-depthT*.18);
 
   rockLeft.style.transform='translateY('+((depth%760)*-.24)+'px)';
   rockRight.style.transform='translateY('+((depth%820)*-.22)+'px)';
@@ -190,7 +186,6 @@ function render(){
   mist1.style.transform='translateY('+((depth%900)*-.23)+'px)';
   mist2.style.transform='translateY('+((depth%1100)*-.18)+'px)';
 
-  const depthT=pct/100;
   const openingScale=Math.max(.16,1-depthT*.82);
   const openingOpacity=Math.max(.08,.9-depthT*.82);
   skyOpening.style.transform='translateX(-50%) scale('+openingScale+')';
