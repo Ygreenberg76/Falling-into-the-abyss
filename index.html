@@ -100,6 +100,19 @@
         </div>
       </div>
 
+      <aside id="diasporaMap" class="diaspora-map" aria-label="Jewish population geography through time">
+        <div class="diaspora-map-head">
+          <div><small>Jewish world</small><strong id="mapYear">1800 BCE</strong></div>
+          <span id="mapCommunityCount">1 center</span>
+        </div>
+        <svg id="worldMap" class="world-map" viewBox="0 0 360 180" role="img" aria-label="World map showing major Jewish population centers at the current timeline year">
+          <path class="map-land" d="M18 35L38 20 70 18 92 31 88 48 72 58 64 79 47 83 34 68 20 61ZM91 92L108 88 122 101 119 126 107 153 95 139 88 112ZM151 30L176 21 199 29 216 22 244 31 270 27 301 39 329 55 337 73 316 84 290 79 272 91 247 82 229 91 208 82 195 67 177 65 163 54ZM176 76L198 76 215 94 211 122 195 151 177 137 165 110ZM292 119L313 113 333 126 326 145 304 149 289 137Z"/>
+          <g id="mapDots"></g>
+        </svg>
+        <div id="mapLegend" class="diaspora-map-legend"></div>
+        <p class="diaspora-map-note">Major centers • dot size shows relative prominence, not exact population.</p>
+      </aside>
+
       <div class="progress-rail" aria-hidden="true">
         <div id="progressFill"></div>
       </div>
