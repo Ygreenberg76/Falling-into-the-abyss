@@ -7,6 +7,12 @@ function ringPath(r){return r.map((c,i)=>{const p=point(c[1],c[0]);return(i?"L":
 function geometryPath(g){if(g.type==="Polygon")return g.coordinates.map(ringPath).join(" ");if(g.type==="MultiPolygon")return g.coordinates.flatMap(p=>p.map(ringPath)).join(" ");return""}
 fetch("data/ne_110m_land.geojson").then(r=>r.json()).then(data=>{const ns="http://www.w3.org/2000/svg",frag=document.createDocumentFragment();data.features.forEach(f=>{const d=geometryPath(f.geometry);if(!d)return;const p=document.createElementNS(ns,"path");p.setAttribute("d",d);p.setAttribute("fill-rule","evenodd");frag.appendChild(p)});land.replaceChildren(frag)}).catch(()=>{});
 function parseYear(){const t=yearEl.textContent.trim();const n=parseInt(t.replace(/[^0-9]/g,""),10);return Number.isFinite(n)?(/BCE/i.test(t)?-n:n):null}
-function update(){const y=parseYear();if(y===null)return;const p=periods.find(p=>y>=p.from&&y<=p.to)||periods[periods.length-1];mapYear.textContent=y<0?Math.abs(y)+" BCE":y+" CE";countEl.textContent=p.c.length+(p.c.length===1?" center":" centers");dots.innerHTML="";legend.innerHTML="";const ns="http://www.w3.org/2000/svg";p.c.forEach(([name,lat,lon,size])=>{const q=point(lat,lon),halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle");halo.setAttribute("cx",q.x);halo.setAttribute("cy",q.y);halo.setAttribute("r",2.2+size*.72);halo.setAttribute("class","map-community");core.setAttribute("cx",q.x);core.setAttribute("cy",q.y);core.setAttribute("r",.65+size*.28);core.setAttribute("class","map-community-core");dots.append(halo,core);const item=document.createElement("span");item.textContent=name;legend.appendChild(item)})}
-new MutationObserver(update).observe(yearEl,{childList:true,characterData:true,subtree:true});update();
+function update(){if(comparisonMapActive)return;const y=parseYear();if(y===null)return;const p=periods.find(p=>y>=p.from&&y<=p.to)||periods[periods.length-1];mapYear.textContent=y<0?Math.abs(y)+" BCE":y+" CE";countEl.textContent=p.c.length+(p.c.length===1?" center":" centers");dots.innerHTML="";legend.innerHTML="";const ns="http://www.w3.org/2000/svg";p.c.forEach(([name,lat,lon,size])=>{const q=point(lat,lon),halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle");halo.setAttribute("cx",q.x);halo.setAttribute("cy",q.y);halo.setAttribute("r",2.2+size*.72);halo.setAttribute("class","map-community");core.setAttribute("cx",q.x);core.setAttribute("cy",q.y);core.setAttribute("r",.65+size*.28);core.setAttribute("class","map-community-core");dots.append(halo,core);const item=document.createElement("span");item.textContent=name;legend.appendChild(item)})}
+new MutationObserver(update).observe(yearEl,{childList:true,characterData:
+let comparisonMapActive=false;
+window.addEventListener("history-map-compare",e=>{
+ comparisonMapActive=!!(e.detail&&e.detail.active);
+ if(!comparisonMapActive)update();
+});
+true,subtree:true});update();
 })();
