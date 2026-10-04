@@ -2576,7 +2576,12 @@ function bestComparedEvent(source,kind){
   const pool=(window.HISTORY_COMPARE_DATA&&window.HISTORY_COMPARE_DATA[kind])||[];
   if(!pool.length)return null;
   const curated={
-    "Birth of Jesus (Yeshua)|jewish":"Judea becomes a Roman province and census resistance"
+    "Birth of Jesus (Yeshua)|jewish":"Judea becomes a Roman province and census resistance",
+    "Fourth Lateran Council regulates Christian society and minorities|jewish":"Fulda blood-libel accusations",
+    "Visigothic monarchy adopts Catholic Christianity|jewish":"Sasanian capture of Jerusalem",
+    "Third Council of Toledo links Visigothic monarchy and Catholic Church|jewish":"Sasanian capture of Jerusalem",
+    "Seventeenth Council of Toledo imposes extreme measures on Jews|jewish":"Jewish life under early Islamic rule and dhimmi status",
+    "Martin Luther publishes On the Jews and Their Lies|jewish":"Brandenburg host-desecration persecution"
   };
   const curatedTitle=curated[(source.title||"")+"|"+kind];
   if(curatedTitle){
