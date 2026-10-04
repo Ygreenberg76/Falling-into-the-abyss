@@ -2580,13 +2580,27 @@ function renderEras(){
     el.style.opacity=(y>-100&&y<abyss.clientHeight+100)?Math.max(.12,1-distance/(abyss.clientHeight*.7)):0;
   });
 }
+function historyOverlap(event){
+  const text=[event.title,event.location,event.story,event.context,event.aftermath].filter(Boolean).join(" ").toLowerCase();
+  const christian=/christian|christianity|church|pope|crusad|byzantine|jesus|christ|patriarch|blood libel|ritual murder|inquisition/.test(text);
+  const islamic=/islam|muslim|muhammad|caliph|caliphate|ottoman|dhimmi|medina|mecca|banu |khaybar|arab conquest|fatimid|mamluk/.test(text);
+  return christian&&islamic?"both":christian?"christian":islamic?"islamic":"";
+}
+function overlapBadge(kind){
+  if(kind==="christian")return '<em class="history-overlap overlap-christian">Christian history overlap</em>';
+  if(kind==="islamic")return '<em class="history-overlap overlap-islamic">Islamic history overlap</em>';
+  if(kind==="both")return '<em class="history-overlap overlap-both">Christian + Islamic overlap</em>';
+  return "";
+}
 const markerEls=events.map((event,index)=>{
   const btn=document.createElement("button");
   btn.type="button";
   btn.className="event-marker";
+  const overlap=historyOverlap(event);
+  if(overlap) btn.classList.add("has-history-overlap","overlap-"+overlap);
   btn.setAttribute("aria-label",event.year+" — "+event.title+". Open event details.");
   if(index%2===0) btn.style.left="7%"; else btn.style.right="7%";
-  btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small><strong>'+event.title+'</strong></span>';
+  btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small><strong>'+event.title+'</strong>'+overlapBadge(overlap)+'</span>';
   btn.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();openEvent(event)});
   eventsLayer.appendChild(btn);
   return btn;
