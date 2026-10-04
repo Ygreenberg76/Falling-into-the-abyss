@@ -82,11 +82,9 @@ function draw(){
  countEl.textContent=p.c.length+" center"+(p.c.length===1?"":"s");
 }
 draw();
-new MutationObserver(draw).observe(yearEl,{childList:true,cha
-let comparisonMapActive=false;
+new MutationObserver(draw).observe(yearEl,{childList:true,characterData:true,subtree:true});
 window.addEventListener("history-map-compare",e=>{
  comparisonMapActive=!!(e.detail&&e.detail.active);
  if(!comparisonMapActive){lastKey="";draw();}
 });
-racterData:true,subtree:true});
 })();
