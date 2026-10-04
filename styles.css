@@ -412,3 +412,20 @@ body.event-open{overflow:hidden}
 .connected-history-links{display:grid;gap:7px}
 .connected-history-links a{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border:1px solid rgba(216,199,173,.22);border-radius:8px;background:rgba(7,7,9,.5);color:#d9c8ea;text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.03em;transition:filter .16s ease,transform .16s ease}
 .connected-history-links a:hover{filter:brightness(1.25);transform:translateX(2px)}
+
+
+/* Shared History Compare Mode */
+.compare-panel{position:fixed;z-index:90;inset:6vh 5vw;overflow:auto;padding:24px;border:1px solid rgba(216,199,173,.3);border-radius:18px;background:rgba(8,8,11,.97);box-shadow:0 28px 90px rgba(0,0,0,.72);backdrop-filter:blur(18px)}
+.compare-history-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:18px}
+.compare-history-card{min-height:245px;padding:18px;border:1px solid rgba(216,199,173,.2);border-radius:14px;background:rgba(255,255,255,.025)}
+.compare-history-card.current-history{border-color:rgba(255,226,154,.42);background:linear-gradient(145deg,rgba(255,218,128,.09),rgba(255,255,255,.02))}
+.compare-history-card.christian-compare{border-color:rgba(105,163,218,.42)}
+.compare-history-card.islamic-compare{border-color:rgba(87,176,121,.42)}
+.compare-history-card.jewish-compare{border-color:rgba(198,156,93,.42)}
+.compare-history-card small{display:block;margin-bottom:9px;color:#bcae97;font-size:9px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.compare-history-card h3{margin:0 0 8px;font-size:18px;color:#f0ebe3}
+.compare-history-card p{color:#b8b3bb;font-size:12px;line-height:1.6}
+.compare-location{font-weight:800;color:#d5c8b7!important}
+.compare-open{display:inline-flex;margin-top:10px;text-decoration:none}
+.compare-history-btn{width:100%;margin-top:10px;cursor:pointer}
+@media(max-width:760px){.compare-panel{inset:2vh 3vw;padding:16px;border-radius:14px}.compare-history-grid{grid-template-columns:1fr}.compare-history-card{min-height:0}}
