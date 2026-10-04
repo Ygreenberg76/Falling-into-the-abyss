@@ -106,6 +106,11 @@ const speedLines=document.getElementById("speedLines");
 const fallTrail=document.getElementById("fallTrail");
 const rockLeft=document.querySelector(".rock-left");
 const rockRight=document.querySelector(".rock-right");
+const rockFarLeft=document.querySelector(".rock-far-left");
+const rockFarRight=document.querySelector(".rock-far-right");
+const rockMidLeft=document.querySelector(".rock-mid-left");
+const rockMidRight=document.querySelector(".rock-mid-right");
+const bottomMarker=document.getElementById("bottomMarker");
 const mist1=document.querySelector(".mist-1");
 const mist2=document.querySelector(".mist-2");
 const panel=document.getElementById("eventPanel");
@@ -169,15 +174,19 @@ function render(){
   const bob=Math.sin(depth/95)*4;
 
   person.style.transform='translate(-50%,calc(-50% + '+bob+'px)) rotate('+rotate+'deg) scale('+squash+','+stretch+')';
-  const armSwing=48+speed*18;
-  const legSwing=19+speed*14;
-  document.querySelector(".arm-left").style.transform='rotate('+armSwing+'deg)';
-  document.querySelector(".arm-right").style.transform='rotate('+(-armSwing)+'deg)';
-  document.querySelector(".leg-left").style.transform='rotate('+legSwing+'deg)';
-  document.querySelector(".leg-right").style.transform='rotate('+(-legSwing)+'deg)';
+  const armSwing=10+direction*speed*28+Math.sin(depth/80)*7;
+  const legSwing=4+speed*16+Math.cos(depth/105)*5;
+  document.querySelector(".arm-svg-left").style.transform='rotate('+armSwing+'deg)';
+  document.querySelector(".arm-svg-right").style.transform='rotate('+(-armSwing*.82)+'deg)';
+  document.querySelector(".leg-svg-left").style.transform='rotate('+legSwing+'deg)';
+  document.querySelector(".leg-svg-right").style.transform='rotate('+(-legSwing*.75)+'deg)';
 
-  rockLeft.style.transform='translateY('+((depth%650)*-.18)+'px)';
-  rockRight.style.transform='translateY('+((depth%720)*-.16)+'px)';
+  rockLeft.style.transform='translateY('+((depth%760)*-.24)+'px)';
+  rockRight.style.transform='translateY('+((depth%820)*-.22)+'px)';
+  rockMidLeft.style.transform='translateY('+((depth%980)*-.13)+'px)';
+  rockMidRight.style.transform='translateY('+((depth%1040)*-.12)+'px)';
+  rockFarLeft.style.transform='translateY('+((depth%1300)*-.07)+'px)';
+  rockFarRight.style.transform='translateY('+((depth%1380)*-.065)+'px)';
   mist1.style.transform='translateY('+((depth%900)*-.23)+'px)';
   mist2.style.transform='translateY('+((depth%1100)*-.18)+'px)';
 
@@ -186,6 +195,11 @@ function render(){
     'radial-gradient(ellipse at 50% 78%,rgba(74,47,20,.12),transparent 34%),'+
     'linear-gradient(#161821 0%,#0c0d12 '+Math.max(18,30-pct*.12)+'%,#07070a 64%,#020203 100%)';
 
+  bottomMarker.classList.toggle("visible",pct>=94);
+  document.querySelectorAll(".particles span").forEach((p,i)=>{
+    const drift=((depth*(.04+(i%5)*.009))%(abyss.clientHeight+80));
+    p.style.transform='translateY('+(-drift)+'px) translateX('+(Math.sin((depth+i*31)/130)*8)+'px)';
+  });
   renderEvents();
 }
 function tick(){
