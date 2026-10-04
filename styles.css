@@ -444,3 +444,7 @@ body.event-open{overflow:hidden}
 .jewish-map-marker{color:#d4a85f}.christian-map-marker{color:#6da8df}.islamic-map-marker{color:#63b980}
 .compare-map-legend{font-weight:800!important;border-color:rgba(255,255,255,.18)!important}
 .jewish-map-legend{color:#e0b873!important}.christian-map-legend{color:#8dc1ef!important}.islamic-map-legend{color:#82d09d!important}
+
+.compare-map-marker{cursor:help;filter:drop-shadow(0 0 2.5px currentColor)}
+.compare-map-marker .compare-map-halo{animation:compareMapPulse 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes compareMapPulse{0%,100%{opacity:.2;transform:scale(.85)}50%{opacity:.48;transform:scale(1.18)}}
