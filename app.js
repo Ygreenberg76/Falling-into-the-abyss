@@ -2367,7 +2367,25 @@ const events = [
     sources:[{label:"United Nations — Question of Palestine timeline",url:"https://www.un.org/unispal/timeline/"}]
   },
   {
-    year:2022, depth:44890, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
+    year:2021, depth:44890, title:"May 2021 Jerusalem crisis and Israel–Hamas war", location:"Jerusalem, Gaza Strip and Israel",
+    story:"Tensions over Sheikh Jarrah, Ramadan restrictions and clashes at Jerusalem holy sites escalated sharply in May 2021. Hamas fired rockets toward Jerusalem and other Israeli cities; Israel responded with an intensive air campaign in Gaza. During eleven days of fighting, thousands of rockets were fired from Gaza and hundreds of Israeli strikes hit Gaza.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Gaza–Israel war / rockets / air strikes",Evidence:"The escalation, rocket fire, Israeli strikes and casualties are extensively documented. UN reporting recorded 253 Palestinians killed during the hostilities and 13 people killed in Israel, while casualty classifications and individual strike legality were disputed."},
+    sourceStatus:"The escalation, rocket fire, Israeli strikes and casualties are extensively documented. UN reporting recorded 253 Palestinians killed during the hostilities and 13 people killed in Israel, while casualty classifications and individual strike legality were disputed.",
+    sources:[{label:"United Nations — May 2021 hostilities",url:"https://www.un.org/unispal/document/action-by-un-system-and-intergovernmental-organizations-relevant-to-the-question-of-palestine-may-2021-monthly-bulletin/"}]
+  },
+  {
+    year:2021, depth:45060, title:"Jewish–Arab communal violence in mixed Israeli cities", location:"Lod, Acre, Jaffa and other Israeli cities",
+    story:"As the May 2021 Gaza conflict unfolded, serious communal violence erupted inside Israel. Jewish and Arab mobs attacked people, homes, businesses, vehicles and religious sites in several mixed cities. The violence included killings and assaults and exposed deep tensions between Jewish and Arab citizens.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Communal violence / riots",Evidence:"Violence by both Jewish and Arab groups is extensively documented. Individual incidents had different perpetrators and circumstances and should not be collapsed into one-sided attribution."},
+    sourceStatus:"Violence by both Jewish and Arab groups is extensively documented. Individual incidents had different perpetrators and circumstances and should not be collapsed into one-sided attribution.",
+    sources:[{label:"United Nations — May 2021 bulletin",url:"https://www.un.org/unispal/document/action-by-un-system-and-intergovernmental-organizations-relevant-to-the-question-of-palestine-may-2021-monthly-bulletin/"}]
+  },
+  {
+    year:2022, depth:45230, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
     story:"An armed man took worshippers hostage at Congregation Beth Israel in January 2022. The hostages ultimately escaped or were rescued; the attacker was killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -2376,13 +2394,130 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-ndtx/press-release/file/1465966/dl"}]
   },
   {
-    year:2023, depth:45060, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
+    year:2022, depth:45400, title:"West Bank violence reaches highest Palestinian death toll in years", location:"West Bank and Israel",
+    story:"Violence intensified sharply during 2022. Palestinian attacks killed Israelis, while Israeli arrest raids and armed clashes, especially around Jenin and Nablus, killed growing numbers of Palestinians. Settler attacks against Palestinians also increased. The UN described 2022 as on course to be the deadliest year for Palestinians in the West Bank since systematic UN tracking began in 2005.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Armed attacks / raids / settler violence",Evidence:"The escalation and casualty trend are extensively documented by UN monitoring. Individual incidents involved civilians, militants, security forces and settlers in different circumstances."},
+    sourceStatus:"The escalation and casualty trend are extensively documented by UN monitoring. Individual incidents involved civilians, militants, security forces and settlers in different circumstances.",
+    sources:[{label:"United Nations Security Council — 2022 violence",url:"https://press.un.org/en/2022/sc15086.doc.htm"}]
+  },
+  {
+    year:2023, depth:45570, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
     story:"Hamas and other armed groups attacked southern Israel on October 7, killing civilians and security personnel and taking hostages. Israel then launched a major war in Gaza with very large Palestinian civilian and combatant casualties and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
     stats:{Type:"Mass attack / hostage-taking / war",Evidence:"Very high for core events; evolving and contested details require dated sourcing"},
     sourceStatus:"Very high for core events; evolving and contested details require dated sourcing",
     sources:[{label:"Source / further reading",url:"https://www.un.org/unispal/document/coi-report-a-hrc-56-26-27may24/"}]
+  },
+  {
+    year:2023, depth:45740, title:"Huwara attack and settler rampage", location:"Huwara and surrounding West Bank villages",
+    story:"On February 26, 2023, a Palestinian gunman killed two Israeli brothers near Huwara. Hours later, hundreds of Israeli settlers attacked Huwara and nearby Palestinian communities, burning homes, shops and vehicles. A Palestinian man was killed and many people were injured.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Terror attack / settler mob violence",Evidence:"Both the killing of the Israeli brothers and the subsequent settler rampage are extensively documented. Israeli leaders, including the president, condemned the settler violence."},
+    sourceStatus:"Both the killing of the Israeli brothers and the subsequent settler rampage are extensively documented. Israeli leaders, including the president, condemned the settler violence.",
+    sources:[{label:"UN Human Rights — Huwara violence",url:"https://www.un.org/unispal/document/ohchr-statement-opt-3mar2023/"}]
+  },
+  {
+    year:2023, depth:45910, title:"Large-scale Israeli operation in Jenin refugee camp", location:"Jenin, West Bank",
+    story:"On July 3–4, 2023, Israeli forces launched a large air-and-ground operation in and around Jenin refugee camp targeting armed groups and weapons infrastructure. Palestinian militants exchanged fire with Israeli forces. Palestinians, including children, were killed, many people were injured and infrastructure in the camp was damaged.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Israeli military raid / armed clashes",Evidence:"The operation, air strikes, armed exchanges and casualties are extensively documented. Israeli authorities said forces targeted militant infrastructure; humanitarian organizations documented civilian harm and access problems."},
+    sourceStatus:"The operation, air strikes, armed exchanges and casualties are extensively documented. Israeli authorities said forces targeted militant infrastructure; humanitarian organizations documented civilian harm and access problems.",
+    sources:[{label:"United Nations OCHA — Jenin operation",url:"https://www.un.org/unispal/document/israeli-operation-jenin-ocha-3july2023/"}]
+  },
+  {
+    year:2023, depth:46080, title:"October 7 Hamas-led attack on southern Israel", location:"Southern Israel near the Gaza Strip",
+    story:"On October 7, 2023, Hamas and other Palestinian armed groups launched a coordinated assault into southern Israel under heavy rocket fire. Attackers entered communities, a music festival and military sites, deliberately killed civilians and soldiers, and abducted hostages into Gaza. About 1,200 Israelis and foreign nationals were killed and 251 people were taken hostage according to current Israeli figures.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Massacre / terrorism / hostage-taking",Evidence:"The coordinated attack, deliberate killing of civilians and hostage-taking are extensively documented. A UN Commission of Inquiry concluded that Hamas and other armed groups committed war crimes, including murder and hostage-taking, and found evidence of sexual and gender-based violence."},
+    sourceStatus:"The coordinated attack, deliberate killing of civilians and hostage-taking are extensively documented. A UN Commission of Inquiry concluded that Hamas and other armed groups committed war crimes, including murder and hostage-taking, and found evidence of sexual and gender-based violence.",
+    sources:[{label:"United Nations Commission of Inquiry — October 7",url:"https://www.un.org/unispal/document/coi-report-a-hrc-56-26-27may24/"}]
+  },
+  {
+    year:2023, depth:46250, title:"Israel launches large-scale Gaza war after October 7", location:"Gaza Strip",
+    story:"Israel responded to the October 7 attack with a large-scale air campaign and ground invasion of Gaza, stating that its objectives were to dismantle Hamas and return the hostages. The campaign caused enormous destruction, mass displacement and a very high Palestinian death toll, including civilians, while Israeli soldiers were also killed in combat and Palestinian armed groups continued attacks.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"War / ground invasion / humanitarian catastrophe",Evidence:"The scale of military operations, destruction and displacement is extensively documented. Palestinian casualty totals are reported by Gaza health authorities and widely used by UN agencies, while combatant classifications and allegations concerning proportionality, starvation, genocide and other violations remain subjects of legal proceedings and intense dispute."},
+    sourceStatus:"The scale of military operations, destruction and displacement is extensively documented. Palestinian casualty totals are reported by Gaza health authorities and widely used by UN agencies, while combatant classifications and allegations concerning proportionality, starvation, genocide and other violations remain subjects of legal proceedings and intense dispute.",
+    sources:[{label:"United Nations OCHA — one year since October 7",url:"https://www.un.org/unispal/document/ocha-statement-07oct24/"}]
+  },
+  {
+    year:2023, depth:46420, title:"Israel–Hezbollah border conflict expands after October 7", location:"Israel–Lebanon border",
+    story:"Beginning shortly after October 7, Hezbollah and Israel exchanged near-daily fire across the Lebanon border. Hezbollah said it was acting in support of Gaza; Israel struck Hezbollah positions and commanders. Tens of thousands of civilians on both sides of the border were displaced as the confrontation intensified.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Cross-border war / rockets / air strikes",Evidence:"The sustained exchanges and mass displacement are extensively documented. The conflict escalated significantly during 2024 and again later in the regional war."},
+    sourceStatus:"The sustained exchanges and mass displacement are extensively documented. The conflict escalated significantly during 2024 and again later in the regional war.",
+    sources:[{label:"United Nations — Lebanon and Israel",url:"https://news.un.org/en/tags/lebanon"}]
+  },
+  {
+    year:2024, depth:46590, title:"Iran and Israel exchange direct attacks", location:"Israel and Iran",
+    story:"In April 2024, Iran launched hundreds of drones and missiles toward Israel after an Israeli strike on an Iranian diplomatic compound in Damascus killed senior Iranian commanders. Israel and partners intercepted most incoming weapons, and Israel subsequently carried out a limited strike in Iran. The exchange marked an unprecedented move from the long-running shadow conflict into direct state-to-state attacks.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Iran–Israel direct conflict",Evidence:"The attacks and interceptions are extensively documented. Attribution for the Damascus strike was widely reported as Israeli although Israel did not publicly claim it at the time."},
+    sourceStatus:"The attacks and interceptions are extensively documented. Attribution for the Damascus strike was widely reported as Israeli although Israel did not publicly claim it at the time.",
+    sources:[{label:"United Nations — Security Council on Iran-Israel escalation",url:"https://press.un.org/en/2024/sc15660.doc.htm"}]
+  },
+  {
+    year:2024, depth:46760, title:"Israel–Hezbollah war escalates in Lebanon", location:"Lebanon and northern Israel",
+    story:"The Israel–Hezbollah confrontation escalated dramatically in 2024, including Israeli strikes across Lebanon, Hezbollah rocket and missile fire into Israel, the killing of senior Hezbollah leaders and Israeli ground operations in southern Lebanon. Large civilian populations were displaced and casualties rose sharply.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Israel–Hezbollah war",Evidence:"The escalation, strikes, ground fighting and displacement are extensively documented. Assessments of individual attacks and compliance with international humanitarian law remain contested."},
+    sourceStatus:"The escalation, strikes, ground fighting and displacement are extensively documented. Assessments of individual attacks and compliance with international humanitarian law remain contested.",
+    sources:[{label:"United Nations — Lebanon crisis",url:"https://news.un.org/en/tags/lebanon"}]
+  },
+  {
+    year:2025, depth:46930, title:"Gaza ceasefire and hostage-prisoner exchanges", location:"Gaza Strip and Israel",
+    story:"Ceasefire arrangements during the post-October 7 war produced exchanges in which Israeli hostages held in Gaza were released in return for Palestinian prisoners and detainees. A later U.S.-brokered ceasefire agreed in October 2025 ended full-scale fighting, though Israeli attacks continued and major political, humanitarian and security issues remained unresolved.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Ceasefire / hostage and prisoner exchange",Evidence:"The ceasefire and exchanges are documented. Implementation remained incomplete and the agreement did not produce a comprehensive political settlement or fully end violence."},
+    sourceStatus:"The ceasefire and exchanges are documented. Implementation remained incomplete and the agreement did not produce a comprehensive political settlement or fully end violence.",
+    sources:[{label:"Reuters — Gaza ceasefire context, 2026",url:"https://www.reuters.com/world/middle-east/evacuated-an-incubator-now-back-gaza-getting-know-mama-2026-10-02/"}]
+  },
+  {
+    year:2026, depth:47100, title:"Gaza after the 2025 ceasefire: continuing strikes and humanitarian crisis", location:"Gaza Strip",
+    story:"By 2026, the October 2025 ceasefire had ended full-scale warfare but had not produced a stable peace. Israeli strikes continued, Hamas had not been disarmed, and Gaza remained devastated by years of war. Severe shortages, damaged infrastructure and displacement continued to affect civilians.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Post-ceasefire conflict / humanitarian crisis",Evidence:"Current as of October 2026. Reuters reports that strikes continued despite the ceasefire and that Gaza's humanitarian and energy crises remained severe. Because conditions continue to change, this marker should be treated as an evolving record."},
+    sourceStatus:"Current as of October 2026. Reuters reports that strikes continued despite the ceasefire and that Gaza's humanitarian and energy crises remained severe. Because conditions continue to change, this marker should be treated as an evolving record.",
+    sources:[{label:"Reuters — Gaza conditions, September 2026",url:"https://www.reuters.com/business/energy/gazas-hospitals-homes-struggle-keep-generators-running-oil-shortages-bite-2026-09-10/"}]
+  },
+  {
+    year:2026, depth:47270, title:"U.S.–Israel campaign against Iran", location:"Iran and wider Middle East",
+    story:"In 2026, the regional conflict expanded into a direct U.S.–Israeli military campaign against Iran, described by U.S. officials as Operation Epic Fury. The war produced major regional repercussions and affected diplomacy, energy security and neighboring states.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Regional interstate war",Evidence:"Current as of October 2026. Reuters reporting confirms the U.S.–Israel campaign against Iran. Operational details and consequences remain developing and should be updated as stronger official and archival records become available."},
+    sourceStatus:"Current as of October 2026. Reuters reporting confirms the U.S.–Israel campaign against Iran. Operational details and consequences remain developing and should be updated as stronger official and archival records become available.",
+    sources:[{label:"Reuters — U.S.–Israel campaign against Iran",url:"https://www.reuters.com/world/africa/us-waives-rights-conditions-320-million-military-aid-egypt-letter-shows-2026-10-01/"}]
+  },
+  {
+    year:2026, depth:47440, title:"Israel–Hezbollah ceasefire after renewed Lebanon escalation", location:"Israel and Lebanon",
+    story:"After renewed fighting linked to the wider regional conflict, Israel and Hezbollah agreed to a U.S.-announced ceasefire in June 2026. Israeli forces remained in southern Lebanon, and early strikes occurred around the ceasefire's start, underscoring the fragility of the arrangement.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Ceasefire / Israel–Hezbollah conflict",Evidence:"Current as of October 2026. Reuters reported confirmation of the ceasefire by a U.S. official, an Israeli official and Hezbollah sources. Its durability remains an evolving question."},
+    sourceStatus:"Current as of October 2026. Reuters reported confirmation of the ceasefire by a U.S. official, an Israeli official and Hezbollah sources. Its durability remains an evolving question.",
+    sources:[{label:"Reuters — Israel–Hezbollah ceasefire, June 2026",url:"https://www.investing.com/news/world-news/israeli-hezbollah-agree-to-ceasefire-starting-on-friday-us-official-4751504"}]
+  },
+  {
+    year:2026, depth:47610, title:"2026 — YOU ARE HERE", location:"Present day",
+    story:"The timeline reaches the present in October 2026. The historical record remains open: Gaza is under a fragile post-war ceasefire environment, Israeli-Palestinian violence and displacement remain unresolved, and the wider regional confrontation involving Israel, Iran and Hezbollah has produced new wars and ceasefires.",
+    context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
+    aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
+    stats:{Type:"Present-day marker",Evidence:"This is a live endpoint, not a settled historical conclusion. Contemporary facts, casualty figures, legal findings and political arrangements may change as new evidence and authoritative records emerge."},
+    sourceStatus:"This is a live endpoint, not a settled historical conclusion. Contemporary facts, casualty figures, legal findings and political arrangements may change as new evidence and authoritative records emerge.",
+    sources:[{label:"Reuters — Middle East developments, October 2026",url:"https://www.reuters.com/world/middle-east/"}]
   }
 ];
 
@@ -2396,10 +2531,10 @@ const eras = [
   {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:19220,end:21430},
   {name:"The Holocaust",range:"1933–1945 CE",start:21430,end:27040},
   {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:27040,end:38770},
-  {name:"Contemporary Era",range:"2000–2026 CE",start:38770,end:45580}
+  {name:"Contemporary Era",range:"2000–2026 CE",start:38770,end:48130}
 ];
 
-const MAX_DEPTH=45580;
+const MAX_DEPTH=48130;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
