@@ -488,14 +488,9 @@ function restart(){
   aboutPanel.classList.add("hidden");
   document.getElementById("intro").scrollIntoView({behavior:reduced?"auto":"smooth"});
 }
-/* The abyss is a fixed-height interactive timeline: wheel input advances history.
-   Release the wheel back to normal page scrolling only at the first/last depth. */
 abyss.addEventListener("wheel",e=>{
-  if(panel&&!panel.classList.contains("hidden")) return;
-  const goingDown=e.deltaY>0;
-  const goingUp=e.deltaY<0;
-  const atBottom=depth>=MAX_DEPTH-2;
-  const atTop=depth<=2;
+  const goingDown=e.deltaY>0, goingUp=e.deltaY<0;
+  const atBottom=depth>=MAX_DEPTH-1, atTop=depth<=1;
   if((goingDown&&atBottom)||(goingUp&&atTop)) return;
   e.preventDefault();
   descend(e.deltaY);
