@@ -2595,9 +2595,9 @@ function renderCompareCard(kind,label,event,page,fromKind){
   return card;
 }
 function showComparisonMap(items){
-  const dots=document.getElementById("compareAtlasDots"),land=document.getElementById("compareAtlasLand"),legend=document.getElementById("compareAtlasLegend");
-  if(!dots||!land||!legend||!window.findHistoryMapPlace)return;
-  dots.replaceChildren();legend.replaceChildren();
+  const dots=document.getElementById("compareAtlasDots"),land=document.getElementById("compareAtlasLand"),legend=document.getElementById("compareAtlasLegend"),insight=document.getElementById("compareAtlasInsight");
+  if(!dots||!land||!legend||!insight||!window.findHistoryMapPlace)return;
+  dots.replaceChildren();legend.replaceChildren();insight.innerHTML="";
   const mainLand=document.getElementById("mapLand");
   if(mainLand&&mainLand.childNodes.length)land.innerHTML=mainLand.innerHTML;
   else fetch("data/ne_110m_land.geojson").then(r=>r.json()).then(data=>{
@@ -2609,6 +2609,18 @@ function showComparisonMap(items){
   }).catch(()=>{});
   const ns="http://www.w3.org/2000/svg",plotted=[];
   items.forEach(item=>{const place=window.findHistoryMapPlace(item.event);if(place)plotted.push({...item,place});});
+  const geoDistanceKm=(a,b)=>{const R=6371,rad=n=>n*Math.PI/180,dLat=rad(b.lat-a.lat),dLon=rad(b.lon-a.lon),la1=rad(a.lat),la2=rad(b.lat);const h=Math.sin(dLat/2)**2+Math.cos(la1)*Math.cos(la2)*Math.sin(dLon/2)**2;return Math.round(2*R*Math.asin(Math.sqrt(h)));};
+  const geoDirection=(a,b)=>{const dy=b.lat-a.lat,dx=b.lon-a.lon;if(Math.abs(dx)<2&&Math.abs(dy)<2)return"same area";const ns=dy>2?"north":dy<-2?"south":"",ew=dx>2?"east":dx<-2?"west":"";return ns&&ew?ns+"-"+ew:ns||ew;};
+  if(plotted.length>1){
+    const relations=[];
+    for(let i=1;i<plotted.length;i++){
+      const a=plotted[0],b=plotted[i],km=geoDistanceKm(a.place,b.place),direction=geoDirection(a.place,b.place);
+      if(km<80)relations.push("<strong>Shared geography:</strong> "+a.label+" and "+b.label+" events occur in the same historical area around "+a.event.location+".");
+      else relations.push("<strong>"+a.label+" ↔ "+b.label+":</strong> approximately "+km.toLocaleString()+" km apart; the "+b.label+" event is "+direction+" of the "+a.label+" event.");
+    }
+    insight.innerHTML=relations.join("<br>");
+  }else if(plotted.length===1){insight.innerHTML="<strong>Geographic context:</strong> only one of the compared events has a precise mapped location, so no distance relationship can be calculated.";}
+  else{insight.innerHTML="<strong>Geographic context:</strong> these events do not yet have precise enough location data for a meaningful map comparison.";}
   if(plotted.length>1){
     const lines=document.createElementNS(ns,"g");lines.setAttribute("class","compare-map-connections");
     for(let i=1;i<plotted.length;i++){const a=plotted[i-1].place,b=plotted[i].place,line=document.createElementNS(ns,"line");line.setAttribute("x1",a.lon+180);line.setAttribute("y1",90-a.lat);line.setAttribute("x2",b.lon+180);line.setAttribute("y2",90-b.lat);line.setAttribute("class","compare-map-connection");lines.appendChild(line);}dots.appendChild(lines);
