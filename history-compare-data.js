@@ -5158,3 +5158,22 @@ window.HISTORY_COMPARE_DATA={jewish:[
   {year:2025,depth:41150,title:"Contemporary Muslim world",location:"Global",story:"Muslim societies in 2025 spanned radically different political systems and experiences—from democratic participation and ordinary religious life to authoritarian repression, civil war, anti-Muslim persecution and militant violence.",context:"Global context",aftermath:"This event is presented with responsibility assigned to the specific governments, armed groups, institutions or communities involved rather than generalized to Islam or Muslims collectively.",stats:{Type:"Global context",Evidence:"There is no single Muslim political actor or unified 'Islamic world'; more than a billion Muslims live across diverse states, cultures, sects and political traditions."},sourceStatus:"There is no single Muslim political actor or unified 'Islamic world'; more than a billion Muslims live across diverse states, cultures, sects and political traditions.",sources:[{label:"Reuters — Middle East regional conflicts, Oct. 2026",url:"https://www.reuters.com/world/middle-east/iran-says-strait-hormuz-will-not-reopen-until-conditions-are-met-2026-10-04/"}]},
   {year:2026,depth:41320,title:"2026 — YOU ARE HERE",location:"Global",story:"In 2026, Muslim communities are living through a sharply unsettled period: Gaza remains devastated despite a ceasefire framework, the U.S.-Israeli war with Iran has disrupted the Gulf and Strait of Hormuz, and renewed fighting in Yemen and Lebanon has kept regional conflict active.",context:"Present-day context",aftermath:"This event is presented with responsibility assigned to the specific governments, armed groups, institutions or communities involved rather than generalized to Islam or Muslims collectively.",stats:{Type:"Present-day context",Evidence:"This marker describes current political conflicts involving Muslim-majority societies, not a single religious war. Conditions remain fast-moving and require current reporting."},sourceStatus:"This marker describes current political conflicts involving Muslim-majority societies, not a single religious war. Conditions remain fast-moving and require current reporting.",sources:[{label:"Associated Press — Middle East developments, Oct. 4, 2026",url:"https://apnews.com/article/a37b24d446b3066d3b17441ac5bb0264"}]}
 ]};
+
+window.HISTORY_MAP_PLACES=[
+ ["jerusalem",31.78,35.22],["judea",31.8,35.2],["palestine",31.9,35.2],["israel",31.8,35.0],["galilee",32.8,35.5],
+ ["mecca",21.42,39.83],["medina",24.47,39.61],["damascus",33.51,36.29],["baghdad",33.32,44.37],["iraq",33,44],["babylonia",32.5,44.5],
+ ["egypt",30.0,31.2],["alexandria",31.2,29.92],["cairo",30.04,31.24],["levant",32.5,35.5],["syria",34.8,38.9],
+ ["constantinople",41.01,28.97],["istanbul",41.01,28.97],["anatolia",39,32.5],["asia minor",39,32.5],["rome",41.9,12.5],
+ ["vatican",41.9,12.45],["iberia",40,-4],["spain",40,-4],["portugal",39.5,-8],["granada",37.18,-3.6],
+ ["france",47,2],["paris",48.86,2.35],["england",52,-1.5],["london",51.5,-0.12],["germany",51,10],["rhineland",50.3,7.5],
+ ["poland",52,19],["vienna",48.21,16.37],["austria",47.5,14.5],["russia",55.8,37.6],["moscow",55.75,37.62],
+ ["ukraine",49,32],["balkans",43,21],["bosnia",44,18],["sarajevo",43.86,18.41],["kosovo",42.6,21],
+ ["north africa",33,10],["morocco",32,-6],["tunisia",34,9],["libya",27,17],["ethiopia",9,40],["abyssinia",9,40],
+ ["persia",32,53],["iran",32,53],["arabia",24,44],["india",22,79],["pakistan",30,70],["central asia",41,65],
+ ["united states",39,-98],["new york",40.71,-74],["latin america",-15,-60],["argentina",-34.6,-58.4]
+];
+window.findHistoryMapPlace=function(event){
+ const text=((event&&event.location)||"").toLowerCase();
+ for(const p of window.HISTORY_MAP_PLACES){if(text.includes(p[0]))return{name:p[0],lat:p[1],lon:p[2]};}
+ return null;
+};
