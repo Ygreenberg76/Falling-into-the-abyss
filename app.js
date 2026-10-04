@@ -177,12 +177,13 @@ function render(){
   person.style.transform='translate(-50%,calc(-50% + '+bob+'px)) rotate('+rotate+'deg) scale('+perspectiveScale+')';
   person.style.opacity=Math.max(.72,1-depthT*.18);
 
-  rockLeft.style.transform='translateY('+((depth%760)*-.24)+'px)';
-  rockRight.style.transform='translateY('+((depth%820)*-.22)+'px)';
-  rockMidLeft.style.transform='translateY('+((depth%980)*-.13)+'px)';
-  rockMidRight.style.transform='translateY('+((depth%1040)*-.12)+'px)';
-  rockFarLeft.style.transform='translateY('+((depth%1300)*-.07)+'px)';
-  rockFarRight.style.transform='translateY('+((depth%1380)*-.065)+'px)';
+  const wallSway=Math.sin(depth/420)*5;
+  rockLeft.style.transform='translate3d('+(-wallSway)+'px,'+((depth%760)*-.24)+'px,35px) scale(1.035)';
+  rockRight.style.transform='translate3d('+wallSway+'px,'+((depth%820)*-.22)+'px,35px) scale(1.035)';
+  rockMidLeft.style.transform='translate3d('+(-wallSway*.55)+'px,'+((depth%980)*-.13)+'px,0) scale(1.015)';
+  rockMidRight.style.transform='translate3d('+(wallSway*.55)+'px,'+((depth%1040)*-.12)+'px,0) scale(1.015)';
+  rockFarLeft.style.transform='translate3d(0,'+((depth%1300)*-.07)+'px,-50px)';
+  rockFarRight.style.transform='translate3d(0,'+((depth%1380)*-.065)+'px,-50px)';
   mist1.style.transform='translateY('+((depth%900)*-.23)+'px)';
   mist2.style.transform='translateY('+((depth%1100)*-.18)+'px)';
 
