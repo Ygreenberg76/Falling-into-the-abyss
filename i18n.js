@@ -1,6 +1,6 @@
 (()=>{
 const KEY="fallingLanguageV1";
-function currentLanguage(){return localStorage.getItem(KEY)||"en";}
+function currentLanguage(){const saved=localStorage.getItem(KEY);if(["en","he","ar"].includes(saved))return saved;const q=new URLSearchParams(location.search).get("lang");return ["en","he","ar"].includes(q)?q:"en";}
 function localizeEvent(kind,event){const lang=currentLanguage();if(lang==="en"||!event)return event;const table=window.FALLING_TRANSLATIONS&&window.FALLING_TRANSLATIONS[lang]&&window.FALLING_TRANSLATIONS[lang][kind];const translated=table&&table[event.id];return Object.assign({},event,translated||{},{_translationLanguage:lang});}
 function applyEventDirection(displayEvent){
  const rtl=displayEvent&&displayEvent._translationLanguage&&displayEvent._translationLanguage!=="en";
@@ -21,15 +21,18 @@ function translateText(lang,root=document.body){
  nodes.forEach(n=>{const raw=n.nodeValue,trim=raw.trim();if(dict[trim]){n.nodeValue=raw.replace(trim,dict[trim]);const el=n.parentElement;if(el){el.setAttribute("dir","rtl");el.setAttribute("lang",lang);}}});
  root.querySelectorAll("input[placeholder]").forEach(el=>{const v=el.getAttribute("placeholder");if(dict[v])el.setAttribute("placeholder",dict[v]);});
 }
+function syncTimelineLinks(lang){document.querySelectorAll('a[href$=".html"],a[href*=".html?"]').forEach(a=>{try{const u=new URL(a.href,location.href);if(u.origin!==location.origin)return;u.searchParams.set("lang",lang);a.href=u.pathname.split("/").pop()+u.search+u.hash;}catch{}});}
 function setLanguage(lang,reload=false){
  if(!["en","he","ar"].includes(lang))lang="en";
  localStorage.setItem(KEY,lang);
- if(reload){location.reload();return;}
+ syncTimelineLinks(lang);
+ if(reload){const u=new URL(location.href);u.searchParams.set("lang",lang);location.href=u.toString();return;}
  document.documentElement.lang=lang;
  document.documentElement.dataset.language=lang;
  // Keep the document flow LTR while untranslated English fallback content remains on the page.\n // Translated Hebrew/Arabic interface strings receive RTL direction individually.\n document.documentElement.dir="ltr";\n document.body.classList.toggle("rtl-language",lang!=="en");
  document.querySelectorAll("[data-lang]").forEach(b=>{b.classList.toggle("active",b.dataset.lang===lang);b.setAttribute("aria-pressed",b.dataset.lang===lang?"true":"false");});
  translateText(lang);
+ syncTimelineLinks(lang);
  document.dispatchEvent(new CustomEvent("falling:languagechange",{detail:{language:lang}}));
 }
 document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLanguage(b.dataset.lang,true)));
