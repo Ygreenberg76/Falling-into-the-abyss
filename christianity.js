@@ -1,3 +1,5 @@
+const TIMELINE_KIND="christian";
+function stableEventId(event,index){const slug=String(event.title||"event").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,72)||"event";return TIMELINE_KIND+"-"+String(event.year).replace("-","bce-")+"-"+slug+(index!==undefined?"-"+index:"");}
 const events = [
   {
     year:-5, depth:180, title:"Birth of Jesus (Yeshua)", location:"Bethlehem (Gospel tradition) / Nazareth, Galilee",
@@ -2376,6 +2378,8 @@ const events = [
     sources:[{label:"U.S. State Department — International Religious Freedom",url:"https://www.state.gov/international-religious-freedom-reports/"}]
   }
 ];
+events.forEach((event,index)=>{if(!event.id)event.id=stableEventId(event,index);});
+
 
 const eras = [
   {name:"Birth & Jewish Origins of Jesus",range:"c. 6–4 BCE to c. 30 CE",start:180,end:350},
@@ -2783,13 +2787,14 @@ function renderHistoryTrail(event,connected){
 }
 function openEvent(event){
   paused=true;velocity=0;
+  const displayEvent=(window.FALLING_I18N&&window.FALLING_I18N.localizeEvent)?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,event):event;
   document.getElementById("eventDate").innerHTML=event.year+(jewishOverlapTitles.has(event.title)?' <span class="overlap-badge panel-overlap-badge">Jewish history overlap</span>':'')+(islamicOverlapTitles.has(event.title)?' <span class="overlap-badge islamic-overlap-badge panel-overlap-badge">Islamic history overlap</span>':'');
-  document.getElementById("eventTitle").textContent=event.title;
-  document.getElementById("eventLocation").textContent=event.location;
-  document.getElementById("eventStory").textContent=event.story;
-  document.getElementById("eventContext").textContent=event.context;
-  document.getElementById("eventAftermath").textContent=event.aftermath;
-  document.getElementById("eventSourceStatus").textContent=event.sourceStatus;
+  document.getElementById("eventTitle").textContent=displayEvent.title||event.title;
+  document.getElementById("eventLocation").textContent=displayEvent.location||event.location;
+  document.getElementById("eventStory").textContent=displayEvent.story||event.story;
+  document.getElementById("eventContext").textContent=displayEvent.context||event.context;
+  document.getElementById("eventAftermath").textContent=displayEvent.aftermath||event.aftermath;
+  document.getElementById("eventSourceStatus").textContent=displayEvent.sourceStatus||event.sourceStatus;
   const connected=[];
   if(jewishOverlapTitles.has(event.title))connected.push(["Jewish timeline","index.html","jewish"]);
   if(islamicOverlapTitles.has(event.title))connected.push(["Islam timeline","islam.html","islamic"]);
