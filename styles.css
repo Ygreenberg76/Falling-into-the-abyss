@@ -317,3 +317,9 @@ body.event-open{overflow:hidden}
 .diaspora-map-note{margin:7px 0 0;color:#88838a;font-size:9px;line-height:1.35}
 @media(max-width:1000px){.diaspora-map{width:min(285px,29vw)}}
 @media(max-width:760px){.diaspora-map{top:auto;right:10px;bottom:48px;width:min(260px,64vw);padding:8px}.diaspora-map-head strong{font-size:14px}.diaspora-map-legend{display:none}.diaspora-map-note{font-size:8px}}
+
+
+/* Jewish diaspora map placement: centered below falling figure, clear of event cards */
+.diaspora-map{left:50%;right:auto;top:auto;bottom:48px;width:min(360px,36vw);transform:translateX(-50%);z-index:20;pointer-events:none}
+@media(max-width:1000px){.diaspora-map{width:min(320px,38vw)}}
+@media(max-width:760px){.diaspora-map{left:50%;right:auto;top:auto;bottom:42px;width:min(270px,68vw);transform:translateX(-50%)}}
