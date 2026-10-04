@@ -290,3 +290,8 @@ body.event-open{overflow:hidden}
 .event-marker.jewish-overlap .dot{background:#77cfff;box-shadow:0 0 16px rgba(92,197,255,.95)}
 .event-marker.jewish-overlap small{color:#8fd6ff}
 .event-marker.jewish-overlap::after{background:linear-gradient(90deg,rgba(100,202,255,.7),transparent)}
+
+
+.overlap-badge{display:inline-block;margin:3px 0 5px;padding:3px 7px;border:1px solid rgba(119,207,255,.7);border-radius:999px;background:rgba(29,117,166,.24);color:#8fdcff!important;font-size:10px!important;font-style:normal;font-weight:900!important;letter-spacing:.08em!important;text-transform:uppercase;line-height:1.2;box-shadow:0 0 12px rgba(92,197,255,.14)}
+.event-marker .overlap-badge{display:table}
+.panel-overlap-badge{margin-left:8px;vertical-align:middle;font-size:11px!important;padding:4px 9px}
