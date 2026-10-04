@@ -358,3 +358,11 @@ body.event-open{overflow:hidden}
 .overlap-christian .history-overlap,.history-overlap.overlap-christian{background:rgba(78,135,194,.17);color:#a9cef0}
 .overlap-islamic .history-overlap,.history-overlap.overlap-islamic{background:rgba(65,150,107,.17);color:#a8dfc1}
 .overlap-both .history-overlap,.history-overlap.overlap-both{background:rgba(156,103,191,.18);color:#d9b8ed}
+
+
+/* Jewish page: match shared-history treatment used by Christianity/Islam pages */
+.event-marker.islam-overlap{border-color:rgba(91,201,145,.78);background:linear-gradient(100deg,rgba(18,57,39,.94),rgba(7,12,9,.88));box-shadow:inset 0 1px rgba(255,255,255,.05),0 0 22px rgba(74,190,130,.16),0 9px 28px rgba(0,0,0,.38)}
+.event-marker.islam-overlap .dot{background:#75dba7;box-shadow:0 0 16px rgba(91,201,145,.95)}
+.event-marker.islam-overlap small{color:#9ae8bd}
+.islam-overlap-badge{border-color:rgba(91,201,145,.72);background:rgba(30,125,78,.24);color:#9ae8bd!important}
+.event-marker.christian-overlap.islam-overlap{border-color:rgba(191,142,255,.82);box-shadow:0 0 24px rgba(174,117,255,.2),0 9px 28px rgba(0,0,0,.38)}
