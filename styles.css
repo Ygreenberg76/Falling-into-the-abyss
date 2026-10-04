@@ -145,3 +145,7 @@ footer{text-align:center;color:#71717a;padding:30px}
   html{scroll-behavior:auto}
   .event-marker{transition:none}
 }
+.source-links{display:grid;gap:8px;margin-top:12px}
+.source-links a{color:#ddd6fe;text-decoration:none;border-bottom:1px solid #403653;padding-bottom:7px;line-height:1.4}
+.source-links a:hover{text-decoration:underline}
+.source-links span{color:#8b8b95;font-size:14px}
