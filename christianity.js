@@ -2575,6 +2575,14 @@ function compareScore(source,candidate){
 function bestComparedEvent(source,kind){
   const pool=(window.HISTORY_COMPARE_DATA&&window.HISTORY_COMPARE_DATA[kind])||[];
   if(!pool.length)return null;
+  const curated={
+    "Birth of Jesus (Yeshua)|jewish":"Judea becomes a Roman province and census resistance"
+  };
+  const curatedTitle=curated[(source.title||"")+"|"+kind];
+  if(curatedTitle){
+    const contextual=pool.find(candidate=>candidate.title===curatedTitle);
+    if(contextual)return contextual;
+  }
   let best=pool[0],bestScore=-Infinity;
   pool.forEach(candidate=>{const s=compareScore(source,candidate);if(s>bestScore){best=candidate;bestScore=s;}});
   return bestScore>=20?best:null;
