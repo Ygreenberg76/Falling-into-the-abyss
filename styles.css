@@ -474,3 +474,9 @@ body.event-open{overflow:hidden}
 
 .compare-atlas-insight{margin-top:12px;padding:11px 13px;border-left:3px solid rgba(212,168,95,.7);border-radius:4px 12px 12px 4px;background:rgba(212,168,95,.07);font-size:.82rem;line-height:1.55;color:rgba(245,239,229,.84)}
 .compare-atlas-insight strong{color:#ead3a8}
+
+.compare-history-connection{margin-top:12px;padding:14px;border:1px solid rgba(255,255,255,.1);border-radius:14px;background:rgba(255,255,255,.035)}
+.history-connection-heading{margin-bottom:10px}.history-connection-heading small{display:block;text-transform:uppercase;letter-spacing:.12em;font-size:.67rem;opacity:.58}.history-connection-heading strong{display:block;margin-top:2px;font-family:Georgia,serif;font-size:1rem}
+.history-connection-item{padding:10px 0;border-top:1px solid rgba(255,255,255,.07)}.history-connection-item:first-of-type{border-top:0}
+.history-connection-item>strong{display:block;margin:6px 0 3px;font-size:.84rem}.history-connection-item p{margin:0;line-height:1.5;font-size:.8rem;opacity:.78}
+.history-connection-type{display:inline-flex;padding:4px 8px;border-radius:999px;border:1px solid rgba(212,168,95,.34);background:rgba(212,168,95,.09);color:#ead3a8;font-size:.68rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
