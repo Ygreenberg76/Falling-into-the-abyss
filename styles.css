@@ -572,3 +572,9 @@ html[dir="rtl"] .conflict-chain-number{grid-column:2}html[dir="rtl"] .conflict-c
 html[dir="rtl"] .conflict-chain-rail:before{left:auto;right:16px}
 html[dir="rtl"] .sources-language-switcher{margin-left:0;margin-right:auto}
 @media(max-width:680px){.language-switcher{order:-1}}
+
+/* Mixed-language direction: English fallbacks stay LTR until translated */
+body.rtl-language{direction:ltr}
+body.rtl-language [dir="rtl"]{direction:rtl;text-align:right}
+body.rtl-language .language-switcher{direction:ltr}
+body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-language .sources-shell,body.rtl-language .conflict-chain-step{direction:ltr;text-align:left}
