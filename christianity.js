@@ -2612,8 +2612,23 @@ function renderHistoryConnection(items){
  const box=document.getElementById("compareHistoryConnection");if(!box)return;box.innerHTML="";
  if(items.length<2){box.classList.add("hidden");return;}box.classList.remove("hidden");
  const base=items[0],parts=[];
- items.slice(1).forEach(other=>{const [type,desc]=historyConnectionType(base.event,other.event);parts.push('<div class="history-connection-item"><span class="history-connection-type">'+type+'</span><strong>'+base.label+' ↔ '+other.label+'</strong><p>'+desc+'</p></div>');});
- box.innerHTML='<div class="history-connection-heading"><small>Historical connection</small><strong>Why these histories are connected</strong></div>'+parts.join("");
+ const clean=s=>(s||"").replace(/\s+/g," ").trim();
+ const esc=s=>clean(s).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+ const yearLabel=y=>Number(y)<0?Math.abs(Number(y))+" BCE":Number(y)===0?"1 BCE / 1 CE":Number(y)+" CE";
+ const keywords=s=>new Set(clean(s).toLowerCase().replace(/[^a-z0-9\s]/g," ").split(/\s+/).filter(w=>w.length>4&&!["history","event","people","during","after","before","their","these","which","through","between","under","against","became"].includes(w)));
+ items.slice(1).forEach(other=>{
+   const a=base.event,b=other.event,[type,desc]=historyConnectionType(a,b),diff=Math.abs(Number(a.year)-Number(b.year));
+   const at=keywords([a.title,a.location,a.context].join(" ")),bt=keywords([b.title,b.location,b.context].join(" ")),shared=[];at.forEach(w=>{if(bt.has(w)&&shared.length<4)shared.push(w);});
+   const samePlace=clean(a.location).toLowerCase()===clean(b.location).toLowerCase()&&clean(a.location);
+   let timing=diff<=2?"They occur at essentially the same historical moment":diff<=25?"They occur within "+diff+" years of one another":(Number(a.year)<Number(b.year)?base.label+" event comes about "+diff+" years earlier":other.label+" event comes about "+diff+" years earlier");
+   let specific=timing+". ";
+   if(samePlace)specific+="Both are centered on "+a.location+", so the overlap is geographic as well as historical. ";
+   else if(shared.length)specific+="Their descriptions share historical context around "+shared.map(w=>w.charAt(0).toUpperCase()+w.slice(1)).join(", ")+". ";
+   specific+=desc+" ";
+   specific+="In "+base.label+", this appears as “"+a.title+"” ("+yearLabel(a.year)+"); in "+other.label+", the related entry is “"+b.title+"” ("+yearLabel(b.year)+").";
+   parts.push('<div class="history-connection-item '+other.kind+'-connection"><span class="history-connection-type">'+esc(type)+'</span><strong>'+esc(base.label)+' ↔ '+esc(other.label)+'</strong><p>'+esc(specific)+'</p></div>');
+ });
+ box.innerHTML='<div class="history-connection-heading"><small>Historical connection</small><strong>Why these histories are connected</strong><p>Compare the same period through the events, places and communities recorded in each timeline.</p></div>'+parts.join("");
 }
 function showComparisonMap(items){
   const dots=document.getElementById("compareAtlasDots"),land=document.getElementById("compareAtlasLand"),legend=document.getElementById("compareAtlasLegend"),insight=document.getElementById("compareAtlasInsight");
