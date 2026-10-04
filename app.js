@@ -396,6 +396,15 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://wwv.yadvashem.org/yv/en/exhibitions/music/vilna-ghetto.asp"}]
   },
   {
+    year:1941, depth:6270, title:"Chełmno killing center begins mass murder", location:"Chełmno, German-occupied Poland",
+    story:"Mass murder began at Chełmno in December 1941 using gas vans. Nazi Germany murdered at least 152,000 Jews there.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Killing center / genocide",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/chelmno"}]
+  },
+  {
     year:1941, depth:6280, title:"Holocaust mass shootings and extermination", location:"German-occupied Europe",
     story:"Nazi Germany and its allies and collaborators systematically murdered approximately six million European Jews through shootings, killing centers, ghettos, starvation, forced labor and other methods.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
@@ -403,6 +412,15 @@ const events = [
     stats:{Type:"Genocide",Evidence:"Very high"},
     sourceStatus:"Very high",
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust"}]
+  },
+  {
+    year:1941, depth:6290, title:"Rumbula massacre", location:"Near Riga, German-occupied Latvia",
+    story:"German SS and police and Latvian auxiliaries murdered approximately 25,000 Jews from the Riga ghetto and about 1,000 German Jews in the Rumbula forest in late 1941.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Mass shooting / genocide",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/riga"}]
   },
   {
     year:1941, depth:6300, title:"Babi Yar massacre", location:"Kyiv, German-occupied Ukraine",
@@ -414,6 +432,69 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://wwv.yadvashem.org/yv/en/exhibitions/communities/kiev/babi-yar.asp"}]
   },
   {
+    year:1942, depth:6305, title:"Belzec killing center", location:"Bełżec, German-occupied Poland",
+    story:"Belzec became an Operation Reinhard killing center. Approximately 435,000 Jews were murdered there, overwhelmingly in gas chambers.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Killing center / genocide",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/belzec"}]
+  },
+  {
+    year:1942, depth:6310, title:"Sobibor killing center", location:"Sobibór, German-occupied Poland",
+    story:"Sobibor was established as an Operation Reinhard killing center. At least 167,000 Jews were murdered there.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Killing center / genocide",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/sobibor"}]
+  },
+  {
+    year:1942, depth:6315, title:"Treblinka II killing center", location:"Treblinka, German-occupied Poland",
+    story:"Treblinka II operated as an Operation Reinhard killing center. Nazi personnel murdered an estimated 925,000 Jews there.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Killing center / genocide",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/treblinka"}]
+  },
+  {
+    year:1942, depth:6320, title:"Auschwitz-Birkenau mass murder of Jews", location:"Auschwitz-Birkenau, German-occupied Poland",
+    story:"Auschwitz-Birkenau became the largest Nazi concentration and killing complex. Approximately one million Jews were murdered in the Auschwitz camp complex.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Killing center / genocide",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/auschwitz"}]
+  },
+  {
+    year:1942, depth:6325, title:"Great Action: deportation of Warsaw Jews to Treblinka", location:"Warsaw, German-occupied Poland",
+    story:"From July to September 1942, German authorities deported about 265,000 Jews from the Warsaw ghetto to Treblinka and killed approximately 35,000 Jews in the ghetto during the operation.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Deportation / genocide",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
+  },
+  {
+    year:1943, depth:6330, title:"Warsaw Ghetto Uprising", location:"Warsaw, German-occupied Poland",
+    story:"Jewish fighters resisted the final German deportation operation beginning April 19, 1943. At least 7,000 Jews died fighting or in hiding as German forces destroyed the ghetto.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Jewish armed resistance / suppression",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
+  },
+  {
+    year:1943, depth:6335, title:"Operation Harvest Festival", location:"Lublin district, German-occupied Poland",
+    story:"German SS and police murdered tens of thousands of Jewish forced laborers in the Lublin district during Operation Harvest Festival in November 1943.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Mass shooting / genocide",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
+  },
+  {
     year:1946, depth:6350, title:"Kielce pogrom", location:"Kielce, Poland",
     story:"A mob, joined by some police and soldiers, killed Jewish Holocaust survivors and other Jews in Kielce; at least 42 Jews were murdered.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
@@ -423,7 +504,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1947, depth:6400, title:"Fajja bus attacks", location:"Near Petah Tikva, Mandatory Palestine",
+    year:1947, depth:6390, title:"Fajja bus attacks", location:"Near Petah Tikva, Mandatory Palestine",
     story:"On November 30, 1947, the day after the UN partition vote, Arab gunmen attacked Jewish buses, among the opening incidents of the civil-war phase of the 1947–49 conflict.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -432,7 +513,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/The-1948-war"}]
   },
   {
-    year:1947, depth:6420, title:"1947–1949 Palestine war / Arab–Israeli War", location:"Mandatory Palestine / Israel",
+    year:1947, depth:6405, title:"1947–1949 Palestine war / Arab–Israeli War", location:"Mandatory Palestine / Israel",
     story:"Fighting followed the UN partition vote; after Israel declared independence in May 1948, neighboring Arab armies entered the war. Jewish and Arab civilians and combatants suffered major losses and displacement.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -450,22 +531,49 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Jerusalem"}]
   },
   {
-    year:1956, depth:6500, title:"Suez Crisis / Sinai War", location:"Egypt / Sinai / Israel",
-    story:"Israel invaded Egypt's Sinai Peninsula in coordination with the Anglo-French intervention after Egypt nationalized the Suez Canal.",
-    context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
-    aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
-    stats:{Type:"Interstate war",Evidence:"Very high"},
-    sourceStatus:"Very high",
-    sources:[{label:"Source / further reading",url:"https://history.state.gov/milestones/1953-1960/suez"}]
-  },
-  {
-    year:1954, depth:6525, title:"Ma'ale Akrabim bus massacre", location:"Negev, Israel",
+    year:1954, depth:6490, title:"Ma'ale Akrabim bus massacre", location:"Negev, Israel",
     story:"Gunmen ambushed an Israeli passenger bus at Ma'ale Akrabim in March 1954, killing passengers and leaving only a few survivors.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
     stats:{Type:"Attack on civilian bus",Evidence:"High"},
     sourceStatus:"High",
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
+  },
+  {
+    year:1955, depth:6510, title:"Patish wedding attack", location:"Patish, Israel",
+    story:"Attackers threw grenades and opened fire on a crowded wedding celebration in March 1955, killing a young woman and wounding 18 people.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Terrorist attack",Evidence:"High"},
+    sourceStatus:"High",
+    sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
+  },
+  {
+    year:1956, depth:6530, title:"Kfar Chabad synagogue attack", location:"Kfar Chabad, Israel",
+    story:"Gunmen opened fire on a synagogue containing children and teenagers in April 1956, killing three children and a youth worker and injuring others.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Terrorist attack on children",Evidence:"High"},
+    sourceStatus:"High",
+    sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
+  },
+  {
+    year:1956, depth:6540, title:"Ramat Rachel shooting", location:"Ramat Rachel, Israel",
+    story:"Gunfire from a Jordanian position killed four archaeologists and wounded sixteen people at Ramat Rachel in September 1956.",
+    context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
+    aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
+    stats:{Type:"Cross-border shooting",Evidence:"High"},
+    sourceStatus:"High",
+    sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
+  },
+  {
+    year:1956, depth:6550, title:"Suez Crisis / Sinai War", location:"Egypt / Sinai / Israel",
+    story:"Israel invaded Egypt's Sinai Peninsula in coordination with the Anglo-French intervention after Egypt nationalized the Suez Canal.",
+    context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
+    aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
+    stats:{Type:"Interstate war",Evidence:"Very high"},
+    sourceStatus:"Very high",
+    sources:[{label:"Source / further reading",url:"https://history.state.gov/milestones/1953-1960/suez"}]
   },
   {
     year:1967, depth:6570, title:"Six-Day War", location:"Israel / Egypt / Jordan / Syria",
@@ -782,7 +890,7 @@ const events = [
     sourceStatus:"Very high for core events; evolving and contested details require dated sourcing",
     sources:[{label:"Source / further reading",url:"https://www.un.org/unispal/document/coi-report-a-hrc-56-26-27may24/"}]
   }
-];
+]
 
 const eras = [
   {name:"Ancient Israel & Judah",range:"c. 1200–586 BCE",start:0,end:1160},
