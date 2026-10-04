@@ -2534,6 +2534,142 @@ const mist1=document.querySelector(".mist-1");
 const mist2=document.querySelector(".mist-2");
 const panel=document.getElementById("eventPanel");
 const aboutPanel=document.getElementById("aboutPanel");
+const mapDots=document.getElementById("mapDots");
+const mapYear=document.getElementById("mapYear");
+const mapCommunityCount=document.getElementById("mapCommunityCount");
+const mapLegend=document.getElementById("mapLegend");
+
+/* Historical geography uses broad, approximate periods and relative prominence.
+   Coordinates mark major Jewish population centers, not borders or exact population totals. */
+const jewishGeoPeriods=[
+  {from:-1800,to:-722,centers:[
+    {name:"Canaan / Israel",lat:31.8,lon:35.2,w:5}
+  ]},
+  {from:-721,to:-587,centers:[
+    {name:"Judah / Jerusalem",lat:31.8,lon:35.2,w:5},
+    {name:"Mesopotamia",lat:33.3,lon:44.4,w:2}
+  ]},
+  {from:-586,to:-332,centers:[
+    {name:"Babylonia",lat:32.5,lon:44.5,w:5},
+    {name:"Judea",lat:31.8,lon:35.2,w:3},
+    {name:"Egypt",lat:30.0,lon:31.2,w:2}
+  ]},
+  {from:-331,to:69,centers:[
+    {name:"Judea",lat:31.8,lon:35.2,w:5},
+    {name:"Babylonia",lat:32.5,lon:44.5,w:4},
+    {name:"Alexandria",lat:31.2,lon:29.9,w:4},
+    {name:"Asia Minor",lat:39.0,lon:32.5,w:2},
+    {name:"Rome",lat:41.9,lon:12.5,w:2}
+  ]},
+  {from:70,to:499,centers:[
+    {name:"Galilee / Palestine",lat:32.8,lon:35.5,w:4},
+    {name:"Babylonia",lat:32.5,lon:44.5,w:5},
+    {name:"Rome / Italy",lat:41.9,lon:12.5,w:2},
+    {name:"North Africa",lat:34.0,lon:10.0,w:2}
+  ]},
+  {from:500,to:999,centers:[
+    {name:"Babylonia",lat:32.5,lon:44.5,w:5},
+    {name:"Levant",lat:32.0,lon:35.2,w:3},
+    {name:"Iberia",lat:40.0,lon:-4.0,w:4},
+    {name:"North Africa",lat:33.5,lon:3.0,w:3},
+    {name:"Italy",lat:42.0,lon:12.5,w:2}
+  ]},
+  {from:1000,to:1299,centers:[
+    {name:"Iberia",lat:40.0,lon:-4.0,w:5},
+    {name:"France",lat:47.0,lon:2.0,w:3},
+    {name:"Rhineland",lat:50.3,lon:7.5,w:3},
+    {name:"North Africa",lat:33.5,lon:3.0,w:3},
+    {name:"Egypt",lat:30.0,lon:31.2,w:3},
+    {name:"Iraq",lat:33.0,lon:44.0,w:2}
+  ]},
+  {from:1300,to:1491,centers:[
+    {name:"Iberia",lat:40.0,lon:-4.0,w:5},
+    {name:"Italy",lat:42.0,lon:12.5,w:3},
+    {name:"Poland",lat:52.0,lon:19.0,w:4},
+    {name:"Ottoman lands",lat:41.0,lon:29.0,w:2},
+    {name:"North Africa",lat:33.5,lon:3.0,w:3}
+  ]},
+  {from:1492,to:1647,centers:[
+    {name:"Ottoman Empire",lat:41.0,lon:29.0,w:5},
+    {name:"Poland–Lithuania",lat:52.5,lon:23.0,w:5},
+    {name:"Italy",lat:42.0,lon:12.5,w:3},
+    {name:"North Africa",lat:33.5,lon:3.0,w:3},
+    {name:"Netherlands",lat:52.1,lon:5.3,w:2},
+    {name:"Levant",lat:32.0,lon:35.2,w:2}
+  ]},
+  {from:1648,to:1799,centers:[
+    {name:"Poland–Lithuania",lat:52.5,lon:23.0,w:5},
+    {name:"Ottoman Empire",lat:41.0,lon:29.0,w:4},
+    {name:"German lands",lat:51.0,lon:10.0,w:3},
+    {name:"Netherlands",lat:52.1,lon:5.3,w:3},
+    {name:"North Africa",lat:33.5,lon:3.0,w:3},
+    {name:"Americas",lat:40.7,lon:-74.0,w:1}
+  ]},
+  {from:1800,to:1880,centers:[
+    {name:"Russian Empire / Pale",lat:52.0,lon:27.0,w:6},
+    {name:"Central Europe",lat:49.0,lon:15.0,w:4},
+    {name:"Ottoman lands",lat:41.0,lon:29.0,w:3},
+    {name:"North Africa",lat:33.5,lon:3.0,w:3},
+    {name:"United States",lat:40.7,lon:-74.0,w:2}
+  ]},
+  {from:1881,to:1932,centers:[
+    {name:"Eastern Europe",lat:52.0,lon:27.0,w:6},
+    {name:"Central Europe",lat:49.0,lon:15.0,w:4},
+    {name:"United States",lat:40.7,lon:-74.0,w:5},
+    {name:"Palestine",lat:32.0,lon:35.2,w:3},
+    {name:"North Africa",lat:33.5,lon:3.0,w:3},
+    {name:"Argentina",lat:-34.6,lon:-58.4,w:2}
+  ]},
+  {from:1933,to:1945,centers:[
+    {name:"Eastern Europe",lat:52.0,lon:27.0,w:5},
+    {name:"United States",lat:40.7,lon:-74.0,w:5},
+    {name:"Palestine",lat:32.0,lon:35.2,w:4},
+    {name:"Soviet Union",lat:55.8,lon:37.6,w:3},
+    {name:"North Africa",lat:33.5,lon:3.0,w:3},
+    {name:"Latin America",lat:-23.5,lon:-46.6,w:2}
+  ]},
+  {from:1946,to:1989,centers:[
+    {name:"Israel",lat:31.8,lon:35.0,w:6},
+    {name:"United States",lat:40.7,lon:-74.0,w:6},
+    {name:"Soviet Union",lat:55.8,lon:37.6,w:4},
+    {name:"Western Europe",lat:48.9,lon:2.3,w:3},
+    {name:"North Africa",lat:33.5,lon:3.0,w:2},
+    {name:"Latin America",lat:-34.6,lon:-58.4,w:2}
+  ]},
+  {from:1990,to:2026,centers:[
+    {name:"Israel",lat:31.8,lon:35.0,w:7},
+    {name:"United States",lat:40.7,lon:-74.0,w:6},
+    {name:"France",lat:48.9,lon:2.3,w:3},
+    {name:"Canada",lat:43.7,lon:-79.4,w:2},
+    {name:"United Kingdom",lat:51.5,lon:-0.1,w:2},
+    {name:"Russia",lat:55.8,lon:37.6,w:2},
+    {name:"Argentina",lat:-34.6,lon:-58.4,w:2},
+    {name:"Australia",lat:-33.9,lon:151.2,w:2}
+  ]}
+];
+function mapPoint(lat,lon){return{x:(lon+180),y:90-lat}}
+let lastMapPeriod=null;
+function renderJewishMap(year){
+  if(!mapDots)return;
+  const period=jewishGeoPeriods.find(p=>year>=p.from&&year<=p.to)||jewishGeoPeriods[jewishGeoPeriods.length-1];
+  mapYear.textContent=year<0?Math.abs(year)+" BCE":year+" CE";
+  if(period===lastMapPeriod)return;
+  lastMapPeriod=period;
+  mapDots.innerHTML="";
+  mapLegend.innerHTML="";
+  period.centers.forEach(center=>{
+    const p=mapPoint(center.lat,center.lon);
+    const g=document.createElementNS("http://www.w3.org/2000/svg","g");
+    const halo=document.createElementNS("http://www.w3.org/2000/svg","circle");
+    halo.setAttribute("cx",p.x);halo.setAttribute("cy",p.y);halo.setAttribute("r",3+center.w*1.05);halo.setAttribute("class","map-community");halo.setAttribute("opacity",.32);
+    const dot=document.createElementNS("http://www.w3.org/2000/svg","circle");
+    dot.setAttribute("cx",p.x);dot.setAttribute("cy",p.y);dot.setAttribute("r",1.2+center.w*.42);dot.setAttribute("class","map-community-core");
+    g.append(halo,dot);mapDots.appendChild(g);
+    const tag=document.createElement("span");tag.textContent=center.name;mapLegend.appendChild(tag);
+  });
+  mapCommunityCount.textContent=period.centers.length+" center"+(period.centers.length===1?"":"s");
+}
+
 
 function makeParticles(){
   const wrap=document.getElementById("particles");
@@ -2604,7 +2740,7 @@ function render(){
   const pct=Math.round((depth/MAX_DEPTH)*100);
   const currentYear=yearAt(depth);
   yearReadout.textContent=currentYear<0?Math.abs(currentYear)+" BCE":currentYear+" CE";
-  depthReadout.textContent=pct+"%";
+  renderJewishMap(currentYear);\n  depthReadout.textContent=pct+"%";
   progressFill.style.height=pct+"%";
 
   const speed=Math.min(1,Math.abs(velocity)/105);
