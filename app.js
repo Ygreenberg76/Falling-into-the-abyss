@@ -2943,6 +2943,7 @@ function openEvent(event){
   document.getElementById("eventContext").textContent=displayEvent.context||event.context;
   document.getElementById("eventAftermath").textContent=displayEvent.aftermath||event.aftermath;
   document.getElementById("eventSourceStatus").textContent=displayEvent.sourceStatus||event.sourceStatus;
+  if(window.FALLING_I18N&&window.FALLING_I18N.applyEventDirection)window.FALLING_I18N.applyEventDirection(displayEvent);
   const connected=[];
   const overlap=historyOverlap(event);
   if(overlap==="christian"||overlap==="both")connected.push(["Christianity timeline","christianity.html","christian"]);
