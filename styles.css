@@ -494,3 +494,16 @@ body.event-open{overflow:hidden}
 .same-time-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:9px}.same-time-card{display:flex;flex-direction:column;gap:4px;padding:11px 12px;border:1px solid rgba(255,255,255,.08);border-radius:13px;background:rgba(0,0,0,.16);color:inherit;text-decoration:none;transition:transform .16s ease,border-color .16s ease,background .16s ease}.same-time-card:hover{transform:translateY(-2px);border-color:rgba(212,168,95,.4);background:rgba(255,255,255,.045)}
 .same-time-timeline{font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.jewish-same-time .same-time-timeline{color:#d4a85f}.christian-same-time .same-time-timeline{color:#6da8df}.islamic-same-time .same-time-timeline{color:#63b980}.same-time-card strong{font-size:.8rem;line-height:1.35}.same-time-card small{font-size:.72rem;opacity:.62}.same-time-card em{margin-top:4px;font-size:.7rem;font-style:normal;font-weight:800;opacity:.82}.same-time-empty{margin:0;font-size:.8rem;opacity:.68}
 @media(max-width:600px){.same-time-grid{grid-template-columns:1fr}}
+
+
+/* Event panel: explain why histories overlap */
+.overlap-explanations{display:grid;gap:8px;margin:12px 0}
+.overlap-explanation{padding:10px 12px;border-left:3px solid rgba(255,255,255,.25);border-radius:8px;background:rgba(255,255,255,.035)}
+.overlap-explanation strong{display:block;margin-bottom:4px;font-size:11px;letter-spacing:.05em;text-transform:uppercase}
+.overlap-explanation p{margin:0;color:#c8c3ba;font-size:12px;line-height:1.55}
+.overlap-explanation.jewish-overlap-explanation{border-left-color:#77cfff;background:rgba(29,117,166,.10)}
+.overlap-explanation.jewish-overlap-explanation strong{color:#8fdcff}
+.overlap-explanation.christian-overlap-explanation{border-left-color:#ffc46b;background:rgba(153,93,22,.10)}
+.overlap-explanation.christian-overlap-explanation strong{color:#ffd08b}
+.overlap-explanation.islamic-overlap-explanation{border-left-color:#65e3a5;background:rgba(24,125,78,.10)}
+.overlap-explanation.islamic-overlap-explanation strong{color:#8aefbd}
