@@ -63,6 +63,7 @@ function parseYear(){
 function point(lat,lon){return{x:lon+180,y:90-lat}}
 let lastKey="";
 function draw(){
+ if(comparisonMapActive)return;
  const year=parseYear(); if(year===null)return;
  mapYear.textContent=year<0?Math.abs(year)+" BCE":year+" CE";
  const p=periods.find(x=>year>=x.from&&year<=x.to)||periods[periods.length-1];
@@ -81,5 +82,11 @@ function draw(){
  countEl.textContent=p.c.length+" center"+(p.c.length===1?"":"s");
 }
 draw();
-new MutationObserver(draw).observe(yearEl,{childList:true,characterData:true,subtree:true});
+new MutationObserver(draw).observe(yearEl,{childList:true,cha
+let comparisonMapActive=false;
+window.addEventListener("history-map-compare",e=>{
+ comparisonMapActive=!!(e.detail&&e.detail.active);
+ if(!comparisonMapActive){lastKey="";draw();}
+});
+racterData:true,subtree:true});
 })();
