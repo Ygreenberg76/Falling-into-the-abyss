@@ -315,7 +315,43 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/biography/Herod-king-of-Judaea"}]
   },
   {
-    year:66, depth:6130, title:"First Jewish–Roman War", location:"Roman Judaea",
+    year:38, depth:6130, title:"Alexandria anti-Jewish violence", location:"Alexandria, Roman Egypt",
+    story:"Severe communal violence erupted in Alexandria between Greek and Jewish inhabitants amid a political dispute under the Roman prefect Aulus Avilius Flaccus. Philo describes Jews being driven into a restricted quarter, homes and shops looted, and people assaulted and killed. Modern historians often describe the episode as one of antiquity's clearest large-scale anti-Jewish outbreaks.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Strong contemporary literary evidence from Philo; exact casualty totals unknown"},
+    sourceStatus:"Strong contemporary literary evidence from Philo; exact casualty totals unknown",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Alexandria-Egypt"}]
+  },
+  {
+    year:46, depth:6300, title:"Roman crucifixion of Jacob and Simon, sons of Judas the Galilean", location:"Judea",
+    story:"Josephus records that the Roman procurator Tiberius Julius Alexander ordered the crucifixion of Jacob and Simon, sons of Judas the Galilean, whose movement had resisted Roman taxation. The episode illustrates continuing armed resistance and Roman repression before the great revolt of 66 CE.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Ancient literary evidence, principally Josephus"},
+    sourceStatus:"Ancient literary evidence, principally Josephus",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/Roman-Palestine"}]
+  },
+  {
+    year:50, depth:6470, title:"Jewish–Samaritan violence under Roman rule", location:"Judea / Samaria",
+    story:"After Galilean pilgrims were killed while traveling through Samaria, Jewish groups retaliated against Samaritan villages. Roman intervention followed. The episode shows that violence in Roman Palestine was not simply Jews against Rome but also included serious intercommunal conflict.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Ancient literary evidence; details primarily Josephus"},
+    sourceStatus:"Ancient literary evidence; details primarily Josephus",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Samaria-historical-region-Palestine"}]
+  },
+  {
+    year:64, depth:6640, title:"Gessius Florus and escalating violence in Judea", location:"Jerusalem / Judea",
+    story:"Roman procurator Gessius Florus became notorious in Jewish sources for harsh taxation and violence. His seizure of funds from the Temple treasury and brutal suppression of protests in Jerusalem helped turn long-standing tensions into open revolt.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Strong ancient literary evidence; motives and details filtered through hostile sources"},
+    sourceStatus:"Strong ancient literary evidence; motives and details filtered through hostile sources",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/First-Jewish-Revolt"}]
+  },
+  {
+    year:66, depth:6810, title:"First Jewish–Roman War", location:"Roman Judaea",
     story:"A major Jewish revolt against Roman rule began in 66 CE and was crushed over several years.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -324,7 +360,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/First-Jewish-Revolt"}]
   },
   {
-    year:70, depth:6300, title:"Destruction of Jerusalem and Second Temple", location:"Jerusalem",
+    year:67, depth:6980, title:"Roman campaign in Galilee", location:"Galilee",
+    story:"Roman forces under Vespasian and Titus systematically retook Galilee during the First Jewish–Roman War. Major centers including Jotapata fell after sieges, with large-scale deaths, enslavement and displacement reported by Josephus.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Strong ancient literary and archaeological evidence; casualty numbers in Josephus may be inflated"},
+    sourceStatus:"Strong ancient literary and archaeological evidence; casualty numbers in Josephus may be inflated",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/First-Jewish-Revolt"}]
+  },
+  {
+    year:70, depth:7150, title:"Destruction of Jerusalem and Second Temple", location:"Jerusalem",
     story:"Roman forces under Titus captured Jerusalem and destroyed the Second Temple. Ancient casualty totals are disputed.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -333,7 +378,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Siege-of-Jerusalem-70"}]
   },
   {
-    year:115, depth:6470, title:"Kitos War / Diaspora Revolt", location:"Eastern Roman Empire",
+    year:73, depth:7320, title:"Siege and fall of Masada", location:"Masada, Judean Desert",
+    story:"Roman forces besieged the fortress of Masada, held by Jewish rebels after the fall of Jerusalem. Josephus reports that the defenders chose mass suicide rather than capture. Archaeology confirms the Roman siege works and destruction, while historians debate aspects of Josephus's account of the final deaths.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Very strong archaeological evidence for siege; final suicide narrative depends on Josephus"},
+    sourceStatus:"Very strong archaeological evidence for siege; final suicide narrative depends on Josephus",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Masada"}]
+  },
+  {
+    year:115, depth:7490, title:"Kitos War / Diaspora Revolt", location:"Eastern Roman Empire",
     story:"Jewish revolts erupted in several eastern Roman provinces during Trajan's reign and were violently suppressed.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -342,7 +396,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/Judaism/The-Roman-period-63-bce-135-ce"}]
   },
   {
-    year:132, depth:6640, title:"Bar Kokhba Revolt", location:"Judaea",
+    year:117, depth:7660, title:"Roman suppression of the Diaspora Revolt", location:"Cyrenaica / Egypt / Cyprus / Mesopotamia",
+    story:"The Kitos War or Diaspora Revolt spread through several eastern Roman provinces. Ancient sources describe extensive killing by both Jewish rebels and their opponents. Roman forces eventually suppressed the revolts with devastating consequences for several Jewish communities.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Well-attested revolt; ancient casualty figures highly unreliable"},
+    sourceStatus:"Well-attested revolt; ancient casualty figures highly unreliable",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/Judaism/The-Roman-period-63-bce-135-ce"}]
+  },
+  {
+    year:132, depth:7830, title:"Bar Kokhba Revolt", location:"Judaea",
     story:"Bar Kokhba led a major Jewish revolt against Rome. Roman suppression devastated Judaea; ancient casualty figures require caution.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -351,7 +414,43 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Bar-Kokhba-Revolt"}]
   },
   {
-    year:614, depth:6810, title:"Sasanian capture of Jerusalem", location:"Jerusalem, Byzantine Palestine",
+    year:135, depth:8000, title:"Roman suppression after the Bar Kokhba Revolt", location:"Judea",
+    story:"After defeating Bar Kokhba's revolt, Rome devastated much of Judea. Ancient sources describe enormous losses, enslavement and destruction. Jerusalem was refounded as the Roman colony Aelia Capitolina, and Jewish access to the city was heavily restricted.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Strong literary, epigraphic and archaeological evidence; ancient casualty totals debated"},
+    sourceStatus:"Strong literary, epigraphic and archaeological evidence; ancient casualty totals debated",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Bar-Kokhba-Revolt"}]
+  },
+  {
+    year:351, depth:8170, title:"Jewish revolt against Constantius Gallus", location:"Galilee / Sepphoris",
+    story:"A Jewish revolt broke out in Roman Palestine during the reign of Constantius II and his cousin Gallus. Rebels seized or attacked several centers, including Sepphoris. Roman forces suppressed the uprising, and ancient accounts report significant destruction.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Historically attested but surviving literary accounts are brief and sometimes contradictory"},
+    sourceStatus:"Historically attested but surviving literary accounts are brief and sometimes contradictory",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/Roman-Palestine"}]
+  },
+  {
+    year:415, depth:8340, title:"Expulsion of Jews from Alexandria under Cyril", location:"Alexandria, Byzantine Egypt",
+    story:"During violent conflict among Christian, Jewish and imperial factions in Alexandria, Patriarch Cyril led action against the city's Jewish community after an outbreak of communal violence. Socrates Scholasticus reports that synagogues were seized and many Jews were expelled. The scale and permanence of the expulsion are debated.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Late-antique literary evidence; scale and sequence debated"},
+    sourceStatus:"Late-antique literary evidence; scale and sequence debated",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/biography/Saint-Cyril-of-Alexandria"}]
+  },
+  {
+    year:529, depth:8510, title:"Samaritan revolts and Jewish communities in Byzantine Palestine", location:"Palestine",
+    story:"Repeated Samaritan revolts against Byzantine rule brought severe warfare to Palestine in the sixth century. Jewish communities lived within the same contested landscape and appear in some accounts as participants or victims depending on locality and episode. The conflicts devastated parts of the region.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Revolts well attested; specific Jewish participation varies by source and episode"},
+    sourceStatus:"Revolts well attested; specific Jewish participation varies by source and episode",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/Roman-Palestine"}]
+  },
+  {
+    year:614, depth:8680, title:"Sasanian capture of Jerusalem", location:"Jerusalem, Byzantine Palestine",
     story:"Sasanian Persian forces captured Jerusalem during the Byzantine–Sasanian war. Jewish groups participated on the Persian side; Christian inhabitants suffered extensive violence. Later accounts differ substantially on casualty numbers and the roles of participants.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -360,7 +459,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Jerusalem/Roman-rule"}]
   },
   {
-    year:624, depth:6980, title:"Banu Qaynuqa conflict", location:"Medina",
+    year:614, depth:8850, title:"Persian conquest of Jerusalem and Jewish participation", location:"Jerusalem / Byzantine Palestine",
+    story:"Sasanian Persian forces captured Jerusalem during their war with Byzantium. Some Jewish groups supported the Persian advance, hoping for relief from Byzantine Christian rule. Christian inhabitants suffered major violence after the city's capture. Later Christian accounts attribute extensive killing to Jews, but casualty numbers and the precise extent of Jewish participation remain disputed.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Conquest firmly attested; responsibility and massacre numbers contested in later sources"},
+    sourceStatus:"Conquest firmly attested; responsibility and massacre numbers contested in later sources",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Jerusalem/Roman-rule"}]
+  },
+  {
+    year:624, depth:9020, title:"Banu Qaynuqa conflict", location:"Medina",
     story:"Early Islamic literary traditions describe a conflict between Muhammad's Medinan community and Banu Qaynuqa, followed by the group's expulsion.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -369,7 +477,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/biography/Muhammad"}]
   },
   {
-    year:625, depth:7150, title:"Banu Nadir conflict", location:"Medina",
+    year:625, depth:9190, title:"Banu Nadir conflict", location:"Medina",
     story:"Early Islamic sources describe Muhammad's conflict with Banu Nadir and their expulsion from Medina.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -378,7 +486,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/biography/Muhammad"}]
   },
   {
-    year:627, depth:7320, title:"Banu Qurayza episode", location:"Medina",
+    year:627, depth:9360, title:"Banu Qurayza episode", location:"Medina",
     story:"Islamic tradition describes the surrender of Banu Qurayza after the Battle of the Trench and the execution of many adult males; details and numbers are debated.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -387,7 +495,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/biography/Muhammad"}]
   },
   {
-    year:628, depth:7490, title:"Khaybar campaign", location:"Khaybar, Arabia",
+    year:628, depth:9530, title:"Khaybar campaign", location:"Khaybar, Arabia",
     story:"Muhammad's forces defeated the Jewish oasis communities of Khaybar; agreements allowed many inhabitants to remain under new political conditions.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -396,7 +504,16 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Khaybar"}]
   },
   {
-    year:1011, depth:7660, title:"Persecution under al-Hakim", location:"Fatimid Caliphate",
+    year:629, depth:9700, title:"Byzantine restoration and reported anti-Jewish reprisals", location:"Jerusalem / Byzantine Palestine",
+    story:"After Emperor Heraclius restored Byzantine control, later traditions describe persecution and killings of Jews accused of collaborating with the Persians. The existence of renewed restrictions is credible, but accounts of a systematic empire-wide massacre or a specific Heraclean oath are late and disputed.",
+    context:"Roman and Byzantine Palestine contained imperial repression, Jewish resistance, and intercommunal violence. This entry identifies the participants rather than treating every conflict as a single continuous ethnic war.",
+    aftermath:"The consequences are described conservatively where ancient authors give dramatic or conflicting casualty claims.",
+    stats:{Type:"Roman/Byzantine conflict or persecution",Evidence:"Evidence for restrictions stronger than later massacre narratives"},
+    sourceStatus:"Evidence for restrictions stronger than later massacre narratives",
+    sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/Roman-Palestine"}]
+  },
+  {
+    year:1011, depth:9870, title:"Persecution under al-Hakim", location:"Fatimid Caliphate",
     story:"Under Fatimid caliph al-Hakim, discriminatory and coercive measures were imposed on Christians and Jews, including restrictions and destruction of houses of worship. The intensity and chronology of policies varied over his reign.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -405,7 +522,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/biography/al-Hakim-Fatimid-caliph"}]
   },
   {
-    year:1066, depth:7830, title:"Granada massacre", location:"Granada, al-Andalus",
+    year:1066, depth:10040, title:"Granada massacre", location:"Granada, al-Andalus",
     story:"A mob attacked Granada's Jewish community and killed the Jewish vizier Joseph ibn Naghrela; medieval sources describe extensive killing.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -414,7 +531,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/anti-Semitism/Anti-Semitism-in-medieval-Europe"}]
   },
   {
-    year:1096, depth:8000, title:"Speyer massacre", location:"Speyer, Holy Roman Empire",
+    year:1096, depth:10210, title:"Speyer massacre", location:"Speyer, Holy Roman Empire",
     story:"As First Crusade violence spread through the Rhineland, attackers targeted the Jewish community of Speyer. The bishop protected many Jews, but a number were murdered.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -423,7 +540,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1096, depth:8170, title:"Worms massacre", location:"Worms, Holy Roman Empire",
+    year:1096, depth:10380, title:"Worms massacre", location:"Worms, Holy Roman Empire",
     story:"Crusaders and local participants attacked Jews in Worms during the First Crusade. Many Jews were killed despite attempts to shelter under episcopal protection.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -432,7 +549,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1096, depth:8340, title:"Mainz massacre", location:"Mainz, Holy Roman Empire",
+    year:1096, depth:10550, title:"Mainz massacre", location:"Mainz, Holy Roman Empire",
     story:"The Jewish community of Mainz was attacked during the First Crusade despite taking refuge with the archbishop. Medieval accounts describe mass killing and suicide under threat of forced conversion.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -441,7 +558,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1096, depth:8510, title:"Rhineland massacres during the First Crusade", location:"Worms, Mainz, Cologne and Rhineland",
+    year:1096, depth:10720, title:"Rhineland massacres during the First Crusade", location:"Worms, Mainz, Cologne and Rhineland",
     story:"Crusading bands and local mobs attacked Jewish communities as the First Crusade moved east.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -450,7 +567,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1099, depth:8680, title:"Crusader capture of Jerusalem", location:"Jerusalem",
+    year:1099, depth:10890, title:"Crusader capture of Jerusalem", location:"Jerusalem",
     story:"First Crusade forces captured Jerusalem in July 1099 and massacred Muslim and Jewish inhabitants. Jewish residents were among those killed during the conquest.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -459,7 +576,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Crusades/The-First-Crusade-and-the-establishment-of-the-Latin-states"}]
   },
   {
-    year:1146, depth:8850, title:"Second Crusade violence and Almohad persecution", location:"Western Europe / North Africa / Iberia",
+    year:1146, depth:11060, title:"Second Crusade violence and Almohad persecution", location:"Western Europe / North Africa / Iberia",
     story:"The mid-12th century brought anti-Jewish violence connected to crusading in Europe and coercive Almohad policies in North Africa and Iberia.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -468,7 +585,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1171, depth:9020, title:"Blois blood-libel executions", location:"Blois, France",
+    year:1171, depth:11230, title:"Blois blood-libel executions", location:"Blois, France",
     story:"Dozens of Jews were burned after a false ritual-murder accusation, an early major blood-libel prosecution.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -477,7 +594,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/blood-libel"}]
   },
   {
-    year:1189, depth:9190, title:"London coronation riots", location:"London, England",
+    year:1189, depth:11400, title:"London coronation riots", location:"London, England",
     story:"Violence broke out against Jews around the coronation of Richard I in 1189. Attacks spread beyond London during the following months and helped set the stage for the York massacre.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -486,7 +603,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.english-heritage.org.uk/visit/places-to-visit/cliffords-tower/history-and-stories/massacre-of-the-jews/"}]
   },
   {
-    year:1189, depth:9360, title:"Anti-Jewish violence at Richard I's coronation", location:"London, England",
+    year:1189, depth:11570, title:"Anti-Jewish violence at Richard I's coronation", location:"London, England",
     story:"Violence against Jews erupted around Richard I's coronation and spread to other English towns.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -495,7 +612,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.ushmm.org/research/about-the-mandel-center/initiatives/religion-holocaust/resources/christian-persecution-of-jews-over-the-centuries"}]
   },
   {
-    year:1190, depth:9530, title:"York massacre", location:"York, England",
+    year:1190, depth:11740, title:"York massacre", location:"York, England",
     story:"Jews sheltering in York Castle faced a mob; many died by killing one another and suicide rather than forced conversion, while others were killed after leaving.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -504,7 +621,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.english-heritage.org.uk/visit/places/cliffords-tower-york/history-and-stories/massacre-of-the-jews/"}]
   },
   {
-    year:1190, depth:9700, title:"York massacre at Clifford's Tower", location:"York, England",
+    year:1190, depth:11910, title:"York massacre at Clifford's Tower", location:"York, England",
     story:"About 150 members of York's Jewish community were besieged in the royal castle. Many killed their families and themselves rather than face forced conversion or murder; survivors who emerged were killed by attackers.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -513,7 +630,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.english-heritage.org.uk/visit/places-to-visit/cliffords-tower/history-and-stories/history/"}]
   },
   {
-    year:1236, depth:9870, title:"Anjou and Poitou attacks on Jewish communities", location:"Western France",
+    year:1236, depth:12080, title:"Anjou and Poitou attacks on Jewish communities", location:"Western France",
     story:"Crusading violence in western France targeted Jewish communities in Anjou and Poitou. Medieval sources describe killings and forced conversion pressures.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -522,7 +639,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1255, depth:10040, title:"Lincoln blood-libel case", location:"Lincoln, England",
+    year:1255, depth:12250, title:"Lincoln blood-libel case", location:"Lincoln, England",
     story:"After the death of a Christian boy known as Little Saint Hugh, Jews were falsely accused of ritual murder. Eighteen Jews were executed following proceedings encouraged by the crown.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -531,7 +648,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/blood-libel"}]
   },
   {
-    year:1290, depth:10210, title:"Expulsion of Jews from England", location:"England",
+    year:1290, depth:12420, title:"Expulsion of Jews from England", location:"England",
     story:"Edward I ordered the expulsion of Jews from England in 1290 after decades of discriminatory taxation, restrictions and violence. Jewish communal life in England was formally ended for centuries.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -540,7 +657,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.english-heritage.org.uk/learn/story-of-england/medieval/religion/"}]
   },
   {
-    year:1298, depth:10380, title:"Rintfleisch massacres", location:"Franconia and Bavaria",
+    year:1298, depth:12590, title:"Rintfleisch massacres", location:"Franconia and Bavaria",
     story:"Anti-Jewish massacres spread through numerous German communities under the Rintfleisch movement.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -549,7 +666,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/genocidal-massacres-of-jews-in-medieval-western-europe-10961392/00724C8FEFEDF90A56EE4CF62E2CB536"}]
   },
   {
-    year:1320, depth:10550, title:"Shepherds' Crusade attacks", location:"France and northern Iberia",
+    year:1320, depth:12760, title:"Shepherds' Crusade attacks", location:"France and northern Iberia",
     story:"Bands associated with the Shepherds' Crusade attacked Jewish communities across parts of France and northern Iberia.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -558,7 +675,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/genocidal-massacres-of-jews-in-medieval-western-europe-10961392/00724C8FEFEDF90A56EE4CF62E2CB536"}]
   },
   {
-    year:1336, depth:10720, title:"Armleder massacres", location:"German lands",
+    year:1336, depth:12930, title:"Armleder massacres", location:"German lands",
     story:"Armed bands attacked Jewish communities across parts of the German lands during the 1330s.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -567,7 +684,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/genocidal-massacres-of-jews-in-medieval-western-europe-10961392/00724C8FEFEDF90A56EE4CF62E2CB536"}]
   },
   {
-    year:1348, depth:10890, title:"Black Death massacres", location:"Central and Western Europe",
+    year:1348, depth:13100, title:"Black Death massacres", location:"Central and Western Europe",
     story:"Jews were falsely accused of causing the plague by poisoning wells, triggering massacres and destruction of communities across Europe.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -576,7 +693,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1349, depth:11060, title:"Strasbourg massacre during the Black Death", location:"Strasbourg, Holy Roman Empire",
+    year:1349, depth:13270, title:"Strasbourg massacre during the Black Death", location:"Strasbourg, Holy Roman Empire",
     story:"During Black Death persecutions, Strasbourg authorities and citizens burned a large number of Jews after false accusations that Jews had poisoned wells and caused the plague.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -585,7 +702,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism-in-history-from-the-early-church-to-1400"}]
   },
   {
-    year:1391, depth:11230, title:"Anti-Jewish massacres in Iberia", location:"Castile and Aragon",
+    year:1391, depth:13440, title:"Anti-Jewish massacres in Iberia", location:"Castile and Aragon",
     story:"Urban violence swept Jewish communities in Spain, killing Jews and driving many others into forced conversion.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -594,7 +711,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/genocidal-massacres-of-jews-in-medieval-western-europe-10961392/00724C8FEFEDF90A56EE4CF62E2CB536"}]
   },
   {
-    year:1421, depth:11400, title:"Vienna Gesera", location:"Duchy of Austria",
+    year:1421, depth:13610, title:"Vienna Gesera", location:"Duchy of Austria",
     story:"Austrian Jews were arrested, dispossessed, expelled or executed during the Vienna Gesera.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -603,7 +720,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.jewishvirtuallibrary.org/the-vienna-gesera"}]
   },
   {
-    year:1475, depth:11570, title:"Trent blood-libel persecution", location:"Trent, Prince-Bishopric of Trent",
+    year:1475, depth:13780, title:"Trent blood-libel persecution", location:"Trent, Prince-Bishopric of Trent",
     story:"After a Christian child disappeared, local Jews were accused of ritual murder, tortured and executed. The ritual-murder allegation was false and became one of Europe's most influential blood libels.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -612,7 +729,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/blood-libel"}]
   },
   {
-    year:1478, depth:11740, title:"Spanish Inquisition begins", location:"Spain",
+    year:1478, depth:13950, title:"Spanish Inquisition begins", location:"Spain",
     story:"The Spanish Inquisition targeted alleged heresy, including converted Jews accused of secretly practicing Judaism; torture and executions followed.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -621,7 +738,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/antisemitism"}]
   },
   {
-    year:1492, depth:11910, title:"Expulsion of Jews from Spain", location:"Spain",
+    year:1492, depth:14120, title:"Expulsion of Jews from Spain", location:"Spain",
     story:"The Alhambra Decree ordered practicing Jews to convert or leave Spain, producing mass displacement and severe hardship.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -630,7 +747,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Spanish-Inquisition"}]
   },
   {
-    year:1648, depth:12080, title:"Khmelnytsky uprising massacres", location:"Polish–Lithuanian Commonwealth / Ukraine",
+    year:1648, depth:14290, title:"Khmelnytsky uprising massacres", location:"Polish–Lithuanian Commonwealth / Ukraine",
     story:"During the Khmelnytsky uprising, Jewish communities were among populations subjected to widespread killing and destruction. Historical death estimates vary greatly.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -639,7 +756,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Khmelnytsky-Insurrection"}]
   },
   {
-    year:1821, depth:12250, title:"Odessa anti-Jewish riot", location:"Odessa, Russian Empire",
+    year:1821, depth:14460, title:"Odessa anti-Jewish riot", location:"Odessa, Russian Empire",
     story:"Anti-Jewish rioting in Odessa is commonly identified as the first incident to be labeled a pogrom.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -648,7 +765,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1881, depth:12420, title:"Russian Empire pogrom wave", location:"Russian Empire",
+    year:1881, depth:14630, title:"Russian Empire pogrom wave", location:"Russian Empire",
     story:"After Tsar Alexander II's assassination, extensive anti-Jewish riots swept southern and western parts of the Russian Empire from 1881 to 1884.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -657,7 +774,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1903, depth:12590, title:"Kishinev pogrom", location:"Kishinev, Russian Empire",
+    year:1903, depth:14800, title:"Kishinev pogrom", location:"Kishinev, Russian Empire",
     story:"Three days of anti-Jewish violence killed nearly 50 Jews, wounded hundreds, and destroyed or looted hundreds of homes and businesses.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -666,7 +783,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/blood-libel"}]
   },
   {
-    year:1905, depth:12760, title:"Odessa pogrom", location:"Odessa, Russian Empire",
+    year:1905, depth:14970, title:"Odessa pogrom", location:"Odessa, Russian Empire",
     story:"During revolutionary unrest, Odessa experienced one of the deadliest pogroms of 1905, with extensive killing, injury and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -675,7 +792,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1918, depth:12930, title:"Civil War pogroms in Ukraine and neighboring regions", location:"Ukraine / Belarus / Galicia",
+    year:1918, depth:15140, title:"Civil War pogroms in Ukraine and neighboring regions", location:"Ukraine / Belarus / Galicia",
     story:"During the post-1917 civil wars, forces from several political and military camps carried out pogroms that killed tens of thousands of Jews.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -684,7 +801,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1920, depth:13100, title:"Nebi Musa riots", location:"Jerusalem",
+    year:1920, depth:15310, title:"Nebi Musa riots", location:"Jerusalem",
     story:"Violence during the Nebi Musa festival included attacks on Jerusalem's Jewish community amid escalating Arab–Jewish political tensions under the British Mandate.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -693,7 +810,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/World-War-I-and-after"}]
   },
   {
-    year:1921, depth:13270, title:"Jaffa riots", location:"Jaffa and surrounding area",
+    year:1921, depth:15480, title:"Jaffa riots", location:"Jaffa and surrounding area",
     story:"Arab–Jewish violence in Jaffa and nearby areas killed and injured members of both communities and deepened Mandate-era tensions.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -702,7 +819,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/World-War-I-and-after"}]
   },
   {
-    year:1929, depth:13440, title:"Hebron massacre and 1929 Palestine riots", location:"Hebron and Mandatory Palestine",
+    year:1929, depth:15650, title:"Hebron massacre and 1929 Palestine riots", location:"Hebron and Mandatory Palestine",
     story:"During widespread 1929 violence, Arab attackers killed 67 Jews in Hebron; Jews were also attacked elsewhere, while Arabs were killed in clashes and by British forces.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -711,7 +828,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Hebron-city-West-Bank"}]
   },
   {
-    year:1929, depth:13610, title:"Safed massacre during the 1929 riots", location:"Safed, Mandatory Palestine",
+    year:1929, depth:15820, title:"Safed massacre during the 1929 riots", location:"Safed, Mandatory Palestine",
     story:"During the 1929 Palestine disturbances, Arab attackers killed Jewish residents of Safed and burned and looted Jewish homes.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -720,7 +837,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/World-War-I-and-after"}]
   },
   {
-    year:1936, depth:13780, title:"1936–1939 Arab Revolt: attacks on Jewish civilians", location:"Mandatory Palestine",
+    year:1936, depth:15990, title:"1936–1939 Arab Revolt: attacks on Jewish civilians", location:"Mandatory Palestine",
     story:"The Arab Revolt against British rule and mass Jewish immigration included attacks on Jewish civilians and communities, alongside British counterinsurgency and Jewish armed responses.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -729,7 +846,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/The-Arab-Revolt"}]
   },
   {
-    year:1938, depth:13950, title:"Kristallnacht / November Pogrom", location:"Germany and Austria",
+    year:1938, depth:16160, title:"Kristallnacht / November Pogrom", location:"Germany and Austria",
     story:"Nazi leaders unleashed nationwide anti-Jewish violence: synagogues burned, businesses and homes were destroyed, Jews were killed and about 26,000 Jewish men were imprisoned in concentration camps.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -738,7 +855,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/kristallnacht"}]
   },
   {
-    year:1941, depth:14120, title:"Farhud", location:"Baghdad, Iraq",
+    year:1941, depth:16330, title:"Farhud", location:"Baghdad, Iraq",
     story:"Anti-Jewish violence in Baghdad on June 1–2, 1941 killed and injured Jews and involved widespread looting and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -747,7 +864,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/the-farhud"}]
   },
   {
-    year:1941, depth:14290, title:"Iași pogrom", location:"Iași, Romania",
+    year:1941, depth:16500, title:"Iași pogrom", location:"Iași, Romania",
     story:"Romanian authorities and military units, assisted at times by German soldiers, murdered at least 8,000 Jews during the June 1941 pogrom and related death transports.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -756,7 +873,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1941, depth:14460, title:"Lviv pogrom", location:"Lviv, German-occupied Ukraine",
+    year:1941, depth:16670, title:"Lviv pogrom", location:"Lviv, German-occupied Ukraine",
     story:"Following the German occupation of Lviv, German forces, Ukrainian nationalist activists, militia members and local civilians participated in anti-Jewish humiliation, beatings and killings.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -765,7 +882,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/the-lwow-pogrom-of-july-1-1941"}]
   },
   {
-    year:1941, depth:14630, title:"Jedwabne massacre", location:"Jedwabne, German-occupied Poland",
+    year:1941, depth:16840, title:"Jedwabne massacre", location:"Jedwabne, German-occupied Poland",
     story:"Hundreds of Jewish residents of Jedwabne were murdered by Polish neighbors in July 1941 in the presence of German police; aspects of German instigation remain historically examined.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -774,7 +891,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1941, depth:14800, title:"Ponary mass killings begin", location:"Near Vilna (Vilnius), Lithuania",
+    year:1941, depth:17010, title:"Ponary mass killings begin", location:"Near Vilna (Vilnius), Lithuania",
     story:"German SS and police units with Lithuanian collaborators murdered Jews from Vilna and surrounding areas at Ponary. Tens of thousands of Jews were ultimately killed at the site.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -783,7 +900,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://wwv.yadvashem.org/yv/en/exhibitions/music/vilna-ghetto.asp"}]
   },
   {
-    year:1941, depth:14970, title:"Chełmno killing center begins mass murder", location:"Chełmno, German-occupied Poland",
+    year:1941, depth:17180, title:"Chełmno killing center begins mass murder", location:"Chełmno, German-occupied Poland",
     story:"Mass murder began at Chełmno in December 1941 using gas vans. Nazi Germany murdered at least 152,000 Jews there.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -792,7 +909,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/chelmno"}]
   },
   {
-    year:1941, depth:15140, title:"Holocaust mass shootings and extermination", location:"German-occupied Europe",
+    year:1941, depth:17350, title:"Holocaust mass shootings and extermination", location:"German-occupied Europe",
     story:"Nazi Germany and its allies and collaborators systematically murdered approximately six million European Jews through shootings, killing centers, ghettos, starvation, forced labor and other methods.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -801,7 +918,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust"}]
   },
   {
-    year:1941, depth:15310, title:"Rumbula massacre", location:"Near Riga, German-occupied Latvia",
+    year:1941, depth:17520, title:"Rumbula massacre", location:"Near Riga, German-occupied Latvia",
     story:"German SS and police and Latvian auxiliaries murdered approximately 25,000 Jews from the Riga ghetto and about 1,000 German Jews in the Rumbula forest in late 1941.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -810,7 +927,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/riga"}]
   },
   {
-    year:1941, depth:15480, title:"Babi Yar massacre", location:"Kyiv, German-occupied Ukraine",
+    year:1941, depth:17690, title:"Babi Yar massacre", location:"Kyiv, German-occupied Ukraine",
     story:"On September 29–30, 1941, Einsatzgruppe C personnel and collaborators murdered 33,771 Jewish men, women and children at the Babi Yar ravine.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -819,7 +936,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://wwv.yadvashem.org/yv/en/exhibitions/communities/kiev/babi-yar.asp"}]
   },
   {
-    year:1942, depth:15650, title:"Belzec killing center", location:"Bełżec, German-occupied Poland",
+    year:1942, depth:17860, title:"Belzec killing center", location:"Bełżec, German-occupied Poland",
     story:"Belzec became an Operation Reinhard killing center. Approximately 435,000 Jews were murdered there, overwhelmingly in gas chambers.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -828,7 +945,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/belzec"}]
   },
   {
-    year:1942, depth:15820, title:"Sobibor killing center", location:"Sobibór, German-occupied Poland",
+    year:1942, depth:18030, title:"Sobibor killing center", location:"Sobibór, German-occupied Poland",
     story:"Sobibor was established as an Operation Reinhard killing center. At least 167,000 Jews were murdered there.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -837,7 +954,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/sobibor"}]
   },
   {
-    year:1942, depth:15990, title:"Treblinka II killing center", location:"Treblinka, German-occupied Poland",
+    year:1942, depth:18200, title:"Treblinka II killing center", location:"Treblinka, German-occupied Poland",
     story:"Treblinka II operated as an Operation Reinhard killing center. Nazi personnel murdered an estimated 925,000 Jews there.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -846,7 +963,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/treblinka"}]
   },
   {
-    year:1942, depth:16160, title:"Auschwitz-Birkenau mass murder of Jews", location:"Auschwitz-Birkenau, German-occupied Poland",
+    year:1942, depth:18370, title:"Auschwitz-Birkenau mass murder of Jews", location:"Auschwitz-Birkenau, German-occupied Poland",
     story:"Auschwitz-Birkenau became the largest Nazi concentration and killing complex. Approximately one million Jews were murdered in the Auschwitz camp complex.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -855,7 +972,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/auschwitz"}]
   },
   {
-    year:1942, depth:16330, title:"Great Action: deportation of Warsaw Jews to Treblinka", location:"Warsaw, German-occupied Poland",
+    year:1942, depth:18540, title:"Great Action: deportation of Warsaw Jews to Treblinka", location:"Warsaw, German-occupied Poland",
     story:"From July to September 1942, German authorities deported about 265,000 Jews from the Warsaw ghetto to Treblinka and killed approximately 35,000 Jews in the ghetto during the operation.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -864,7 +981,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
   },
   {
-    year:1943, depth:16500, title:"Warsaw Ghetto Uprising", location:"Warsaw, German-occupied Poland",
+    year:1943, depth:18710, title:"Warsaw Ghetto Uprising", location:"Warsaw, German-occupied Poland",
     story:"Jewish fighters resisted the final German deportation operation beginning April 19, 1943. At least 7,000 Jews died fighting or in hiding as German forces destroyed the ghetto.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -873,7 +990,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
   },
   {
-    year:1943, depth:16670, title:"Operation Harvest Festival", location:"Lublin district, German-occupied Poland",
+    year:1943, depth:18880, title:"Operation Harvest Festival", location:"Lublin district, German-occupied Poland",
     story:"German SS and police murdered tens of thousands of Jewish forced laborers in the Lublin district during Operation Harvest Festival in November 1943.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -882,7 +999,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/warsaw-ghetto-uprising"}]
   },
   {
-    year:1946, depth:16840, title:"Kielce pogrom", location:"Kielce, Poland",
+    year:1946, depth:19050, title:"Kielce pogrom", location:"Kielce, Poland",
     story:"A mob, joined by some police and soldiers, killed Jewish Holocaust survivors and other Jews in Kielce; at least 42 Jews were murdered.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -891,7 +1008,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://encyclopedia.ushmm.org/content/en/article/pogroms"}]
   },
   {
-    year:1947, depth:17010, title:"Fajja bus attacks", location:"Near Petah Tikva, Mandatory Palestine",
+    year:1947, depth:19220, title:"Fajja bus attacks", location:"Near Petah Tikva, Mandatory Palestine",
     story:"On November 30, 1947, the day after the UN partition vote, Arab gunmen attacked Jewish buses, among the opening incidents of the civil-war phase of the 1947–49 conflict.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -900,7 +1017,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Palestine/The-1948-war"}]
   },
   {
-    year:1947, depth:17180, title:"1947–1949 Palestine war / Arab–Israeli War", location:"Mandatory Palestine / Israel",
+    year:1947, depth:19390, title:"1947–1949 Palestine war / Arab–Israeli War", location:"Mandatory Palestine / Israel",
     story:"Fighting followed the UN partition vote; after Israel declared independence in May 1948, neighboring Arab armies entered the war. Jewish and Arab civilians and combatants suffered major losses and displacement.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -909,7 +1026,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/milestones/1945-1952/arab-israeli-war"}]
   },
   {
-    year:1948, depth:17350, title:"Hadassah medical convoy massacre", location:"Jerusalem",
+    year:1948, depth:19560, title:"Hadassah medical convoy massacre", location:"Jerusalem",
     story:"An Arab force ambushed a convoy carrying medical personnel and supplies to Hadassah Hospital and Hebrew University on Mount Scopus in April 1948; 78 Jews were killed.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -918,7 +1035,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Jerusalem"}]
   },
   {
-    year:1954, depth:17520, title:"Ma'ale Akrabim bus massacre", location:"Negev, Israel",
+    year:1954, depth:19730, title:"Ma'ale Akrabim bus massacre", location:"Negev, Israel",
     story:"Gunmen ambushed an Israeli passenger bus at Ma'ale Akrabim in March 1954, killing passengers and leaving only a few survivors.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -927,7 +1044,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1955, depth:17690, title:"Patish wedding attack", location:"Patish, Israel",
+    year:1955, depth:19900, title:"Patish wedding attack", location:"Patish, Israel",
     story:"Attackers threw grenades and opened fire on a crowded wedding celebration in March 1955, killing a young woman and wounding 18 people.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -936,7 +1053,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:17860, title:"Kfar Chabad synagogue attack", location:"Kfar Chabad, Israel",
+    year:1956, depth:20070, title:"Kfar Chabad synagogue attack", location:"Kfar Chabad, Israel",
     story:"Gunmen opened fire on a synagogue containing children and teenagers in April 1956, killing three children and a youth worker and injuring others.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -945,7 +1062,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:18030, title:"Ramat Rachel shooting", location:"Ramat Rachel, Israel",
+    year:1956, depth:20240, title:"Ramat Rachel shooting", location:"Ramat Rachel, Israel",
     story:"Gunfire from a Jordanian position killed four archaeologists and wounded sixteen people at Ramat Rachel in September 1956.",
     context:"This event is represented separately because it is an identifiable episode within a broader historical period of violence.",
     aftermath:"The database uses conservative figures from institutional historical sources; additional source notes can be added as research continues.",
@@ -954,7 +1071,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1956, depth:18200, title:"Suez Crisis / Sinai War", location:"Egypt / Sinai / Israel",
+    year:1956, depth:20410, title:"Suez Crisis / Sinai War", location:"Egypt / Sinai / Israel",
     story:"Israel invaded Egypt's Sinai Peninsula in coordination with the Anglo-French intervention after Egypt nationalized the Suez Canal.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -963,7 +1080,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/milestones/1953-1960/suez"}]
   },
   {
-    year:1967, depth:18370, title:"Six-Day War", location:"Israel / Egypt / Jordan / Syria",
+    year:1967, depth:20580, title:"Six-Day War", location:"Israel / Egypt / Jordan / Syria",
     story:"Israel fought Egypt, Jordan and Syria in June 1967 and captured the Sinai, Gaza Strip, West Bank, East Jerusalem and Golan Heights.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -972,7 +1089,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/historicaldocuments/frus1964-68v14/d217"}]
   },
   {
-    year:1968, depth:18540, title:"El Al Flight 253 attack in Athens", location:"Athens, Greece",
+    year:1968, depth:20750, title:"El Al Flight 253 attack in Athens", location:"Athens, Greece",
     story:"Palestinian militants attacked an El Al aircraft at Athens airport in December 1968, killing an Israeli passenger and injuring others.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -981,7 +1098,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1970, depth:18710, title:"Avivim school bus massacre", location:"Avivim, Israel",
+    year:1970, depth:20920, title:"Avivim school bus massacre", location:"Avivim, Israel",
     story:"Militants fired on an Israeli school bus near the Lebanese border in May 1970, killing children and adults and wounding others.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -990,7 +1107,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:1972, depth:18880, title:"Lod Airport massacre", location:"Lod Airport, Israel",
+    year:1972, depth:21090, title:"Lod Airport massacre", location:"Lod Airport, Israel",
     story:"Gunmen from the Japanese Red Army, acting with a Palestinian militant organization, attacked passengers at Lod Airport in May 1972.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -999,7 +1116,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1972, depth:19050, title:"Munich Olympics attack", location:"Munich, West Germany",
+    year:1972, depth:21260, title:"Munich Olympics attack", location:"Munich, West Germany",
     story:"Members of Black September took Israeli Olympic team members hostage; eleven Israeli athletes and coaches were killed during the attack and failed rescue.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1008,7 +1125,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Munich-Massacre"}]
   },
   {
-    year:1973, depth:19220, title:"Yom Kippur / October War", location:"Israel / Egypt / Syria",
+    year:1973, depth:21430, title:"Yom Kippur / October War", location:"Israel / Egypt / Syria",
     story:"Egypt and Syria launched a surprise attack on Israeli positions on October 6, 1973, beginning a major regional war.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1017,7 +1134,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://history.state.gov/historicaldocuments/frus1969-76v36/d209"}]
   },
   {
-    year:1974, depth:19390, title:"Kiryat Shmona massacre", location:"Kiryat Shmona, Israel",
+    year:1974, depth:21600, title:"Kiryat Shmona massacre", location:"Kiryat Shmona, Israel",
     story:"Palestinian militants infiltrated Kiryat Shmona in April 1974 and murdered civilians, including children.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1026,7 +1143,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/israel_in_maps/en/English_SiteTransfer_DOCUMENTS_mapstorypart3.pdf"}]
   },
   {
-    year:1974, depth:19560, title:"Ma'alot massacre", location:"Ma'alot, Israel",
+    year:1974, depth:21770, title:"Ma'alot massacre", location:"Ma'alot, Israel",
     story:"Three Palestinian militants seized schoolchildren and other hostages in May 1974. During the attempted rescue, the attackers fired on the children and threw grenades; many hostages were killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1035,7 +1152,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1975, depth:19730, title:"Savoy Hotel attack", location:"Tel Aviv, Israel",
+    year:1975, depth:21940, title:"Savoy Hotel attack", location:"Tel Aviv, Israel",
     story:"Fatah militants seized the Savoy Hotel in March 1975. Eight hostages and three Israeli soldiers were killed during the incident and rescue operation.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1044,7 +1161,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/Exhib/malons/Pages/default.aspx"}]
   },
   {
-    year:1976, depth:19900, title:"Entebbe hijacking and hostage crisis", location:"Entebbe, Uganda",
+    year:1976, depth:22110, title:"Entebbe hijacking and hostage crisis", location:"Entebbe, Uganda",
     story:"PFLP-linked and German militants hijacked an Air France flight and diverted it to Entebbe. Israeli and Jewish passengers were separated from many other hostages before an Israeli commando rescue.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1053,7 +1170,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://archives.mod.gov.il/sites/English/theTimeAxis/Pages/1972-%E2%80%93-1980.aspx"}]
   },
   {
-    year:1978, depth:20070, title:"Coastal Road massacre", location:"Israel",
+    year:1978, depth:22280, title:"Coastal Road massacre", location:"Israel",
     story:"Palestinian militants attacked civilians traveling on Israel's Coastal Road, killing dozens and triggering a major Israeli military response in Lebanon.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1062,7 +1179,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/place/Israel/War-in-Lebanon"}]
   },
   {
-    year:1980, depth:20240, title:"Paris synagogue bombing", location:"Paris, France",
+    year:1980, depth:22450, title:"Paris synagogue bombing", location:"Paris, France",
     story:"A bomb exploded outside the Rue Copernic synagogue in Paris in October 1980, killing four people and injuring dozens.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1071,7 +1188,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/anti-Semitism"}]
   },
   {
-    year:1982, depth:20410, title:"1982 Lebanon War", location:"Lebanon / Israel",
+    year:1982, depth:22620, title:"1982 Lebanon War", location:"Lebanon / Israel",
     story:"Israel invaded Lebanon amid conflict with the PLO and cross-border attacks. The war involved Israeli, Palestinian, Lebanese and Syrian forces and caused extensive civilian suffering.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1080,7 +1197,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Lebanon-War"}]
   },
   {
-    year:1982, depth:20580, title:"Great Synagogue of Rome attack", location:"Rome, Italy",
+    year:1982, depth:22790, title:"Great Synagogue of Rome attack", location:"Rome, Italy",
     story:"Gunmen attacked worshippers leaving the Great Synagogue of Rome in October 1982, killing a two-year-old child and wounding dozens.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1089,7 +1206,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/anti-Semitism"}]
   },
   {
-    year:1985, depth:20750, title:"Rome and Vienna airport attacks", location:"Rome, Italy / Vienna, Austria",
+    year:1985, depth:22960, title:"Rome and Vienna airport attacks", location:"Rome, Italy / Vienna, Austria",
     story:"Gunmen attacked El Al ticket counters at airports in Rome and Vienna in December 1985, killing and wounding travelers.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1098,7 +1215,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/terrorism"}]
   },
   {
-    year:1987, depth:20920, title:"First Intifada", location:"West Bank / Gaza / Israel",
+    year:1987, depth:23130, title:"First Intifada", location:"West Bank / Gaza / Israel",
     story:"A Palestinian uprising against Israeli occupation involved demonstrations, riots, attacks and Israeli military responses, causing deaths on both sides.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1107,7 +1224,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:1992, depth:21090, title:"Israeli embassy bombing in Buenos Aires", location:"Buenos Aires, Argentina",
+    year:1992, depth:23300, title:"Israeli embassy bombing in Buenos Aires", location:"Buenos Aires, Argentina",
     story:"A suicide bombing destroyed the Israeli embassy in Buenos Aires in March 1992, killing 29 people and injuring hundreds.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1116,7 +1233,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/1992-Buenos-Aires-embassy-bombing"}]
   },
   {
-    year:1994, depth:21260, title:"AMIA bombing", location:"Buenos Aires, Argentina",
+    year:1994, depth:23470, title:"AMIA bombing", location:"Buenos Aires, Argentina",
     story:"A bombing destroyed the AMIA Jewish community center, killing 85 people and injuring hundreds.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1125,7 +1242,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/AMIA-bombing"}]
   },
   {
-    year:1994, depth:21430, title:"Tel Aviv bus 5 bombing", location:"Tel Aviv, Israel",
+    year:1994, depth:23640, title:"Tel Aviv bus 5 bombing", location:"Tel Aviv, Israel",
     story:"A Hamas suicide bomber attacked a city bus in Tel Aviv in October 1994, killing 22 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1134,7 +1251,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/news/cabinet-communique-29-jan-2006/en/English_SiteTransfer_DOCUMENTS_Profile-of-the-Hamas-movement_ITIC.pdf"}]
   },
   {
-    year:1996, depth:21600, title:"Jerusalem bus 18 bombings", location:"Jerusalem, Israel",
+    year:1996, depth:23810, title:"Jerusalem bus 18 bombings", location:"Jerusalem, Israel",
     story:"Two suicide bombings on Jerusalem bus route 18 in 1996 killed dozens of civilians during a wave of Hamas attacks.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1143,7 +1260,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/news/cabinet-communique-29-jan-2006/en/English_SiteTransfer_DOCUMENTS_Profile-of-the-Hamas-movement_ITIC.pdf"}]
   },
   {
-    year:2000, depth:21770, title:"Second Intifada", location:"Israel / West Bank / Gaza",
+    year:2000, depth:23980, title:"Second Intifada", location:"Israel / West Bank / Gaza",
     story:"The Second Intifada brought suicide bombings and other attacks against Israelis alongside major Israeli military operations; thousands of Palestinians and Israelis were killed.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1152,7 +1269,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2001, depth:21940, title:"Dolphinarium discotheque bombing", location:"Tel Aviv, Israel",
+    year:2001, depth:24150, title:"Dolphinarium discotheque bombing", location:"Tel Aviv, Israel",
     story:"A suicide bomber attacked young people waiting outside the Dolphinarium nightclub in June 2001; 21 Israeli civilians were killed, most of them teenagers.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1161,7 +1278,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/palestinian-violence-and-terrorism-since-september-2000/en/English_SiteTransfer_DOCUMENTS_Leading-Palestinian-Terrorist-Organizations-Aug-2004.pdf"}]
   },
   {
-    year:2001, depth:22110, title:"Sbarro restaurant bombing", location:"Jerusalem, Israel",
+    year:2001, depth:24320, title:"Sbarro restaurant bombing", location:"Jerusalem, Israel",
     story:"A suicide bomber attacked the crowded Sbarro restaurant in Jerusalem in August 2001, killing 15 civilians.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1170,7 +1287,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/palestinian-violence-and-terrorism-since-september-2000/en/English_SiteTransfer_DOCUMENTS_Leading-Palestinian-Terrorist-Organizations-Aug-2004.pdf"}]
   },
   {
-    year:2002, depth:22280, title:"Passover massacre", location:"Netanya, Israel",
+    year:2002, depth:24490, title:"Passover massacre", location:"Netanya, Israel",
     story:"A suicide bomber attacked a Passover seder at the Park Hotel in Netanya during the Second Intifada, killing civilians and injuring many others.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1179,7 +1296,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2003, depth:22450, title:"Maxim restaurant bombing", location:"Haifa, Israel",
+    year:2003, depth:24660, title:"Maxim restaurant bombing", location:"Haifa, Israel",
     story:"A suicide bomber attacked the Maxim restaurant in Haifa in October 2003, killing 21 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1188,7 +1305,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/saving-lives-israel-s-anti-terrorist-fence-answers-to-questions-jan-2004/en/English_SiteTransfer_DOCUMENTS_PDF_19279_2.pdf"}]
   },
   {
-    year:2008, depth:22620, title:"Mumbai Chabad House attack", location:"Mumbai, India",
+    year:2008, depth:24830, title:"Mumbai Chabad House attack", location:"Mumbai, India",
     story:"During the coordinated Mumbai attacks, terrorists seized the Chabad Jewish center at Nariman House and murdered hostages there.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1197,7 +1314,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Mumbai-terrorist-attacks-of-2008"}]
   },
   {
-    year:2012, depth:22790, title:"Toulouse Jewish school attack", location:"Toulouse, France",
+    year:2012, depth:25000, title:"Toulouse Jewish school attack", location:"Toulouse, France",
     story:"A gunman attacked the Ozar Hatorah Jewish school, murdering a teacher and three children.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1206,7 +1323,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Toulouse-and-Montauban-shootings"}]
   },
   {
-    year:2014, depth:22960, title:"Jerusalem synagogue attack", location:"Jerusalem",
+    year:2014, depth:25170, title:"Jerusalem synagogue attack", location:"Jerusalem",
     story:"Two Palestinian attackers armed with guns, knives and axes attacked worshippers at a synagogue in Har Nof in November 2014, killing worshippers and a police officer.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1215,7 +1332,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:2015, depth:23130, title:"Hyper Cacher hostage attack", location:"Paris, France",
+    year:2015, depth:25340, title:"Hyper Cacher hostage attack", location:"Paris, France",
     story:"A gunman attacked a kosher supermarket in Paris, killing four Jewish hostages.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1224,7 +1341,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Charlie-Hebdo-shooting"}]
   },
   {
-    year:2018, depth:23300, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
+    year:2018, depth:25510, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
     story:"A gunman attacked worshippers at the Tree of Life synagogue complex, murdering eleven people.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1233,7 +1350,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/pennsylvania-man-sentenced-death-2018-tree-life-synagogue-shooting"}]
   },
   {
-    year:2019, depth:23470, title:"Poway synagogue shooting", location:"Poway, California, United States",
+    year:2019, depth:25680, title:"Poway synagogue shooting", location:"Poway, California, United States",
     story:"An antisemitic gunman opened fire inside Chabad of Poway on the final day of Passover, killing one worshipper and injuring three others, including a child.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1242,7 +1359,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-sdca/pr/john-earnest-pleads-guilty-113-count-federal-hate-crime-indictment-connection-poway"}]
   },
   {
-    year:2019, depth:23640, title:"Halle synagogue attack", location:"Halle, Germany",
+    year:2019, depth:25850, title:"Halle synagogue attack", location:"Halle, Germany",
     story:"An armed extremist attempted to enter a synagogue on Yom Kippur; unable to enter, he murdered two people nearby.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1251,7 +1368,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Halle-synagogue-shooting"}]
   },
   {
-    year:2020, depth:23810, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
+    year:2020, depth:26020, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
     story:"During a Hanukkah gathering at a rabbi's home, an attacker stabbed multiple people; one victim later died from his injuries.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -1260,7 +1377,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/monsey-man-charged-federal-hate-crimes-december-2019-stabbing"}]
   },
   {
-    year:2022, depth:23980, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
+    year:2022, depth:26190, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
     story:"An armed man took worshippers hostage at Congregation Beth Israel in January 2022. The hostages ultimately escaped or were rescued; the attacker was killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -1269,7 +1386,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-ndtx/press-release/file/1465966/dl"}]
   },
   {
-    year:2023, depth:24150, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
+    year:2023, depth:26360, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
     story:"Hamas and other armed groups attacked southern Israel on October 7, killing civilians and security personnel and taking hostages. Israel then launched a major war in Gaza with very large Palestinian civilian and combatant casualties and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1281,18 +1398,18 @@ const events = [
 
 const eras = [
   {name:"Biblical Origins & Ancient Israel",range:"Jacob/Israel tradition → 586 BCE",start:0,end:3920},
-  {name:"Second Temple Period",range:"586 BCE–70 CE",start:3920,end:6300},
-  {name:"Roman & Byzantine Period",range:"70–622 CE",start:6300,end:6980},
-  {name:"Early Islamic Period",range:"622–1096 CE",start:6980,end:8000},
-  {name:"Crusades & Medieval Period",range:"1096–1492 CE",start:8000,end:11910},
-  {name:"Early Modern Jewish Diaspora",range:"1492–1881 CE",start:11910,end:12420},
-  {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:12420,end:13780},
-  {name:"The Holocaust",range:"1933–1945 CE",start:13780,end:16840},
-  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:16840,end:21770},
-  {name:"Contemporary Era",range:"2000–2026 CE",start:21770,end:24670}
+  {name:"Second Temple Period",range:"586 BCE–70 CE",start:3920,end:7150},
+  {name:"Roman & Byzantine Period",range:"70–622 CE",start:7150,end:9020},
+  {name:"Early Islamic Period",range:"622–1096 CE",start:9020,end:10210},
+  {name:"Crusades & Medieval Period",range:"1096–1492 CE",start:10210,end:14120},
+  {name:"Early Modern Jewish Diaspora",range:"1492–1881 CE",start:14120,end:14630},
+  {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:14630,end:15990},
+  {name:"The Holocaust",range:"1933–1945 CE",start:15990,end:19050},
+  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:19050,end:23980},
+  {name:"Contemporary Era",range:"2000–2026 CE",start:23980,end:26880}
 ];
 
-const MAX_DEPTH=24670;
+const MAX_DEPTH=26880;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
