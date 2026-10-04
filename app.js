@@ -2097,7 +2097,25 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/intifada"}]
   },
   {
-    year:2003, depth:39790, title:"Maxim restaurant bombing", location:"Haifa, Israel",
+    year:2002, depth:39790, title:"Operation Defensive Shield", location:"West Bank",
+    story:"Following a wave of Palestinian suicide bombings, including the Passover massacre, Israel launched Operation Defensive Shield in March 2002 and re-entered major Palestinian cities in the West Bank. Fighting, arrests and extensive damage occurred, with especially intense combat in Jenin and Nablus.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Israeli military operation / Second Intifada",Evidence:"The operation and reoccupation of major West Bank population centers are firmly documented. Casualty narratives around particular battles, especially Jenin, were intensely disputed."},
+    sourceStatus:"The operation and reoccupation of major West Bank population centers are firmly documented. Casualty narratives around particular battles, especially Jenin, were intensely disputed.",
+    sources:[{label:"United Nations — Jenin report",url:"https://www.un.org/unispal/document/auto-insert-185675/"}]
+  },
+  {
+    year:2002, depth:39960, title:"Construction of the West Bank barrier begins", location:"West Bank and East Jerusalem area",
+    story:"Israel began constructing a system of fences and walls during the Second Intifada, citing the need to prevent suicide bombers and other attackers from reaching Israeli population centers. Much of the route runs inside the West Bank rather than along the 1949 armistice line, generating Palestinian displacement and access concerns and major international legal controversy.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Security barrier / territorial dispute",Evidence:"Construction, route and security rationale are documented. Israel credits the barrier as one factor in reducing attacks; Palestinians and international bodies have challenged portions of its route and humanitarian effects."},
+    sourceStatus:"Construction, route and security rationale are documented. Israel credits the barrier as one factor in reducing attacks; Palestinians and international bodies have challenged portions of its route and humanitarian effects.",
+    sources:[{label:"International Court of Justice — Wall advisory proceedings",url:"https://www.icj-cij.org/case/131"}]
+  },
+  {
+    year:2003, depth:40130, title:"Maxim restaurant bombing", location:"Haifa, Israel",
     story:"A suicide bomber attacked the Maxim restaurant in Haifa in October 2003, killing 21 people.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -2106,7 +2124,61 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/BlobFolder/generalpage/saving-lives-israel-s-anti-terrorist-fence-answers-to-questions-jan-2004/en/English_SiteTransfer_DOCUMENTS_PDF_19279_2.pdf"}]
   },
   {
-    year:2008, depth:39960, title:"Mumbai Chabad House attack", location:"Mumbai, India",
+    year:2005, depth:40300, title:"Israel disengages from the Gaza Strip", location:"Gaza Strip and northern West Bank",
+    story:"In August and September 2005, Israel evacuated all Israeli settlements in Gaza and four in the northern West Bank and withdrew its permanent military presence from inside Gaza. Palestinian Authority security forces entered the former settlement areas. Israel continued to control important aspects of Gaza's external access, while Egypt controlled its side of the Rafah border under later arrangements.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Unilateral withdrawal / territorial change",Evidence:"The evacuation of settlers and withdrawal of the permanent IDF presence are directly documented. The legal question of Gaza's occupation status after disengagement remained disputed."},
+    sourceStatus:"The evacuation of settlers and withdrawal of the permanent IDF presence are directly documented. The legal question of Gaza's occupation status after disengagement remained disputed.",
+    sources:[{label:"United Nations OCHA — Gaza disengagement",url:"https://www.un.org/unispal/document/auto-insert-203265/"}]
+  },
+  {
+    year:2006, depth:40470, title:"Hamas wins Palestinian legislative election", location:"Palestinian territories",
+    story:"Hamas won a majority of seats in the January 2006 Palestinian Legislative Council election. The result produced a major political confrontation because Hamas did not accept the Quartet's conditions to renounce violence, recognize Israel and accept previous Israeli-Palestinian agreements.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Election / political rupture",Evidence:"The election result and subsequent international political crisis are firmly documented."},
+    sourceStatus:"The election result and subsequent international political crisis are firmly documented.",
+    sources:[{label:"United Nations — History of the Question of Palestine",url:"https://www.un.org/unispal/history/"}]
+  },
+  {
+    year:2006, depth:40640, title:"Gilad Shalit captured in Gaza border attack", location:"Kerem Shalom / Gaza border",
+    story:"On June 25, 2006, Palestinian militants tunneled across the Gaza border and attacked an Israeli military post, killing two Israeli soldiers and capturing Corporal Gilad Shalit. Israel launched major military operations in Gaza. Shalit remained captive until a 2011 prisoner exchange.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Cross-border attack / hostage capture",Evidence:"The attack, deaths, capture and subsequent captivity are firmly documented."},
+    sourceStatus:"The attack, deaths, capture and subsequent captivity are firmly documented.",
+    sources:[{label:"Encyclopaedia Britannica — Gilad Shalit",url:"https://www.britannica.com/biography/Gilad-Shalit"}]
+  },
+  {
+    year:2006, depth:40810, title:"Second Lebanon War", location:"Israel and Lebanon",
+    story:"On July 12, 2006, Hezbollah fighters crossed the border, killed Israeli soldiers and captured two. Israel responded with a major air and ground campaign in Lebanon, while Hezbollah fired thousands of rockets into northern Israel. The war caused substantial civilian casualties and displacement in Lebanon and Israel.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Israel–Hezbollah war",Evidence:"The initiating cross-border attack, rocket campaign and Israeli military response are extensively documented. Assessments of conduct, proportionality and strategic outcome remain contested."},
+    sourceStatus:"The initiating cross-border attack, rocket campaign and Israeli military response are extensively documented. Assessments of conduct, proportionality and strategic outcome remain contested.",
+    sources:[{label:"United Nations — Security Council Resolution 1701",url:"https://www.un.org/press/en/2006/sc8808.doc.htm"}]
+  },
+  {
+    year:2007, depth:40980, title:"Hamas–Fatah fighting and Hamas takeover of Gaza", location:"Gaza Strip",
+    story:"After months of escalating conflict between Palestinian factions, Hamas forces defeated Fatah-aligned security forces and took control of the Gaza Strip in June 2007. The Palestinian political system split, with Hamas controlling Gaza and the Palestinian Authority under Mahmoud Abbas governing parts of the West Bank.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Palestinian internal armed conflict",Evidence:"The violent takeover and political division are firmly documented. Accounts differ over responsibility for the breakdown of earlier power-sharing arrangements."},
+    sourceStatus:"The violent takeover and political division are firmly documented. Accounts differ over responsibility for the breakdown of earlier power-sharing arrangements.",
+    sources:[{label:"United Nations — Gaza ten years later",url:"https://www.un.org/unispal/wp-content/uploads/2017/10/GAZARPT_110717.pdf"}]
+  },
+  {
+    year:2007, depth:41150, title:"Israel tightens blockade of the Gaza Strip after Hamas takeover", location:"Gaza Strip",
+    story:"Following Hamas's takeover of Gaza, Israel imposed increasingly severe restrictions on movement of people and goods, while Egypt also restricted the Rafah crossing. Israel cited security concerns and attacks from Gaza; humanitarian organizations documented major effects on Gaza's economy and civilian population.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Blockade / security policy",Evidence:"The restrictions following Hamas's takeover are extensively documented. Their legality, scope, humanitarian impact and security justification remain heavily contested."},
+    sourceStatus:"The restrictions following Hamas's takeover are extensively documented. Their legality, scope, humanitarian impact and security justification remain heavily contested.",
+    sources:[{label:"United Nations — History of the Question of Palestine",url:"https://www.un.org/unispal/history/"}]
+  },
+  {
+    year:2008, depth:41320, title:"Mumbai Chabad House attack", location:"Mumbai, India",
     story:"During the coordinated Mumbai attacks, terrorists seized the Chabad Jewish center at Nariman House and murdered hostages there.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2115,7 +2187,25 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Mumbai-terrorist-attacks-of-2008"}]
   },
   {
-    year:2012, depth:40130, title:"Toulouse Jewish school attack", location:"Toulouse, France",
+    year:2008, depth:41490, title:"Escalating rocket fire and Israeli strikes around Gaza", location:"Gaza Strip and southern Israel",
+    story:"Palestinian armed groups fired rockets and mortars from Gaza toward Israeli communities, while Israel conducted air strikes, raids and other military actions in Gaza. A six-month truce reduced violence for a period in 2008, but it unraveled amid renewed attacks and military action.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Rocket attacks / military strikes",Evidence:"Rocket fire, Israeli strikes and the 2008 truce are well documented. The sequence of violations and responsibility for the truce's collapse is disputed."},
+    sourceStatus:"Rocket fire, Israeli strikes and the 2008 truce are well documented. The sequence of violations and responsibility for the truce's collapse is disputed.",
+    sources:[{label:"United Nations — Gaza conflict background",url:"https://www.un.org/unispal/document/auto-insert-186806/"}]
+  },
+  {
+    year:2008, depth:41660, title:"Operation Cast Lead / 2008–09 Gaza War", location:"Gaza Strip and southern Israel",
+    story:"Israel began Operation Cast Lead on December 27, 2008 after renewed escalation in rocket fire and hostilities. The campaign included intensive air strikes followed by a ground offensive. Palestinian armed groups continued firing rockets into Israel. Large numbers of Palestinians, including civilians, were killed, as were Israeli soldiers and civilians.",
+    context:"This marker is part of the contemporary Israeli–Palestinian and regional conflict. The timeline distinguishes attacks on civilians, armed-group activity, Israeli military operations, Palestinian internal conflict and political or territorial changes rather than treating them as equivalent events.",
+    aftermath:"The Second Intifada and its aftermath transformed Israeli and Palestinian security policy, weakened the peace process and contributed to the political and geographic division between Hamas-controlled Gaza and the Palestinian Authority in the West Bank.",
+    stats:{Type:"Gaza war / rockets / Israeli military operation",Evidence:"The war and major military actions are extensively documented. Casualty classifications, proportionality and alleged violations of international law were and remain disputed."},
+    sourceStatus:"The war and major military actions are extensively documented. Casualty classifications, proportionality and alleged violations of international law were and remain disputed.",
+    sources:[{label:"United Nations — Gaza conflict report",url:"https://digitallibrary.un.org/record/681797/files/S_2009_537-EN.pdf"}]
+  },
+  {
+    year:2012, depth:41830, title:"Toulouse Jewish school attack", location:"Toulouse, France",
     story:"A gunman attacked the Ozar Hatorah Jewish school, murdering a teacher and three children.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2124,7 +2214,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Toulouse-and-Montauban-shootings"}]
   },
   {
-    year:2014, depth:40300, title:"Jerusalem synagogue attack", location:"Jerusalem",
+    year:2014, depth:42000, title:"Jerusalem synagogue attack", location:"Jerusalem",
     story:"Two Palestinian attackers armed with guns, knives and axes attacked worshippers at a synagogue in Har Nof in November 2014, killing worshippers and a police officer.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -2133,7 +2223,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.gov.il/en/pages/terrorism-deaths-in-israel-1920-1999"}]
   },
   {
-    year:2015, depth:40470, title:"Hyper Cacher hostage attack", location:"Paris, France",
+    year:2015, depth:42170, title:"Hyper Cacher hostage attack", location:"Paris, France",
     story:"A gunman attacked a kosher supermarket in Paris, killing four Jewish hostages.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2142,7 +2232,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Charlie-Hebdo-shooting"}]
   },
   {
-    year:2018, depth:40640, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
+    year:2018, depth:42340, title:"Pittsburgh synagogue shooting", location:"Pittsburgh, United States",
     story:"A gunman attacked worshippers at the Tree of Life synagogue complex, murdering eleven people.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2151,7 +2241,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/pennsylvania-man-sentenced-death-2018-tree-life-synagogue-shooting"}]
   },
   {
-    year:2019, depth:40810, title:"Poway synagogue shooting", location:"Poway, California, United States",
+    year:2019, depth:42510, title:"Poway synagogue shooting", location:"Poway, California, United States",
     story:"An antisemitic gunman opened fire inside Chabad of Poway on the final day of Passover, killing one worshipper and injuring three others, including a child.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -2160,7 +2250,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-sdca/pr/john-earnest-pleads-guilty-113-count-federal-hate-crime-indictment-connection-poway"}]
   },
   {
-    year:2019, depth:40980, title:"Halle synagogue attack", location:"Halle, Germany",
+    year:2019, depth:42680, title:"Halle synagogue attack", location:"Halle, Germany",
     story:"An armed extremist attempted to enter a synagogue on Yom Kippur; unable to enter, he murdered two people nearby.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2169,7 +2259,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/event/Halle-synagogue-shooting"}]
   },
   {
-    year:2020, depth:41150, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
+    year:2020, depth:42850, title:"Monsey Hanukkah stabbing", location:"Monsey, New York, United States",
     story:"During a Hanukkah gathering at a rabbi's home, an attacker stabbed multiple people; one victim later died from his injuries.",
     context:"This is an individually identifiable episode within the broader history of violence involving Jewish or Israeli targets. The surrounding conflict is represented separately where appropriate.",
     aftermath:"Additional casualty, perpetrator and aftermath fields will be expanded as the research database grows.",
@@ -2178,7 +2268,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/opa/pr/monsey-man-charged-federal-hate-crimes-december-2019-stabbing"}]
   },
   {
-    year:2022, depth:41320, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
+    year:2022, depth:43020, title:"Colleyville synagogue hostage crisis", location:"Colleyville, Texas, United States",
     story:"An armed man took worshippers hostage at Congregation Beth Israel in January 2022. The hostages ultimately escaped or were rescued; the attacker was killed.",
     context:"This event is shown separately because it is an identifiable episode within a broader period of violence.",
     aftermath:"Event-specific consequences and additional primary and secondary sources will continue to be expanded.",
@@ -2187,7 +2277,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.justice.gov/usao-ndtx/press-release/file/1465966/dl"}]
   },
   {
-    year:2023, depth:41490, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
+    year:2023, depth:43190, title:"October 7 Hamas-led attack and Israel–Hamas war", location:"Israel / Gaza",
     story:"Hamas and other armed groups attacked southern Israel on October 7, killing civilians and security personnel and taking hostages. Israel then launched a major war in Gaza with very large Palestinian civilian and combatant casualties and destruction.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -2207,10 +2297,10 @@ const eras = [
   {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:19220,end:21430},
   {name:"The Holocaust",range:"1933–1945 CE",start:21430,end:27040},
   {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:27040,end:38770},
-  {name:"Contemporary Era",range:"2000–2026 CE",start:38770,end:42010}
+  {name:"Contemporary Era",range:"2000–2026 CE",start:38770,end:43710}
 ];
 
-const MAX_DEPTH=42010;
+const MAX_DEPTH=43710;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
