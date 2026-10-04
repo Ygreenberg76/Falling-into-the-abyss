@@ -225,7 +225,8 @@ function renderEvents(){
 }
 function render(){
   const pct=Math.round((depth/MAX_DEPTH)*100);
-  const currentYear=yearAt(depth);\n  yearReadout.textContent=currentYear<0?Math.abs(currentYear)+" BCE":currentYear+" CE";
+  const currentYear=yearAt(depth);
+  yearReadout.textContent=currentYear<0?Math.abs(currentYear)+" BCE":currentYear+" CE";
   depthReadout.textContent=pct+"%";
   progressFill.style.height=pct+"%";
 
