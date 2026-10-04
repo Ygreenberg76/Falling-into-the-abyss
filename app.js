@@ -1,15 +1,32 @@
-const events = [
   {
-    year:-1208, depth:70, title:"Merneptah Stele: Egyptian campaign mentioning Israel", location:"Canaan",
-    story:"The victory inscription of Pharaoh Merneptah, dated to about 1208 BCE, states that 'Israel' was defeated during an Egyptian campaign in Canaan. It is the earliest widely accepted extra-biblical reference to a people called Israel. It does not describe Jews in the later religious sense.",
-    context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
-    aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
-    stats:{Type:"Egyptian military campaign / earliest external Israel reference",Evidence:"Very high for the inscription; limited detail about the conflict"},
-    sourceStatus:"Very high for the inscription; limited detail about the conflict",
-    sources:[{label:"Source / further reading",url:"https://www.britannica.com/topic/Merneptah-Stele"}]
+    year:-1800, depth:40, title:"Jacob is given the name Israel", location:"Canaan / Biblical tradition",
+    story:"According to Genesis, Jacob (Yaakov), son of Isaac and grandson of Abraham, is given the name Israel (Yisrael). His descendants are subsequently known as Bnei Yisrael — the Children of Israel. The biblical text is the source for this account; there is no independently established historical date for Jacob, so the date shown here is an approximate traditional-era placement rather than an archaeological date.",
+    context:"This is the narrative starting point of the website, not the first independently attested historical event. The site distinguishes biblical tradition from later extra-biblical and archaeological evidence.",
+    aftermath:"The name Israel becomes central to the biblical identity of Jacob's descendants and the traditions of the Twelve Tribes of Israel.",
+    stats:{Type:"Biblical tradition / origin narrative",Evidence:"Biblical text; date historically uncertain"},
+    sourceStatus:"Traditional biblical account — not independently dated",
+    sources:[{label:"Genesis 32 — Jacob renamed Israel",url:"https://www.sefaria.org/Genesis.32.29?lang=bi"}]
   },
   {
-    year:-925, depth:150, title:"Shoshenq I campaign in the southern Levant", location:"Judah / Israel / southern Levant",
+    year:-1750, depth:75, title:"Bnei Yisrael — the Children of Israel", location:"Biblical tradition",
+    story:"In the biblical narrative, the descendants of Jacob/Israel become known as Bnei Yisrael, the Children of Israel. The Twelve Tribes are traditionally traced to Jacob's sons and family. This entry establishes the meaning of the name before the timeline reaches independently attested references to Israel.",
+    context:"This is a traditional genealogical and identity framework preserved in the Hebrew Bible. It should not be confused with archaeological proof of a single historical family from which every later Israelite descended.",
+    aftermath:"The term Children of Israel becomes a recurring collective designation throughout the Torah and later biblical literature.",
+    stats:{Type:"Biblical tradition / peoplehood",Evidence:"Biblical text; historical reconstruction uncertain"},
+    sourceStatus:"Traditional biblical account",
+    sources:[{label:"Genesis — Jacob and the Children of Israel",url:"https://www.sefaria.org/Genesis.35.10?lang=bi"}]
+  },
+  {
+    year:-1208, depth:150, title:"Merneptah Stele: earliest extra-biblical reference to Israel", location:"Canaan",
+    story:"An Egyptian royal victory inscription dating to about 1208 BCE contains the earliest widely accepted non-biblical reference to a people called Israel. Merneptah claims that this group was defeated during his campaign in Canaan. The Egyptian writing identifies Israel as a people rather than a city, territory, kingdom, or state.",
+    context:"This marker is the site's transition from the traditional biblical narrative to independently attested evidence. It shows that a population known as Israel existed in Canaan by about 1208 BCE; it does not show that the later Kingdom of Israel already existed. The pharaoh's statement is an Egyptian royal victory claim, not proof that the people Israel were destroyed.",
+    aftermath:"Later Iron Age evidence documents Israel and Judah as political kingdoms. Their precise development from earlier highland populations remains a subject of historical and archaeological research.",
+    stats:{Type:"Egyptian campaign / earliest external Israel reference",Evidence:"Very high for inscription; interpretation of early Israel's organization remains debated"},
+    sourceStatus:"Contemporary Egyptian inscription — earliest widely accepted extra-biblical Israel reference",
+    sources:[{label:"Merneptah Stele — historical reference",url:"https://www.britannica.com/topic/Merneptah-Stele"}]
+  },
+  {
+    year:-925, depth:230, title:"Shoshenq I campaign in the southern Levant", location:"Judah / Israel / southern Levant",
     story:"Egyptian Pharaoh Shoshenq I campaigned in the Levant in the 10th century BCE. Egyptian inscriptions provide an external anchor for warfare affecting settlements associated with early Israel and Judah; the relationship to the biblical Shishak narrative is debated in detail.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -18,7 +35,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://www.britannica.com/biography/Sheshonk-I"}]
   },
   {
-    year:-840, depth:210, title:"Mesha's revolt against Israel", location:"Moab / Kingdom of Israel",
+    year:-840, depth:300, title:"Mesha's revolt against Israel", location:"Moab / Kingdom of Israel",
     story:"The Moabite king Mesha recorded the recovery of territories from Israel in a royal inscription. The Mesha Stele is an unusually important contemporary non-biblical source for conflict between Moab and the Kingdom of Israel.",
     context:"This entry distinguishes the securely attested core event from later narrative details where the evidence requires caution.",
     aftermath:"Consequences and casualty figures are presented conservatively; exact totals are omitted where surviving sources do not support confidence.",
@@ -27,7 +44,7 @@ const events = [
     sources:[{label:"Source / further reading",url:"https://collections.louvre.fr/ark:/53355/cl010120339"}]
   },
   {
-    year:-722, depth:260, title:"Assyrian conquest of Samaria", location:"Samaria / Kingdom of Israel",
+    year:-722, depth:370, title:"Assyrian conquest of Samaria", location:"Samaria / Kingdom of Israel",
     story:"Assyria conquered Samaria and ended the northern Kingdom of Israel; deportations and resettlement followed.",
     context:"This entry is part of the site's chronological record of documented violence involving Jewish communities. Open the cited source for fuller historical context and competing interpretations where relevant.",
     aftermath:"Consequences are summarized conservatively; this database will be expanded with event-specific aftermath, casualty notes and additional primary/secondary sources.",
@@ -1037,7 +1054,7 @@ const events = [
 ];
 
 const eras = [
-  {name:"Ancient Israel & Judah",range:"c. 1200–586 BCE",start:0,end:1160},
+  {name:"Biblical Origins & Ancient Israel",range:"Jacob/Israel tradition → 586 BCE",start:0,end:1160},
   {name:"Second Temple Period",range:"586 BCE–70 CE",start:1160,end:1940},
   {name:"Roman & Byzantine Period",range:"70–622 CE",start:1940,end:3100},
   {name:"Early Islamic Period",range:"622–1096 CE",start:3100,end:3820},
@@ -1089,7 +1106,7 @@ function makeParticles(){
   }
 }
 function yearAt(d){
-  const points=[{depth:0,year:-1210},...events,{depth:MAX_DEPTH,year:2026}];
+  const points=[{depth:0,year:-1800},...events,{depth:MAX_DEPTH,year:2026}];
   let a=points[0],b=points[1];
   for(let i=1;i<points.length;i++){
     if(d<=points[i].depth){b=points[i];a=points[i-1];break}
