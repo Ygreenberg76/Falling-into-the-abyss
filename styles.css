@@ -204,3 +204,18 @@ body.event-open{overflow:hidden}
 .person .human-head{fill:#17181b}.person .human-torso{fill:#101114}
 .fall-trail{height:230px;width:3px;opacity:.1}
 .scroll-hint{background:rgba(0,0,0,.45);padding:7px 12px;border-radius:999px}
+
+/* Realistic falling figure + depth-responsive surface light */
+.sky-opening{transform-origin:50% 0;will-change:transform,opacity,filter}
+.light-shaft{transform-origin:50% 0;will-change:transform,opacity}
+.realistic-person{width:150px;height:180px;filter:drop-shadow(0 15px 18px rgba(0,0,0,.82));transform-origin:50% 52%}
+.realistic-person svg{overflow:visible;width:100%;height:100%}
+.realistic-person .fall-body{transform-origin:110px 125px}
+.realistic-person .hair{fill:#09090a}
+.realistic-person .head-real,.realistic-person .skin{fill:url(#skinShade);stroke:#171313;stroke-width:1}
+.realistic-person .shirt,.realistic-person .sleeve{fill:url(#shirtShade);stroke:#090a0b;stroke-width:2}
+.realistic-person .pants{fill:url(#pantsShade);stroke:#050607;stroke-width:2}
+.realistic-person .boot{fill:#08090a;stroke:#303238;stroke-width:2}
+.realistic-person .real-limb{transform-box:fill-box;transform-origin:center 18%;will-change:transform}
+.realistic-person .foreground-leg{filter:drop-shadow(0 8px 7px rgba(0,0,0,.7))}
+@media(max-width:760px){.realistic-person{width:125px;height:155px}}
