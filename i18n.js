@@ -1,5 +1,8 @@
 (()=>{
 const KEY="fallingLanguageV1";
+function currentLanguage(){return localStorage.getItem(KEY)||"en";}
+function localizeEvent(kind,event){const lang=currentLanguage();if(lang==="en"||!event)return event;const table=window.FALLING_TRANSLATIONS&&window.FALLING_TRANSLATIONS[lang]&&window.FALLING_TRANSLATIONS[lang][kind];const translated=table&&table[event.id];return translated?Object.assign({},event,translated):event;}
+window.FALLING_I18N={currentLanguage,localizeEvent};
 const TEXT={
 he:{
 "Interactive History":"היסטוריה אינטראקטיבית","Falling Into the Abyss":"נופלים אל התהום","Christianity timeline":"ציר הזמן הנוצרי","Islam timeline":"ציר הזמן האסלאמי","Jewish timeline":"ציר הזמן היהודי","Restart":"התחלה מחדש","Method & Sources":"שיטה ומקורות","Scroll to descend":"גללו כדי לרדת","History gets deeper as you fall.":"ככל שיורדים, ההיסטוריה מעמיקה.","Begin the descent":"התחילו בירידה","Current year":"השנה הנוכחית","Current era":"התקופה הנוכחית","Depth":"עומק","Explore timeline":"חקרו את ציר הזמן","Find an event":"מצאו אירוע","Search":"חיפוש","Era":"תקופה","Type":"סוג","All eras":"כל התקופות","All event types":"כל סוגי האירועים","Jump to year":"מעבר לשנה","Go":"עבור","Clear filters":"נקה מסננים","YOU ARE HERE":"אתם כאן","Transparency & research":"שקיפות ומחקר","Disclosure & Sources":"גילוי נאות ומקורות","Disclosure":"גילוי נאות","Research method":"שיטת המחקר","Master bibliography":"ביבליוגרפיה ראשית","Sources used across the site":"מקורות המשמשים באתר","Search sources or domains…":"חיפוש מקורות או אתרים…"},
