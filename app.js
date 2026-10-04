@@ -2598,6 +2598,7 @@ function overlapBadge(kind){
   return "";
 }
 const markerEls=events.map((event,index)=>{
+  const displayEvent=(window.FALLING_I18N&&window.FALLING_I18N.localizeEvent)?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,event):event;
   const btn=document.createElement("button");
   btn.type="button";
   btn.className="event-marker";
@@ -2605,9 +2606,9 @@ const markerEls=events.map((event,index)=>{
   if(overlap==="christian") btn.classList.add("christian-overlap");
   if(overlap==="islamic") btn.classList.add("islam-overlap");
   if(overlap==="both") btn.classList.add("christian-overlap","islam-overlap");
-  btn.setAttribute("aria-label",event.year+" — "+event.title+". Open event details.");
+  btn.setAttribute("aria-label",event.year+" — "+displayEvent.title+". Open event details.");
   if(index%2===0) btn.style.left="7%"; else btn.style.right="7%";
-  btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small><strong>'+event.title+'</strong>'+overlapBadge(overlap)+'</span>';
+  btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small><strong>'+displayEvent.title+'</strong>'+overlapBadge(overlap)+'</span>';
   btn.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();openEvent(event)});
   wireOverlapLinks(btn,event);
   eventsLayer.appendChild(btn);
