@@ -2858,6 +2858,50 @@ function renderHistoricalPath(event){
   box.appendChild(rail);
   if(path.length>1){const clear=document.createElement("button");clear.type="button";clear.className="historical-path-clear";clear.textContent="Start a new path";clear.addEventListener("click",()=>{try{sessionStorage.removeItem(HISTORY_PATH_KEY);}catch{}renderHistoricalPath(event);});box.appendChild(clear);}
 }
+const CONFLICT_CHAINS={
+  "October 7 Hamas-led attack on southern Israel":{
+    note:"This chain separates long-term background, escalation, the attack itself and the response. It does not claim that any earlier event made the attack inevitable or justified attacks on civilians.",
+    steps:[
+      {title:"Israel disengages from the Gaza Strip",role:"Broader background",detail:"Israel withdrew its permanent military presence and settlements from inside Gaza in 2005."},
+      {title:"Hamas–Fatah fighting and Hamas takeover of Gaza",role:"Broader background",detail:"Hamas took control of Gaza in 2007, creating a separate political and security reality from the Palestinian Authority in the West Bank."},
+      {title:"Israel tightens blockade of the Gaza Strip after Hamas takeover",role:"Broader background",detail:"Israel tightened restrictions around Gaza after the Hamas takeover; Egypt also restricted its border. The blockade became a major part of the continuing conflict."},
+      {title:"May 2021 Jerusalem crisis and Israel–Hamas war",role:"Earlier escalation",detail:"A major round of fighting followed tensions in Jerusalem. Hamas and other groups fired rockets at Israel and Israel carried out extensive strikes in Gaza."},
+      {title:"West Bank violence reaches highest Palestinian death toll in years",role:"Escalating context",detail:"Violence increased sharply in the West Bank during 2022, involving Israeli raids, Palestinian attacks and armed clashes."},
+      {title:"Large-scale Israeli operation in Jenin refugee camp",role:"Recent escalation",detail:"In July 2023 Israeli forces carried out a major operation in Jenin amid growing armed-group activity and West Bank violence."},
+      {title:"October 7 Hamas-led attack on southern Israel",role:"This attack",detail:"Hamas and other armed groups launched the October 7 assault. Hamas leaders publicly framed the operation in terms of occupation, Al-Aqsa/Jerusalem and Palestinian prisoners; those stated motives are not the same as an independently proven single trigger."},
+      {title:"Israel launches large-scale Gaza war after October 7",role:"Immediate response",detail:"Israel declared war and launched a large-scale air and ground campaign in Gaza, saying its goals included dismantling Hamas and returning the hostages."}
+    ]
+  },
+  "Passover massacre":{
+    note:"The Passover massacre occurred during the Second Intifada. The chain shows the wider uprising and the major Israeli military response without presenting the preceding conflict as justification for the bombing.",
+    steps:[
+      {title:"Second Intifada",role:"Broader conflict",detail:"The Second Intifada brought sustained Israeli–Palestinian violence, including Palestinian suicide bombings and shootings and Israeli military operations."},
+      {title:"Passover massacre",role:"This attack",detail:"A Hamas suicide bomber attacked the Park Hotel Passover seder in Netanya in March 2002."},
+      {title:"Operation Defensive Shield",role:"Major response",detail:"Following a wave of suicide bombings, including the Passover massacre, Israel launched a major West Bank military operation."},
+      {title:"Construction of the West Bank barrier begins",role:"Longer-term response",detail:"Israel began building the barrier during the Second Intifada, citing prevention of suicide bombings and other attacks as a security objective."}
+    ]
+  }
+};
+function renderConflictChain(event){
+  let box=document.getElementById("conflictChainBox");
+  if(!box){box=document.createElement("section");box.id="conflictChainBox";box.className="conflict-chain";const sourceCard=document.querySelector(".sources-card");if(sourceCard)sourceCard.before(box);}
+  const chain=CONFLICT_CHAINS[event.title];
+  box.classList.toggle("hidden",!chain);box.innerHTML="";if(!chain)return;
+  box.innerHTML='<div class="conflict-chain-heading"><small>Conflict chain</small><h3>What led to this?</h3><p>'+chain.note+'</p></div>';
+  const rail=document.createElement("div");rail.className="conflict-chain-rail";
+  chain.steps.forEach((step,i)=>{
+    const linked=events.find(e=>e.title===step.title),el=document.createElement(linked?"button":"div");if(linked)el.type="button";
+    el.className="conflict-chain-step"+(step.title===event.title?" current":"")+(linked?" clickable":"");
+    const num=document.createElement("span");num.className="conflict-chain-number";num.textContent=String(i+1).padStart(2,"0");
+    const body=document.createElement("div");body.className="conflict-chain-body";
+    const role=document.createElement("small");role.textContent=step.role+(linked?" · "+sameTimeYearLabel(linked.year):"");
+    const title=document.createElement("strong");title.textContent=step.title;
+    const detail=document.createElement("p");detail.textContent=step.detail;
+    body.append(role,title,detail);el.append(num,body);if(linked&&linked!==event)el.addEventListener("click",()=>openEvent(linked));rail.appendChild(el);
+  });
+  box.appendChild(rail);
+  const key=document.createElement("p");key.className="conflict-chain-key";key.textContent="Earlier event ≠ justification. The labels describe chronology and documented context; where motives are disputed, the timeline identifies them as claims rather than established causes.";box.appendChild(key);
+}
 function renderHistoryTrail(event,connected){
   let box=document.getElementById("historyTrailBox");
   if(!box){box=document.createElement("div");box.id="historyTrailBox";box.className="history-trail";document.querySelector(".sources-card").before(box);}
@@ -2945,6 +2989,7 @@ function openEvent(event){
     dd.textContent=v;
     row.append(dt,dd);dl.appendChild(row);
   });
+  renderConflictChain(event);
   renderSameTimeHistory(event);
   renderHistoryTrail(event,connected);
   renderHistoricalPath(event);
