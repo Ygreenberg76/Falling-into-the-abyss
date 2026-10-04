@@ -68,7 +68,9 @@ const eras=[{name:"Muhammad & Origins of Islam",range:"c. 570–632 CE",start:18
 const MAX_DEPTH=11410;
 const islamJewishOverlapTitles=new Set(["Battle of the Trench and Banu Qurayza episode","Muslim capture of Jerusalem","Dome of the Rock completed","Crusaders capture Jerusalem","Arab-Israeli war and Palestinian Nakba","Six-Day War and Jerusalem holy sites","First Intifada","Hamas founded","October 7 attack and Gaza war","Gaza war and regional escalation"]);
 const islamChristianOverlapTitles=new Set(["Battle of Yarmouk","Muslim capture of Jerusalem","Dome of the Rock completed","Muslim conquest of Iberia begins","Al-Hakim orders destruction of Holy Sepulchre","Battle of Manzikert","Crusaders capture Jerusalem","Saladin recovers Jerusalem","Mamluks capture Acre","Ottoman conquest of Constantinople","Fall of Granada","First Ottoman siege of Vienna","Battle of Lepanto","Second Ottoman siege of Vienna","Ottoman Empire enters World War I","British capture Jerusalem","Six-Day War and Jerusalem holy sites","ISIS murders 21 Coptic Christians in Libya"]);
-let depth=0, velocity=0, paused=false, rafId=0;\nconst reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;\nconst abyss=document.getElementById("abyss");
+let depth=0, velocity=0, paused=false, rafId=0;
+const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const abyss=document.getElementById("abyss");
 const person=document.getElementById("fallingPerson");
 const eventsLayer=document.getElementById("eventsLayer");
 const yearReadout=document.getElementById("yearReadout");
