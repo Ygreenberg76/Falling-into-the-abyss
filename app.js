@@ -18,6 +18,51 @@ const events = [
     sources:[{label:"Genesis — Jacob and the Children of Israel",url:"https://www.sefaria.org/Genesis.35.10?lang=bi"}]
   },
   {
+    year:-1650, depth:92, title:"Israel's family goes down to Egypt", location:"Egypt / Biblical tradition",
+    story:"Genesis describes Jacob/Israel and his household moving to Egypt during a famine, where Joseph had risen to authority. This is part of the biblical origin narrative of Bnei Yisrael; no independent Egyptian record has been securely identified as documenting Jacob or Joseph.",
+    context:"This entry is included because it is fundamental to the traditional story that leads to the Exodus. Its placement is approximate and should not be read as an established archaeological date.",
+    aftermath:"The biblical narrative later describes the descendants of Israel becoming numerous in Egypt and being subjected to forced labor.",
+    stats:{Type:"Biblical tradition / migration",Evidence:"Biblical text; independently unverified"},
+    sourceStatus:"Traditional biblical account — date historically uncertain",
+    sources:[{label:"Genesis 46 — Israel goes to Egypt",url:"https://www.sefaria.org/Genesis.46?lang=bi"}]
+  },
+  {
+    year:-1300, depth:108, title:"Enslavement of Bnei Yisrael in Egypt", location:"Egypt / Biblical tradition",
+    story:"The book of Exodus describes a new pharaoh enslaving the Children of Israel and imposing forced labor upon them. The account is foundational to Jewish history and identity, but historians have not found independent evidence establishing the biblical enslavement on the scale or in the form described.",
+    context:"The site presents this as biblical tradition rather than a securely dated Egyptian historical event. Ancient Egypt did use forced labor and enslaved populations, but that fact alone does not independently verify the Exodus narrative.",
+    aftermath:"In the biblical account, oppression leads to Moses' leadership and the departure of Bnei Yisrael from Egypt.",
+    stats:{Type:"Biblical tradition / persecution and forced labor",Evidence:"Biblical text; historical scale and chronology uncertain"},
+    sourceStatus:"Traditional biblical account",
+    sources:[{label:"Exodus 1 — oppression of the Children of Israel",url:"https://www.sefaria.org/Exodus.1?lang=bi"}]
+  },
+  {
+    year:-1250, depth:120, title:"The Exodus from Egypt", location:"Egypt → Sinai / Biblical tradition",
+    story:"According to the Torah, Moses leads Bnei Yisrael out of slavery in Egypt. The Exodus becomes one of the central narratives of Jewish identity and religious memory. Scholars continue to debate whether the story preserves memories of smaller historical movements or events, but the biblical Exodus as narrated has not been independently established archaeologically.",
+    context:"This marker deliberately separates religious and cultural tradition from independently attested history. The date is an approximate traditional-era placement, not a proven date.",
+    aftermath:"The biblical narrative continues with the wilderness journey, covenant at Sinai, and the development of Israel as a people bound by a shared law and tradition.",
+    stats:{Type:"Biblical tradition / liberation narrative",Evidence:"Biblical text; historicity and chronology debated"},
+    sourceStatus:"Traditional biblical account — not independently established at the narrated scale",
+    sources:[{label:"Exodus — departure from Egypt",url:"https://www.sefaria.org/Exodus.12?lang=bi"}]
+  },
+  {
+    year:-1240, depth:130, title:"Amalek attacks Bnei Yisrael", location:"Rephidim / Biblical tradition",
+    story:"Exodus describes Amalek attacking the Israelites at Rephidim during the wilderness journey. Later biblical texts make Amalek a recurring enemy in Israelite memory. There is no independent contemporary evidence that securely identifies this particular battle.",
+    context:"Because this is an account of armed conflict involving Bnei Yisrael, it belongs in the project's traditional-history section, but it is explicitly labeled as a biblical narrative rather than independently verified history.",
+    aftermath:"The conflict becomes an enduring motif in biblical and later Jewish memory.",
+    stats:{Type:"Biblical tradition / battle",Evidence:"Biblical text; independently unverified"},
+    sourceStatus:"Traditional biblical account",
+    sources:[{label:"Exodus 17 — battle with Amalek",url:"https://www.sefaria.org/Exodus.17?lang=bi"}]
+  },
+  {
+    year:-1230, depth:140, title:"Joshua and warfare in Canaan", location:"Canaan / Biblical tradition",
+    story:"The book of Joshua describes Israelite campaigns against Canaanite cities after the wilderness period. Archaeology shows that Canaan underwent major political and social changes around the end of the Late Bronze Age, but it does not support a simple reconstruction in which every city in Joshua fell in one unified conquest exactly as narrated.",
+    context:"Some sites named in Joshua experienced destruction in the relevant broad period, while others present different archaeological histories. Hazor, for example, was destroyed in the 13th century BCE, but the identity of those responsible remains debated.",
+    aftermath:"Biblical tradition presents the campaigns as leading into settlement by the tribes of Israel; historical reconstruction instead points to a complex emergence of early Israel within Canaan.",
+    stats:{Type:"Biblical tradition / conquest narratives",Evidence:"Mixed: biblical narrative plus archaeological evidence for regional upheaval; specific campaigns disputed"},
+    sourceStatus:"Traditional narrative with partial archaeological context — details debated",
+    sources:[{label:"Joshua — Canaan campaigns",url:"https://www.sefaria.org/Joshua.11?lang=bi"},{label:"Hazor archaeological context",url:"https://www.bibleodyssey.org/map-gallery/hazor-map"}]
+  },
+  {
     year:-1208, depth:150, title:"Merneptah Stele: earliest extra-biblical reference to Israel", location:"Canaan",
     story:"An Egyptian royal victory inscription dating to about 1208 BCE contains the earliest widely accepted non-biblical reference to a people called Israel. Merneptah claims that this group was defeated during his campaign in Canaan. The Egyptian writing identifies Israel as a people rather than a city, territory, kingdom, or state.",
     context:"This marker is the site's transition from the traditional biblical narrative to independently attested evidence. It shows that a population known as Israel existed in Canaan by about 1208 BCE; it does not show that the later Kingdom of Israel already existed. The pharaoh's statement is an Egyptian royal victory claim, not proof that the people Israel were destroyed.",
@@ -1052,7 +1097,7 @@ const events = [
     sourceStatus:"Very high for core events; evolving and contested details require dated sourcing",
     sources:[{label:"Source / further reading",url:"https://www.un.org/unispal/document/coi-report-a-hrc-56-26-27may24/"}]
   }
-];
+]
 
 const eras = [
   {name:"Biblical Origins & Ancient Israel",range:"Jacob/Israel tradition → 586 BCE",start:0,end:1160},
