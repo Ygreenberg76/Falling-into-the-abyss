@@ -3015,6 +3015,7 @@ if(Number.isFinite(linkedYear)){
       marker.scrollIntoView({block:"center",behavior:"smooth"});
       setTimeout(()=>marker.classList.remove("linked-history-target"),4200);
     }
+    if(events[nearestIndex]) openEvent(events[nearestIndex]);
   });
 }
 
