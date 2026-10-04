@@ -2613,7 +2613,7 @@ function wireOverlapLinks(btn,event){
   links.forEach(([cls,page])=>btn.querySelectorAll("."+cls).forEach(badge=>{
     badge.dataset.historyLink="true";
     badge.title="Open this year in the related history timeline";
-    badge.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();window.location.href=page+"?year="+encodeURIComponent(event.year)});
+    badge.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();window.location.href=page+"?year="+encodeURIComponent(event.year)+"&from=jewish"});
   }));
 }
 function renderEvents(){
@@ -2835,6 +2835,19 @@ if(Number.isFinite(linkedYear)){
       setTimeout(()=>marker.classList.remove("linked-history-target"),4200);
     }
   });
+}
+
+const linkedFrom=new URLSearchParams(window.location.search).get("from");
+if(linkedFrom&&Number.isFinite(linkedYear)){
+  const names={jewish:"Jewish timeline",christian:"Christianity timeline",islamic:"Islam timeline"};
+  const pages={jewish:"index.html",christian:"christianity.html",islamic:"islam.html"};
+  if(names[linkedFrom]&&pages[linkedFrom]){
+    const cue=document.createElement("a");
+    cue.className="history-return-cue";
+    cue.href=pages[linkedFrom]+"?year="+encodeURIComponent(linkedYear);
+    cue.innerHTML='<small>History overlap</small><strong>← Back to '+names[linkedFrom]+'</strong>';
+    document.getElementById("abyss").appendChild(cue);
+  }
 }
 
 makeParticles();render();rafId=requestAnimationFrame(tick);
