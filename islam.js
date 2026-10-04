@@ -494,35 +494,32 @@ function renderCompareCard(kind,label,event,page,fromKind){
   return card;
 }
 function showComparisonMap(items){
-  const dots=document.getElementById("compareMapDots"),legend=document.getElementById("mapLegend"),mapYear=document.getElementById("mapYear"),count=document.getElementById("mapCommunityCount");
-  if(!dots||!window.findHistoryMapPlace)return;
-  dots.replaceChildren();
-  const ns="http://www.w3.org/2000/svg";let shown=0;
-  const plotted=[];
+  const dots=document.getElementById("compareAtlasDots"),land=document.getElementById("compareAtlasLand"),legend=document.getElementById("compareAtlasLegend");
+  if(!dots||!land||!legend||!window.findHistoryMapPlace)return;
+  dots.replaceChildren();legend.replaceChildren();
+  const mainLand=document.getElementById("mapLand");
+  if(mainLand&&mainLand.childNodes.length)land.innerHTML=mainLand.innerHTML;
+  else fetch("data/ne_110m_land.geojson").then(r=>r.json()).then(data=>{
+    const ns="http://www.w3.org/2000/svg";
+    const point=(lat,lon)=>({x:lon+180,y:90-lat});
+    const ringPath=r=>r.map((v,i)=>{const q=point(v[1],v[0]);return(i?"L":"M")+q.x.toFixed(2)+" "+q.y.toFixed(2)}).join(" ")+" Z";
+    const geometryPath=g=>g.type==="Polygon"?g.coordinates.map(ringPath).join(" "):g.type==="MultiPolygon"?g.coordinates.flatMap(p=>p.map(ringPath)).join(" "):"";
+    data.features.forEach(feature=>{const d=geometryPath(feature.geometry);if(!d)return;const path=document.createElementNS(ns,"path");path.setAttribute("d",d);path.setAttribute("fill-rule","evenodd");land.appendChild(path);});
+  }).catch(()=>{});
+  const ns="http://www.w3.org/2000/svg",plotted=[];
   items.forEach(item=>{const place=window.findHistoryMapPlace(item.event);if(place)plotted.push({...item,place});});
   if(plotted.length>1){
-    const lineGroup=document.createElementNS(ns,"g");lineGroup.setAttribute("class","compare-map-connections");
-    for(let i=1;i<plotted.length;i++){
-      const a=plotted[i-1].place,b=plotted[i].place,line=document.createElementNS(ns,"line");
-      line.setAttribute("x1",a.lon+180);line.setAttribute("y1",90-a.lat);line.setAttribute("x2",b.lon+180);line.setAttribute("y2",90-b.lat);
-      line.setAttribute("class","compare-map-connection");lineGroup.appendChild(line);
-    }
-    dots.appendChild(lineGroup);
+    const lines=document.createElementNS(ns,"g");lines.setAttribute("class","compare-map-connections");
+    for(let i=1;i<plotted.length;i++){const a=plotted[i-1].place,b=plotted[i].place,line=document.createElementNS(ns,"line");line.setAttribute("x1",a.lon+180);line.setAttribute("y1",90-a.lat);line.setAttribute("x2",b.lon+180);line.setAttribute("y2",90-b.lat);line.setAttribute("class","compare-map-connection");lines.appendChild(line);}dots.appendChild(lines);
   }
   plotted.forEach(({kind,label,event,place})=>{
-    const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g");
-    g.setAttribute("class","compare-map-marker "+kind+"-map-marker");
-    const halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle"),title=document.createElementNS(ns,"title");
-    halo.setAttribute("cx",x);halo.setAttribute("cy",y);halo.setAttribute("r","7");halo.setAttribute("class","compare-map-halo");
-    core.setAttribute("cx",x);core.setAttribute("cy",y);core.setAttribute("r","2.8");core.setAttribute("class","compare-map-core");
-    title.textContent=label+" — "+event.title+" • "+event.location;
-    g.append(title,halo,core);dots.appendChild(g);shown++;
+    const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g"),halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle"),title=document.createElementNS(ns,"title");
+    g.setAttribute("class","compare-map-marker "+kind+"-map-marker");halo.setAttribute("cx",x);halo.setAttribute("cy",y);halo.setAttribute("r","7");halo.setAttribute("class","compare-map-halo");core.setAttribute("cx",x);core.setAttribute("cy",y);core.setAttribute("r","2.8");core.setAttribute("class","compare-map-core");title.textContent=label+" — "+event.title+" • "+event.location;g.append(title,halo,core);dots.appendChild(g);
+    const tag=document.createElement("span");tag.className="compare-map-legend "+kind+"-map-legend";tag.textContent=label+": "+event.location;legend.appendChild(tag);
   });
-  window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:true,items:plotted}}));
-  if(mapYear)mapYear.textContent="Shared history";
-  if(count)count.textContent=shown?shown+" event location"+(shown===1?"":"s"):"Historical centers";
+  if(!plotted.length){const tag=document.createElement("span");tag.textContent="No precise map location is available for these events.";legend.appendChild(tag);}
 }
-function restoreTimelineMap(){const layer=document.getElementById("compareMapDots");if(layer)layer.replaceChildren();window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:false}}));}
+function restoreTimelineMap(){}}));}
 function comparisonTargets(event){const targets=[];if(islamJewishOverlapTitles.has(event.title))targets.push(["jewish","Jewish history","index.html"]);if(islamChristianOverlapTitles.has(event.title))targets.push(["christian","Christian history","christianity.html"]);return targets;}
 function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
 function openComparison(event){
