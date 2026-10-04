@@ -69,6 +69,35 @@
         </div>
       </div>
 
+      <div class="explore-tools">
+        <button id="exploreToggle" class="explore-toggle" type="button" aria-expanded="false" aria-controls="explorePanel">Explore timeline <span>⌄</span></button>
+        <div id="explorePanel" class="explore-panel hidden">
+          <div class="explore-heading"><strong>Find an event</strong><small id="filterCount">277 events</small></div>
+          <label>Search
+            <input id="eventSearch" type="search" placeholder="Event, place or keyword…" autocomplete="off">
+          </label>
+          <div class="explore-grid">
+            <label>Era
+              <select id="eraFilter"><option value="">All eras</option></select>
+            </label>
+            <label>Type
+              <select id="typeFilter"><option value="">All event types</option></select>
+            </label>
+          </div>
+          <div class="year-jump">
+            <label>Jump to year
+              <input id="yearJump" type="number" min="1" max="2026" placeholder="e.g. 1948">
+            </label>
+            <label class="year-era">Era
+              <select id="yearEra"><option value="CE">CE</option><option value="BCE">BCE</option></select>
+            </label>
+            <button id="yearJumpBtn" class="explore-action" type="button">Go</button>
+          </div>
+          <div id="filterResults" class="filter-results" aria-live="polite"></div>
+          <button id="clearFilters" class="clear-filters" type="button">Clear filters</button>
+        </div>
+      </div>
+
       <div class="progress-rail" aria-hidden="true">
         <div id="progressFill"></div>
       </div>
