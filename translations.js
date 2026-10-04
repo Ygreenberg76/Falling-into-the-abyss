@@ -20,3 +20,28 @@ christian:{
 islamic:{
 "islamic-570-birth-of-muhammad-0":{title:"مولد محمد",location:"مكة، شبه الجزيرة العربية",story:"وُلد محمد في مكة نحو سنة 570م في قريش. وأصبحت حياته الإطار التاريخي الذي نشأ منه الإسلام في شبه الجزيرة العربية في القرن السابع.",context:"نشأة الإسلام",aftermath:"يُعرض هذا الحدث مع إسناد المسؤولية إلى الحكومات أو الجماعات المسلحة أو المؤسسات أو المجتمعات المحددة المعنية، بدل تعميمها على الإسلام أو المسلمين.",sourceStatus:"وجود محمد وقيادته أمران تاريخيان؛ أما الروايات التفصيلية عن طفولته فتأتي أساسًا من كتب السيرة الإسلامية اللاحقة."}
 }}});
+Object.assign(window.FALLING_TRANSLATIONS.he.jewish,{
+"jewish-bce-1750-bnei-yisrael-the-children-of-israel-1":{title:"בני ישראל — ילדי ישראל",location:"כנען / המסורת המקראית",context:"היווצרות זהות ישראלית מוקדמת"},
+"jewish-bce-1650-israel-s-family-goes-down-to-egypt-2":{title:"משפחת ישראל יורדת למצרים",location:"כנען ומצרים",context:"מסורת מקראית / הגירה למצרים"},
+"jewish-bce-1300-enslavement-of-bnei-yisrael-in-egypt-3":{title:"שעבוד בני ישראל במצרים",location:"מצרים",context:"מסורת מקראית / שעבוד"},
+"jewish-bce-1250-the-exodus-from-egypt-4":{title:"יציאת מצרים",location:"מצרים וסיני",context:"מסורת מקראית / יציאה ממצרים"},
+"jewish-bce-1240-amalek-attacks-bnei-yisrael-5":{title:"עמלק תוקף את בני ישראל",location:"מדבר סיני / רפידים",context:"מסורת מקראית / עימות"},
+"jewish-bce-1230-joshua-and-warfare-in-canaan-6":{title:"יהושע והמלחמות בכנען",location:"כנען",context:"מסורת מקראית / כיבוש ומלחמה"},
+"jewish-bce-1150-philistine-expansion-and-conflict-with-early-israel-8":{title:"התפשטות הפלשתים והעימות עם ישראל הקדומה",location:"דרום הלבנט",context:"תקופת הברזל / עימות אזורי"},
+"jewish-bce-1050-saul-and-the-philistine-wars-9":{title:"שאול והמלחמות בפלשתים",location:"ישראל הקדומה / דרום הלבנט",context:"מלוכה מוקדמת / מלחמה"},
+"jewish-bce-1010-battle-of-mount-gilboa-and-death-of-saul-10":{title:"קרב הר הגלבוע ומותו של שאול",location:"הר הגלבוע",context:"מלוכה מוקדמת / מלחמה"},
+"jewish-bce-1000-david-s-wars-and-rise-of-the-israelite-monarchy-11":{title:"מלחמות דוד ועליית המלוכה הישראלית",location:"יהודה וישראל",context:"מלוכה מוקדמת / התגבשות מדינית"}
+});
+
+Object.assign(window.FALLING_TRANSLATIONS.ar.jewish,{
+"jewish-bce-1750-bnei-yisrael-the-children-of-israel-1":{title:"بنو إسرائيل — أبناء إسرائيل",location:"كنعان / التقليد التوراتي",context:"تشكّل الهوية الإسرائيلية المبكرة"},
+"jewish-bce-1650-israel-s-family-goes-down-to-egypt-2":{title:"عائلة إسرائيل تنزل إلى مصر",location:"كنعان ومصر",context:"تقليد توراتي / الهجرة إلى مصر"},
+"jewish-bce-1300-enslavement-of-bnei-yisrael-in-egypt-3":{title:"استعباد بني إسرائيل في مصر",location:"مصر",context:"تقليد توراتي / الاستعباد"},
+"jewish-bce-1250-the-exodus-from-egypt-4":{title:"الخروج من مصر",location:"مصر وسيناء",context:"تقليد توراتي / الخروج"},
+"jewish-bce-1240-amalek-attacks-bnei-yisrael-5":{title:"عماليق يهاجمون بني إسرائيل",location:"صحراء سيناء / رفيديم",context:"تقليد توراتي / صراع"},
+"jewish-bce-1230-joshua-and-warfare-in-canaan-6":{title:"يشوع والحروب في كنعان",location:"كنعان",context:"تقليد توراتي / غزو وحرب"},
+"jewish-bce-1150-philistine-expansion-and-conflict-with-early-israel-8":{title:"التوسع الفلسطيني القديم والصراع مع إسرائيل المبكرة",location:"جنوب بلاد الشام",context:"العصر الحديدي / صراع إقليمي"},
+"jewish-bce-1050-saul-and-the-philistine-wars-9":{title:"شاول وحروب الفلسطينيين القدماء",location:"إسرائيل المبكرة / جنوب بلاد الشام",context:"الملكية المبكرة / حرب"},
+"jewish-bce-1010-battle-of-mount-gilboa-and-death-of-saul-10":{title:"معركة جبل جلبوع وموت شاول",location:"جبل جلبوع",context:"الملكية المبكرة / حرب"},
+"jewish-bce-1000-david-s-wars-and-rise-of-the-israelite-monarchy-11":{title:"حروب داود وصعود الملكية الإسرائيلية",location:"يهوذا وإسرائيل",context:"الملكية المبكرة / تشكّل الدولة"}
+});
