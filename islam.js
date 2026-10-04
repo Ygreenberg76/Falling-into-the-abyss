@@ -503,10 +503,11 @@ function showComparisonMap(items){
   plotted.forEach(({kind,label,event,place})=>{
     const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g");
     g.setAttribute("class","compare-map-marker "+kind+"-map-marker");
-    const halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle");
-    halo.setAttribute("cx",x);halo.setAttribute("cy",y);halo.setAttribute("r","6");halo.setAttribute("class","compare-map-halo");
-    core.setAttribute("cx",x);core.setAttribute("cy",y);core.setAttribute("r","2.3");core.setAttribute("class","compare-map-core");
-    g.append(halo,core);dots.appendChild(g);shown++;
+    const halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle"),title=document.createElementNS(ns,"title");
+    halo.setAttribute("cx",x);halo.setAttribute("cy",y);halo.setAttribute("r","7");halo.setAttribute("class","compare-map-halo");
+    core.setAttribute("cx",x);core.setAttribute("cy",y);core.setAttribute("r","2.8");core.setAttribute("class","compare-map-core");
+    title.textContent=label+" — "+event.title+" • "+event.location;
+    g.append(title,halo,core);dots.appendChild(g);shown++;
   });
   window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:true,items:plotted}}));
   if(mapYear)mapYear.textContent="Shared history";
