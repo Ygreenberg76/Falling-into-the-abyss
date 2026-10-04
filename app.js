@@ -573,7 +573,7 @@ const events = [
     aftermath:"Jewish life varied substantially across regions and rulers; the timeline records both coexistence and conflict.",
     stats:{Type:"Political / communal transition",Evidence:"The Hijra is securely historical; many details of community agreements survive in later Islamic literary sources."},
     sourceStatus:"The Hijra is securely historical; many details of community agreements survive in later Islamic literary sources.",
-    sources:[{label:"Reference source",url:"https://www.britannica.com"}]
+    sources:[{label:"Encyclopaedia Britannica — Muhammad",url:"https://www.britannica.com/biography/Muhammad"}]
   },
   {
     year:624, depth:11060, title:"Banu Qaynuqa conflict", location:"Medina",
@@ -627,7 +627,7 @@ const events = [
     aftermath:"Jewish life varied substantially across regions and rulers; the timeline records both coexistence and conflict.",
     stats:{Type:"Political / communal transition",Evidence:"The conquest is securely historical; detailed surrender narratives and early communal policies vary among later sources."},
     sourceStatus:"The conquest is securely historical; detailed surrender narratives and early communal policies vary among later sources.",
-    sources:[{label:"Reference source",url:"https://www.britannica.com"}]
+    sources:[{label:"Encyclopaedia Britannica — Jerusalem history",url:"https://www.britannica.com/place/Jerusalem/Roman-rule"}]
   },
   {
     year:717, depth:12080, title:"Jewish life under early Islamic rule and dhimmi status", location:"Early Islamic territories",
@@ -636,7 +636,7 @@ const events = [
     aftermath:"Jewish life varied substantially across regions and rulers; the timeline records both coexistence and conflict.",
     stats:{Type:"Political / communal transition",Evidence:"Broad legal-historical framework is established; enforcement and specific rules varied considerably."},
     sourceStatus:"Broad legal-historical framework is established; enforcement and specific rules varied considerably.",
-    sources:[{label:"Reference source",url:"https://www.britannica.com"}]
+    sources:[{label:"Encyclopaedia Britannica — Dhimmi",url:"https://www.britannica.com/topic/dhimmi"}]
   },
   {
     year:1011, depth:12250, title:"Persecution under al-Hakim", location:"Fatimid Caliphate",
@@ -663,7 +663,7 @@ const events = [
     aftermath:"Jewish life varied substantially across regions and rulers; the timeline records both coexistence and conflict.",
     stats:{Type:"Political / communal transition",Evidence:"The crusading call is well documented; surviving versions of Urban's speech were written after the event."},
     sourceStatus:"The crusading call is well documented; surviving versions of Urban's speech were written after the event.",
-    sources:[{label:"Reference source",url:"https://www.britannica.com"}]
+    sources:[{label:"Encyclopaedia Britannica — Council of Clermont",url:"https://www.britannica.com/event/Council-of-Clermont"}]
   },
   {
     year:1096, depth:12760, title:"Speyer massacre", location:"Speyer, Holy Roman Empire",
@@ -1713,7 +1713,7 @@ function openEvent(event){
   sourceWrap.innerHTML="";
   (event.sources||[]).forEach(source=>{
     const a=document.createElement("a");
-    a.href=source.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=source.label;
+    a.href=source.url;a.target="_blank";a.rel="noopener noreferrer";\n    let domain="";try{domain=new URL(source.url).hostname.replace(/^www\\./,"")}catch{}\n    a.textContent=source.label+(domain&&!source.label.toLowerCase().includes(domain.toLowerCase())?" — "+domain:"");
     sourceWrap.appendChild(a);
   });
   if(!(event.sources||[]).length){
