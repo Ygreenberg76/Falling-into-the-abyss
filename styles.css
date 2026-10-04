@@ -347,3 +347,14 @@ body.event-open{overflow:hidden}
 .world-map-wrap{background:radial-gradient(ellipse at 50% 45%,rgba(47,55,58,.72),rgba(9,11,13,.98) 78%)}
 .map-land-accurate{fill:#4a463d;stroke:#918572;stroke-width:.7;vector-effect:non-scaling-stroke}
 .map-graticule{fill:none;stroke:rgba(216,199,173,.08);stroke-width:.45;vector-effect:non-scaling-stroke}
+
+
+/* Shared-history indicators on Jewish timeline */
+.event-marker.has-history-overlap{border-width:1px;border-style:solid}
+.event-marker.overlap-christian{border-color:rgba(112,168,222,.72);box-shadow:0 0 18px rgba(78,135,194,.13)}
+.event-marker.overlap-islamic{border-color:rgba(93,181,137,.72);box-shadow:0 0 18px rgba(65,150,107,.13)}
+.event-marker.overlap-both{border-color:rgba(181,135,211,.8);box-shadow:0 0 20px rgba(156,103,191,.16)}
+.history-overlap{display:block;width:max-content;max-width:100%;margin-top:4px;padding:2px 6px;border-radius:999px;font-style:normal;font-size:8px;line-height:1.25;letter-spacing:.04em;text-transform:uppercase;white-space:normal}
+.overlap-christian .history-overlap,.history-overlap.overlap-christian{background:rgba(78,135,194,.17);color:#a9cef0}
+.overlap-islamic .history-overlap,.history-overlap.overlap-islamic{background:rgba(65,150,107,.17);color:#a8dfc1}
+.overlap-both .history-overlap,.history-overlap.overlap-both{background:rgba(156,103,191,.18);color:#d9b8ed}
