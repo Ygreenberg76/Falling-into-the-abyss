@@ -224,3 +224,29 @@ body.event-open{overflow:hidden}
 .photo-person{width:min(38vw,430px);height:auto;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 20px 24px rgba(0,0,0,.8));transform-origin:50% 50%;pointer-events:none}
 .photo-person img{display:block;width:100%;height:auto;object-fit:contain;user-select:none;-webkit-user-drag:none}
 @media(max-width:760px){.photo-person{width:min(68vw,330px);height:auto}}
+
+/* Abyss v4: geological depth and wall-mounted history */
+.abyss{border-color:#18191b;background:#050607;box-shadow:inset 0 0 220px 80px #000,0 35px 100px rgba(0,0,0,.55)}
+.rock{background-blend-mode:multiply,overlay,normal;filter:drop-shadow(0 0 35px rgba(0,0,0,.95));}
+.rock-far-left{background:radial-gradient(ellipse at 92% 18%,rgba(151,132,105,.16),transparent 22%),repeating-linear-gradient(103deg,transparent 0 18px,rgba(255,255,255,.025) 19px 21px,transparent 22px 44px),linear-gradient(100deg,#050505 4%,#171512 46%,#302a23 78%,#080706 93%)}
+.rock-far-right{background:radial-gradient(ellipse at 8% 20%,rgba(151,132,105,.16),transparent 22%),repeating-linear-gradient(257deg,transparent 0 18px,rgba(255,255,255,.025) 19px 21px,transparent 22px 44px),linear-gradient(260deg,#050505 4%,#171512 46%,#302a23 78%,#080706 93%)}
+.rock-mid-left{background:repeating-radial-gradient(ellipse at 88% 50%,rgba(180,157,126,.08) 0 2px,transparent 3px 18px),linear-gradient(102deg,#030303 0%,#171410 45%,#443b31 73%,#0a0807 92%)}
+.rock-mid-right{background:repeating-radial-gradient(ellipse at 12% 50%,rgba(180,157,126,.08) 0 2px,transparent 3px 18px),linear-gradient(258deg,#030303 0%,#171410 45%,#443b31 73%,#0a0807 92%)}
+.rock-near.rock-left{background:repeating-linear-gradient(112deg,rgba(255,255,255,.018) 0 3px,transparent 4px 24px),linear-gradient(103deg,#020202 5%,#14110e 43%,#54483b 73%,#090706 91%)}
+.rock-near.rock-right{background:repeating-linear-gradient(248deg,rgba(255,255,255,.018) 0 3px,transparent 4px 24px),linear-gradient(257deg,#020202 5%,#14110e 43%,#54483b 73%,#090706 91%)}
+.rock-near{filter:drop-shadow(0 0 55px #000) contrast(1.12)}
+.rock-mid{filter:drop-shadow(0 0 40px #000) brightness(.78)}
+.rock-far{filter:blur(1.2px) brightness(.48)}
+.void-core{background:radial-gradient(ellipse at 50% 4%,rgba(84,92,96,.12),transparent 22%),linear-gradient(90deg,rgba(0,0,0,.25),#000 24%,#000 76%,rgba(0,0,0,.25));filter:blur(12px)}
+.sky-opening{background:radial-gradient(ellipse,#eef8ff 0%,#b8d9e9 14%,rgba(130,170,190,.38) 34%,rgba(45,55,60,.08) 58%,transparent 72%);box-shadow:0 0 120px rgba(190,222,238,.22)}
+.light-shaft{background:linear-gradient(rgba(211,229,237,.18),rgba(142,169,180,.05) 45%,transparent 92%);filter:blur(26px)}
+.mist{background:radial-gradient(ellipse,rgba(190,198,197,.07),rgba(90,95,94,.025) 45%,transparent 72%);filter:blur(32px)}
+.vignette{box-shadow:inset 0 0 250px 90px rgba(0,0,0,.84)}
+.event-marker{width:min(270px,34%);padding:9px 12px;border:0;border-left:2px solid rgba(207,188,158,.48);border-radius:2px;background:linear-gradient(90deg,rgba(23,20,17,.86),rgba(5,5,6,.38));box-shadow:0 8px 24px rgba(0,0,0,.35);backdrop-filter:blur(3px)}
+.event-marker::before{content:"";position:absolute;top:50%;width:18px;height:18px;border:1px solid rgba(216,198,168,.4);border-radius:50%;background:#17130f;box-shadow:0 0 16px rgba(215,193,155,.22)}
+.event-marker[style*="left"]::before{right:-53px}.event-marker[style*="right"]::before{left:-53px}
+.event-marker::after{width:52px;background:linear-gradient(90deg,rgba(216,199,173,.48),rgba(216,199,173,.12))}
+.event-marker[style*="left"]::after{right:-52px}.event-marker[style*="right"]::after{left:-52px}
+.event-marker .dot{display:none}
+.event-marker small{font-size:11px;color:#c7b596}.event-marker strong{font-weight:600;text-shadow:0 2px 5px #000}
+.particles span{background:#817567;opacity:.18}
