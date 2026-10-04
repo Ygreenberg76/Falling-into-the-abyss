@@ -290,6 +290,7 @@ const islamJewishOverlapTitles=new Set(["Maimonides exemplifies Jewish scholarsh
 const islamChristianOverlapTitles=new Set(["Early Muslims migrate to Christian Abyssinia","Treaty of Hudaybiyyah","Document on Human Fraternity is signed in Abu Dhabi","A Common Word initiative expands Muslim-Christian dialogue","Akbar's court becomes a center of interreligious debate and Mughal art","Battle of Yarmouk","Muslim capture of Jerusalem","Muslim conquest of Egypt","Dome of the Rock completed","Muslim conquest of Iberia begins","Muslim conquest of Sicily begins","Al-Hakim orders destruction of Holy Sepulchre","Christian Great Schism changes Islam's neighboring Christian world","Battle of Manzikert","First Crusade begins and Jewish communities are massacred","Crusaders capture Jerusalem","Zengi captures Edessa","Almohads capture Marrakesh and replace Almoravids","Saladin recovers Jerusalem","Battle of Las Navas de Tolosa","Mamluks capture Acre","Ottomans establish permanent foothold in Europe","Battle of Kosovo","Ottoman conquest of Constantinople","Fall of Granada","Forced conversion campaign targets Muslims in Granada","First Ottoman siege of Vienna","Morisco Revolt of the Alpujarras","Battle of Lepanto","Spain expels the Moriscos","Second Ottoman siege of Vienna","Greek War of Independence brings communal massacres","Crimean War begins over imperial rivalry and holy-place disputes","Mount Lebanon and Damascus communal violence","Ottoman Empire enters World War I","Armenian genocide under Ottoman wartime rule","British capture Jerusalem","Sabra and Shatila massacre","Bosnian War targets Bosniak Muslim communities","Srebrenica genocide","Boko Haram insurgency escalates in Nigeria","ISIS murders 21 Coptic Christians in Libya","October 7 attack and Gaza war","Gaza war and regional escalation"]);
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+window.__islamTimelineLoaded=true;
 const abyss=document.getElementById("abyss");
 const person=document.getElementById("fallingPerson");
 const eventsLayer=document.getElementById("eventsLayer");
@@ -500,6 +501,11 @@ function handleTimelineWheel(e){
   descend(e.deltaY);
 }
 document.addEventListener("wheel",handleTimelineWheel,{passive:false});
+// Emergency fallback: arrow keys and PageDown work from anywhere on the page.
+document.addEventListener("keydown",e=>{
+  if(e.key==="ArrowDown"||e.key==="PageDown"){e.preventDefault();descend(230)}
+  if(e.key==="ArrowUp"||e.key==="PageUp"){e.preventDefault();descend(-230)}
+});
 let touchY=null;
 abyss.addEventListener("touchstart",e=>{touchY=e.touches[0].clientY},{passive:true});
 abyss.addEventListener("touchmove",e=>{
