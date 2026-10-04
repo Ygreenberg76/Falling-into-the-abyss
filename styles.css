@@ -219,3 +219,8 @@ body.event-open{overflow:hidden}
 .realistic-person .real-limb{transform-box:fill-box;transform-origin:center 18%;will-change:transform}
 .realistic-person .foreground-leg{filter:drop-shadow(0 8px 7px rgba(0,0,0,.7))}
 @media(max-width:760px){.realistic-person{width:125px;height:155px}}
+
+/* Photorealistic falling-person asset */
+.photo-person{width:min(38vw,430px);height:auto;aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 20px 24px rgba(0,0,0,.8));transform-origin:50% 50%;pointer-events:none}
+.photo-person img{display:block;width:100%;height:auto;object-fit:contain;user-select:none;-webkit-user-drag:none}
+@media(max-width:760px){.photo-person{width:min(68vw,330px);height:auto}}
