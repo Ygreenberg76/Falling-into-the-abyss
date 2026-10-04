@@ -493,6 +493,26 @@ function renderCompareCard(kind,label,event,page,fromKind){
   const a=document.createElement("a");a.className="btn compare-open";a.href=page+"?year="+encodeURIComponent(event.year)+"&from="+fromKind+"&match="+eventKey(event);a.textContent="Open in "+label+" →";card.appendChild(a);
   return card;
 }
+function showComparisonMap(items){
+  const dots=document.getElementById("mapDots"),legend=document.getElementById("mapLegend"),mapYear=document.getElementById("mapYear"),count=document.getElementById("mapCommunityCount");
+  if(!dots||!legend||!window.findHistoryMapPlace)return;
+  dots.replaceChildren();legend.replaceChildren();
+  const ns="http://www.w3.org/2000/svg";let shown=0;
+  items.forEach(({kind,label,event})=>{
+    const place=window.findHistoryMapPlace(event);if(!place)return;
+    const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g");
+    g.setAttribute("class","compare-map-marker "+kind+"-map-marker");
+    const halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle");
+    halo.setAttribute("cx",x);halo.setAttribute("cy",y);halo.setAttribute("r","6");halo.setAttribute("class","compare-map-halo");
+    core.setAttribute("cx",x);core.setAttribute("cy",y);core.setAttribute("r","2.3");core.setAttribute("class","compare-map-core");
+    g.append(halo,core);dots.appendChild(g);
+    const tag=document.createElement("span");tag.className="compare-map-legend "+kind+"-map-legend";tag.textContent=label+": "+event.location;legend.appendChild(tag);shown++;
+  });
+  if(mapYear)mapYear.textContent="Shared history";
+  if(count)count.textContent=shown+" event location"+(shown===1?"":"s");
+  window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:true}}));
+}
+function restoreTimelineMap(){window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:false}}));}
 function comparisonTargets(event){const targets=[];if(islamJewishOverlapTitles.has(event.title))targets.push(["jewish","Jewish history","index.html"]);if(islamChristianOverlapTitles.has(event.title))targets.push(["christian","Christian history","christianity.html"]);return targets;}
 function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
 function openComparison(event){
@@ -501,13 +521,15 @@ function openComparison(event){
   grid.innerHTML="";
   const current=renderCompareCard("islamic","Islamic history",event,location.pathname.split("/").pop()||"index.html","islamic");
   current.classList.add("current-history");grid.appendChild(current);
+  const mapItems=[{kind:"islamic",label:"Islamic",event}];
   comparisonTargets(event).forEach(([kind,label,page])=>{
     const matched=bestComparedEvent(event,kind);
     grid.appendChild(renderCompareCard(kind,label,matched,page,"islamic"));
+    if(matched)mapItems.push({kind,label,event:matched});
   });
-  panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
+  showComparisonMap(mapItems);panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
 }
-function closeComparison(){document.getElementById("comparePanel").classList.add("hidden");document.body.classList.remove("event-open");paused=false;}
+function closeComparison(){document.getElementById("comparePanel").classList.add("hidden");document.body.classList.remove("event-open");restoreTimelineMap();paused=false;}
 function openEvent(event){
   paused=true;velocity=0;
   document.getElementById("eventDate").innerHTML=event.year+(islamJewishOverlapTitles.has(event.title)?' <span class="overlap-badge panel-overlap-badge">Jewish history overlap</span>':'')+(islamChristianOverlapTitles.has(event.title)?' <span class="overlap-badge christian-overlap-badge panel-overlap-badge">Christian history overlap</span>':'');
