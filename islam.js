@@ -462,7 +462,13 @@ function tick(){
   rafId=requestAnimationFrame(tick);
 }
 function descend(delta){
-  if(paused)return;
+  if(paused){
+    const eventOpen=!panel.classList.contains("hidden");
+    const comparePanel=document.getElementById("comparePanel");
+    const compareOpen=comparePanel&&!comparePanel.classList.contains("hidden");
+    if(eventOpen||compareOpen)return;
+    paused=false;
+  }
   const scaled=Math.max(-260,Math.min(260,delta));
   depth=Math.max(0,Math.min(MAX_DEPTH,depth+scaled*.72));
   velocity=Math.max(-115,Math.min(115,velocity+scaled*.037));
