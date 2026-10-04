@@ -2883,6 +2883,7 @@ if(Number.isFinite(linkedYear)){
       marker.classList.add("linked-history-target");
       setTimeout(()=>marker.classList.remove("linked-history-target"),4200);
     }
+    if(events[nearestIndex]) openEvent(events[nearestIndex]);
   });
 }
 
