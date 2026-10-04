@@ -347,3 +347,12 @@ body.event-open{overflow:hidden}
 .world-map-wrap{background:radial-gradient(ellipse at 50% 45%,rgba(47,55,58,.72),rgba(9,11,13,.98) 78%)}
 .map-land-accurate{fill:#4a463d;stroke:#918572;stroke-width:.7;vector-effect:non-scaling-stroke}
 .map-graticule{fill:none;stroke:rgba(216,199,173,.08);stroke-width:.45;vector-effect:non-scaling-stroke}
+
+
+/* Historical migration/displacement trails on Jewish atlas */
+.map-flow{fill:none;stroke-width:1.15;stroke-linecap:round;stroke-dasharray:3 2;opacity:.72;vector-effect:non-scaling-stroke;animation:mapFlow 2.8s linear infinite}
+.map-flow-migration{stroke:#e8c978}
+.map-flow-dispersal{stroke:#d6b875}
+.map-flow-forced{stroke:#d78b72;stroke-width:1.35}
+@keyframes mapFlow{to{stroke-dashoffset:-10}}
+@media(prefers-reduced-motion:reduce){.map-flow{animation:none}}
