@@ -2751,7 +2751,7 @@ function showComparisonMap(items){
   });
   if(!plotted.length){const tag=document.createElement("span");tag.textContent="No precise map location is available for these events.";legend.appendChild(tag);}
 }
-function restoreTimelineMap(){}}));}
+function restoreTimelineMap(){}
 function comparisonTargets(event){const targets=[];const overlap=historyOverlap(event);if(overlap==="christian"||overlap==="both")targets.push(["christian","Christian history","christianity.html"]);if(overlap==="islamic"||overlap==="both")targets.push(["islamic","Islamic history","islam.html"]);return targets;}
 function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
 function openComparison(event){
