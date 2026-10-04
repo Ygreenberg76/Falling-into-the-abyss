@@ -323,3 +323,9 @@ body.event-open{overflow:hidden}
 .diaspora-map{left:50%;right:auto;top:auto;bottom:48px;width:min(360px,36vw);transform:translateX(-50%);z-index:20;pointer-events:none}
 @media(max-width:1000px){.diaspora-map{width:min(320px,38vw)}}
 @media(max-width:760px){.diaspora-map{left:50%;right:auto;top:auto;bottom:42px;width:min(270px,68vw);transform:translateX(-50%)}}
+
+
+/* Fine-tune Jewish diaspora map: smaller and lower beneath falling figure */
+.diaspora-map{bottom:24px;width:min(300px,30vw)}
+@media(max-width:1000px){.diaspora-map{width:min(275px,32vw)}}
+@media(max-width:760px){.diaspora-map{bottom:24px;width:min(230px,58vw)}}
