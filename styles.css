@@ -448,3 +448,7 @@ body.event-open{overflow:hidden}
 .compare-map-marker{cursor:help;filter:drop-shadow(0 0 2.5px currentColor)}
 .compare-map-marker .compare-map-halo{animation:compareMapPulse 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
 @keyframes compareMapPulse{0%,100%{opacity:.2;transform:scale(.85)}50%{opacity:.48;transform:scale(1.18)}}
+
+.compare-map-connections{pointer-events:none}
+.compare-map-connection{stroke:rgba(235,220,196,.48);stroke-width:.85;stroke-dasharray:3 2;vector-effect:non-scaling-stroke;animation:compareRouteFlow 2.4s linear infinite}
+@keyframes compareRouteFlow{to{stroke-dashoffset:-10}}
