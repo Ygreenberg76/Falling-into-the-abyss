@@ -2602,7 +2602,9 @@ function openEvent(event){
       a.href=page+"?year="+encodeURIComponent(event.year)+"&from="+from;
       a.textContent="Open "+label+" →";nav.appendChild(a);
     });
-    const compareBtn=document.createElement("button");compareBtn.type="button";compareBtn.className="btn compare-history-btn";compareBtn.textContent="Compare histories";compareBtn.addEventListener("click",()=>openComparison(event));connectedBox.appendChild(compareBtn);
+    try{
+      const compareBtn=document.createElement("button");compareBtn.type="button";compareBtn.className="btn compare-history-btn";compareBtn.textContent="Compare histories";compareBtn.addEventListener("click",()=>openComparison(event));connectedBox.appendChild(compareBtn);
+    }catch(err){console.warn("Compare histories unavailable",err);}
     connectedBox.appendChild(nav);
   }
   const sourceWrap=document.getElementById("eventSources");
@@ -2741,7 +2743,6 @@ if(Number.isFinite(linkedYear)){
     const marker=document.querySelectorAll(".event-marker")[nearestIndex];
     if(marker){
       marker.classList.add("linked-history-target");
-      marker.scrollIntoView({block:"center",behavior:"smooth"});
       setTimeout(()=>marker.classList.remove("linked-history-target"),4200);
     }
   });
@@ -2760,5 +2761,6 @@ if(linkedFrom&&Number.isFinite(linkedYear)){
   }
 }
 
-document.getElementById("closeCompareBtn").addEventListener("click",closeComparison);
+const closeCompareBtn=document.getElementById("closeCompareBtn");
+if(closeCompareBtn) closeCompareBtn.addEventListener("click",closeComparison);
 makeParticles();render();rafId=requestAnimationFrame(tick);
