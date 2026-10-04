@@ -366,3 +366,8 @@ body.event-open{overflow:hidden}
 .event-marker.islam-overlap small{color:#9ae8bd}
 .islam-overlap-badge{border-color:rgba(91,201,145,.72);background:rgba(30,125,78,.24);color:#9ae8bd!important}
 .event-marker.christian-overlap.islam-overlap{border-color:rgba(191,142,255,.82);box-shadow:0 0 24px rgba(174,117,255,.2),0 9px 28px rgba(0,0,0,.38)}
+
+
+/* Cross-timeline navigation */
+.overlap-badge[data-history-link="true"]{cursor:pointer;transition:filter .16s ease,transform .16s ease}
+.overlap-badge[data-history-link="true"]:hover{filter:brightness(1.28);transform:translateY(-1px)}
