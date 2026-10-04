@@ -452,3 +452,15 @@ body.event-open{overflow:hidden}
 .compare-map-connections{pointer-events:none}
 .compare-map-connection{stroke:rgba(235,220,196,.48);stroke-width:.85;stroke-dasharray:3 2;vector-effect:non-scaling-stroke;animation:compareRouteFlow 2.4s linear infinite}
 @keyframes compareRouteFlow{to{stroke-dashoffset:-10}}
+
+.compare-atlas{margin:18px 0 22px;padding:16px;border:1px solid rgba(212,168,95,.25);border-radius:22px;background:rgba(255,255,255,.025)}
+.compare-atlas-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:10px}
+.compare-atlas-head small{display:block;text-transform:uppercase;letter-spacing:.12em;opacity:.62;font-size:.7rem}
+.compare-atlas-head strong{display:block;margin-top:2px;font-family:Georgia,serif;font-size:1.08rem}
+.compare-atlas-key{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.74rem;opacity:.82}
+.compare-atlas-key i{width:8px;height:8px;border-radius:50%;display:inline-block;margin-left:7px}
+.jewish-key{background:#d4a85f}.christian-key{background:#6da8df}.islamic-key{background:#63b980}
+.compare-atlas-map{height:min(31vh,270px);min-height:190px;overflow:hidden;border-radius:16px;border:1px solid rgba(255,255,255,.09);background:rgba(0,0,0,.18)}
+.compare-atlas-map svg{width:100%;height:100%;display:block}
+.compare-atlas .diaspora-map-legend{margin-top:10px}
+@media(max-width:700px){.compare-atlas-head{align-items:flex-start;flex-direction:column}.compare-atlas-map{height:200px;min-height:200px}}
