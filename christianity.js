@@ -1,7 +1,7 @@
 const events = [
   {
-    year:-5, depth:180, title:"Birth of Jesus (Yeshua)", location:"Judea, Roman client kingdom",
-    story:"Jesus, known in his Jewish setting as Yeshua, was born into a Jewish family in Roman-era Judea. The Gospels of Matthew and Luke place his birth in Bethlehem, while he was raised in Nazareth. Christianity later developed around his life, teachings, crucifixion and the belief of his followers in his resurrection.",
+    year:-5, depth:180, title:"Birth of Jesus (Yeshua)", location:"Bethlehem (Gospel tradition) / Nazareth, Galilee",
+    story:"Jesus, known in his Jewish setting as Yeshua, was born into a Jewish family in the Roman-ruled Levant, probably around 6–4 BCE. The Gospels of Matthew and Luke place his birth in Bethlehem; he is historically associated with Nazareth in Galilee, where the Gospel traditions describe him as being raised. Christianity later developed around his life, teachings, crucifixion and his followers' belief in his resurrection.",
     context:"Jesus was Jewish, and the movement that became Christianity began within first-century Judaism. The English name Jesus comes through Greek and Latin forms of the Hebrew/Aramaic name Yeshua. The exact year and circumstances of his birth cannot be established with certainty.",
     aftermath:"Jesus's followers initially formed a Jewish movement in the land of Israel/Judea. Over subsequent decades, the movement spread among non-Jews throughout the Roman world and gradually developed into Christianity as a distinct religion.",
     stats:{Type:"Origins / Jewish-Christian history",Evidence:"Historical existence of Jesus is widely accepted; exact birth year and Gospel infancy details are debated. A conventional scholarly estimate places his birth around 6–4 BCE."},
@@ -207,7 +207,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Galerius",url:"https://www.britannica.com/biography/Galerius"}]
   },
   {
-    year:313, depth:4090, title:"Edict of Milan and legalization of Christianity", location:"Roman Empire",
+    year:313, depth:4090, title:"Agreement of Milan strengthens legal toleration of Christianity", location:"Roman Empire",
     story:"Constantine and Licinius agreed on a policy of religious toleration that restored confiscated Christian property and allowed Christians to worship openly.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
