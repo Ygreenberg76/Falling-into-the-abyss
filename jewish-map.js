@@ -9,7 +9,7 @@ const legend=document.getElementById("mapLegend");
 if(!yearEl||!mapYear||!countEl||!dots||!legend||!land)return;
 
 const periods=[
- {from:-1800,to:-722,c:[["Canaan / Israel",31.8,35.2,5]]},
+ {from:-1800,to:-722,c:[["Canaan",31.8,35.2,5]]},
  {from:-721,to:-587,c:[["Judah / Jerusalem",31.8,35.2,5],["Mesopotamia",33.3,44.4,2]]},
  {from:-586,to:-332,c:[["Babylonia",32.5,44.5,5],["Judea",31.8,35.2,3],["Egypt",30,31.2,2]]},
  {from:-331,to:69,c:[["Judea",31.8,35.2,5],["Babylonia",32.5,44.5,4],["Alexandria",31.2,29.9,4],["Asia Minor",39,32.5,2],["Rome",41.9,12.5,2]]},
