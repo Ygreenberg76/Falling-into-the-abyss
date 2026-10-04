@@ -283,3 +283,10 @@ body.event-open{overflow:hidden}
 .filter-result:hover,.filter-result:focus-visible{background:#211c27;outline:none;border-left-color:#ddd6fe}.filter-result small{display:block;color:#bba990;margin-bottom:2px}.filter-result strong{font-size:12px;line-height:1.3}
 .event-marker.filtered-out{display:none!important}
 @media(max-width:760px){.explore-tools{top:150px;left:10px;width:min(330px,calc(100% - 38px))}.explore-panel{padding:11px}.filter-results{max-height:145px}.explore-grid{grid-template-columns:1fr}}
+
+
+/* Cross-timeline marker: Christianity event that directly overlaps Jewish history */
+.event-marker.jewish-overlap{border-color:rgba(96,190,255,.72);background:linear-gradient(100deg,rgba(18,45,62,.94),rgba(7,12,18,.86));box-shadow:inset 0 1px rgba(255,255,255,.05),0 0 22px rgba(76,170,235,.16),0 9px 28px rgba(0,0,0,.38)}
+.event-marker.jewish-overlap .dot{background:#77cfff;box-shadow:0 0 16px rgba(92,197,255,.95)}
+.event-marker.jewish-overlap small{color:#8fd6ff}
+.event-marker.jewish-overlap::after{background:linear-gradient(90deg,rgba(100,202,255,.7),transparent)}
