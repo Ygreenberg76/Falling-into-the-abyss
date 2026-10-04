@@ -2727,6 +2727,24 @@ function renderSameTimeHistory(currentEvent){
   });
   box.appendChild(grid);
 }
+function renderHistoryTrail(event,connected){
+  let box=document.getElementById("historyTrailBox");
+  if(!box){box=document.createElement("div");box.id="historyTrailBox";box.className="history-trail";document.querySelector(".sources-card").before(box);}
+  box.innerHTML='<div class="history-trail-heading"><small>Follow the history</small><strong>What came before and what happened next</strong></div>';
+  const index=events.indexOf(event),row=document.createElement("div");row.className="history-trail-row";
+  const add=(label,item,state)=>{
+    const el=document.createElement(item?"button":"div");if(item)el.type="button";el.className="history-trail-step "+state+(item?"":" unavailable");
+    const small=document.createElement("small");small.textContent=label;const strong=document.createElement("strong");strong.textContent=item?item.title:"No event";
+    const date=document.createElement("span");date.textContent=item?sameTimeYearLabel(item.year):"";
+    el.append(small,strong,date);if(item)el.addEventListener("click",()=>openEvent(item));row.appendChild(el);
+  };
+  add("Previous",index>0?events[index-1]:null,"previous");add("This event",event,"current");add("Next",index>=0&&index<events.length-1?events[index+1]:null,"next");box.appendChild(row);
+  if(connected&&connected.length){
+    const branches=document.createElement("div");branches.className="history-trail-branches";
+    connected.forEach(([label,page,from])=>{const matched=bestComparedEvent(event,from);if(!matched)return;const a=document.createElement("a");a.className="history-trail-branch "+from+"-trail-branch";a.href=page+"?year="+encodeURIComponent(matched.year)+"&from="+from+"&match="+encodeURIComponent(eventKey(matched));a.innerHTML="<small>Continue into "+label+"</small><strong>"+matched.title+"</strong><span>"+sameTimeYearLabel(matched.year)+" →</span>";branches.appendChild(a);});
+    if(branches.childNodes.length)box.appendChild(branches);
+  }
+}
 function openEvent(event){
   paused=true;velocity=0;
   document.getElementById("eventDate").innerHTML=event.year+(jewishOverlapTitles.has(event.title)?' <span class="overlap-badge panel-overlap-badge">Jewish history overlap</span>':'')+(islamicOverlapTitles.has(event.title)?' <span class="overlap-badge islamic-overlap-badge panel-overlap-badge">Islamic history overlap</span>':'');
@@ -2798,6 +2816,7 @@ function openEvent(event){
     row.append(dt,dd);dl.appendChild(row);
   });
   renderSameTimeHistory(event);
+  renderHistoryTrail(event,connected);
   panel.classList.remove("hidden");
   document.body.classList.add("event-open");
   document.getElementById("closeEventBtn").focus();
