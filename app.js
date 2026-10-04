@@ -2728,10 +2728,18 @@ function renderCompareCard(kind,label,event,page,fromKind){
 function showComparisonMap(items){
   const dots=document.getElementById("mapDots"),legend=document.getElementById("mapLegend"),mapYear=document.getElementById("mapYear"),count=document.getElementById("mapCommunityCount");
   if(!dots||!legend||!window.findHistoryMapPlace)return;
-  dots.replaceChildren();legend.replaceChildren();
+  const previousDots=Array.from(dots.childNodes).map(n=>n.cloneNode(true));
+  const previousLegend=Array.from(legend.childNodes).map(n=>n.cloneNode(true));
   const ns="http://www.w3.org/2000/svg";let shown=0;
-  items.forEach(({kind,label,event})=>{
-    const place=window.findHistoryMapPlace(event);if(!place)return;
+  const plotted=[];
+  items.forEach(item=>{const place=window.findHistoryMapPlace(item.event);if(place)plotted.push({...item,place});});
+  if(!plotted.length){
+    if(mapYear)mapYear.textContent="Shared history • map context";
+    if(count)count.textContent="No precise event coordinates";
+    return;
+  }
+  dots.replaceChildren();legend.replaceChildren();
+  plotted.forEach(({kind,label,event,place})=>{
     const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g");
     g.setAttribute("class","compare-map-marker "+kind+"-map-marker");
     const halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle");
