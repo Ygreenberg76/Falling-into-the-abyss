@@ -2557,19 +2557,54 @@ function descend(delta){
   depth=Math.max(0,Math.min(MAX_DEPTH,depth+scaled*.72));
   velocity=Math.max(-115,Math.min(115,velocity+scaled*.037));
 }
+function compareWords(text){
+  return new Set((text||"").toLowerCase().replace(/[^a-z0-9\s]/g," ").split(/\s+/).filter(w=>w.length>3&&!["history","event","during","after","before","against","under","from","into","this","that","with","were","their","which","where"].includes(w)));
+}
+function compareScore(source,candidate){
+  let score=0;
+  const gap=Math.abs((source.year||0)-(candidate.year||0));
+  if(gap===0)score+=90;else if(gap<=2)score+=55;else if(gap<=10)score+=25;else if(gap<=25)score+=8;else score-=Math.min(40,gap/10);
+  const a=compareWords([source.title,source.location,source.context].join(" "));
+  const b=compareWords([candidate.title,candidate.location,candidate.context].join(" "));
+  a.forEach(w=>{if(b.has(w))score+=7;});
+  const st=(source.title||"").toLowerCase(),ct=(candidate.title||"").toLowerCase();
+  if(st&&ct&&(st.includes(ct)||ct.includes(st)))score+=60;
+  return score;
+}
+function bestComparedEvent(source,kind){
+  const pool=(window.HISTORY_COMPARE_DATA&&window.HISTORY_COMPARE_DATA[kind])||[];
+  if(!pool.length)return null;
+  let best=pool[0],bestScore=-Infinity;
+  pool.forEach(candidate=>{const s=compareScore(source,candidate);if(s>bestScore){best=candidate;bestScore=s;}});
+  return bestScore>=20?best:null;
+}
+function renderCompareCard(kind,label,event,page,fromKind){
+  const card=document.createElement("article");card.className="compare-history-card "+kind+"-compare";
+  if(!event){
+    card.innerHTML="<small>"+label+"</small><h3>No confident matching event</h3><p>The timelines do not yet contain a sufficiently close corresponding entry for this comparison.</p>";
+    return card;
+  }
+  card.innerHTML="<small>"+label+"</small><h3></h3><p class=\"compare-location\"></p><h4>What happened</h4><p class=\"compare-story\"></p><h4>Historical context</h4><p class=\"compare-context\"></p><h4>Aftermath</h4><p class=\"compare-aftermath\"></p><div class=\"compare-source-status\"><strong>Sources & certainty</strong><p></p></div>";
+  card.querySelector("h3").textContent=event.year+" — "+event.title;
+  card.querySelector(".compare-location").textContent=event.location||"";
+  card.querySelector(".compare-story").textContent=event.story||"";
+  card.querySelector(".compare-context").textContent=event.context||"";
+  card.querySelector(".compare-aftermath").textContent=event.aftermath||"";
+  card.querySelector(".compare-source-status p").textContent=event.sourceStatus||"Source review still in progress.";
+  const a=document.createElement("a");a.className="btn compare-open";a.href=page+"?year="+encodeURIComponent(event.year)+"&from="+fromKind+"&match="+eventKey(event);a.textContent="Open in "+label+" →";card.appendChild(a);
+  return card;
+}
 function comparisonTargets(event){const targets=[];if(jewishOverlapTitles.has(event.title))targets.push(["jewish","Jewish history","index.html"]);return targets;}
 function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
 function openComparison(event){
   const compare=document.getElementById("comparePanel"),grid=document.getElementById("compareGrid");
   document.getElementById("compareSubtitle").textContent=event.year+" • "+event.location;
   grid.innerHTML="";
-  const current=document.createElement("article");current.className="compare-history-card current-history";
-  current.innerHTML='<small>Christian history</small><h3></h3><p class="compare-location"></p><p class="compare-story"></p>';
-  current.querySelector("h3").textContent=event.title;current.querySelector(".compare-location").textContent=event.location;current.querySelector(".compare-story").textContent=event.story;grid.appendChild(current);
+  const current=renderCompareCard("christian","Christian history",event,location.pathname.split("/").pop()||"index.html","christian");
+  current.classList.add("current-history");grid.appendChild(current);
   comparisonTargets(event).forEach(([kind,label,page])=>{
-    const card=document.createElement("article");card.className="compare-history-card "+kind+"-compare";
-    card.innerHTML="<small>"+label+"</small><h3>Connected event</h3><p>This event belongs to the same historical intersection. Open the related timeline to see its account, context, aftermath, sources and certainty.</p>";
-    const a=document.createElement("a");a.className="btn compare-open";a.href=page+"?year="+encodeURIComponent(event.year)+"&from=christian&match="+eventKey(event);a.textContent="Open exact period →";card.appendChild(a);grid.appendChild(card);
+    const matched=bestComparedEvent(event,kind);
+    grid.appendChild(renderCompareCard(kind,label,matched,page,"christian"));
   });
   panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
 }
