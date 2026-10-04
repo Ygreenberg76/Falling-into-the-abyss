@@ -111,6 +111,8 @@ const rockFarRight=document.querySelector(".rock-far-right");
 const rockMidLeft=document.querySelector(".rock-mid-left");
 const rockMidRight=document.querySelector(".rock-mid-right");
 const bottomMarker=document.getElementById("bottomMarker");
+const skyOpening=document.querySelector(".sky-opening");
+const lightShaft=document.querySelector(".light-shaft");
 const mist1=document.querySelector(".mist-1");
 const mist2=document.querySelector(".mist-2");
 const panel=document.getElementById("eventPanel");
@@ -168,18 +170,16 @@ function render(){
   fallTrail.style.opacity=(.12+speed*.5).toFixed(2);
 
   const direction=velocity>=0?1:-1;
-  const stretch=1+speed*.28;
-  const squash=1-speed*.1;
-  const rotate=Math.sin(depth/310)*11+(direction*speed*7);
-  const bob=Math.sin(depth/95)*4;
-
-  person.style.transform='translate(-50%,calc(-50% + '+bob+'px)) rotate('+rotate+'deg) scale('+squash+','+stretch+')';
-  const armSwing=10+direction*speed*28+Math.sin(depth/80)*7;
-  const legSwing=4+speed*16+Math.cos(depth/105)*5;
-  document.querySelector(".arm-svg-left").style.transform='rotate('+armSwing+'deg)';
-  document.querySelector(".arm-svg-right").style.transform='rotate('+(-armSwing*.82)+'deg)';
-  document.querySelector(".leg-svg-left").style.transform='rotate('+legSwing+'deg)';
-  document.querySelector(".leg-svg-right").style.transform='rotate('+(-legSwing*.75)+'deg)';
+  const rotate=Math.sin(depth/360)*8+(direction*speed*5);
+  const bob=Math.sin(depth/105)*5;
+  const perspectiveScale=1+speed*.035;
+  person.style.transform='translate(-50%,calc(-50% + '+bob+'px)) rotate('+rotate+'deg) scale('+perspectiveScale+')';
+  const armSwing=Math.sin(depth/95)*5+direction*speed*9;
+  const legSwing=Math.cos(depth/125)*4+speed*7;
+  document.querySelector(".real-arm-left").style.transform='rotate('+armSwing+'deg)';
+  document.querySelector(".real-arm-right").style.transform='rotate('+(-armSwing*.65)+'deg)';
+  document.querySelector(".real-leg-left").style.transform='rotate('+(-legSwing*.55)+'deg)';
+  document.querySelector(".real-leg-right").style.transform='rotate('+legSwing+'deg)';
 
   rockLeft.style.transform='translateY('+((depth%760)*-.24)+'px)';
   rockRight.style.transform='translateY('+((depth%820)*-.22)+'px)';
@@ -190,9 +190,17 @@ function render(){
   mist1.style.transform='translateY('+((depth%900)*-.23)+'px)';
   mist2.style.transform='translateY('+((depth%1100)*-.18)+'px)';
 
+  const depthT=pct/100;
+  const openingScale=Math.max(.16,1-depthT*.82);
+  const openingOpacity=Math.max(.08,.9-depthT*.82);
+  skyOpening.style.transform='translateX(-50%) scale('+openingScale+')';
+  skyOpening.style.opacity=openingOpacity;
+  skyOpening.style.filter='blur('+(5+depthT*8)+'px)';
+  lightShaft.style.transform='translateX(-50%) scaleX('+(1-depthT*.45)+') scaleY('+(1-depthT*.6)+')';
+  lightShaft.style.opacity=Math.max(.03,.58-depthT*.52);
   abyss.style.background=
-    'radial-gradient(ellipse at 50% 0%,rgba(150,190,210,'+(0.14*(1-pct/110))+'),transparent 25%),'+
-    'linear-gradient(180deg,#17191d 0%,#0a0c0f 30%,#040507 64%,#010102 100%)';
+    'radial-gradient(ellipse at 50% 0%,rgba(150,190,210,'+(0.17*(1-depthT))+'),transparent '+(25-depthT*13)+'%),'+
+    'linear-gradient(180deg,#'+(depthT<.45?'17191d':'0c0d10')+' 0%,#08090b 30%,#030405 64%,#000 100%)';
 
   bottomMarker.classList.toggle("visible",pct>=94);
   document.querySelectorAll(".particles span").forEach((p,i)=>{
