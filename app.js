@@ -1,3 +1,4 @@
+const events = [
   {
     year:-1800, depth:40, title:"Jacob is given the name Israel", location:"Canaan / Biblical tradition",
     story:"According to Genesis, Jacob (Yaakov), son of Isaac and grandson of Abraham, is given the name Israel (Yisrael). His descendants are subsequently known as Bnei Yisrael — the Children of Israel. The biblical text is the source for this account; there is no independently established historical date for Jacob, so the date shown here is an approximate traditional-era placement rather than an archaeological date.",
