@@ -949,7 +949,7 @@ const markerEls=events.map((event,index)=>{
   btn.className="event-marker"+(jewishOverlapTitles.has(event.title)?" jewish-overlap":"");
   btn.setAttribute("aria-label",event.year+" — "+event.title+". Open event details.");
   if(index%2===0) btn.style.left="7%"; else btn.style.right="7%";
-  btn.innerHTML='<span class="dot"></span><span><small>'+event.year+(jewishOverlapTitles.has(event.title)?' · Jewish history overlap':'')+'</small><strong>'+event.title+'</strong></span>';
+  btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small>'+(jewishOverlapTitles.has(event.title)?'<em class="overlap-badge">Jewish history overlap</em>':'')+'<strong>'+event.title+'</strong></span>';
   btn.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();openEvent(event)});
   eventsLayer.appendChild(btn);
   return btn;
@@ -1028,7 +1028,7 @@ function descend(delta){
 }
 function openEvent(event){
   paused=true;velocity=0;
-  document.getElementById("eventDate").textContent=event.year+(jewishOverlapTitles.has(event.title)?" · Jewish history overlap":"");
+  document.getElementById("eventDate").innerHTML=event.year+(jewishOverlapTitles.has(event.title)?' <span class="overlap-badge panel-overlap-badge">Jewish history overlap</span>':"");
   document.getElementById("eventTitle").textContent=event.title;
   document.getElementById("eventLocation").textContent=event.location;
   document.getElementById("eventStory").textContent=event.story;
