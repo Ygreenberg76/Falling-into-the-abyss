@@ -2620,7 +2620,7 @@ function showComparisonMap(items){
   });
   if(!plotted.length){const tag=document.createElement("span");tag.textContent="No precise map location is available for these events.";legend.appendChild(tag);}
 }
-function restoreTimelineMap(){}}));}
+function restoreTimelineMap(){}
 function comparisonTargets(event){const targets=[];if(jewishOverlapTitles.has(event.title))targets.push(["jewish","Jewish history","index.html"]);return targets;}
 function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
 function openComparison(event){
