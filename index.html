@@ -106,8 +106,21 @@
           <span id="mapCommunityCount">1 center</span>
         </div>
         <div class="world-map-wrap">
-          <img class="world-map-base" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/BlankMap-Equirectangular.svg/960px-BlankMap-Equirectangular.svg.png" alt="" aria-hidden="true">
           <svg id="worldMap" class="world-map world-map-overlay" viewBox="0 0 360 180" role="img" aria-label="World map showing major Jewish population centers at the current timeline year">
+            <g class="map-graticule">
+              <path d="M0 30H360M0 60H360M0 90H360M0 120H360M0 150H360M60 0V180M120 0V180M180 0V180M240 0V180M300 0V180"/>
+            </g>
+            <g class="map-land map-land-accurate">
+              <path d="M9 27L24 18 49 13 75 17 93 28 108 42 103 55 91 59 82 70 69 75 61 88 48 80 43 67 28 64 17 55 8 43Z"/>
+              <path d="M79 84L94 80 107 87 117 102 114 120 106 139 97 158 89 148 87 129 81 111 76 95Z"/>
+              <path d="M150 30L163 24 177 25 188 34 183 42 168 44 157 39Z"/>
+              <path d="M174 43L187 37 198 39 205 48 199 56 190 60 180 56 169 54 163 48Z"/>
+              <path d="M191 36L210 31 230 28 251 29 270 33 289 34 309 40 329 49 347 61 352 72 340 79 321 76 307 68 294 70 283 81 269 83 256 75 244 78 232 71 220 74 211 66 201 69 193 61 185 61 179 53Z"/>
+              <path d="M177 62L190 62 201 69 209 83 211 98 205 113 198 130 189 148 178 153 171 137 166 119 164 101 168 82Z"/>
+              <path d="M211 71L220 69 228 77 229 88 222 96 215 90 210 80Z"/>
+              <path d="M287 119L302 111 319 114 337 126 333 141 319 150 301 146 289 136Z"/>
+              <path d="M346 91L352 94 350 102 344 99Z"/>
+            </g>
             <g id="mapDots"></g>
           </svg>
         </div>
