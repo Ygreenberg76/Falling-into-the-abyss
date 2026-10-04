@@ -2465,20 +2465,21 @@ function renderEras(){
   });
 }
 const jewishOverlapTitles=new Set(["Birth of Jesus (Yeshua)","Crucifixion of Jesus","Emergence of the early Christian movement","Council of Jerusalem and the Jewish–Gentile question","Destruction of Jerusalem reshapes Jewish and Christian communities","First Crusade massacres of Jewish communities","Crusaders capture Jerusalem","Fourth Lateran Council regulates Christian society and minorities","Spanish Inquisition established","Expulsion of Jews from Spain under Catholic monarchs","Forced conversion of Jews in Portugal","Nazi persecution of churches and Christian opponents during World War II","Ustaša persecution and Jasenovac camp end with World War II","Martyrdom of Stephen in the New Testament tradition","Execution of James son of Zebedee in Acts","Death of James, brother of Jesus","Visigothic monarchy adopts Catholic Christianity","Expulsion of Jews from Christian England","Black Death persecutions of Jews in Christian Europe","Anti-Jewish massacres and forced conversions in Iberia","Bar Kokhba revolt accelerates Jewish–Christian separation","Norwich blood-libel accusation","Fulda blood-libel accusations and killings","Martin Luther publishes On the Jews and Their Lies","German churches confront accommodation and resistance under Nazism","Christian rescuers and church networks aid Jews during the Holocaust","Seelisberg conference confronts Christian antisemitism after Holocaust","Second Vatican Council begins","Nostra Aetate rejects collective Jewish guilt","Vatican publishes We Remember: A Reflection on the Shoah","Third Council of Toledo links Visigothic monarchy and Catholic Church","Visigothic forced-baptism policy against Jews","Seventeenth Council of Toledo imposes extreme measures on Jews","York massacre of Jews","French crown expels Jews","Vienna Gesera destroys Austrian Jewish communities","Spanish Inquisition begins operating against suspected crypto-Judaism","Russian pogrom wave unfolds in predominantly Christian empire","Anti-Jewish violence erupts at Richard I's coronation","Strasbourg massacre during Black Death persecutions","Balfour Declaration creates new Christian-Jewish political intersection","Dutch churches publicly protest deportation of Jews","Bulgarian Orthodox leaders oppose deportation of Bulgarian Jews","Creation of Israel transforms ancient Christian communities in the Holy Land","Gaza war devastates historic Palestinian Christian community","Gaza and regional war continue to affect Christian holy sites and communities"]);
+const islamicOverlapTitles=new Set(["Arab-Muslim conquest transforms Christian Byzantine provinces","Jerusalem surrenders to Caliph Umar","Coptic Christians transition from Byzantine to Muslim rule","Pope Urban II calls the First Crusade","First Crusade massacres of Jewish communities","Siege of Antioch during the First Crusade","Crusaders capture Jerusalem","Second Crusade and Northern Crusading campaigns","Saladin captures Jerusalem","Fifth Crusade attacks Egypt","Seventh Crusade invades Egypt","Fall of Acre ends major Crusader rule in the Holy Land","Ottoman conquest of Constantinople","Greek War of Independence brings Christian-Muslim communal violence","French conquest of Algeria transforms Christian-Muslim colonial relations","Edict of Toleration eases Ottoman penalties around conversion","Bulgarian April Uprising and Ottoman massacres","Anti-Armenian massacres spread across Ottoman provinces","Bosnian War targets Christian and Muslim communities","Monks of Tibhirine kidnapped and killed in Algeria","Maluku sectarian conflict erupts between Muslim and Christian communities","Kaduna sharia riots kill Christians and Muslims","Jos communal riots kill Christians and Muslims","Nag Hammadi shooting targets Coptic worshippers","ISIS murders 21 Coptic Christians in Libya","Minya attack on Coptic pilgrims","Marawi siege devastates Christian and Muslim communities","Gaza war devastates historic Palestinian Christian community","Gaza and regional war continue to affect Christian holy sites and communities"]);
 const markerEls=events.map((event,index)=>{
   const btn=document.createElement("button");
   btn.type="button";
-  btn.className="event-marker"+(jewishOverlapTitles.has(event.title)?" jewish-overlap":"");
+  btn.className="event-marker"+(jewishOverlapTitles.has(event.title)?" jewish-overlap":"")+(islamicOverlapTitles.has(event.title)?" islamic-overlap":"");
   btn.setAttribute("aria-label",event.year+" — "+event.title+". Open event details.");
   if(index%2===0) btn.style.left="7%"; else btn.style.right="7%";
-  btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small>'+(jewishOverlapTitles.has(event.title)?'<em class="overlap-badge">Jewish history overlap</em>':'')+'<strong>'+event.title+'</strong></span>';
+  btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small>'+(jewishOverlapTitles.has(event.title)?'<em class="overlap-badge">Jewish history overlap</em>':'')+(islamicOverlapTitles.has(event.title)?'<em class="overlap-badge islamic-overlap-badge">Islamic history overlap</em>':'')+'<strong>'+event.title+'</strong></span>';
   btn.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();openEvent(event)});
   wireOverlapLinks(btn,event);
   eventsLayer.appendChild(btn);
   return btn;
 });
 function wireOverlapLinks(btn,event){
-  const links=[["overlap-badge","index.html"]];
+  const links=[["overlap-badge","index.html"],["islamic-overlap-badge","islam.html"]];
   links.forEach(([cls,page])=>btn.querySelectorAll("."+cls).forEach(badge=>{
     badge.dataset.historyLink="true";
     badge.title="Open this year in the related history timeline";
@@ -2653,7 +2654,7 @@ function showComparisonMap(items){
   if(!plotted.length){const tag=document.createElement("span");tag.textContent="No precise map location is available for these events.";legend.appendChild(tag);}
 }
 function restoreTimelineMap(){}
-function comparisonTargets(event){const targets=[];if(jewishOverlapTitles.has(event.title))targets.push(["jewish","Jewish history","index.html"]);return targets;}
+function comparisonTargets(event){const targets=[];if(jewishOverlapTitles.has(event.title))targets.push(["jewish","Jewish history","index.html"]);if(islamicOverlapTitles.has(event.title))targets.push(["islamic","Islamic history","islam.html"]);return targets;}
 function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
 function openComparison(event){
   const compare=document.getElementById("comparePanel"),grid=document.getElementById("compareGrid");
@@ -2713,7 +2714,7 @@ function renderSameTimeHistory(currentEvent){
 }
 function openEvent(event){
   paused=true;velocity=0;
-  document.getElementById("eventDate").innerHTML=event.year+(jewishOverlapTitles.has(event.title)?' <span class="overlap-badge panel-overlap-badge">Jewish history overlap</span>':"");
+  document.getElementById("eventDate").innerHTML=event.year+(jewishOverlapTitles.has(event.title)?' <span class="overlap-badge panel-overlap-badge">Jewish history overlap</span>':'')+(islamicOverlapTitles.has(event.title)?' <span class="overlap-badge islamic-overlap-badge panel-overlap-badge">Islamic history overlap</span>':'');
   document.getElementById("eventTitle").textContent=event.title;
   document.getElementById("eventLocation").textContent=event.location;
   document.getElementById("eventStory").textContent=event.story;
@@ -2722,6 +2723,7 @@ function openEvent(event){
   document.getElementById("eventSourceStatus").textContent=event.sourceStatus;
   const connected=[];
   if(jewishOverlapTitles.has(event.title))connected.push(["Jewish timeline","index.html","jewish"]);
+  if(islamicOverlapTitles.has(event.title))connected.push(["Islam timeline","islam.html","islamic"]);
   let connectedBox=document.getElementById("connectedHistoryBox");
   if(!connectedBox){
     connectedBox=document.createElement("div");
