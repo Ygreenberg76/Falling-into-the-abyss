@@ -49,35 +49,39 @@ const events = [
   },
   {
     year:1941, depth:2970, title:"Farhud", location:"Baghdad, Iraq",
-    story:"Draft placeholder for the anti-Jewish violence in Baghdad in June 1941.",
-    context:"Final entry will cover Iraqi political instability, wartime propaganda, nationalism, and the immediate trigger.",
-    aftermath:"Draft placeholder.",
-    stats:{Type:"Pogrom",Jewish_deaths:"Approx. 150–180 (verify)",Injured:"Approx. 600 (verify)"},
-    sourceStatus:"Draft — figures will be tied to specific archival/academic sources."
+    story:"On June 1–2, 1941, anti-Jewish mob violence erupted in Baghdad. The United States Holocaust Memorial Museum describes the Farhud as a turning point in the history of Iraqi Jewry.",
+    context:"The violence followed a pro-German coup and its collapse during World War II. USHMM notes that political turmoil, anti-British nationalism, antisemitic ideology and Nazi propaganda all formed part of the setting.",
+    aftermath:"USHMM reports that rioters murdered between 150 and 180 Jews and injured about 600; an Iraqi investigating commission recorded 128 Jewish deaths and 210 injuries. Homes and businesses were looted and damaged.",
+    stats:{Type:"Pogrom / mass violence",Jewish_deaths:"150–180 (USHMM range)",Jewish_injured:"About 600",Homes_businesses_looted:"About 1,500"},
+    sourceStatus:"High-quality institutional source for the modern event; the source itself notes differing official and community casualty totals.",
+    sources:[{label:"U.S. Holocaust Memorial Museum — The Farhud",url:"https://encyclopedia.ushmm.org/content/en/article/the-farhud"}]
   },
   {
     year:1948, depth:3430, title:"1948 Arab–Israeli War", location:"Israel / Palestine and neighboring fronts",
-    story:"Draft placeholder for the interstate war following Israel's declaration of independence and the preceding civil-war phase.",
-    context:"The final entry will separate the 1947–48 civil war, interstate invasion, Palestinian displacement, Jewish losses, and competing interpretations.",
-    aftermath:"Draft placeholder.",
-    stats:{Type:"War",Deaths:"To verify by category",Displaced:"To verify by source"},
-    sourceStatus:"Draft — requires multi-source treatment."
+    story:"Following the UN partition resolution of November 29, 1947, fighting intensified between Jewish and Arab forces in Mandatory Palestine. After Israel declared independence on May 14, 1948, armies from neighboring Arab states entered the former mandate and the conflict became an interstate war.",
+    context:"The U.S. State Department's historical account distinguishes the fighting that began after partition from the invasion that followed Israel's declaration of independence. The full site will separately document Palestinian displacement, Jewish displacement and casualties, individual battles, atrocities, and competing historical interpretations.",
+    aftermath:"Fighting continued into 1949. Separate armistice agreements were concluded between Israel and Egypt, Lebanon, Transjordan and Syria; Egypt retained the Gaza Strip and Jordan controlled the West Bank until 1967.",
+    stats:{Type:"Civil war + interstate war",Start_phase:"After UN partition, Nov. 1947",Interstate_phase:"May 1948",Armistices:"1949"},
+    sourceStatus:"Institutional diplomatic history; casualty and displacement totals will be added only with additional dedicated sources.",
+    sources:[{label:"U.S. State Department — Arab-Israeli War of 1948",url:"https://history.state.gov/milestones/1945-1952/arab-israeli-war"}]
   },
   {
     year:1967, depth:3890, title:"Six-Day War", location:"Israel, Egypt, Jordan, Syria",
-    story:"Draft placeholder for the June 1967 war.",
-    context:"Final entry will cover prewar escalation, mobilization, opening strikes, territorial changes, casualties, and aftermath.",
-    aftermath:"Draft placeholder.",
-    stats:{Type:"War",Deaths:"To verify",Duration:"6 days"},
-    sourceStatus:"Draft — not publication-ready."
+    story:"War erupted on June 5, 1967 and ended on June 10. The conflict involved Israel and neighboring Arab states, principally Egypt, Jordan and Syria.",
+    context:"Declassified U.S. diplomatic records document the outbreak of heavy fighting on June 5 and intensive U.S.–Soviet communications during the six-day conflict.",
+    aftermath:"The war radically changed the territorial and diplomatic landscape of the Arab–Israeli conflict. A separate research entry will document territorial changes, casualties and displacement with dedicated sources.",
+    stats:{Type:"War",Began:"June 5, 1967",Ended:"June 10, 1967",Duration:"6 days"},
+    sourceStatus:"Dates anchored to declassified U.S. diplomatic records; detailed casualty figures still require dedicated sourcing.",
+    sources:[{label:"U.S. State Department — FRUS, Six-Day War documentation",url:"https://history.state.gov/historicaldocuments/frus1964-68v14/d217"}]
   },
   {
     year:1973, depth:4280, title:"Yom Kippur War", location:"Sinai and Golan Heights",
-    story:"Draft placeholder for the October 1973 war.",
-    context:"Final entry will cover the surprise Egyptian-Syrian attack, battlefield phases, superpower diplomacy, and casualty estimates.",
-    aftermath:"Draft placeholder.",
-    stats:{Type:"War",Deaths:"To verify",Duration:"Oct. 1973"},
-    sourceStatus:"Draft — not publication-ready."
+    story:"On October 6, 1973, Egypt and Syria launched a coordinated surprise attack on Israel, beginning the war known in Israel as the Yom Kippur War and in Arab contexts as the October War.",
+    context:"U.S. State Department historical documents record the October 6 opening attack and the intense superpower diplomacy surrounding the war.",
+    aftermath:"The fighting ended later in October after a U.S.–Soviet sponsored UN Security Council ceasefire process. The conflict reshaped subsequent diplomacy, including disengagement negotiations.",
+    stats:{Type:"War",Began:"October 6, 1973",Ceasefire_period:"Late October 1973",Belligerents:"Israel; Egypt; Syria and allies"},
+    sourceStatus:"Dates and opening circumstances anchored to U.S. diplomatic records. Detailed casualty totals will be sourced separately.",
+    sources:[{label:"U.S. State Department — 1973 war editorial note",url:"https://history.state.gov/historicaldocuments/frus1969-76v36/d209"}]
   },
   {
     year:2023, depth:4840, title:"October 7 and subsequent war", location:"Israel and Gaza",
@@ -205,6 +209,18 @@ function openEvent(event){
   document.getElementById("eventContext").textContent=event.context;
   document.getElementById("eventAftermath").textContent=event.aftermath;
   document.getElementById("eventSourceStatus").textContent=event.sourceStatus;
+  const sourceWrap=document.getElementById("eventSources");
+  sourceWrap.innerHTML="";
+  (event.sources||[]).forEach(source=>{
+    const a=document.createElement("a");
+    a.href=source.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=source.label;
+    sourceWrap.appendChild(a);
+  });
+  if(!(event.sources||[]).length){
+    const note=document.createElement("span");
+    note.textContent="Source review still in progress.";
+    sourceWrap.appendChild(note);
+  }
   const dl=document.getElementById("eventStats");
   dl.innerHTML="";
   Object.entries(event.stats).forEach(([k,v])=>{
