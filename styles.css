@@ -155,3 +155,40 @@ footer{text-align:center;color:#71717a;padding:30px}
 @keyframes eventReveal{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
 body.event-open{overflow:hidden}
 @media(max-width:760px){.event-panel:not(.hidden){inset:12px;max-height:calc(100vh - 24px)}}
+
+/* Cinematic abyss v2 */
+.abyss{isolation:isolate;background:radial-gradient(ellipse at 50% 12%,rgba(135,180,208,.2),transparent 23%),linear-gradient(#18191d,#090a0d 45%,#010102);perspective:900px}
+.light-shaft{position:absolute;z-index:1;top:-5%;left:50%;width:44%;height:72%;transform:translateX(-50%);clip-path:polygon(31% 0,69% 0,96% 100%,4% 100%);background:linear-gradient(rgba(195,220,236,.16),rgba(140,170,190,.035) 55%,transparent);filter:blur(13px);pointer-events:none}
+.void-core{position:absolute;z-index:2;left:25%;right:25%;top:5%;bottom:-10%;background:radial-gradient(ellipse at 50% 45%,rgba(17,18,22,.2),rgba(0,0,0,.92) 74%);filter:blur(8px);pointer-events:none}
+.rock{top:-15%;bottom:-15%;height:130%;background-size:100% 100%,90px 110px,130px 160px;will-change:transform}
+.rock-far{z-index:3;width:45%;opacity:.48;filter:blur(1.4px)}
+.rock-far-left{left:-8%;clip-path:polygon(0 0,76% 0,69% 11%,85% 22%,65% 34%,80% 47%,62% 61%,79% 73%,67% 86%,74% 100%,0 100%);background:linear-gradient(100deg,#090909,#2a2826 67%,#080808),radial-gradient(circle,#55504a 0 8%,transparent 9%)}
+.rock-far-right{right:-8%;clip-path:polygon(24% 0,100% 0,100% 100%,27% 100%,34% 87%,20% 73%,38% 61%,21% 47%,39% 34%,17% 22%,31% 10%);background:linear-gradient(260deg,#090909,#292724 67%,#080808),radial-gradient(circle,#514c46 0 8%,transparent 9%)}
+.rock-mid{z-index:4;width:38%;opacity:.78}
+.rock-mid-left{left:-7%;clip-path:polygon(0 0,75% 0,62% 9%,84% 18%,65% 28%,88% 39%,63% 50%,82% 62%,57% 74%,83% 85%,64% 100%,0 100%);background:linear-gradient(105deg,#080706,#1b1815 27%,#4a423a 63%,#17130f 82%,transparent 83%),repeating-radial-gradient(ellipse at 75% 50%,rgba(255,255,255,.09) 0 2px,transparent 3px 15px)}
+.rock-mid-right{right:-7%;clip-path:polygon(25% 0,100% 0,100% 100%,36% 100%,17% 86%,42% 74%,18% 62%,38% 50%,13% 39%,35% 28%,14% 18%,38% 9%);background:linear-gradient(255deg,#080706,#1b1815 27%,#4a423a 63%,#17130f 82%,transparent 83%),repeating-radial-gradient(ellipse at 25% 50%,rgba(255,255,255,.09) 0 2px,transparent 3px 15px)}
+.rock-near{z-index:5;width:29%;opacity:.94;filter:drop-shadow(0 0 38px #000)}
+.rock-near.rock-left{left:-8%;clip-path:polygon(0 0,77% 0,58% 13%,88% 27%,61% 40%,92% 54%,55% 68%,84% 82%,60% 100%,0 100%);background:linear-gradient(105deg,#050505,#17130f 38%,#51483e 72%,#0b0908 91%)}
+.rock-near.rock-right{right:-8%;clip-path:polygon(23% 0,100% 0,100% 100%,40% 100%,16% 83%,45% 69%,8% 54%,39% 40%,12% 27%,42% 13%);background:linear-gradient(255deg,#050505,#17130f 38%,#51483e 72%,#0b0908 91%)}
+.sky-opening{z-index:0;width:54%;height:220px;box-shadow:0 0 80px rgba(163,210,238,.15)}
+.vignette{z-index:30;box-shadow:inset 0 0 210px 70px rgba(0,0,0,.76)}
+.mist{z-index:8}
+.person{z-index:24;width:84px;height:154px;filter:drop-shadow(0 7px 11px rgba(0,0,0,.9)) drop-shadow(0 0 10px rgba(207,226,237,.14))}
+.person svg{width:100%;height:100%;overflow:visible}
+.person svg *{fill:#050506;stroke:rgba(226,232,240,.24);stroke-width:1.3}
+.person .limb{transform-box:fill-box;transform-origin:50% 12%;will-change:transform}
+.person .arm-svg-left{transform:rotate(10deg)}
+.person .arm-svg-right{transform:rotate(-10deg)}
+.person .leg-svg-left{transform:rotate(4deg)}
+.person .leg-svg-right{transform:rotate(-4deg)}
+.event-marker{border-radius:5px;border-color:rgba(190,174,150,.24);background:linear-gradient(100deg,rgba(35,31,27,.88),rgba(8,8,9,.76));box-shadow:inset 0 1px rgba(255,255,255,.04),0 9px 28px rgba(0,0,0,.35);backdrop-filter:blur(5px)}
+.event-marker::after{content:"";position:absolute;top:50%;width:44px;height:1px;background:linear-gradient(90deg,rgba(216,199,173,.55),transparent)}
+.event-marker[style*="left"]::after{right:-44px}.event-marker[style*="right"]::after{left:-44px;transform:scaleX(-1)}
+.event-marker .dot{width:9px;height:9px;background:#d7c7ad;box-shadow:0 0 13px rgba(218,196,160,.8)}
+.event-marker small{color:#cdbda4;letter-spacing:.14em}
+.bottom-marker{position:absolute;z-index:18;left:50%;top:78%;transform:translate(-50%,40px);opacity:0;text-align:center;letter-spacing:.18em;text-shadow:0 2px 15px #000;transition:opacity .3s,transform .3s;pointer-events:none}
+.bottom-marker small{display:block;color:#cbbda6;font-size:18px}.bottom-marker strong{display:block;font-size:clamp(19px,3vw,34px);margin-top:5px}
+.bottom-marker.visible{opacity:1;transform:translate(-50%,0)}
+.particles{position:absolute;inset:0;z-index:10;pointer-events:none}
+.particles span{width:3px;height:3px;background:#a99b87;box-shadow:0 0 3px #000;will-change:transform}
+@media(max-width:760px){.rock-far{width:50%}.rock-mid{width:43%}.rock-near{width:33%}.person{width:70px;height:132px}}
