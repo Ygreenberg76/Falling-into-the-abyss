@@ -14,15 +14,15 @@ function translateText(lang){
  const dict=TEXT[lang]||{};
  const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
  const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
- nodes.forEach(n=>{const raw=n.nodeValue,trim=raw.trim();if(dict[trim])n.nodeValue=raw.replace(trim,dict[trim]);});
+ nodes.forEach(n=>{const raw=n.nodeValue,trim=raw.trim();if(dict[trim]){n.nodeValue=raw.replace(trim,dict[trim]);const el=n.parentElement;if(el){el.setAttribute("dir","rtl");el.setAttribute("lang",lang);}}});
  document.querySelectorAll("input[placeholder]").forEach(el=>{const v=el.getAttribute("placeholder");if(dict[v])el.setAttribute("placeholder",dict[v]);});
 }
 function setLanguage(lang,reload=false){
  if(!["en","he","ar"].includes(lang))lang="en";
  localStorage.setItem(KEY,lang);
  if(reload){location.reload();return;}
- document.documentElement.lang=lang;document.documentElement.dir=lang==="en"?"ltr":"rtl";
- document.body.classList.toggle("rtl-language",lang!=="en");
+ document.documentElement.lang=lang;
+ // Keep the document flow LTR while untranslated English fallback content remains on the page.\n // Translated Hebrew/Arabic interface strings receive RTL direction individually.\n document.documentElement.dir="ltr";\n document.body.classList.toggle("rtl-language",lang!=="en");
  document.querySelectorAll("[data-lang]").forEach(b=>{b.classList.toggle("active",b.dataset.lang===lang);b.setAttribute("aria-pressed",b.dataset.lang===lang?"true":"false");});
  translateText(lang);
 }
