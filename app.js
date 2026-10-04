@@ -2728,4 +2728,74 @@ document.getElementById("closeEventBtn").addEventListener("click",()=>{panel.cla
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!panel.classList.contains("hidden")){panel.classList.add("hidden");document.body.classList.remove("event-open");paused=false;abyss.focus()}});
 document.getElementById("aboutBtn").addEventListener("click",()=>{aboutPanel.classList.remove("hidden");aboutPanel.scrollIntoView({behavior:reduced?"auto":"smooth"})});
 document.getElementById("closeAboutBtn").addEventListener("click",()=>aboutPanel.classList.add("hidden"));
+
+/* Explore timeline: search, filters and year jump */
+const exploreToggle=document.getElementById("exploreToggle");
+const explorePanel=document.getElementById("explorePanel");
+const eventSearch=document.getElementById("eventSearch");
+const eraFilter=document.getElementById("eraFilter");
+const typeFilter=document.getElementById("typeFilter");
+const filterResults=document.getElementById("filterResults");
+const filterCount=document.getElementById("filterCount");
+const yearJump=document.getElementById("yearJump");
+const yearEra=document.getElementById("yearEra");
+
+function eraForEvent(event){return eras.find(era=>event.depth>=era.start&&event.depth<era.end)||eras[eras.length-1]}
+function eventType(event){return (event.stats&&event.stats.Type)||"Other"}
+eras.forEach(era=>{const o=document.createElement("option");o.value=era.name;o.textContent=era.name;eraFilter.appendChild(o)});
+[...new Set(events.map(eventType))].sort((a,b)=>a.localeCompare(b)).forEach(type=>{const o=document.createElement("option");o.value=type;o.textContent=type;typeFilter.appendChild(o)});
+
+function jumpToDepth(target){
+  paused=false;velocity=0;depth=Math.max(0,Math.min(MAX_DEPTH,target));render();
+  abyss.scrollIntoView({behavior:reduced?"auto":"smooth",block:"center"});abyss.focus({preventScroll:true});
+}
+function jumpToEvent(event){jumpToDepth(event.depth)}
+function applyFilters(){
+  const q=eventSearch.value.trim().toLowerCase(), era=eraFilter.value, type=typeFilter.value;
+  const matches=events.filter((event,index)=>{
+    const hay=[event.title,event.location,event.story,eventType(event),event.year].join(" ").toLowerCase();
+    const ok=(!q||hay.includes(q))&&(!era||eraForEvent(event).name===era)&&(!type||eventType(event)===type);
+    markerEls[index].classList.toggle("filtered-out",!ok);
+    return ok;
+  });
+  filterCount.textContent=matches.length+" event"+(matches.length===1?"":"s");
+  filterResults.innerHTML="";
+  const show=(q||era||type)?matches.slice(0,18):[];
+  show.forEach(event=>{
+    const b=document.createElement("button");b.type="button";b.className="filter-result";
+    const y=event.year<0?Math.abs(event.year)+" BCE":event.year+" CE";
+    b.innerHTML="<small>"+y+" · "+event.location+"</small><strong>"+event.title+"</strong>";
+    b.addEventListener("click",()=>jumpToEvent(event));filterResults.appendChild(b);
+  });
+  if((q||era||type)&&!matches.length){const n=document.createElement("span");n.className="source-links";n.textContent="No matching events.";filterResults.appendChild(n)}
+}
+function depthForYear(year){
+  const sorted=events.slice().sort((a,b)=>a.year-b.year);
+  if(year<=sorted[0].year)return sorted[0].depth;
+  if(year>=sorted[sorted.length-1].year)return sorted[sorted.length-1].depth;
+  for(let i=1;i<sorted.length;i++){
+    if(year<=sorted[i].year){
+      const a=sorted[i-1],b=sorted[i],span=Math.max(1,b.year-a.year),t=(year-a.year)/span;
+      return a.depth+(b.depth-a.depth)*t;
+    }
+  }
+  return 0;
+}
+function doYearJump(){
+  const raw=parseInt(yearJump.value,10);if(!Number.isFinite(raw)||raw<1)return;
+  const y=yearEra.value==="BCE"?-raw:raw;
+  jumpToDepth(depthForYear(Math.max(-1800,Math.min(2026,y))));
+}
+exploreToggle.addEventListener("click",()=>{
+  const open=explorePanel.classList.contains("hidden");explorePanel.classList.toggle("hidden",!open);exploreToggle.setAttribute("aria-expanded",String(open));
+  if(open)eventSearch.focus();
+});
+[eventSearch,eraFilter,typeFilter].forEach(el=>el.addEventListener(el.tagName==="INPUT"?"input":"change",applyFilters));
+document.getElementById("yearJumpBtn").addEventListener("click",doYearJump);
+yearJump.addEventListener("keydown",e=>{if(e.key==="Enter")doYearJump()});
+document.getElementById("clearFilters").addEventListener("click",()=>{
+  eventSearch.value="";eraFilter.value="";typeFilter.value="";yearJump.value="";yearEra.value="CE";applyFilters();
+});
+applyFilters();
+
 makeParticles();render();rafId=requestAnimationFrame(tick);
