@@ -2738,6 +2738,7 @@ function showComparisonMap(items){
     if(count)count.textContent="No precise event coordinates";
     return;
   }
+  window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:true}}));
   dots.replaceChildren();legend.replaceChildren();
   plotted.forEach(({kind,label,event,place})=>{
     const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g");
@@ -2750,7 +2751,6 @@ function showComparisonMap(items){
   });
   if(mapYear)mapYear.textContent="Shared history";
   if(count)count.textContent=shown+" event location"+(shown===1?"":"s");
-  window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:true}}));
 }
 function restoreTimelineMap(){window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:false}}));}
 function comparisonTargets(event){const targets=[];const overlap=historyOverlap(event);if(overlap==="christian"||overlap==="both")targets.push(["christian","Christian history","christianity.html"]);if(overlap==="islamic"||overlap==="both")targets.push(["islamic","Islamic history","islam.html"]);return targets;}
