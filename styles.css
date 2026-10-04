@@ -403,3 +403,12 @@ body.event-open{overflow:hidden}
   .history-return-cue{top:10px;min-width:160px;padding:6px 11px}
   .history-return-cue strong{font-size:10px}
 }
+
+
+/* Connected history inside event details */
+.connected-history{margin-bottom:14px;padding:15px;border:1px solid rgba(181,135,211,.28);border-radius:12px;background:linear-gradient(135deg,rgba(78,135,194,.10),rgba(65,150,107,.08));}
+.connected-history h3{margin:0 0 5px;color:#eee8df}
+.connected-history p{margin:0 0 10px;color:#aaa5ad;font-size:12px;line-height:1.45}
+.connected-history-links{display:grid;gap:7px}
+.connected-history-links a{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border:1px solid rgba(216,199,173,.22);border-radius:8px;background:rgba(7,7,9,.5);color:#d9c8ea;text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.03em;transition:filter .16s ease,transform .16s ease}
+.connected-history-links a:hover{filter:brightness(1.25);transform:translateX(2px)}
