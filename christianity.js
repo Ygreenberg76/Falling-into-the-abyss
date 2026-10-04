@@ -10,11 +10,11 @@ const events = [
   },
   {
     year:30, depth:350, title:"Crucifixion of Jesus", location:"Jerusalem",
-    story:"Roman authorities crucified Jesus of Nazareth during the prefecture of Pontius Pilate. His followers proclaimed that he had risen from the dead, and the movement that became Christianity developed from this first-century Jewish setting.",
-    context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
+    story:"Jesus (Yeshua), a Jewish teacher from Galilee, was crucified in Judea under the Roman prefect Pontius Pilate. His followers came to believe that he had risen from the dead, a conviction at the center of the movement that became Christianity.",
+    context:"Jewish origins of Christianity / Roman execution",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
     stats:{Type:"Origins / Roman execution",Evidence:"The crucifixion under Pontius Pilate is accepted by the overwhelming majority of historians; theological claims about resurrection belong to religious belief."},
-    sourceStatus:"The crucifixion under Pontius Pilate is accepted by the overwhelming majority of historians; theological claims about resurrection belong to religious belief.",
+    sourceStatus:"Jesus's crucifixion under Pontius Pilate is accepted by the overwhelming majority of historians. Christian Gospel narratives are theological as well as historical sources. Collective blame against Jews is historically and theologically improper; Roman authority carried out the execution.",
     sources:[{label:"Encyclopaedia Britannica — Jesus",url:"https://www.britannica.com/biography/Jesus"}]
   },
   {
@@ -64,11 +64,11 @@ const events = [
   },
   {
     year:64, depth:1370, title:"Neronian persecution after the Great Fire of Rome", location:"Rome",
-    story:"After the Great Fire of Rome, Emperor Nero blamed Christians and subjected some to brutal executions. The Roman historian Tacitus later described the episode.",
-    context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
+    story:"After the Great Fire of Rome, Nero blamed and brutally punished a group identified as Christians. Tacitus, writing decades later, is the principal non-Christian source for the episode.",
+    context:"Local Roman persecution / scapegoating",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
     stats:{Type:"Persecution / Roman state violence",Evidence:"Tacitus is the principal non-Christian literary source. The persecution appears to have been localized in Rome rather than an empire-wide policy."},
-    sourceStatus:"Tacitus is the principal non-Christian literary source. The persecution appears to have been localized in Rome rather than an empire-wide policy.",
+    sourceStatus:"Tacitus provides important Roman evidence for Nero's punishment of Christians. It should be treated as a specific persecution at Rome, not the beginning of an uninterrupted empire-wide policy.",
     sources:[{label:"Encyclopaedia Britannica — Nero",url:"https://www.britannica.com/biography/Nero-Roman-emperor"}]
   },
   {
@@ -109,11 +109,11 @@ const events = [
   },
   {
     year:132, depth:2220, title:"Bar Kokhba revolt accelerates Jewish–Christian separation", location:"Judea",
-    story:"The Bar Kokhba revolt against Rome placed followers of Jesus who did not recognize Bar Kokhba as Messiah in a different position from Jewish rebels. The war devastated Judea and contributed to the long, gradual differentiation of Christianity from Judaism.",
+    story:"The Bar Kokhba revolt against Rome devastated Judea. Followers of Jesus who did not accept Bar Kokhba's messianic claim stood apart from the revolt, contributing to—but not single-handedly causing—the long process by which Christianity and rabbinic Judaism became increasingly distinct.",
     context:"Jewish-Christian divergence / Roman war context",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
     stats:{Type:"Jewish-Christian divergence / Roman war context",Evidence:"The revolt is firmly historical. Historians caution against treating any single event as the moment Christianity and Judaism definitively separated."},
-    sourceStatus:"The revolt is firmly historical. Historians caution against treating any single event as the moment Christianity and Judaism definitively separated.",
+    sourceStatus:"The revolt is firmly historical. Historians increasingly describe the 'parting of the ways' between Judaism and Christianity as a prolonged, regionally varied process rather than a single break in 132–135.",
     sources:[{label:"Britannica — Bar Kokhba Revolt",url:"https://www.britannica.com/event/Bar-Kokhba-Revolt"}]
   },
   {
@@ -1549,11 +1549,11 @@ const events = [
   },
   {
     year:1933, depth:29420, title:"German churches confront accommodation and resistance under Nazism", location:"Germany",
-    story:"As the Nazi regime consolidated power, Protestant and Catholic institutions sought to protect church autonomy while many leaders accommodated the new state. The German Christian movement embraced Nazi nationalism, while the Confessing Church later resisted some state interference. Public institutional opposition to persecution of Jews remained extremely limited.",
+    story:"After the Nazi seizure of power, most Protestant and Catholic church leaders sought accommodation or institutional self-protection. The pro-Nazi German Christian movement embraced racial nationalism, while the Confessing Church resisted state interference in parts of Protestant life. Public institutional opposition to the persecution of Jews remained extremely limited.",
     context:"Churches / Nazism / antisemitism",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
     stats:{Type:"Churches / Nazism / antisemitism",Evidence:"USHMM documents both conflict between churches and the Nazi state and the broader failure of church leadership to publicly oppose antisemitic persecution, alongside individual Christian rescuers and dissenters."},
-    sourceStatus:"USHMM documents both conflict between churches and the Nazi state and the broader failure of church leadership to publicly oppose antisemitic persecution, alongside individual Christian rescuers and dissenters.",
+    sourceStatus:"USHMM documents widespread accommodation and silence alongside a minority of Christian dissenters and rescuers. Church behavior varied, but most German church leaders did not publicly oppose the regime's persecution of Jews.",
     sources:[{label:"USHMM — German Churches and Nazi State",url:"https://encyclopedia.ushmm.org/content/en/article/the-german-churches-and-the-nazi-state"}]
   },
   {
@@ -1756,11 +1756,11 @@ const events = [
   },
   {
     year:1965, depth:33330, title:"Nostra Aetate rejects collective Jewish guilt", location:"Vatican City",
-    story:"The Second Vatican Council promulgated Nostra Aetate. It rejected the idea that responsibility for Jesus's death could be charged against all Jews then living or Jews today and deplored antisemitism, becoming a landmark in Catholic–Jewish relations.",
+    story:"The Second Vatican Council promulgated Nostra Aetate, declaring that responsibility for Jesus's death could not be charged against all Jews then living or Jews today and deploring antisemitism. It became a landmark change in Catholic teaching and Catholic–Jewish relations.",
     context:"Jewish-Christian reconciliation / doctrinal change",
     aftermath:"This marker shows a major development in Christian history and its wider social consequences. Where Christianity intersects with Jewish history, the overlap badge indicates a substantive historical connection rather than a coincidental date.",
     stats:{Type:"Jewish-Christian reconciliation / doctrinal change",Evidence:"Nostra Aetate is an official Catholic conciliar declaration. It marked a major break with centuries of Christian teaching that had helped sustain anti-Jewish prejudice."},
-    sourceStatus:"Nostra Aetate is an official Catholic conciliar declaration. It marked a major break with centuries of Christian teaching that had helped sustain anti-Jewish prejudice.",
+    sourceStatus:"Nostra Aetate is an official Catholic conciliar declaration. USHMM identifies it as one of the most influential post-Holocaust Christian statements rethinking relations with Jews and Judaism.",
     sources:[{label:"Vatican — Nostra Aetate",url:"https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651028_nostra-aetate_en.html"}]
   },
   {
@@ -2232,16 +2232,7 @@ const events = [
     sources:[{label:"Britannica — Marawi",url:"https://www.britannica.com/place/Marawi"}]
   },
   {
-    year:2017, depth:42340, title:"Quezon? Coptic attacks continue across Egypt", location:"Egypt",
-    story:"A sequence of attacks on Coptic churches, pilgrims and families made 2017 one of the most violent recent years for Egypt's Christian minority.",
-    context:"Anti-Christian terrorism / sectarian violence",
-    aftermath:"This event is included because it materially changed Christian communities, institutions, conflict, persecution or interfaith relations. Political and social causes are kept distinct from religious identity where appropriate.",
-    stats:{Type:"Anti-Christian terrorism / sectarian violence",Evidence:"Multiple distinct attacks are represented elsewhere in the timeline; this marker provides annual context without replacing event-specific cards."},
-    sourceStatus:"Multiple distinct attacks are represented elsewhere in the timeline; this marker provides annual context without replacing event-specific cards.",
-    sources:[{label:"U.S. State Department — Egypt religious freedom",url:"https://www.state.gov/reports/2017-report-on-international-religious-freedom/egypt/"}]
-  },
-  {
-    year:2018, depth:42510, title:"Surabaya church bombings", location:"Surabaya, Indonesia",
+    year:2018, depth:42340, title:"Surabaya church bombings", location:"Surabaya, Indonesia",
     story:"Members of one family carried out suicide bombings at three Christian churches on a Sunday morning. Indonesian authorities linked the attackers to an ISIS-inspired network.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -2250,7 +2241,7 @@ const events = [
     sources:[{label:"U.S. State Department — Indonesia religious freedom",url:"https://www.state.gov/reports/2018-report-on-international-religious-freedom/indonesia/"}]
   },
   {
-    year:2018, depth:42680, title:"Central African Republic church and mosque attacks deepen communal conflict", location:"Central African Republic",
+    year:2018, depth:42510, title:"Central African Republic church and mosque attacks deepen communal conflict", location:"Central African Republic",
     story:"Armed groups attacked churches, mosques and civilians as conflict continued between factions often identified with Christian or Muslim communities. Religious leaders repeatedly warned against portraying the war as simply Christian versus Muslim.",
     context:"Communal conflict / attacks on worship",
     aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
@@ -2259,7 +2250,7 @@ const events = [
     sources:[{label:"U.S. State Department — CAR religious freedom",url:"https://www.state.gov/reports/2018-report-on-international-religious-freedom/central-african-republic/"}]
   },
   {
-    year:2019, depth:42850, title:"Easter Sunday bombings in Sri Lanka", location:"Sri Lanka",
+    year:2019, depth:42680, title:"Easter Sunday bombings in Sri Lanka", location:"Sri Lanka",
     story:"Coordinated suicide bombings struck churches during Easter services and luxury hotels, killing more than 250 people. Authorities attributed the attacks to local Islamist extremists inspired by ISIS.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -2268,7 +2259,7 @@ const events = [
     sources:[{label:"Encyclopaedia Britannica — Sri Lanka Easter bombings",url:"https://www.britannica.com/event/Sri-Lanka-Easter-bombings-of-2019"}]
   },
   {
-    year:2019, depth:43020, title:"Burkina Faso church attacks intensify", location:"Burkina Faso",
+    year:2019, depth:42850, title:"Burkina Faso church attacks intensify", location:"Burkina Faso",
     story:"Jihadist militants attacked churches, clergy and Christian worshippers as insurgent violence expanded across Burkina Faso. Muslim civilians and religious leaders opposing extremists were also killed in the broader conflict.",
     context:"Jihadist insurgency / anti-Christian attacks",
     aftermath:"This event is placed in its wider political and religious setting. The timeline distinguishes the actions of specific rulers, institutions, armies, movements and individuals from entire religious populations.",
@@ -2277,7 +2268,7 @@ const events = [
     sources:[{label:"U.S. State Department — Burkina Faso religious freedom",url:"https://www.state.gov/reports/2019-report-on-international-religious-freedom/burkina-faso/"}]
   },
   {
-    year:2019, depth:43190, title:"Jolo Cathedral bombing in the Philippines", location:"Jolo, Philippines",
+    year:2019, depth:43020, title:"Jolo Cathedral bombing in the Philippines", location:"Jolo, Philippines",
     story:"Twin bombs exploded during Sunday Mass at Our Lady of Mount Carmel Cathedral, killing worshippers and security personnel. ISIS claimed responsibility amid the southern Philippines insurgency.",
     context:"Jihadist terrorism / church attack",
     aftermath:"This event is included because it materially changed Christian communities, institutions, conflict, persecution or interfaith relations. Political and social causes are kept distinct from religious identity where appropriate.",
@@ -2286,7 +2277,7 @@ const events = [
     sources:[{label:"U.S. State Department — Philippines religious freedom",url:"https://www.state.gov/reports/2019-report-on-international-religious-freedom/philippines/"}]
   },
   {
-    year:2020, depth:43360, title:"Mozambique insurgency attacks Christian and Muslim civilians", location:"Cabo Delgado, Mozambique",
+    year:2020, depth:43190, title:"Mozambique insurgency attacks Christian and Muslim civilians", location:"Cabo Delgado, Mozambique",
     story:"An ISIS-linked insurgency in northern Mozambique carried out killings, kidnappings and attacks on villages. Christian communities were among the victims, while Muslim civilians who resisted extremists were also targeted and the conflict displaced huge numbers of people.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -2295,7 +2286,7 @@ const events = [
     sources:[{label:"U.S. State Department — Mozambique religious freedom",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/mozambique/"}]
   },
   {
-    year:2020, depth:43530, title:"Nice basilica attack", location:"Nice, France",
+    year:2020, depth:43360, title:"Nice basilica attack", location:"Nice, France",
     story:"An attacker killed three people inside the Notre-Dame Basilica in Nice. French authorities treated the killings as an Islamist terrorist attack.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, Judaism, Islam, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to surrounding religious, political and social history. Where evidence or attribution is disputed, uncertainty is stated rather than resolved by assumption.",
@@ -2304,7 +2295,7 @@ const events = [
     sources:[{label:"Britannica — France",url:"https://www.britannica.com/place/France"}]
   },
   {
-    year:2021, depth:43700, title:"Makassar cathedral bombing", location:"Makassar, Indonesia",
+    year:2021, depth:43530, title:"Makassar cathedral bombing", location:"Makassar, Indonesia",
     story:"Two suicide bombers attacked outside Sacred Heart of Jesus Cathedral after Palm Sunday Mass, injuring worshippers and security personnel.",
     context:"Jihadist terrorism / church attack",
     aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
@@ -2313,7 +2304,7 @@ const events = [
     sources:[{label:"U.S. State Department — Indonesia religious freedom",url:"https://www.state.gov/reports/2021-report-on-international-religious-freedom/indonesia/"}]
   },
   {
-    year:2022, depth:43870, title:"Owo church massacre in Nigeria", location:"Owo, Nigeria",
+    year:2022, depth:43700, title:"Owo church massacre in Nigeria", location:"Owo, Nigeria",
     story:"Gunmen attacked St. Francis Catholic Church during Pentecost Mass, killing dozens of worshippers. Nigerian authorities later blamed militants associated with Islamic State West Africa Province.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -2322,16 +2313,7 @@ const events = [
     sources:[{label:"U.S. State Department — Nigeria religious freedom",url:"https://www.state.gov/reports/2022-report-on-international-religious-freedom/nigeria/"}]
   },
   {
-    year:2022, depth:44040, title:"Pentecost massacre at St. Francis Xavier Church in Owo", location:"Owo, Nigeria",
-    story:"Gunmen attacked Catholic worshippers during Pentecost Mass, killing dozens. Nigerian authorities later blamed militants linked to Islamic State West Africa Province, although early attribution was uncertain.",
-    context:"Church massacre / terrorism",
-    aftermath:"This event is included because it materially changed Christian communities, institutions, conflict, persecution or interfaith relations. Political and social causes are kept distinct from religious identity where appropriate.",
-    stats:{Type:"Church massacre / terrorism",Evidence:"The attack is firmly documented. Attribution developed through later Nigerian investigations and prosecutions."},
-    sourceStatus:"The attack is firmly documented. Attribution developed through later Nigerian investigations and prosecutions.",
-    sources:[{label:"U.S. State Department — Nigeria religious freedom",url:"https://www.state.gov/reports/2022-report-on-international-religious-freedom/nigeria/"}]
-  },
-  {
-    year:2023, depth:44210, title:"Christmas-period massacres in Plateau State", location:"Plateau State, Nigeria",
+    year:2023, depth:43870, title:"Christmas-period massacres in Plateau State", location:"Plateau State, Nigeria",
     story:"Armed groups attacked numerous villages in central Nigeria around Christmas, killing large numbers of residents, many from predominantly Christian farming communities. The violence sits within a complex conflict involving land, ethnicity, criminality, climate pressure and religious identity.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -2340,7 +2322,7 @@ const events = [
     sources:[{label:"U.S. State Department — Nigeria religious freedom",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/nigeria/"}]
   },
   {
-    year:2023, depth:44380, title:"Manipur violence destroys churches amid ethnic conflict", location:"Manipur, India",
+    year:2023, depth:44040, title:"Manipur violence destroys churches amid ethnic conflict", location:"Manipur, India",
     story:"Violence between predominantly Hindu Meitei and predominantly Christian Kuki-Zo communities killed civilians, displaced tens of thousands and destroyed hundreds of churches as well as homes and other property.",
     context:"Ethnic conflict / anti-Christian destruction",
     aftermath:"This marker is included for its importance to the history of Christian communities, institutions or conflict. Religious identity is separated from political, ethnic, colonial and strategic causes where those factors are more explanatory.",
@@ -2349,7 +2331,7 @@ const events = [
     sources:[{label:"U.S. State Department — India religious freedom",url:"https://www.state.gov/reports/2023-report-on-international-religious-freedom/india/"}]
   },
   {
-    year:2023, depth:44550, title:"Gaza war devastates historic Palestinian Christian community", location:"Gaza",
+    year:2023, depth:44210, title:"Gaza war devastates historic Palestinian Christian community", location:"Gaza",
     story:"The Israel-Hamas war caused deaths, displacement and destruction across Gaza, including among its small Palestinian Christian community. Strikes and fighting affected church compounds where civilians had sought shelter.",
     context:"War / Christian community / Jewish-Christian overlap",
     aftermath:"This event is included because it materially changed Christian communities, institutions, conflict, persecution or interfaith relations. Political and social causes are kept distinct from religious identity where appropriate.",
@@ -2358,7 +2340,7 @@ const events = [
     sources:[{label:"UN OCHA — occupied Palestinian territory",url:"https://www.ochaopt.org/"}]
   },
   {
-    year:2024, depth:44720, title:"Attacks and displacement continue to affect Christian communities in the Sahel", location:"Burkina Faso, Mali, Niger and wider Sahel",
+    year:2024, depth:44380, title:"Attacks and displacement continue to affect Christian communities in the Sahel", location:"Burkina Faso, Mali, Niger and wider Sahel",
     story:"Jihadist insurgencies continued to attack civilians, religious leaders and places of worship across the Sahel. Christian minorities were targeted in some attacks, while Muslim civilians constituted a large share of victims of the same extremist groups.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -2367,7 +2349,7 @@ const events = [
     sources:[{label:"U.S. State Department — International Religious Freedom",url:"https://www.state.gov/international-religious-freedom-reports/"}]
   },
   {
-    year:2024, depth:44890, title:"Gaza and regional war continue to affect Christian holy sites and communities", location:"Israel, Gaza, West Bank and Lebanon",
+    year:2024, depth:44550, title:"Gaza and regional war continue to affect Christian holy sites and communities", location:"Israel, Gaza, West Bank and Lebanon",
     story:"Continuing regional conflict affected Palestinian and Lebanese Christian communities alongside Jewish, Muslim and other civilians. Church leaders repeatedly appealed for civilian protection and access to holy places.",
     context:"Regional war / Christian communities / Jewish-Christian overlap",
     aftermath:"This event is included because it materially changed Christian communities, institutions, conflict, persecution or interfaith relations. Political and social causes are kept distinct from religious identity where appropriate.",
@@ -2376,7 +2358,7 @@ const events = [
     sources:[{label:"UN OCHA — occupied Palestinian territory",url:"https://www.ochaopt.org/"}]
   },
   {
-    year:2025, depth:45060, title:"Global Christian communities face war, repression and extremist violence", location:"Global",
+    year:2025, depth:44720, title:"Global Christian communities face war, repression and extremist violence", location:"Global",
     story:"By 2025, Christian communities faced very different forms of pressure depending on location: jihadist attacks in parts of Africa and the Middle East, authoritarian restrictions in some states, communal violence, and the effects of major wars. Christians were also participants in political power and armed conflicts in other settings.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -2385,7 +2367,7 @@ const events = [
     sources:[{label:"U.S. State Department — International Religious Freedom",url:"https://www.state.gov/international-religious-freedom-reports/"}]
   },
   {
-    year:2026, depth:45230, title:"2026 — YOU ARE HERE", location:"Present day",
+    year:2026, depth:44890, title:"2026 — YOU ARE HERE", location:"Present day",
     story:"The Christianity timeline reaches the present. Christian communities remain the majority in some powerful states and vulnerable minorities in others; contemporary conflicts include persecution of Christians, violence among communities, and political or military action by actors identifying as Christian.",
     context:"This entry is part of a Christianity-focused historical timeline. It distinguishes religious identity from political, ethnic and strategic motives and does not treat Christianity, any denomination, or another religion as a single actor.",
     aftermath:"Its significance is presented in relation to the surrounding religious, political and social history. Where evidence or attribution is disputed, the uncertainty is stated rather than resolved by assumption.",
@@ -2405,11 +2387,11 @@ const eras = [
   {name:"Confessional States & Modernization",range:"1648–1914 CE",start:21260,end:27210},
   {name:"World Wars, Genocide & Totalitarianism",range:"1914–1990 CE",start:27210,end:35880},
   {name:"Post–Cold War Christianity & Conflict",range:"1990–2010 CE",start:35880,end:39110},
-  {name:"Contemporary Persecution & Terrorism",range:"2010–2020 CE",start:39110,end:43360},
-  {name:"Present Era",range:"2020–2026 CE",start:43360,end:45750}
+  {name:"Contemporary Persecution & Terrorism",range:"2010–2020 CE",start:39110,end:43190},
+  {name:"Present Era",range:"2020–2026 CE",start:43190,end:45410}
 ];
 
-const MAX_DEPTH=45750;
+const MAX_DEPTH=45410;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
