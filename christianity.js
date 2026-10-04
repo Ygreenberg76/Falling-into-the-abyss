@@ -2670,6 +2670,7 @@ function openComparison(event){
   renderHistoryConnection(mapItems);showComparisonMap(mapItems);panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
 }
 function closeComparison(){document.getElementById("comparePanel").classList.add("hidden");document.body.classList.remove("event-open");restoreTimelineMap();paused=false;}
+function sameTimeYearLabel(year){const y=Number(year);if(!Number.isFinite(y))return String(year||"");return y<0?Math.abs(y)+" BCE":y===0?"1 BCE / 1 CE":y+" CE";}
 function renderSameTimeHistory(currentEvent){
   let box=document.getElementById("sameTimeHistoryBox");
   if(!box){
@@ -2697,7 +2698,7 @@ function renderSameTimeHistory(currentEvent){
     const key=item.timeline.kind+":"+item.event.title+":"+item.event.year;
     if(used.has(key))continue;used.add(key);chosen.push(item);if(chosen.length===6)break;
   }
-  box.innerHTML='<div class="same-time-heading"><small>World in context</small><h3>What else was happening around this time?</h3><p>Nearby events within about 25 years of '+formatCompareYear(currentYear)+', ordered by the closest date.</p></div>';
+  box.innerHTML='<div class="same-time-heading"><small>World in context</small><h3>What else was happening around this time?</h3><p>Nearby events within about 25 years of '+sameTimeYearLabel(currentYear)+', ordered by the closest date.</p></div>';
   if(!chosen.length){
     box.innerHTML+='<p class="same-time-empty">No other timeline events are currently recorded within 25 years of this date.</p>';return;
   }
@@ -2705,7 +2706,7 @@ function renderSameTimeHistory(currentEvent){
   chosen.forEach(item=>{
     const a=document.createElement("a");a.className="same-time-card "+item.timeline.kind+"-same-time";
     a.href=item.timeline.page+"?year="+encodeURIComponent(item.event.year)+"&match="+encodeURIComponent(item.event.title)+"&from=christian";
-    a.innerHTML='<span class="same-time-timeline">'+item.timeline.label+' history</span><strong>'+formatCompareYear(item.event.year)+' · '+item.event.title+'</strong><small>'+(item.event.location||"Location not specified")+'</small><em>View event →</em>';
+    a.innerHTML='<span class="same-time-timeline">'+item.timeline.label+' history</span><strong>'+sameTimeYearLabel(item.event.year)+' · '+item.event.title+'</strong><small>'+(item.event.location||"Location not specified")+'</small><em>View event →</em>';
     grid.appendChild(a);
   });
   box.appendChild(grid);
