@@ -2725,6 +2725,26 @@ function renderCompareCard(kind,label,event,page,fromKind){
   const a=document.createElement("a");a.className="btn compare-open";a.href=page+"?year="+encodeURIComponent(event.year)+"&from="+fromKind+"&match="+eventKey(event);a.textContent="Open in "+label+" →";card.appendChild(a);
   return card;
 }
+function showComparisonMap(items){
+  const dots=document.getElementById("mapDots"),legend=document.getElementById("mapLegend"),mapYear=document.getElementById("mapYear"),count=document.getElementById("mapCommunityCount");
+  if(!dots||!legend||!window.findHistoryMapPlace)return;
+  dots.replaceChildren();legend.replaceChildren();
+  const ns="http://www.w3.org/2000/svg";let shown=0;
+  items.forEach(({kind,label,event})=>{
+    const place=window.findHistoryMapPlace(event);if(!place)return;
+    const x=place.lon+180,y=90-place.lat,g=document.createElementNS(ns,"g");
+    g.setAttribute("class","compare-map-marker "+kind+"-map-marker");
+    const halo=document.createElementNS(ns,"circle"),core=document.createElementNS(ns,"circle");
+    halo.setAttribute("cx",x);halo.setAttribute("cy",y);halo.setAttribute("r","6");halo.setAttribute("class","compare-map-halo");
+    core.setAttribute("cx",x);core.setAttribute("cy",y);core.setAttribute("r","2.3");core.setAttribute("class","compare-map-core");
+    g.append(halo,core);dots.appendChild(g);
+    const tag=document.createElement("span");tag.className="compare-map-legend "+kind+"-map-legend";tag.textContent=label+": "+event.location;legend.appendChild(tag);shown++;
+  });
+  if(mapYear)mapYear.textContent="Shared history";
+  if(count)count.textContent=shown+" event location"+(shown===1?"":"s");
+  window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:true}}));
+}
+function restoreTimelineMap(){window.dispatchEvent(new CustomEvent("history-map-compare",{detail:{active:false}}));}
 function comparisonTargets(event){const targets=[];const overlap=historyOverlap(event);if(overlap==="christian"||overlap==="both")targets.push(["christian","Christian history","christianity.html"]);if(overlap==="islamic"||overlap==="both")targets.push(["islamic","Islamic history","islam.html"]);return targets;}
 function eventKey(event){return encodeURIComponent(event.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));}
 function openComparison(event){
@@ -2733,13 +2753,15 @@ function openComparison(event){
   grid.innerHTML="";
   const current=renderCompareCard("jewish","Jewish history",event,location.pathname.split("/").pop()||"index.html","jewish");
   current.classList.add("current-history");grid.appendChild(current);
+  const mapItems=[{kind:"jewish",label:"Jewish",event}];
   comparisonTargets(event).forEach(([kind,label,page])=>{
     const matched=bestComparedEvent(event,kind);
     grid.appendChild(renderCompareCard(kind,label,matched,page,"jewish"));
+    if(matched)mapItems.push({kind,label,event:matched});
   });
-  panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
+  showComparisonMap(mapItems);panel.classList.add("hidden");compare.classList.remove("hidden");document.body.classList.add("event-open");
 }
-function closeComparison(){document.getElementById("comparePanel").classList.add("hidden");document.body.classList.remove("event-open");paused=false;}
+function closeComparison(){document.getElementById("comparePanel").classList.add("hidden");document.body.classList.remove("event-open");restoreTimelineMap();paused=false;}
 function openEvent(event){
   paused=true;velocity=0;
   document.getElementById("eventDate").textContent=event.year;
