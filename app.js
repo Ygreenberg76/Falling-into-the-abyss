@@ -1,3 +1,5 @@
+const TIMELINE_KIND="jewish";
+function stableEventId(event,index){const slug=String(event.title||"event").toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,72)||"event";return TIMELINE_KIND+"-"+String(event.year).replace("-","bce-")+"-"+slug+(index!==undefined?"-"+index:"");}
 const events = [
   {
     year:-1800, depth:180, title:"Jacob is given the name Israel", location:"Canaan / Biblical tradition",
@@ -2493,6 +2495,8 @@ const events = [
     sources:[{label:"Reuters — Middle East developments, October 2026",url:"https://www.reuters.com/world/middle-east/"}]
   }
 ];
+events.forEach((event,index)=>{if(!event.id)event.id=stableEventId(event,index);});
+
 
 const eras = [
   {name:"Biblical Origins & Ancient Israel",range:"Jacob/Israel tradition → 586 BCE",start:0,end:3920},
@@ -2931,13 +2935,14 @@ function renderHistoryTrail(event,connected){
 }
 function openEvent(event){
   paused=true;velocity=0;
+  const displayEvent=(window.FALLING_I18N&&window.FALLING_I18N.localizeEvent)?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,event):event;
   document.getElementById("eventDate").textContent=event.year;
-  document.getElementById("eventTitle").textContent=event.title;
-  document.getElementById("eventLocation").textContent=event.location;
-  document.getElementById("eventStory").textContent=event.story;
-  document.getElementById("eventContext").textContent=event.context;
-  document.getElementById("eventAftermath").textContent=event.aftermath;
-  document.getElementById("eventSourceStatus").textContent=event.sourceStatus;
+  document.getElementById("eventTitle").textContent=displayEvent.title||event.title;
+  document.getElementById("eventLocation").textContent=displayEvent.location||event.location;
+  document.getElementById("eventStory").textContent=displayEvent.story||event.story;
+  document.getElementById("eventContext").textContent=displayEvent.context||event.context;
+  document.getElementById("eventAftermath").textContent=displayEvent.aftermath||event.aftermath;
+  document.getElementById("eventSourceStatus").textContent=displayEvent.sourceStatus||event.sourceStatus;
   const connected=[];
   const overlap=historyOverlap(event);
   if(overlap==="christian"||overlap==="both")connected.push(["Christianity timeline","christianity.html","christian"]);
