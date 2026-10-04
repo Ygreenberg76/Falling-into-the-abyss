@@ -1,5 +1,69 @@
 const events = [
   {
+    year:-722, depth:420, title:"Assyrian conquest of Samaria", location:"Kingdom of Israel / Samaria",
+    story:"The Neo-Assyrian Empire conquered Samaria and brought the northern Kingdom of Israel to an end. Assyrian imperial policy included deportation and resettlement of conquered populations.",
+    context:"This is one of the earliest major conflicts involving an Israelite kingdom that is securely anchored by ancient Near Eastern historical evidence outside the biblical narrative.",
+    aftermath:"The northern kingdom ceased to exist as an independent polity and part of its population was deported and dispersed under Assyrian rule.",
+    stats:{Type:"Conquest / deportation",Date:"722 BCE",Evidence:"High — Assyrian, archaeological and literary evidence"},
+    sourceStatus:"Historically well-attested. Exact population and casualty totals should not be presented as certain.",
+    sources:[{label:"Metropolitan Museum of Art — Phoenicia and the Bible",url:"https://www.metmuseum.org/exhibitions/listings/2014/assyria-to-iberia/blog/posts/phoenicia-and-the-bible"}]
+  },
+  {
+    year:-701, depth:780, title:"Assyrian invasion of Judah and siege of Lachish", location:"Judah",
+    story:"Sennacherib's Assyrian army invaded Judah during King Hezekiah's revolt. Lachish, one of Judah's principal fortified cities, was captured and destroyed. Jerusalem was threatened and blockaded but survived.",
+    context:"The campaign is unusually well documented: Assyrian royal inscriptions, the famous Lachish reliefs, archaeology, and biblical texts preserve different perspectives on it.",
+    aftermath:"Judah survived but suffered extensive destruction, deportation, loss of territory and heavy tribute to Assyria.",
+    stats:{Type:"Invasion / siege / deportation",Date:"701 BCE",Jerusalem:"Survived the Assyrian campaign",Evidence:"Very high"},
+    sourceStatus:"Strong external and archaeological evidence. Assyrian royal numerical claims should be treated as ancient imperial claims, not precise modern statistics.",
+    sources:[{label:"Metropolitan Museum of Art — Sennacherib and Jerusalem",url:"https://www.metmuseum.org/exhibitions/listings/2014/assyria-to-iberia/blog/posts/sennacherib-and-jerusalem"}]
+  },
+  {
+    year:-587, depth:1160, title:"Babylonian destruction of Jerusalem and First Temple", location:"Jerusalem, Kingdom of Judah",
+    story:"Nebuchadnezzar II's Babylonian forces captured Jerusalem, destroyed the city and the First Temple, and ended the Kingdom of Judah.",
+    context:"The destruction belongs to the broader Neo-Babylonian conquest of Judah. Modern chronologies commonly place the final destruction in 587 or 586 BCE.",
+    aftermath:"Judah lost its monarchy and independence, and members of its population and elite were deported to Babylonia. The Babylonian Exile became a defining event in Jewish history.",
+    stats:{Type:"Conquest / destruction / exile",Date:"587/586 BCE",Evidence:"High"},
+    sourceStatus:"Historically and archaeologically well-attested; exact casualty totals are unknown.",
+    sources:[{label:"Metropolitan Museum of Art — Iron Age chronology",url:"https://resources.metmuseum.org/resources/metpublications/pdf/Assyria_to_Iberia_Art_and_Culture_in_the_Iron_Age.pdf"}]
+  },
+  {
+    year:66, depth:1580, title:"First Jewish–Roman War", location:"Roman Judaea",
+    story:"A major Jewish revolt against Roman rule began in 66 CE. Roman forces under Vespasian and later Titus reconquered Judaea through a destructive multi-year war.",
+    context:"The revolt arose amid political, economic and religious tensions under Roman rule. Jewish factions also fought one another during parts of the conflict.",
+    aftermath:"Roman victory culminated in the capture of Jerusalem in 70 CE and continued resistance until 73/74 CE.",
+    stats:{Type:"Revolt / war",Period:"66–73/74 CE",Evidence:"High"},
+    sourceStatus:"Well-attested by ancient literary, Roman and archaeological evidence.",
+    sources:[{label:"World History Encyclopedia — Great Jewish Revolt",url:"https://www.worldhistory.org/article/823/the-great-jewish-revolt-of-66-ce/"}]
+  },
+  {
+    year:70, depth:1940, title:"Siege of Jerusalem and destruction of the Second Temple", location:"Jerusalem",
+    story:"Titus and the Roman army besieged and captured Jerusalem during the First Jewish–Roman War. The Second Temple was destroyed and much of the city was burned and devastated.",
+    context:"Ancient casualty figures are extremely large and cannot be treated as reliable modern counts. The destruction itself is securely documented.",
+    aftermath:"Survivors were killed, enslaved or displaced, and the destruction of the Temple transformed Jewish religious and communal life.",
+    stats:{Type:"Siege / destruction",Date:"70 CE",Casualties:"Ancient estimates disputed and unreliable",Evidence:"Very high"},
+    sourceStatus:"Event is firmly established; ancient casualty totals require strong caveats.",
+    sources:[{label:"World History Encyclopedia — Siege of Jerusalem",url:"https://www.worldhistory.org/article/1993/the-siege-of-jerusalem-in-70-ce/"}]
+  },
+  {
+    year:115, depth:2280, title:"Kitos War / Diaspora Revolt", location:"Eastern Roman Empire",
+    story:"Large-scale Jewish revolts erupted in several eastern Roman provinces during the reign of Trajan and were violently suppressed by Roman forces.",
+    context:"The conflict affected Jewish and non-Jewish populations across parts of the eastern Mediterranean and was followed by extensive killing and displacement.",
+    aftermath:"Roman suppression weakened several diaspora Jewish communities and preceded another major revolt in Judaea less than two decades later.",
+    stats:{Type:"Revolt / Roman suppression",Period:"115–117 CE",Evidence:"Moderate to high"},
+    sourceStatus:"The broad conflict is established, but ancient casualty numbers are highly problematic.",
+    sources:[{label:"World History Encyclopedia — Kingdom of Israel history",url:"https://www.worldhistory.org/Kingdom_of_Israel/"}]
+  },
+  {
+    year:132, depth:2640, title:"Bar Kokhba Revolt and Roman devastation of Judaea", location:"Judaea",
+    story:"Jewish rebels led by Simon Bar Kokhba fought a major war against the Roman Empire. After early rebel successes, Rome committed major forces and crushed the revolt.",
+    context:"The surviving evidence includes Roman literary accounts, rabbinic traditions, archaeology, revolt coinage and letters associated with Bar Kokhba. Some causes and numerical claims remain debated.",
+    aftermath:"The war devastated Judaea. Many Jews were killed, enslaved or displaced; Jerusalem became Aelia Capitolina and Jewish access and settlement were heavily restricted.",
+    stats:{Type:"War / revolt / mass devastation",Period:"132–136 CE",Ancient_claim:"Cassius Dio reports 580,000 killed in fighting",Evidence:"High for war; ancient totals uncertain"},
+    sourceStatus:"The revolt and devastation are firmly established. Cassius Dio's enormous casualty figure is an ancient claim, not a verified modern count.",
+    sources:[{label:"World History Encyclopedia — Bar Kokhba Revolt",url:"https://www.worldhistory.org/The_Bar-Kochba_Revolt/"}]
+  },
+
+  {
     year:624, depth:240, title:"Banu Qaynuqa", location:"Medina, Arabia",
     story:"Draft placeholder: an early conflict in Medina involving Muhammad's community and the Jewish tribe Banu Qaynuqa.",
     context:"This entry will be rewritten from primary Islamic literary sources and modern scholarship, with source limitations made explicit.",
@@ -93,7 +157,7 @@ const events = [
   }
 ];
 
-const MAX_DEPTH=5200;
+const MAX_DEPTH=7200;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
@@ -130,7 +194,7 @@ function makeParticles(){
   }
 }
 function yearAt(d){
-  const points=[{depth:0,year:622},...events,{depth:MAX_DEPTH,year:2026}];
+  const points=[{depth:0,year:-800},...events,{depth:MAX_DEPTH,year:2026}];
   let a=points[0],b=points[1];
   for(let i=1;i<points.length;i++){
     if(d<=points[i].depth){b=points[i];a=points[i-1];break}
@@ -161,7 +225,7 @@ function renderEvents(){
 }
 function render(){
   const pct=Math.round((depth/MAX_DEPTH)*100);
-  yearReadout.textContent=yearAt(depth);
+  const currentYear=yearAt(depth);\n  yearReadout.textContent=currentYear<0?Math.abs(currentYear)+" BCE":currentYear+" CE";
   depthReadout.textContent=pct+"%";
   progressFill.style.height=pct+"%";
 
