@@ -532,3 +532,10 @@ button.history-trail-step{cursor:pointer}button.history-trail-step:hover{transfo
 .historical-path-stop.jewish-path-stop{border-color:rgba(119,207,255,.58)}.historical-path-stop.christian-path-stop{border-color:rgba(255,196,107,.58)}.historical-path-stop.islamic-path-stop{border-color:rgba(101,227,165,.58)}
 .historical-path-stop.active{box-shadow:0 0 15px rgba(255,255,255,.1);background:rgba(255,255,255,.09)}
 .historical-path-arrow{flex:0 0 auto;color:#777;font-size:12px}.historical-path-clear{margin-top:5px;padding:0;border:0;background:none;color:#999;font:inherit;font-size:9px;text-decoration:underline;cursor:pointer}.historical-path-clear:hover{color:#ddd}
+
+
+/* World-at-this-time snapshot */
+.world-snapshot-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.world-snapshot-grid .same-time-card{position:relative;min-height:118px}
+.world-snapshot-grid .same-time-timeline{font-size:9px;letter-spacing:.07em;text-transform:uppercase}
+@media(max-width:820px){.world-snapshot-grid{grid-template-columns:1fr}}
