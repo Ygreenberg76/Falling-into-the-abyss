@@ -149,3 +149,9 @@ footer{text-align:center;color:#71717a;padding:30px}
 .source-links a{color:#ddd6fe;text-decoration:none;border-bottom:1px solid #403653;padding-bottom:7px;line-height:1.4}
 .source-links a:hover{text-decoration:underline}
 .source-links span{color:#8b8b95;font-size:14px}
+
+.event-panel:not(.hidden){position:fixed;z-index:100;inset:5vh max(18px,calc((100vw - 1100px)/2));margin:0;max-height:90vh;overflow:auto;box-shadow:0 35px 120px rgba(0,0,0,.8);animation:eventReveal .2s ease-out}
+.event-panel:not(.hidden)::before{content:"";position:fixed;inset:0;background:rgba(0,0,0,.72);backdrop-filter:blur(5px);z-index:-1}
+@keyframes eventReveal{from{opacity:0;transform:translateY(14px) scale(.985)}to{opacity:1;transform:none}}
+body.event-open{overflow:hidden}
+@media(max-width:760px){.event-panel:not(.hidden){inset:12px;max-height:calc(100vh - 24px)}}
