@@ -341,3 +341,9 @@ body.event-open{overflow:hidden}
 .world-map-wrap{position:relative;width:100%;aspect-ratio:2/1;border-radius:50% / 46%;overflow:hidden;border:1px solid rgba(216,199,173,.25);box-shadow:inset 0 0 24px rgba(0,0,0,.72),0 0 14px rgba(205,185,150,.08);background:#17191b}
 .world-map-base{display:block;width:100%;height:100%;object-fit:fill;filter:grayscale(1) sepia(.18) brightness(.42) contrast(1.25)}
 .world-map-overlay{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+
+
+/* Embedded atlas geography — no external image dependency */
+.world-map-wrap{background:radial-gradient(ellipse at 50% 45%,rgba(47,55,58,.72),rgba(9,11,13,.98) 78%)}
+.map-land-accurate{fill:#4a463d;stroke:#918572;stroke-width:.7;vector-effect:non-scaling-stroke}
+.map-graticule{fill:none;stroke:rgba(216,199,173,.08);stroke-width:.45;vector-effect:non-scaling-stroke}
