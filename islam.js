@@ -639,7 +639,9 @@ const linkedYear=parseInt(new URLSearchParams(window.location.search).get("year"
 if(Number.isFinite(linkedYear)){
   const minYear=Math.min(...events.map(e=>e.year)),maxYear=Math.max(...events.map(e=>e.year));
   jumpToDepth(depthForYear(Math.max(minYear,Math.min(maxYear,linkedYear))));
-  const linkedMatch=new URLSearchParams(window.location.search).get("match");\n  const exactIndex=linkedMatch?events.findIndex(e=>eventKey(e)===linkedMatch):-1;\n  const nearestIndex=exactIndex>=0?exactIndex:events.reduce((best,e,i)=>Math.abs(e.year-linkedYear)<Math.abs(events[best].year-linkedYear)?i:best,0);
+  const linkedMatch=new URLSearchParams(window.location.search).get("match");
+  const exactIndex=linkedMatch?events.findIndex(e=>eventKey(e)===linkedMatch):-1;
+  const nearestIndex=exactIndex>=0?exactIndex:events.reduce((best,e,i)=>Math.abs(e.year-linkedYear)<Math.abs(events[best].year-linkedYear)?i:best,0);
   requestAnimationFrame(()=>{
     const marker=document.querySelectorAll(".event-marker")[nearestIndex];
     if(marker){
