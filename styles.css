@@ -295,3 +295,10 @@ body.event-open{overflow:hidden}
 .overlap-badge{display:inline-block;margin:3px 0 5px;padding:3px 7px;border:1px solid rgba(119,207,255,.7);border-radius:999px;background:rgba(29,117,166,.24);color:#8fdcff!important;font-size:10px!important;font-style:normal;font-weight:900!important;letter-spacing:.08em!important;text-transform:uppercase;line-height:1.2;box-shadow:0 0 12px rgba(92,197,255,.14)}
 .event-marker .overlap-badge{display:table}
 .panel-overlap-badge{margin-left:8px;vertical-align:middle;font-size:11px!important;padding:4px 9px}
+
+/* Islam timeline cross-history marker: Christian history overlap */
+.event-marker.christian-overlap{border-color:rgba(255,184,82,.78);background:linear-gradient(100deg,rgba(63,42,18,.94),rgba(12,10,7,.88));box-shadow:inset 0 1px rgba(255,255,255,.05),0 0 22px rgba(255,168,54,.16),0 9px 28px rgba(0,0,0,.38)}
+.event-marker.christian-overlap .dot{background:#ffc46b;box-shadow:0 0 16px rgba(255,184,82,.95)}
+.event-marker.christian-overlap small{color:#ffd08b}
+.christian-overlap-badge{border-color:rgba(255,190,92,.72);background:rgba(153,93,22,.24);color:#ffd08b!important}
+.event-marker.jewish-overlap.christian-overlap{border-color:rgba(191,142,255,.82);box-shadow:0 0 24px rgba(174,117,255,.2),0 9px 28px rgba(0,0,0,.38)}
