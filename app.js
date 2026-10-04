@@ -157,6 +157,19 @@ const events = [
   }
 ];
 
+const eras = [
+  {name:"Ancient Israel & Judah",range:"c. 1200–586 BCE",start:0,end:1160},
+  {name:"Second Temple Period",range:"586 BCE–70 CE",start:1160,end:1940},
+  {name:"Roman & Byzantine Period",range:"70–622 CE",start:1940,end:3100},
+  {name:"Early Islamic Period",range:"622–1096 CE",start:3100,end:3820},
+  {name:"Crusades & Medieval Period",range:"1096–1492 CE",start:3820,end:4500},
+  {name:"Early Modern Jewish Diaspora",range:"1492–1881 CE",start:4500,end:5120},
+  {name:"Modern Europe & Pogroms",range:"1881–1933 CE",start:5120,end:5580},
+  {name:"The Holocaust",range:"1933–1945 CE",start:5580,end:6060},
+  {name:"Israel & Arab–Israeli Conflict",range:"1945–2000 CE",start:6060,end:6700},
+  {name:"Contemporary Era",range:"2000–2026 CE",start:6700,end:7200}
+];
+
 const MAX_DEPTH=7200;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -164,6 +177,9 @@ const abyss=document.getElementById("abyss");
 const person=document.getElementById("fallingPerson");
 const eventsLayer=document.getElementById("eventsLayer");
 const yearReadout=document.getElementById("yearReadout");
+const eraReadout=document.getElementById("eraReadout");
+const eraRange=document.getElementById("eraRange");
+const eraLayer=document.getElementById("eraLayer");
 const depthReadout=document.getElementById("depthReadout");
 const progressFill=document.getElementById("progressFill");
 const speedLines=document.getElementById("speedLines");
@@ -202,6 +218,30 @@ function yearAt(d){
   const span=Math.max(1,b.depth-a.depth);
   const t=Math.max(0,Math.min(1,(d-a.depth)/span));
   return Math.round(a.year+(b.year-a.year)*t);
+}
+function currentEraAt(d){
+  return eras.find(era=>d>=era.start&&d<era.end)||eras[eras.length-1];
+}
+const eraEls=eras.map((era,index)=>{
+  const el=document.createElement("div");
+  el.className="era-transition";
+  el.innerHTML='<span class="era-kicker">Entering historical era</span><strong>'+era.name+'</strong><small>'+era.range+'</small>';
+  eraLayer.appendChild(el);
+  return el;
+});
+function renderEras(){
+  const center=abyss.clientHeight/2;
+  const active=currentEraAt(depth);
+  eraReadout.textContent=active.name;
+  eraRange.textContent=active.range;
+  eras.forEach((era,index)=>{
+    const boundary=index===0?0:era.start;
+    const y=center+(boundary-depth);
+    const el=eraEls[index];
+    el.style.top=y+"px";
+    const distance=Math.abs(y-center);
+    el.style.opacity=(y>-100&&y<abyss.clientHeight+100)?Math.max(.12,1-distance/(abyss.clientHeight*.7)):0;
+  });
 }
 const markerEls=events.map((event,index)=>{
   const btn=document.createElement("button");
@@ -268,6 +308,7 @@ function render(){
     const drift=((depth*(.04+(i%5)*.009))%(abyss.clientHeight+80));
     p.style.transform='translateY('+(-drift)+'px) translateX('+(Math.sin((depth+i*31)/130)*8)+'px)';
   });
+  renderEras();
   renderEvents();
 }
 function tick(){
