@@ -3069,7 +3069,12 @@ abyss.addEventListener("keydown",e=>{
   if(["ArrowDown","PageDown"," "].includes(e.key)){e.preventDefault();descend(230)}
   if(["ArrowUp","PageUp"].includes(e.key)){e.preventDefault();descend(-230)}
 });
-document.getElementById("beginBtn").addEventListener("click",()=>{abyss.scrollIntoView({behavior:reduced?"auto":"smooth"});abyss.focus()});
+document.getElementById("beginBtn").addEventListener("click",()=>{
+  const rect=abyss.getBoundingClientRect();
+  const target=Math.max(0,window.scrollY+rect.top-(window.innerHeight-rect.height)/2);
+  window.scrollTo({top:target,behavior:reduced?"auto":"smooth"});
+  window.setTimeout(()=>abyss.focus({preventScroll:true}),reduced?0:450);
+});
 document.getElementById("restartBtn").addEventListener("click",restart);
 document.getElementById("shareEventBtn").addEventListener("click",shareActiveEvent);
 document.getElementById("closeEventBtn").addEventListener("click",()=>{panel.classList.add("hidden");document.body.classList.remove("event-open");paused=false;activeEvent=null;const clean=new URL(window.location.href);clean.search="";clean.hash="";history.replaceState({},"",clean.toString());abyss.focus()});
