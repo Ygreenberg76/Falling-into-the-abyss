@@ -2924,7 +2924,9 @@ abyss.addEventListener("keydown",e=>{
 });
 function centerAbyss(){
   const rect=abyss.getBoundingClientRect();
-  const topMargin=18;
+  const header=document.querySelector(".site-header");
+  const headerBottom=header&&getComputedStyle(header).position==="sticky"?header.getBoundingClientRect().bottom:0;
+  const topMargin=Math.max(18,headerBottom+14);
   const target=Math.max(0,window.scrollY+rect.top-topMargin);
   window.scrollTo({top:target,behavior:reduced?"auto":"smooth"});
   window.setTimeout(()=>abyss.focus({preventScroll:true}),reduced?0:450);
