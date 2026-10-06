@@ -715,31 +715,6 @@ async function shareActiveEvent(){
   }catch(err){if(err&&err.name!=="AbortError")console.warn("Unable to share event",err);}
 }
 
-const feedbackSubmit=document.getElementById("feedbackSubmit");
-if(feedbackSubmit) feedbackSubmit.addEventListener("click",async()=>{
-  const rating=document.getElementById("feedbackRating");
-  const type=document.getElementById("feedbackType");
-  const message=document.getElementById("feedbackMessage");
-  const contact=document.getElementById("feedbackContact");
-  const status=document.getElementById("feedbackStatus");
-  if(!rating.value||!type.value||!message.value.trim()){
-    status.textContent="Please choose a rating and feedback type, and enter your feedback.";
-    return;
-  }
-  feedbackSubmit.disabled=true; feedbackSubmit.textContent="Sending…"; status.textContent="Sending your feedback…";
-  try{
-    const response=await fetch("https://formspree.io/f/moejjvrq",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({
-      timeline:"Islam",page:window.location.href,event:activeEvent?activeEvent.title:"2026 — YOU ARE HERE",rating:rating.value,feedback_type:type.value,feedback:message.value.trim(),visitor_email:contact.value.trim()||"Not provided",submitted_at:new Date().toISOString()
-    })});
-    if(!response.ok)throw new Error("Submission failed");
-    rating.value="";type.value="";message.value="";contact.value="";
-    feedbackSubmit.textContent="Feedback sent";status.textContent="Thank you for helping improve Falling Into the Abyss.";
-    if(typeof gtag==="function")gtag("event","visitor_feedback_submitted",{timeline:"Islam"});
-  }catch(err){
-    feedbackSubmit.disabled=false;feedbackSubmit.textContent="Send feedback";status.textContent="We could not send your feedback. Please try again.";
-  }
-});
-
 function openEvent(event){
   paused=true;velocity=0;
   activeEvent=event;
