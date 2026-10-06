@@ -584,3 +584,26 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
 #shareEventBtn{border-color:rgba(159,201,223,.3)}
 #shareEventBtn:hover,#shareEventBtn:focus-visible{border-color:rgba(159,201,223,.65)}
 @media(max-width:680px){.event-panel-actions{width:100%;justify-content:flex-start}.event-panel-actions .btn{flex:1}}
+
+/* Multi-history landing experience */
+.portal-intro{padding:clamp(52px,8vw,96px) 0 42px}
+.portal-intro-inner{max-width:1080px}
+.portal-intro h2{max-width:920px;font-size:clamp(42px,7vw,82px);letter-spacing:-.045em;line-height:.94;margin-bottom:24px}
+.portal-intro h2 span{color:#aaa6b4}
+.portal-lede{max-width:840px!important;font-size:clamp(17px,2vw,21px)!important;line-height:1.65!important}
+.history-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:34px 0 24px}
+.history-path{position:relative;min-height:150px;padding:22px 24px;border:1px solid rgba(255,255,255,.13);border-radius:20px;background:linear-gradient(145deg,rgba(25,25,31,.96),rgba(10,10,13,.96));color:var(--text);text-decoration:none;text-align:left;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;overflow:hidden;cursor:pointer;transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.history-path:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 10%,rgba(255,255,255,.09),transparent 40%);pointer-events:none}
+.history-path:hover,.history-path:focus-visible{transform:translateY(-3px);border-color:rgba(255,255,255,.35);outline:none}
+.history-path small{position:relative;text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:#aaa6b4;margin-bottom:8px}
+.history-path strong{position:relative;font-size:clamp(20px,2.5vw,28px);line-height:1.05}
+.history-path span{position:relative;color:#9f9fa8;font-size:12px;margin-top:10px}
+.history-path-jewish{border-color:rgba(196,181,253,.32);background:linear-gradient(145deg,rgba(38,31,55,.92),rgba(11,10,15,.98))}
+.history-path-christian{border-color:rgba(250,204,21,.22)}
+.history-path-islamic{border-color:rgba(74,222,128,.22)}
+.history-path-compare{border-color:rgba(125,211,252,.24)}
+.portal-guide{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--line);margin:24px 0}
+.portal-guide>div{background:#0e0e12;padding:16px 18px}
+.portal-guide strong,.portal-guide span{display:block}.portal-guide strong{font-size:12px;margin-bottom:5px}.portal-guide span{font-size:11px;line-height:1.5;color:#8f8f98}
+.portal-notice{max-width:900px;margin-bottom:0}
+@media(max-width:720px){.history-paths{grid-template-columns:1fr}.history-path{min-height:125px}.portal-guide{grid-template-columns:1fr}.portal-intro h2{font-size:clamp(40px,12vw,62px)}}
