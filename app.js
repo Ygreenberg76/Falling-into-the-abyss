@@ -2934,8 +2934,30 @@ function renderHistoryTrail(event,connected){
     if(branches.childNodes.length)box.appendChild(branches);
   }
 }
+function eventShareUrl(event){
+  const url=new URL(window.location.href);
+  url.search="";
+  url.hash="";
+  url.searchParams.set("year",event.year);
+  url.searchParams.set("match",eventKey(event));
+  return url.toString();
+}
+let activeEvent=null;
+async function shareActiveEvent(){
+  if(!activeEvent)return;
+  const displayEvent=(window.FALLING_I18N&&window.FALLING_I18N.localizeEvent)?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,activeEvent):activeEvent;
+  const url=eventShareUrl(activeEvent);
+  const data={title:displayEvent.title||activeEvent.title,text:(displayEvent.title||activeEvent.title)+" — Falling Into the Abyss",url};
+  try{
+    if(navigator.share){await navigator.share(data);}
+    else if(navigator.clipboard){await navigator.clipboard.writeText(url);const btn=document.getElementById("shareEventBtn");if(btn){const old=btn.textContent;btn.textContent="Link copied";setTimeout(()=>btn.textContent=old,1800);}}
+  }catch(err){if(err&&err.name!=="AbortError")console.warn("Unable to share event",err);}
+}
 function openEvent(event){
   paused=true;velocity=0;
+  activeEvent=event;
+  const directUrl=eventShareUrl(event);
+  if(window.location.href!==directUrl) history.replaceState({event:eventKey(event)},"",directUrl);
   const displayEvent=(window.FALLING_I18N&&window.FALLING_I18N.localizeEvent)?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,event):event;
   document.getElementById("eventDate").textContent=event.year;
   document.getElementById("eventTitle").textContent=displayEvent.title||event.title;
@@ -3037,6 +3059,7 @@ abyss.addEventListener("keydown",e=>{
 });
 document.getElementById("beginBtn").addEventListener("click",()=>{abyss.scrollIntoView({behavior:reduced?"auto":"smooth"});abyss.focus()});
 document.getElementById("restartBtn").addEventListener("click",restart);
+document.getElementById("shareEventBtn").addEventListener("click",shareActiveEvent);
 document.getElementById("closeEventBtn").addEventListener("click",()=>{panel.classList.add("hidden");document.body.classList.remove("event-open");paused=false;abyss.focus()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!panel.classList.contains("hidden")){panel.classList.add("hidden");document.body.classList.remove("event-open");paused=false;abyss.focus()}});
 document.getElementById("aboutBtn").addEventListener("click",()=>{aboutPanel.classList.remove("hidden");aboutPanel.scrollIntoView({behavior:reduced?"auto":"smooth"})});
