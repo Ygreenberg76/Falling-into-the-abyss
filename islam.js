@@ -776,28 +776,13 @@ function restart(){
   aboutPanel.classList.add("hidden");
   document.getElementById("intro").scrollIntoView({behavior:reduced?"auto":"smooth"});
 }
-function handleTimelineWheel(e){
-  if(paused){
-    const eventOpen=!panel.classList.contains("hidden");
-    const comparePanel=document.getElementById("comparePanel");
-    const compareOpen=comparePanel&&!comparePanel.classList.contains("hidden");
-    if(eventOpen||compareOpen)return;
-    paused=false;
-  }
-  const rect=abyss.getBoundingClientRect();
-  const timelineVisible=rect.top<window.innerHeight&&rect.bottom>0;
-  if(!timelineVisible)return;
-  // Keep normal page scrolling active through the intro. The timeline should
-  // capture the wheel only after the abyss itself has reached the top area
-  // of the viewport (or after Begin the Descent scrolls it into position).
-  if(rect.top>Math.min(180,window.innerHeight*0.22))return;
+abyss.addEventListener("wheel",e=>{
   const goingDown=e.deltaY>0, goingUp=e.deltaY<0;
   const atBottom=depth>=MAX_DEPTH-1, atTop=depth<=1;
-  if((goingDown&&atBottom)||(goingUp&&atTop))return;
+  if((goingDown&&atBottom)||(goingUp&&atTop)) return;
   e.preventDefault();
   descend(e.deltaY);
-}
-document.addEventListener("wheel",handleTimelineWheel,{passive:false});
+},{passive:false});
 let touchY=null;
 abyss.addEventListener("touchstart",e=>{touchY=e.touches[0].clientY},{passive:true});
 abyss.addEventListener("touchmove",e=>{
