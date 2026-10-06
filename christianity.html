@@ -172,29 +172,29 @@
         </aside>
       </div>
 
-      <section id="presentFeedback" class="present-feedback hidden" aria-labelledby="presentFeedbackTitle">
+      <form id="presentFeedback" class="present-feedback hidden" aria-labelledby="presentFeedbackTitle" action="https://formspree.io/f/moejjvrq" method="POST">
         <p class="kicker">You reached the present</p>
         <h3 id="presentFeedbackTitle">History continues from here.</h3>
         <p>As significant new events happen and are verified, they will be added to the timeline before <strong>YOU ARE HERE</strong>. Until then, we would like to hear from you.</p>
         <div class="present-feedback-grid">
           <label>How was your experience?
-            <select id="feedbackRating"><option value="">Choose…</option><option>Excellent</option><option>Good</option><option>Okay</option><option>Needs improvement</option></select>
+            <select id="feedbackRating" name="rating" required><option value="">Choose…</option><option>Excellent</option><option>Good</option><option>Okay</option><option>Needs improvement</option></select>
           </label>
           <label>What would you like to share?
-            <select id="feedbackType"><option value="">Choose…</option><option>Idea or recommendation</option><option>Historical correction</option><option>Missing event</option><option>Website improvement</option><option>Something I liked</option><option>Other</option></select>
+            <select id="feedbackType" name="feedback_type" required><option value="">Choose…</option><option>Idea or recommendation</option><option>Historical correction</option><option>Missing event</option><option>Website improvement</option><option>Something I liked</option><option>Other</option></select>
           </label>
         </div>
         <label>Your feedback
-          <textarea id="feedbackMessage" rows="5" maxlength="3000" placeholder="Tell us what you would improve, add, correct, or keep…"></textarea>
+          <textarea id="feedbackMessage" name="feedback" rows="5" maxlength="3000" required placeholder="Tell us what you would improve, add, correct, or keep…"></textarea>
         </label>
         <label class="feedback-contact">Your email <span>(optional, only if you would like a reply)</span>
-          <input id="feedbackContact" type="email" autocomplete="email" placeholder="you@example.com">
+          <input id="feedbackContact" name="visitor_email" type="email" autocomplete="email" placeholder="you@example.com">
         </label>
         <div class="present-feedback-actions">
-          <button id="feedbackSubmit" class="btn btn-primary" type="button">Send feedback</button>
+          <button id="feedbackSubmit" class="btn btn-primary" type="submit">Send feedback</button>
           <small id="feedbackStatus">Your feedback helps improve this project.</small>
         </div>
-      </section>
+      </form>
     </section>
 
 
@@ -230,6 +230,6 @@
   <script src="history-compare-data.js"></script>
   <script src="translations-he.js"></script><script src="translations-ar.js"></script><script src="translations.js"></script><script src="i18n.js"></script><script src="christianity.js?v=20261006-descent8"></script>
   <script src="christianity-map.js"></script>
-<script src="analytics.js"></script>  <script src="present-feedback.js?v=20261006-1"></script>
+<script src="analytics.js"></script>  <script src="present-feedback.js?v=20261006-2"></script>
 </body>
 </html>
