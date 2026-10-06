@@ -3058,16 +3058,6 @@ abyss.addEventListener("keydown",e=>{
   if(["ArrowUp","PageUp"].includes(e.key)){e.preventDefault();descend(-230)}
 });
 document.getElementById("beginBtn").addEventListener("click",()=>{abyss.scrollIntoView({behavior:reduced?"auto":"smooth"});abyss.focus()});
-const introCompareBtn=document.getElementById("introCompareBtn");
-if(introCompareBtn) introCompareBtn.addEventListener("click",()=>{
-  abyss.scrollIntoView({behavior:reduced?"auto":"smooth"});
-  abyss.focus();
-  setTimeout(()=>{
-    const toggle=document.getElementById("exploreToggle");
-    const explore=document.getElementById("explorePanel");
-    if(toggle&&explore&&explore.classList.contains("hidden")) toggle.click();
-  },reduced?0:550);
-});
 document.getElementById("restartBtn").addEventListener("click",restart);
 document.getElementById("shareEventBtn").addEventListener("click",shareActiveEvent);
 document.getElementById("closeEventBtn").addEventListener("click",()=>{panel.classList.add("hidden");document.body.classList.remove("event-open");paused=false;activeEvent=null;const clean=new URL(window.location.href);clean.search="";clean.hash="";history.replaceState({},"",clean.toString());abyss.focus()});
