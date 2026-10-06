@@ -630,3 +630,7 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
 .feedback-contact{margin-top:12px}.feedback-contact span{color:#7f7f89;font-weight:400}
 .present-feedback-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px}.present-feedback-actions small{color:#85858f}
 @media(max-width:680px){.present-feedback-grid{grid-template-columns:1fr}.present-feedback{padding:17px}}
+
+/* Keep the descent viewport fully visible and centered on common desktop screens. */
+.abyss{height:min(720px,calc(100vh - 48px));min-height:520px}
+@media(max-height:650px){.abyss{height:calc(100vh - 28px);min-height:0}}
