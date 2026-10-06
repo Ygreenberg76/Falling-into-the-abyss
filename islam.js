@@ -832,7 +832,8 @@ abyss.addEventListener("keydown",e=>{
 });
 function centerAbyss(){
   const rect=abyss.getBoundingClientRect();
-  const target=Math.max(0,window.scrollY+rect.top-(window.innerHeight-rect.height)/2);
+  const topMargin=18;
+  const target=Math.max(0,window.scrollY+rect.top-topMargin);
   window.scrollTo({top:target,behavior:reduced?"auto":"smooth"});
   window.setTimeout(()=>abyss.focus({preventScroll:true}),reduced?0:450);
 }
