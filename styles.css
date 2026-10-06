@@ -578,3 +578,9 @@ body.rtl-language{direction:ltr}
 body.rtl-language [dir="rtl"]{direction:rtl;text-align:right}
 body.rtl-language .language-switcher{direction:ltr}
 body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-language .sources-shell,body.rtl-language .conflict-chain-step{direction:ltr;text-align:left}
+
+/* Event deep-link sharing */
+.event-panel-actions{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap}
+#shareEventBtn{border-color:rgba(159,201,223,.3)}
+#shareEventBtn:hover,#shareEventBtn:focus-visible{border-color:rgba(159,201,223,.65)}
+@media(max-width:680px){.event-panel-actions{width:100%;justify-content:flex-start}.event-panel-actions .btn{flex:1}}
