@@ -2962,6 +2962,11 @@ async function shareActiveEvent(){
 function openEvent(event){
   paused=true;velocity=0;
   activeEvent=event;
+  const presentFeedback=document.getElementById("presentFeedback");
+  if(presentFeedback){
+    const isPresent=event.year===2026 && /YOU ARE HERE/i.test(event.title||"");
+    presentFeedback.classList.toggle("hidden",!isPresent);
+  }
   const directUrl=eventShareUrl(event);
   if(window.location.href!==directUrl) history.replaceState({event:eventKey(event)},"",directUrl);
   const displayEvent=(window.FALLING_I18N&&window.FALLING_I18N.localizeEvent)?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,event):event;
