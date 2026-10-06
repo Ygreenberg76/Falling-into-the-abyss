@@ -2378,6 +2378,12 @@ const events = [
     sources:[{label:"U.S. State Department — International Religious Freedom",url:"https://www.state.gov/international-religious-freedom-reports/"}]
   }
 ];
+// Keep the live-present marker permanently at the end of the timeline.
+const presentMarkerIndex=events.findIndex(event=>/YOU ARE HERE/i.test(event.title||""));
+if(presentMarkerIndex>=0&&presentMarkerIndex!==events.length-1){
+  const [presentMarker]=events.splice(presentMarkerIndex,1);
+  events.push(presentMarker);
+}
 events.forEach((event,index)=>{if(!event.id)event.id=stableEventId(event,index);});
 
 
