@@ -618,3 +618,15 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
 .abyss-intro-paths .btn{text-decoration:none}
 .abyss-intro-cue{display:block;margin-top:13px;color:#777781;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:680px){.abyss-intro{padding:26px 0 14px}.abyss-intro h2{font-size:clamp(36px,11vw,54px)}}
+
+/* Present-day feedback — intentionally isolated; no observers or background handlers */
+.present-feedback{margin-top:22px;padding:22px;border:1px solid rgba(159,201,223,.24);border-radius:18px;background:linear-gradient(145deg,rgba(18,23,28,.96),rgba(10,10,13,.98))}
+.present-feedback h3{margin:4px 0 8px;font-size:clamp(22px,3vw,32px)}
+.present-feedback>p:not(.kicker){max-width:760px;color:#b8b8c0;line-height:1.6}
+.present-feedback-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 12px}
+.present-feedback label{display:flex;flex-direction:column;gap:7px;font-size:12px;color:#c9c9d0}
+.present-feedback select,.present-feedback textarea,.present-feedback input{width:100%;box-sizing:border-box;border:1px solid rgba(255,255,255,.14);border-radius:10px;background:#0c0c10;color:var(--text);padding:11px 12px;font:inherit}
+.present-feedback textarea{resize:vertical;min-height:110px}
+.feedback-contact{margin-top:12px}.feedback-contact span{color:#7f7f89;font-weight:400}
+.present-feedback-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px}.present-feedback-actions small{color:#85858f}
+@media(max-width:680px){.present-feedback-grid{grid-template-columns:1fr}.present-feedback{padding:17px}}
