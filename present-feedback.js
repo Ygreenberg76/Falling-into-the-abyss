@@ -22,7 +22,8 @@ submit.disabled=false;
 submit.textContent="Send feedback";
 if(status)status.textContent="Your feedback helps improve this project.";
 
-submit.addEventListener("click",async()=>{
+formBox.addEventListener("submit",async(e)=>{
+  e.preventDefault();
   if(!rating.value||!type.value||!message.value.trim()){
     status.textContent="Please choose a rating and feedback type, and enter your feedback.";
     return;
