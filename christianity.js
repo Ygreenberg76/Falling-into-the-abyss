@@ -3042,5 +3042,8 @@ const closeCompareBtn=document.getElementById("closeCompareBtn");
 if(closeCompareBtn) closeCompareBtn.addEventListener("click",closeComparison);
 makeParticles();render();rafId=requestAnimationFrame(tick);
 if(window.location.hash==="#descent"){
-  window.addEventListener("load",()=>window.setTimeout(centerAbyss,80),{once:true});
+  window.addEventListener("load",()=>{
+    window.setTimeout(centerAbyss,120);
+    window.setTimeout(centerAbyss,650);
+  },{once:true});
 }
