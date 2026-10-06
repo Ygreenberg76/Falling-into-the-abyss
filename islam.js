@@ -830,12 +830,13 @@ abyss.addEventListener("keydown",e=>{
   if(["ArrowDown","PageDown"," "].includes(e.key)){e.preventDefault();descend(230)}
   if(["ArrowUp","PageUp"].includes(e.key)){e.preventDefault();descend(-230)}
 });
-document.getElementById("beginBtn").addEventListener("click",()=>{
+function centerAbyss(){
   const rect=abyss.getBoundingClientRect();
   const target=Math.max(0,window.scrollY+rect.top-(window.innerHeight-rect.height)/2);
   window.scrollTo({top:target,behavior:reduced?"auto":"smooth"});
   window.setTimeout(()=>abyss.focus({preventScroll:true}),reduced?0:450);
-});
+}
+document.getElementById("beginBtn").addEventListener("click",centerAbyss);
 document.getElementById("restartBtn").addEventListener("click",restart);
 document.getElementById("shareEventBtn").addEventListener("click",shareActiveEvent);
 document.getElementById("closeEventBtn").addEventListener("click",()=>{panel.classList.add("hidden");document.body.classList.remove("event-open");paused=false;activeEvent=null;const clean=new URL(window.location.href);clean.search="";clean.hash="";history.replaceState({},"",clean.toString());abyss.focus()});
@@ -945,3 +946,6 @@ if(linkedFrom&&Number.isFinite(linkedYear)){
 const closeCompareBtn=document.getElementById("closeCompareBtn");
 if(closeCompareBtn) closeCompareBtn.addEventListener("click",closeComparison);
 makeParticles();render();rafId=requestAnimationFrame(tick);
+if(window.location.hash==="#descent"){
+  window.addEventListener("load",()=>window.setTimeout(centerAbyss,80),{once:true});
+}
