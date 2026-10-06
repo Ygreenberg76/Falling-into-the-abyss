@@ -787,6 +787,10 @@ function handleTimelineWheel(e){
   const rect=abyss.getBoundingClientRect();
   const timelineVisible=rect.top<window.innerHeight&&rect.bottom>0;
   if(!timelineVisible)return;
+  // Keep normal page scrolling active through the intro. The timeline should
+  // capture the wheel only after the abyss itself has reached the top area
+  // of the viewport (or after Begin the Descent scrolls it into position).
+  if(rect.top>Math.min(180,window.innerHeight*0.22))return;
   const goingDown=e.deltaY>0, goingUp=e.deltaY<0;
   const atBottom=depth>=MAX_DEPTH-1, atTop=depth<=1;
   if((goingDown&&atBottom)||(goingUp&&atTop))return;
