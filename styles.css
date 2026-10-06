@@ -578,12 +578,3 @@ body.rtl-language{direction:ltr}
 body.rtl-language [dir="rtl"]{direction:rtl;text-align:right}
 body.rtl-language .language-switcher{direction:ltr}
 body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-language .sources-shell,body.rtl-language .conflict-chain-step{direction:ltr;text-align:left}
-
-/* Event visitor feedback */
-.event-feedback{margin-top:24px;padding:18px 20px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.035)}
-.event-feedback h3{margin:0 0 6px}.event-feedback p{margin:0 0 14px;opacity:.78}
-.event-feedback-actions{display:flex;flex-wrap:wrap;gap:10px}
-.event-feedback-btn{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);color:inherit;border-radius:999px;padding:9px 14px;cursor:pointer;font:inherit}
-.event-feedback-btn:hover,.event-feedback-btn:focus-visible{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.28)}
-.event-feedback-btn.is-selected{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.36)}
-.event-feedback-status{margin-top:10px!important;font-size:.9rem;min-height:1.2em}
