@@ -2914,22 +2914,6 @@ function renderConflictChain(event){
     body.append(role,title,detail);el.append(num,body);if(linked&&linked!==event)el.addEventListener("click",()=>openEvent(linked));rail.appendChild(el);
   });
   box.appendChild(rail);
-  const linkedSteps=chain.steps.map(step=>({step,event:events.find(e=>e.title===step.title)})).filter(item=>item.event);
-  const currentIndex=linkedSteps.findIndex(item=>item.event===event);
-  if(linkedSteps.length>1){
-    const guide=document.createElement("div");guide.className="conflict-chain-guide";
-    const label=document.createElement("div");label.className="conflict-chain-guide-label";
-    label.innerHTML='<small>Guided path</small><strong>Follow this chain</strong><span>Step '+(currentIndex>=0?currentIndex+1:1)+' of '+linkedSteps.length+'</span>';
-    const nav=document.createElement("div");nav.className="conflict-chain-guide-nav";
-    const make=(text,item,dir)=>{
-      const btn=document.createElement("button");btn.type="button";btn.className="conflict-chain-guide-btn";btn.textContent=text;
-      if(!item){btn.disabled=true;return btn}
-      btn.addEventListener("click",()=>{openEvent(item.event);requestAnimationFrame(()=>document.getElementById("conflictChainBox")?.scrollIntoView({behavior:reduced?"auto":"smooth",block:"start"}));});
-      return btn;
-    };
-    nav.append(make("← Previous",currentIndex>0?linkedSteps[currentIndex-1]:null),make("Next →",currentIndex>=0&&currentIndex<linkedSteps.length-1?linkedSteps[currentIndex+1]:null));
-    guide.append(label,nav);box.appendChild(guide);
-  }
   const key=document.createElement("p");key.className="conflict-chain-key";key.textContent="Earlier event ≠ justification. The labels describe chronology and documented context; where motives are disputed, the timeline identifies them as claims rather than established causes.";box.appendChild(key);
 }
 function renderHistoryTrail(event,connected){
