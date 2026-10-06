@@ -578,9 +578,3 @@ body.rtl-language{direction:ltr}
 body.rtl-language [dir="rtl"]{direction:rtl;text-align:right}
 body.rtl-language .language-switcher{direction:ltr}
 body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-language .sources-shell,body.rtl-language .conflict-chain-step{direction:ltr;text-align:left}
-
-/* Guided Follow the Chain prototype */
-.conflict-chain-guide{margin-top:12px;padding:12px;border:1px solid rgba(241,181,111,.3);border-radius:12px;background:rgba(241,181,111,.06);display:flex;align-items:center;justify-content:space-between;gap:12px}
-.conflict-chain-guide-label small{display:block;color:#f1b56f;font-size:8px;letter-spacing:.14em;text-transform:uppercase}.conflict-chain-guide-label strong{display:block;font-size:13px;margin:2px 0}.conflict-chain-guide-label span{display:block;color:#929298;font-size:9px}
-.conflict-chain-guide-nav{display:flex;gap:7px}.conflict-chain-guide-btn{border:1px solid rgba(241,181,111,.34);border-radius:999px;background:rgba(15,12,8,.82);color:#f2d2aa;padding:8px 11px;font:inherit;font-size:9px;font-weight:700;cursor:pointer}.conflict-chain-guide-btn:hover,.conflict-chain-guide-btn:focus-visible{background:rgba(241,181,111,.14);border-color:rgba(241,181,111,.65);outline:none}.conflict-chain-guide-btn:disabled{opacity:.3;cursor:default}
-@media(max-width:680px){.conflict-chain-guide{align-items:flex-start;flex-direction:column}.conflict-chain-guide-nav{width:100%}.conflict-chain-guide-btn{flex:1}}
