@@ -2485,21 +2485,6 @@ const markerEls=events.map((event,index)=>{
   btn.setAttribute("aria-label",event.year+" — "+displayEvent.title+". Open event details.");
   if(index%2===0) btn.style.left="7%"; else btn.style.right="7%";
   btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small>'+(jewishOverlapTitles.has(event.title)?'<em class="overlap-badge">Jewish history overlap</em>':'')+(islamicOverlapTitles.has(event.title)?'<em class="overlap-badge islamic-overlap-badge">Islamic history overlap</em>':'')+'<strong>'+displayEvent.title+'</strong></span>';
-  // Keep marker dimensions unchanged; a small corner icon opens the separate pilot.
-  if(event.year>=1095 && event.year<=1099 && /crusad|jerusalem|rhineland|speyer|worms|mainz|antioch/i.test(event.title||"")){
-    btn.classList.add("has-perspectives");
-    const link=document.createElement("span");
-    link.className="event-perspectives-link";
-    link.textContent="↗";
-    link.title="Explore different historical perspectives";
-    link.setAttribute("role","link");
-    link.setAttribute("tabindex","0");
-    link.setAttribute("aria-label","Explore different historical perspectives");
-    const open=e=>{e.preventDefault();e.stopPropagation();window.location.href="perspectives.html?event=first-crusade&from="+encodeURIComponent(TIMELINE_KIND)};
-    link.addEventListener("click",open);
-    link.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" ")open(e)});
-    btn.appendChild(link);
-  }
   btn.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();openEvent(event)});
   wireOverlapLinks(btn,event);
   eventsLayer.appendChild(btn);
@@ -2840,6 +2825,13 @@ function openEvent(event){
   const displayEvent=(window.FALLING_I18N&&window.FALLING_I18N.localizeEvent)?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,event):event;
   document.getElementById("eventDate").innerHTML=event.year+(jewishOverlapTitles.has(event.title)?' <span class="overlap-badge panel-overlap-badge">Jewish history overlap</span>':'')+(islamicOverlapTitles.has(event.title)?' <span class="overlap-badge islamic-overlap-badge panel-overlap-badge">Islamic history overlap</span>':'');
   document.getElementById("eventTitle").textContent=displayEvent.title||event.title;
+  const perspectiveAction=document.getElementById("eventPerspectiveBtn");
+  if(perspectiveAction){
+    const supported=event.year>=1095&&event.year<=1099&&/crusad|jerusalem|rhineland|speyer|worms|mainz|antioch/i.test(event.title||"");
+    perspectiveAction.classList.toggle("hidden",!supported);
+    perspectiveAction.href="perspectives.html?event=first-crusade&from="+encodeURIComponent(TIMELINE_KIND);
+  }
+
   document.getElementById("eventLocation").textContent=displayEvent.location||event.location;
   document.getElementById("eventStory").textContent=displayEvent.story||event.story;
   document.getElementById("eventContext").textContent=displayEvent.context||event.context;
