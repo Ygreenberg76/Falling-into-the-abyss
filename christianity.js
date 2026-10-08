@@ -2485,19 +2485,20 @@ const markerEls=events.map((event,index)=>{
   btn.setAttribute("aria-label",event.year+" — "+displayEvent.title+". Open event details.");
   if(index%2===0) btn.style.left="7%"; else btn.style.right="7%";
   btn.innerHTML='<span class="dot"></span><span><small>'+event.year+'</small>'+(jewishOverlapTitles.has(event.title)?'<em class="overlap-badge">Jewish history overlap</em>':'')+(islamicOverlapTitles.has(event.title)?'<em class="overlap-badge islamic-overlap-badge">Islamic history overlap</em>':'')+'<strong>'+displayEvent.title+'</strong></span>';
-  // Offer the separate pilot only for First Crusade events, not every event.
+  // Keep marker dimensions unchanged; a small corner icon opens the separate pilot.
   if(event.year>=1095 && event.year<=1099 && /crusad|jerusalem|rhineland|speyer|worms|mainz|antioch/i.test(event.title||"")){
     btn.classList.add("has-perspectives");
-    const perspectiveLink=document.createElement("span");
-    perspectiveLink.className="event-perspectives-link";
-    perspectiveLink.textContent="↗ Explore perspectives";
-    perspectiveLink.setAttribute("role","link");
-    perspectiveLink.setAttribute("tabindex","0");
-    perspectiveLink.setAttribute("aria-label","Explore First Crusade perspectives");
-    const openPerspectives=e=>{e.preventDefault();e.stopPropagation();window.location.href="perspectives.html?event=first-crusade&from="+encodeURIComponent(TIMELINE_KIND)};
-    perspectiveLink.addEventListener("click",openPerspectives);
-    perspectiveLink.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" " )openPerspectives(e)});
-    btn.appendChild(perspectiveLink);
+    const link=document.createElement("span");
+    link.className="event-perspectives-link";
+    link.textContent="↗";
+    link.title="Explore different historical perspectives";
+    link.setAttribute("role","link");
+    link.setAttribute("tabindex","0");
+    link.setAttribute("aria-label","Explore different historical perspectives");
+    const open=e=>{e.preventDefault();e.stopPropagation();window.location.href="perspectives.html?event=first-crusade&from="+encodeURIComponent(TIMELINE_KIND)};
+    link.addEventListener("click",open);
+    link.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" ")open(e)});
+    btn.appendChild(link);
   }
   btn.addEventListener("click",e=>{e.preventDefault();e.stopPropagation();openEvent(event)});
   wireOverlapLinks(btn,event);
