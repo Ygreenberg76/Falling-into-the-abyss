@@ -664,3 +664,10 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
 .event-marker .event-perspectives-link{position:absolute;top:-9px;right:-9px;left:auto;bottom:auto;z-index:6;display:flex;align-items:center;justify-content:center;width:26px;height:26px;min-width:26px;max-width:none;margin:0;padding:0;border:1px solid #c4b5fd;border-radius:50%;background:#392459;color:#fff;font-size:16px;font-weight:700;line-height:1;white-space:nowrap;box-shadow:0 2px 8px #0009;cursor:pointer}
 .event-marker .event-perspectives-link:hover,.event-marker .event-perspectives-link:focus-visible{background:#7453b3;outline:2px solid #fff;outline-offset:2px}
 @media(max-width:760px){.event-marker .event-perspectives-link{top:-8px;right:-8px;width:24px;height:24px;min-width:24px;padding:0;font-size:15px}}
+
+/* Small optional Perspectives preview beneath event statistics. */
+.perspective-preview{margin-top:12px;padding:14px 16px;border:1px solid rgba(167,139,250,.35);border-radius:14px;background:linear-gradient(135deg,rgba(69,45,108,.25),rgba(18,18,23,.92))}
+.perspective-preview h3{margin:0 0 7px;font-size:15px;color:#e5d8ff}
+.perspective-preview p{margin:0 0 9px;font-size:13px;line-height:1.5;color:#d1cbdc}
+.perspective-preview a{display:inline-block;font-size:13px;font-weight:700;color:#c4b5fd;text-decoration:underline;text-underline-offset:3px}
+.perspective-preview a:hover,.perspective-preview a:focus-visible{color:#fff}
