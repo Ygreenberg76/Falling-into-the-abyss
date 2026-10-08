@@ -2827,12 +2827,15 @@ function openEvent(event){
   document.getElementById("eventTitle").textContent=displayEvent.title||event.title;
   const perspectiveAction=document.getElementById("eventPerspectiveBtn");
   if(perspectiveAction){
-    const supported=event.year>=1095&&event.year<=1099&&/crusad|jerusalem|rhineland|speyer|worms|mainz|antioch/i.test(event.title||"");
+    const title=event.title||"";
+    const topic=event.year>=1095&&event.year<=1099&&/crusad|jerusalem|rhineland|speyer|worms|mainz|antioch/i.test(title)?"first-crusade":event.year>=637&&event.year<=638&&/jerusalem|caliph umar|muslim conquest/i.test(title)?"jerusalem-638":event.year===1187&&/saladin|jerusalem|hattin/i.test(title)?"saladin-1187":event.year===1453&&/constantinople|ottoman/i.test(title)?"constantinople-1453":null;
+    const supported=Boolean(topic);
     const perspectiveCard=document.getElementById("eventPerspectiveCard");
     if(perspectiveCard)perspectiveCard.classList.toggle("hidden",!supported);
     const summary=document.getElementById("eventPerspectiveSummary");
-    if(summary&&supported)summary.textContent="Jewish, Christian and Muslim communities experienced the First Crusade differently, as reflected in surviving accounts.";
-    perspectiveAction.href="perspectives.html?event=first-crusade&from="+encodeURIComponent(TIMELINE_KIND);
+    const summaries={"jerusalem-638":"The transfer of Jerusalem to Muslim rule changed political authority while Jewish, Christian and Muslim experiences differed by community and period.","saladin-1187":"Saladin's 1187 victories were experienced as Muslim reconquest, Christian military defeat and a change in conditions for Jerusalem's Jewish communities.","constantinople-1453":"The Ottoman capture of Constantinople ended Byzantine rule and reshaped the lives of Orthodox Christians, Muslims and Jewish communities.","first-crusade":"Jewish, Christian and Muslim communities experienced the First Crusade differently, as reflected in surviving accounts."};
+    if(summary&&supported)summary.textContent=summaries[topic];
+    perspectiveAction.href="perspectives.html?event="+encodeURIComponent(topic||"first-crusade")+"&from="+encodeURIComponent(TIMELINE_KIND);
   }
 
   document.getElementById("eventLocation").textContent=displayEvent.location||event.location;
