@@ -658,3 +658,9 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
 .event-perspectives-link{display:block;grid-column:1/-1;width:max-content;max-width:100%;margin:5px auto 0;padding:5px 9px;border:1px solid rgba(167,139,250,.55);border-radius:999px;background:rgba(34,22,60,.88);color:#e9ddff;font-size:11px;font-weight:700;line-height:1.3;white-space:nowrap;cursor:pointer;position:relative;z-index:3}
 .event-perspectives-link:hover,.event-perspectives-link:focus-visible{background:#60439a;color:#fff;outline:2px solid #c4b5fd;outline-offset:2px}
 @media(max-width:760px){.event-perspectives-link{font-size:10px;white-space:normal;text-align:center;padding:5px 7px}}
+
+/* Compact perspectives corner icon: overlay only, never contributes to marker size. */
+.event-marker.has-perspectives{position:absolute;row-gap:initial}
+.event-marker .event-perspectives-link{position:absolute;top:-9px;right:-9px;left:auto;bottom:auto;z-index:6;display:flex;align-items:center;justify-content:center;width:26px;height:26px;min-width:26px;max-width:none;margin:0;padding:0;border:1px solid #c4b5fd;border-radius:50%;background:#392459;color:#fff;font-size:16px;font-weight:700;line-height:1;white-space:nowrap;box-shadow:0 2px 8px #0009;cursor:pointer}
+.event-marker .event-perspectives-link:hover,.event-marker .event-perspectives-link:focus-visible{background:#7453b3;outline:2px solid #fff;outline-offset:2px}
+@media(max-width:760px){.event-marker .event-perspectives-link{top:-8px;right:-8px;width:24px;height:24px;min-width:24px;padding:0;font-size:15px}}
