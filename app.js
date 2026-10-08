@@ -2976,7 +2976,10 @@ function openEvent(event){
   const perspectiveAction=document.getElementById("eventPerspectiveBtn");
   if(perspectiveAction){
     const supported=event.year>=1095&&event.year<=1099&&/crusad|jerusalem|rhineland|speyer|worms|mainz|antioch/i.test(event.title||"");
-    perspectiveAction.classList.toggle("hidden",!supported);
+    const perspectiveCard=document.getElementById("eventPerspectiveCard");
+    if(perspectiveCard)perspectiveCard.classList.toggle("hidden",!supported);
+    const summary=document.getElementById("eventPerspectiveSummary");
+    if(summary&&supported)summary.textContent="Jewish, Christian and Muslim communities experienced the First Crusade differently, as reflected in surviving accounts.";
     perspectiveAction.href="perspectives.html?event=first-crusade&from="+encodeURIComponent(TIMELINE_KIND);
   }
 
