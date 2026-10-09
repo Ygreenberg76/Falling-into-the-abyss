@@ -2484,6 +2484,45 @@ window.HISTORY_COMPARE_DATA={jewish:[
     sources:[{label:"Reuters — Israel–Hezbollah ceasefire, June 2026",url:"https://www.investing.com/news/world-news/israeli-hezbollah-agree-to-ceasefire-starting-on-friday-us-official-4751504"}]
   },
   {
+    "id": "jewish-2026-manchester-alleged-bomb-plot",
+    "year": 2026,
+    "depth": 47030,
+    "title": "Manchester Jewish community: alleged bomb plot disrupted",
+    "location": "Manchester, England, United Kingdom",
+    "story": "On 20 September 2026, British counterterrorism police arrested two men during an investigation into an alleged plan to attack Manchester's Jewish community. On 2 October, prosecutors charged them with preparation of terrorist acts. At a 3 October hearing, prosecutors alleged reconnaissance of Heaton Park Synagogue and the Manchester Jewish Museum, and preparations involving a homemade explosive device. These are allegations, not findings of guilt.",
+    "context": "The arrests occurred around Yom Kippur and close to the first anniversary of the deadly 2 October 2025 attack at Heaton Park Synagogue. British authorities also reported heightened concern about antisemitic threats. Prosecutors alleged instructions from an overseas individual believed to be in Iran; state direction and the defendants' motives have not been established in court.",
+    "aftermath": "The two defendants did not enter pleas at the 3 October hearing and were remanded in custody pending a scheduled 23 October 2026 hearing. Police said they believed the suspected plot had been disrupted and identified no ongoing public threat from this investigation. No bombing occurred in this case. Status as of 9 October 2026.",
+    "stats": {
+      "Type": "Alleged terrorism plot / criminal proceedings",
+      "Arrested": "2 (20 September 2026)",
+      "Charged": "2 (2 October 2026)",
+      "PotentialTargets": "Heaton Park Synagogue and Manchester Jewish Museum, according to prosecutors",
+      "Deaths": "0 reported from the alleged 2026 plot",
+      "Injuries": "0 reported from the alleged 2026 plot",
+      "Status": "Allegations unproven; proceedings ongoing",
+      "Overlap": "Jewish community targeted; no established Christian or Islamic religious connection"
+    },
+    "sourceStatus": "High certainty: arrests, charges and court appearance (police, CPS, Reuters/AP). Alleged plot, targets, device and overseas direction are prosecution allegations, not judicial findings. Iranian nationality does not establish religious motive or state responsibility.",
+    "sources": [
+      {
+        "label": "Crown Prosecution Service — charges, 2 Oct 2026",
+        "url": "https://www.cps.gov.uk/national-news/news/cps-prosecute-two-men-preparing-act-terrorism-manchester"
+      },
+      {
+        "label": "Metropolitan Police — charges, 2 Oct 2026",
+        "url": "https://news.met.police.uk/news/two-men-charged-with-suspected-terror-plot-targeting-jewish-community-in-manchester-513537"
+      },
+      {
+        "label": "Reuters — court hearing, 3 Oct 2026",
+        "url": "https://www.reuters.com/world/uk/two-iranians-appear-uk-court-over-alleged-plot-target-jews-2026-10-03/"
+      },
+      {
+        "label": "Associated Press — court hearing, 3 Oct 2026",
+        "url": "https://apnews.com/article/65bb5f95964b9df386790266cddfc6ce"
+      }
+    ]
+  },
+  {
     year:2026, depth:47100, title:"2026 — YOU ARE HERE", location:"Present day",
     story:"The timeline reaches the present in October 2026. The historical record remains open: Gaza is under a fragile post-war ceasefire environment, Israeli-Palestinian violence and displacement remain unresolved, and the wider regional confrontation involving Israel, Iran and Hezbollah has produced new wars and ceasefires.",
     context:"This marker belongs to the contemporary phase of the conflict. Events after 2021 are presented with explicit perpetrator attribution, separate markers for attacks and military responses, and caution around evolving casualty figures and unresolved legal claims.",
