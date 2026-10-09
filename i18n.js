@@ -1,6 +1,6 @@
 (()=>{
 const KEY="fallingLanguageV1";
-function currentLanguage(){const saved=localStorage.getItem(KEY);if(["en","he","ar"].includes(saved))return saved;const q=new URLSearchParams(location.search).get("lang");return ["en","he","ar"].includes(q)?q:"en";}
+function currentLanguage(){const q=new URLSearchParams(location.search).get("lang");if(["en","he","ar"].includes(q))return q;const saved=localStorage.getItem(KEY);return ["en","he","ar"].includes(saved)?saved:"en";}
 function localizeEvent(kind,event){const lang=currentLanguage();if(lang==="en"||!event)return event;const table=window.FALLING_TRANSLATIONS&&window.FALLING_TRANSLATIONS[lang]&&window.FALLING_TRANSLATIONS[lang][kind];const translated=table&&table[event.id];return Object.assign({},event,translated||{},{_translationLanguage:lang});}
 function applyEventDirection(displayEvent){
  const rtl=displayEvent&&displayEvent._translationLanguage&&displayEvent._translationLanguage!=="en";
@@ -29,12 +29,14 @@ function setLanguage(lang,reload=false){
  if(reload){const u=new URL(location.href);u.searchParams.set("lang",lang);location.href=u.toString();return;}
  document.documentElement.lang=lang;
  document.documentElement.dataset.language=lang;
- // Keep the document flow LTR while untranslated English fallback content remains on the page.\n // Translated Hebrew/Arabic interface strings receive RTL direction individually.\n document.documentElement.dir="ltr";\n document.body.classList.toggle("rtl-language",lang!=="en");
+ // Keep document flow LTR for untranslated fallback content.
+ document.documentElement.dir="ltr";
+ document.body.classList.toggle("rtl-language",lang!=="en");
  document.querySelectorAll("[data-lang]").forEach(b=>{b.classList.toggle("active",b.dataset.lang===lang);b.setAttribute("aria-pressed",b.dataset.lang===lang?"true":"false");});
  translateText(lang);
  syncTimelineLinks(lang);
  document.dispatchEvent(new CustomEvent("falling:languagechange",{detail:{language:lang}}));
 }
 document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLanguage(b.dataset.lang,true)));
-setLanguage(localStorage.getItem(KEY)||"en");
+setLanguage(currentLanguage());
 })();
