@@ -1,7 +1,7 @@
 (()=>{
 const KEY="fallingLanguageV1";
 function currentLanguage(){const q=new URLSearchParams(location.search).get("lang");if(["en","he","ar"].includes(q))return q;const saved=localStorage.getItem(KEY);return ["en","he","ar"].includes(saved)?saved:"en";}
-function localizeEvent(kind,event){const lang=currentLanguage();if(lang==="en"||!event)return event;const table=window.FALLING_TRANSLATIONS&&window.FALLING_TRANSLATIONS[lang]&&window.FALLING_TRANSLATIONS[lang][kind];const translated=(table&&table[event.id])||(event.localized&&event.localized[lang]);return Object.assign({},event,translated||{},{_translationLanguage:translated?lang:"en"});}
+function localizeEvent(kind,event){const lang=new URLSearchParams(location.search).get("lang")||document.documentElement.dataset.language||currentLanguage();if(lang==="en"||!event)return event;const table=window.FALLING_TRANSLATIONS&&window.FALLING_TRANSLATIONS[lang]&&window.FALLING_TRANSLATIONS[lang][kind];const translated=(event.localized&&event.localized[lang])||(table&&table[event.id]);return Object.assign({},event,translated||{},{_translationLanguage:translated?lang:"en"});}
 function applyEventDirection(displayEvent){
  const rtl=displayEvent&&displayEvent._translationLanguage&&displayEvent._translationLanguage!=="en";
  ["eventTitle","eventLocation","eventStory","eventContext","eventAftermath","eventSourceStatus"].forEach(id=>{const el=document.getElementById(id);if(!el)return;if(rtl){el.setAttribute("dir","rtl");el.setAttribute("lang",displayEvent._translationLanguage);}else{el.setAttribute("dir","ltr");el.setAttribute("lang","en");}});
