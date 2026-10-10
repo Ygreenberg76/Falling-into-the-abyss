@@ -694,3 +694,9 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
  .event-tap-guide{top:20px;left:calc(50% + 125px);max-width:min(560px,calc(100% - 420px));white-space:normal;line-height:1.4;z-index:45}
  .explore-tools{z-index:42}
 }
+
+/* Desktop instruction lives below the top HUD and above Explore Timeline, without overlapping either. */
+@media(min-width:761px){
+ .event-tap-guide{top:166px;left:50%;max-width:min(510px,calc(100% - 400px));z-index:41;transform-origin:center top}
+ .explore-tools{top:245px}
+}
