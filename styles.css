@@ -745,3 +745,11 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
  .hud .era-hud{position:absolute;top:0;left:50%;margin:0;transform:translateX(-50%);width:clamp(330px,34vw,470px);min-width:0;box-sizing:border-box}
  .hud .era-hud .event-tap-guide{left:50%;transform:translateX(-50%)}
 }
+
+/* Compact Click Any Event banner consistently across all three timelines. */
+@media(min-width:761px){
+ .hud .era-hud .event-tap-guide{font-size:12px;padding:7px 12px;line-height:1.25}
+}
+@media(max-width:760px){
+ .hud .era-hud .event-tap-guide{font-size:10px;padding:5px 8px;line-height:1.25}
+}
