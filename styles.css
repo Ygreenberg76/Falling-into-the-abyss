@@ -732,3 +732,9 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
  .hud .era-hud .event-tap-guide{transform:translateX(-50%);transform-origin:center center;animation:eventGuideWelcome 1.8s ease-in-out 1 both}
 }
 @media(prefers-reduced-motion:reduce){.hud .era-hud .event-tap-guide{animation:none!important}}
+
+/* Keep Current Era and its attached cue stable as era labels change. */
+@media(min-width:761px){
+ .hud .era-hud{box-sizing:border-box;width:clamp(330px,34vw,470px);min-width:0;flex:0 0 clamp(330px,34vw,470px)}
+ .hud .era-hud #eraReadout,.hud .era-hud #eraRange{width:100%;text-align:center}
+}
