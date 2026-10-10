@@ -710,3 +710,8 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
  .hud .era-hud{position:relative}
  .hud .era-hud .event-tap-guide{top:calc(100% - 1px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(320px,85vw);z-index:45}
 }
+
+/* Keep the attached Click Any Event instruction on one line on desktop. */
+@media(min-width:761px){
+ .hud .era-hud .event-tap-guide{white-space:nowrap;width:max-content;max-width:none;line-height:1.4}
+}
