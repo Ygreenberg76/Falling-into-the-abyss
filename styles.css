@@ -738,3 +738,10 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
  .hud .era-hud{box-sizing:border-box;width:clamp(330px,34vw,470px);min-width:0;flex:0 0 clamp(330px,34vw,470px)}
  .hud .era-hud #eraReadout,.hud .era-hud #eraRange{width:100%;text-align:center}
 }
+
+/* Anchor the two linked banners to the viewport center, independent of HUD flex reflow. */
+@media(min-width:761px){
+ .hud{position:absolute}
+ .hud .era-hud{position:absolute;top:0;left:50%;margin:0;transform:translateX(-50%);width:clamp(330px,34vw,470px);min-width:0;box-sizing:border-box}
+ .hud .era-hud .event-tap-guide{left:50%;transform:translateX(-50%)}
+}
