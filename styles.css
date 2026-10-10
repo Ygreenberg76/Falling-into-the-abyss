@@ -695,8 +695,8 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
  .explore-tools{z-index:42}
 }
 
-/* Desktop instruction lives below the top HUD and above Explore Timeline, without overlapping either. */
+/* Desktop: keep Explore Timeline on the left, with the event cue below Current Era. */
 @media(min-width:761px){
- .event-tap-guide{top:166px;left:50%;max-width:min(510px,calc(100% - 400px));z-index:41;transform-origin:center top}
- .explore-tools{top:245px}
+ .event-tap-guide{top:166px;left:calc(50% + 75px);max-width:min(480px,calc(100% - 480px));z-index:41;transform-origin:center top}
+ .explore-tools{top:112px;left:18px;z-index:42}
 }
