@@ -2949,7 +2949,7 @@ document.getElementById("restartBtn").addEventListener("click",restart);
 document.getElementById("shareEventBtn").addEventListener("click",shareActiveEvent);
 document.getElementById("closeEventBtn").addEventListener("click",()=>{panel.classList.add("hidden");document.body.classList.remove("event-open");paused=false;activeEvent=null;const clean=new URL(window.location.href);clean.search="";clean.hash="";history.replaceState({},"",clean.toString());abyss.focus()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!panel.classList.contains("hidden")){panel.classList.add("hidden");document.body.classList.remove("event-open");paused=false;abyss.focus()}});
-document.getElementById("aboutBtn").addEventListener("click",()=>{aboutPanel.classList.remove("hidden");aboutPanel.scrollIntoView({behavior:reduced?"auto":"smooth"})});
+document.getElementById("aboutBtn")?.addEventListener("click",()=>{aboutPanel.classList.remove("hidden");aboutPanel.scrollIntoView({behavior:reduced?"auto":"smooth"})});
 document.getElementById("closeAboutBtn").addEventListener("click",()=>aboutPanel.classList.add("hidden"));
 
 /* Explore timeline: search, filters and year jump */
