@@ -715,3 +715,8 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
 @media(min-width:761px){
  .hud .era-hud .event-tap-guide{white-space:nowrap;width:max-content;max-width:none;line-height:1.4}
 }
+
+/* Align the left Explore Timeline control with the top border of the attached event banner. */
+@media(min-width:761px){
+ .explore-tools{top:100px;left:18px}
+}
