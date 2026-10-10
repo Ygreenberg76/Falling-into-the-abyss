@@ -683,13 +683,3 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
  .event-marker{width:min(43%,190px);z-index:26;border-color:rgba(196,181,253,.5);background:rgba(5,5,7,.91)}
  .event-marker::after{content:"Tap to read ›";display:block;grid-column:1/-1;font-size:10px;color:#d8c9ff;font-weight:600}
 }
-
-/* Desktop-first historical discovery, wired to the existing timeline search. */
-.desktop-discovery{margin-top:22px;max-width:680px;padding:17px 19px;border:1px solid rgba(167,139,250,.32);border-radius:15px;background:linear-gradient(120deg,rgba(34,25,52,.82),rgba(13,13,18,.85))}
-.desktop-discovery label{display:block;font-weight:700;font-size:14px;color:#f2edff;margin-bottom:10px}
-.desktop-discovery-row{display:flex;gap:9px;align-items:stretch}
-.desktop-discovery-row input{flex:1;min-width:0;border:1px solid #59516b;border-radius:10px;background:#0b0b10;color:#fff;padding:12px 14px;font:inherit;font-size:14px}
-.desktop-discovery-row input:focus{outline:2px solid #a78bfa;outline-offset:1px}
-.desktop-discovery-row button{white-space:nowrap}
-.abyss-intro .desktop-discovery-tip{font-size:12px!important;color:#bdb2d0!important;margin-top:9px!important}
-@media(max-width:680px){.desktop-discovery{padding:13px}.desktop-discovery-row{flex-direction:column}.desktop-discovery-row button{width:100%}}
