@@ -698,5 +698,5 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
 /* Desktop: keep Explore Timeline on the left, with the event cue below Current Era. */
 @media(min-width:761px){
  .event-tap-guide{top:166px;left:calc(50% + 75px);max-width:min(480px,calc(100% - 480px));z-index:41;transform-origin:center top}
- .explore-tools{top:112px;left:18px;z-index:42}
+ .explore-tools{top:245px;left:18px;z-index:42}
 }
