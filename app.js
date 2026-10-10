@@ -2620,8 +2620,8 @@ const eraEls=eras.map((era,index)=>{
 function renderEras(){
   const center=abyss.clientHeight/2;
   const active=currentEraAt(depth);
-  eraReadout.textContent=active.name;
-  eraRange.textContent=active.range;
+  if(eraReadout.textContent!==active.name) eraReadout.textContent=active.name;
+  if(eraRange.textContent!==active.range) eraRange.textContent=active.range;
   eras.forEach((era,index)=>{
     const boundary=index===0?0:era.start;
     const y=center+(boundary-depth);
