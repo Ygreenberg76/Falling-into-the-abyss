@@ -683,3 +683,8 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
  .event-marker{width:min(43%,190px);z-index:26;border-color:rgba(196,181,253,.5);background:rgba(5,5,7,.91)}
  .event-marker::after{content:"Tap to read ›";display:block;grid-column:1/-1;font-size:10px;color:#d8c9ff;font-weight:600}
 }
+
+/* First-descent cue: briefly grows to draw attention, then settles to its normal size. */
+@keyframes eventGuideWelcome{0%{transform:translateX(-50%) scale(1);opacity:.65}18%{transform:translateX(-50%) scale(1.32);opacity:1}48%{transform:translateX(-50%) scale(1.32);opacity:1}100%{transform:translateX(-50%) scale(1);opacity:1}}
+@media(min-width:761px){.event-tap-guide{transform-origin:center top;animation:eventGuideWelcome 2.6s ease-out 1 both;font-size:14px;padding:12px 19px;box-shadow:0 8px 26px #000a,0 0 18px rgba(196,181,253,.32)}}
+@media(prefers-reduced-motion:reduce){.event-tap-guide{animation:none!important}}
