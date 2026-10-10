@@ -65,6 +65,14 @@
           <button id="beginBtn" class="btn btn-primary" type="button">Christianity ↓</button>
           <a class="btn btn-ghost" href="islam.html#descent">Islam ↓</a>
         </div>
+        <div class="desktop-discovery" role="search" aria-label="Find historical events">
+          <label for="desktopEventSearch">Looking for a specific historical event?</label>
+          <div class="desktop-discovery-row">
+            <input id="desktopEventSearch" type="search" placeholder="Try Spanish Inquisition, Jerusalem, 1948…" autocomplete="off">
+            <button id="desktopEventFind" class="btn btn-primary" type="button">Find events →</button>
+          </div>
+          <p class="desktop-discovery-tip">Search the selected timeline, then choose an event to jump directly to its place in history.</p>
+        </div>
         <span class="abyss-intro-cue">The descent begins below ↓</span>
       </div>
     </section>
@@ -266,5 +274,26 @@
   <script src="translations-he.js"></script><script src="translations-ar.js"></script><script src="translations.js"></script><script src="i18n.js"></script><script src="christianity.js?v=20261008-perspectives10"></script>
   <script src="christianity-map.js"></script>
 <script src="analytics.js"></script>  <script src="present-feedback.js?v=20261006-2"></script>
+<script>
+(function(){
+ const input=document.getElementById("desktopEventSearch");
+ const button=document.getElementById("desktopEventFind");
+ if(!input||!button)return;
+ function find(){
+  const search=document.getElementById("eventSearch");
+  const toggle=document.getElementById("exploreToggle");
+  const panel=document.getElementById("explorePanel");
+  const abyss=document.getElementById("abyss");
+  if(!search||!toggle||!panel||!abyss)return;
+  if(panel.classList.contains("hidden"))toggle.click();
+  search.value=input.value.trim();
+  search.dispatchEvent(new Event("input",{bubbles:true}));
+  abyss.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});
+  search.focus({preventScroll:true});
+ }
+ button.addEventListener("click",find);
+ input.addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();find()}});
+})();
+</script>
 </body>
 </html>
