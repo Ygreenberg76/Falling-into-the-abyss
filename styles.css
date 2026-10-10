@@ -720,3 +720,15 @@ body.rtl-language .event-panel,body.rtl-language .explore-panel,body.rtl-languag
 @media(min-width:761px){
  .explore-tools{top:100px;left:18px}
 }
+
+/* Stable reminder: pulse light and outline without changing layout or position. */
+@keyframes eventGuideWelcome{
+  0%{opacity:1;filter:brightness(1);box-shadow:0 8px 26px #000a,0 0 10px rgba(196,181,253,.2)}
+  35%{opacity:1;filter:brightness(1.22);box-shadow:0 8px 26px #000a,0 0 25px rgba(196,181,253,.75)}
+  70%{opacity:1;filter:brightness(1.12);box-shadow:0 8px 26px #000a,0 0 18px rgba(196,181,253,.45)}
+  100%{opacity:1;filter:brightness(1);box-shadow:0 8px 26px #000a,0 0 10px rgba(196,181,253,.2)}
+}
+@media(min-width:761px){
+ .hud .era-hud .event-tap-guide{transform:translateX(-50%);transform-origin:center center;animation:eventGuideWelcome 1.8s ease-in-out 1 both}
+}
+@media(prefers-reduced-motion:reduce){.hud .era-hud .event-tap-guide{animation:none!important}}
