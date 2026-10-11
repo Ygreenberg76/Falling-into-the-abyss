@@ -11,5 +11,5 @@ window.FALLING_RECENT_EVENTS = [
   }
 ];
 // Add only newly published timeline events with a verified date of addition.
-// The banner displays at most five entries from the most recent five calendar days.
+// The banner displays at most ten entries, ordered by their verified date of addition.
 // Existing events with no verified addedOn date must not be backdated.
