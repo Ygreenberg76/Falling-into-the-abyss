@@ -22,13 +22,13 @@ const style=document.createElement("style");style.textContent=`
 @media(prefers-reduced-motion:reduce){.recent-feed .rf-track{transition:none}}
 `;document.head.appendChild(style);
 const labels={
-en:{heading:"RECENTLY ADDED · LAST 5 DAYS",none:"No new timeline events in the last five days",prev:"Previous event",next:"Next event",added:"Added",kinds:{jewish:"Jewish",christian:"Christian",islamic:"Islamic"}},
-he:{heading:"נוספו לאחרונה · 5 הימים האחרונים",none:"לא נוספו אירועים לצירי הזמן בחמשת הימים האחרונים",prev:"לאירוע הקודם",next:"לאירוע הבא",added:"נוסף",kinds:{jewish:"יהדות",christian:"נצרות",islamic:"אסלאם"}},
-ar:{heading:"أُضيفت حديثًا · آخر 5 أيام",none:"لم تُضف أحداث جديدة إلى الخطوط الزمنية خلال الأيام الخمسة الماضية",prev:"الحدث السابق",next:"الحدث التالي",added:"أُضيف",kinds:{jewish:"اليهودية",christian:"المسيحية",islamic:"الإسلام"}}};
+en:{heading:"10 MOST RECENT EVENTS",none:"No recently added events yet",prev:"Previous event",next:"Next event",added:"Added",kinds:{jewish:"Jewish",christian:"Christian",islamic:"Islamic"}},
+he:{heading:"10 האירועים האחרונים שנוספו",none:"עדיין לא נוספו אירועים חדשים",prev:"לאירוע הקודם",next:"לאירוע הבא",added:"נוסף",kinds:{jewish:"יהדות",christian:"נצרות",islamic:"אסלאם"}},
+ar:{heading:"آخر 10 أحداث أُضيفت",none:"لم تُضف أحداث جديدة بعد",prev:"الحدث السابق",next:"الحدث التالي",added:"أُضيف",kinds:{jewish:"اليهودية",christian:"المسيحية",islamic:"الإسلام"}}};
 function language(){const query=new URLSearchParams(location.search).get("lang");if(labels[query])return query;const v=document.documentElement.dataset.language;return labels[v]?v:"en"}
 function dayValue(s){return /^\d{4}-\d{2}-\d{2}$/.test(s)?Date.parse(s+"T00:00:00Z"):NaN}
 const now=new Date();const today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
-const items=(window.FALLING_RECENT_EVENTS||[]).filter(e=>{const diff=(today-dayValue(e.addedOn))/86400000;return Number.isInteger(diff)&&diff>=0&&diff<5&&labels.en.kinds[e.timeline]&&e.title&&e.title.en&&Number.isFinite(Number(e.year))}).sort((a,b)=>b.addedOn.localeCompare(a.addedOn)).slice(0,5);
+const items=(window.FALLING_RECENT_EVENTS||[]).filter(e=>{return Number.isFinite(dayValue(e.addedOn))&&labels.en.kinds[e.timeline]&&e.title&&e.title.en&&Number.isFinite(Number(e.year))}).sort((a,b)=>b.addedOn.localeCompare(a.addedOn)).slice(0,10);
 const feed=document.createElement("aside");feed.className="recent-feed";feed.setAttribute("aria-label","Recently added historical events");feed.innerHTML='<div class="rf-viewport"><div class="rf-track"></div></div><div class="rf-controls"><button type="button" class="rf-prev">‹</button><button type="button" class="rf-next">›</button></div>';
 const track=feed.querySelector(".rf-track"),controls=feed.querySelector(".rf-controls");let index=0;
 for(const e of items){const slide=document.createElement("div");slide.className="rf-slide";const link=document.createElement("a");link.className="rf-link";const meta=document.createElement("div");meta.className="rf-meta";slide.append(link,meta);track.appendChild(slide)}
