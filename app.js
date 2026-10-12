@@ -1415,6 +1415,86 @@ const events = [
     sources:[{label:"National Library of Israel — Kfar Etzion",url:"https://www.nli.org.il/en/discover/israel/settlements/kfar-etzion"}]
   },
   {
+    "year": 1897,
+    "depth": 21910,
+    "title": "First Zionist Congress",
+    "location": "Basel, Switzerland",
+    "story": "The First Zionist Congress met in Basel from August 29 to 31, 1897, under Theodor Herzl's leadership. Delegates adopted the Basel Program calling for a publicly and legally secured home for the Jewish people in Palestine.",
+    "context": "Political Zionism grew amid European antisemitism and Jewish debates about identity, safety and self-determination. Palestine was already home to an Arab majority and Jewish communities; competing national aspirations would shape later developments.",
+    "aftermath": "The congress established a durable international political organization and institutions that helped organize the Zionist movement.",
+    "stats": {
+      "Type": "Political movement / congress"
+    },
+    "sourceStatus": "The congress, dates and Basel Program are well documented.",
+    "sources": [
+      {
+        "label": "Encyclopaedia Britannica (1911) — Zionism and the Basel Program",
+        "url": "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Zionism"
+      }
+    ]
+  },
+  {
+    "year": 1917,
+    "depth": 22540,
+    "title": "Balfour Declaration",
+    "location": "London, United Kingdom",
+    "story": "On November 2, 1917, British Foreign Secretary Arthur Balfour issued a declaration supporting the establishment in Palestine of a national home for the Jewish people, while stating that the civil and religious rights of existing non-Jewish communities should not be prejudiced.",
+    "context": "The declaration was made during World War I as Britain sought influence in the region. Palestinian Arabs were not promised equivalent national political rights in its text, contributing to enduring controversy.",
+    "aftermath": "The declaration became central to Britain's subsequent Mandate policy and to conflicting Jewish and Palestinian Arab expectations.",
+    "stats": {
+      "Type": "Diplomatic declaration"
+    },
+    "sourceStatus": "The declaration's wording and date are directly documented; interpretations and consequences are debated.",
+    "sources": [
+      {
+        "label": "Interactive Encyclopedia of the Palestine Question — Balfour Declaration",
+        "url": "https://www.palquest.org/en/highlight/157/balfour-declaration-2-november-1917"
+      }
+    ]
+  },
+  {
+    "year": 1922,
+    "depth": 23150,
+    "title": "League of Nations approves British Mandate for Palestine",
+    "location": "Geneva / Palestine",
+    "story": "On July 24, 1922, the League of Nations Council approved the Mandate for Palestine, incorporating Britain's commitment to a Jewish national home while also providing for protection of the civil and religious rights of inhabitants. The Mandate formally came into force in 1923.",
+    "context": "British administration followed the collapse of Ottoman rule. Jewish immigration, land questions and competing national movements contributed to increasing political tensions.",
+    "aftermath": "The Mandate framed British governance and disputes over immigration, political representation and self-determination until 1948.",
+    "stats": {
+      "Type": "International mandate"
+    },
+    "sourceStatus": "The 1922 approval and 1923 commencement are documented; political interpretations remain contested.",
+    "sources": [
+      {
+        "label": "Britannica — Palestine under the British Mandate",
+        "url": "https://www.britannica.com/place/Palestine/The-British-mandate"
+      }
+    ]
+  },
+  {
+    "year": 1947,
+    "depth": 26220,
+    "title": "Civil war in Mandatory Palestine begins",
+    "location": "Mandatory Palestine",
+    "story": "Following the UN partition vote on November 29, 1947, clashes between Palestinian Arab and Jewish forces escalated into a civil war as Britain prepared to withdraw. Attacks, counterattacks, sieges and displacement affected communities across the territory.",
+    "context": "Jewish leaders accepted partition as a basis for statehood, while Palestinian Arab and neighboring Arab leaders rejected the proposed division. The fighting preceded Israel's May 1948 declaration and the intervention of neighboring Arab armies.",
+    "aftermath": "By May 1948 the conflict had caused significant deaths, flight and expulsions, and deepened the struggle over territory and sovereignty.",
+    "stats": {
+      "Type": "Civil war / escalation"
+    },
+    "sourceStatus": "The escalation following the partition vote is well documented; responsibility for particular incidents and precise displacement figures require event-specific sourcing.",
+    "sources": [
+      {
+        "label": "United Nations — Origins and Evolution of the Palestine Problem, Part II",
+        "url": "https://www.un.org/unispal/history2/origins-and-evolution-of-the-palestine-problem/part-ii-1947-1977/"
+      },
+      {
+        "label": "U.S. State Department — Arab-Israeli War of 1948",
+        "url": "https://history.state.gov/milestones/1945-1952/arab-israeli-war"
+      }
+    ]
+  },
+  {
     year:1948, depth:26870, title:"Declaration of the State of Israel", location:"Tel Aviv",
     story:"On May 14, 1948, David Ben-Gurion proclaimed the establishment of the State of Israel as the British Mandate ended. The declaration transformed the ongoing civil war into an interstate conflict when neighboring Arab armies entered the former Mandate territory.",
     context:"This marker is part of the 1947–49 Palestine war and the creation of Israel. The timeline includes violence, military actions and displacement affecting both Jewish and Palestinian Arab communities rather than presenting only one side of the conflict.",
@@ -2910,11 +2990,7 @@ function renderHistoricalPath(event){
   if(path.length>1){const clear=document.createElement("button");clear.type="button";clear.className="historical-path-clear";clear.textContent="Start a new path";clear.addEventListener("click",()=>{try{sessionStorage.removeItem(HISTORY_PATH_KEY);}catch{}renderHistoricalPath(event);});box.appendChild(clear);}
 }
 const CONFLICT_CHAINS={
-  "Declaration of the State of Israel":{note:"Political Zionism, British Mandate policies, competing Jewish and Palestinian Arab national aspirations, Nazi persecution and the Holocaust, and the end of British rule shaped the background. The linked milestones below are documented events already available in this timeline; context does not imply inevitability or justify harm to civilians.",steps:[
-    {title:"Holocaust mass shootings and extermination",role:"Earlier historical context",detail:"The genocide of European Jews heightened the urgency of refuge and Jewish self-determination."},
-    {title:"UN Partition Plan and outbreak of civil war in Mandatory Palestine",role:"Immediate political and military context",detail:"The UN recommended partition in November 1947; Jewish leaders accepted it and Arab leaders rejected it. Fighting escalated before the Mandate ended."},
-    {title:"Declaration of the State of Israel",role:"This event",detail:"David Ben-Gurion proclaimed Israel's independence on May 14, 1948."}
-  ]},
+  "Declaration of the State of Israel":{note:"These milestones trace political Zionism, British policy, Nazi persecution, the UN partition proposal and the war preceding independence. They provide historical context without treating the outcome as inevitable or excusing violence against civilians.",steps:[{"title":"First Zionist Congress","role":"Political origins","detail":"The 1897 congress organized political Zionism and its program."},{"title":"Balfour Declaration","role":"British policy","detail":"Britain supported a Jewish national home in Palestine in 1917 while addressing existing communities' civil and religious rights."},{"title":"League of Nations approves British Mandate for Palestine","role":"Mandate framework","detail":"The League approved British administration and the Mandate's commitments in 1922."},{"title":"Holocaust mass shootings and extermination","role":"Humanitarian background","detail":"The Nazi genocide intensified demands for Jewish refuge and self-determination."},{"title":"UN Partition Plan and outbreak of civil war in Mandatory Palestine","role":"Diplomatic turning point","detail":"The UN recommended partition in November 1947; Jewish and Arab leaders differed sharply over the proposal."},{"title":"Civil war in Mandatory Palestine begins","role":"Immediate escalation","detail":"Fighting, displacement and Britain's withdrawal preceded the declaration."},{"title":"Declaration of the State of Israel","role":"This event","detail":"Israel declared independence on May 14, 1948."}]},
   "Six-Day War":{note:"A sequence of regional confrontations and military decisions preceded the June 1967 war; responsibility and intentions remain subjects of historical debate.",steps:[{title:"1948 Arab–Israeli War",role:"Long-term background",detail:"The 1948 war left unresolved territorial, refugee and security disputes."},{title:"Suez Crisis",role:"Regional background",detail:"The 1956 conflict shaped Israeli–Egyptian relations and UN peacekeeping arrangements."},{title:"Egypt moves forces into Sinai",role:"Immediate escalation",detail:"Egypt deployed forces into Sinai and requested the withdrawal of UN emergency forces in May 1967."},{title:"Closure of the Straits of Tiran",role:"Immediate escalation",detail:"Egypt restricted Israeli shipping through the straits, which Israel regarded as a casus belli."},{title:"Six-Day War",role:"This event",detail:"Israel launched air strikes on Egypt on June 5, 1967; war spread to Jordan and Syria."} ]},
   "Yom Kippur / October War":{note:"The 1973 war emerged from the unresolved consequences of 1967, failed diplomacy and Egyptian and Syrian efforts to change the status quo.",steps:[{title:"Six-Day War",role:"Long-term background",detail:"Israel occupied the Sinai Peninsula and Golan Heights after the 1967 war."},{title:"War of Attrition along the Suez Canal",role:"Earlier escalation",detail:"Egypt and Israel fought along the canal between 1969 and 1970."},{title:"Stalled diplomacy after 1967",role:"Diplomatic background",detail:"Negotiations failed to produce territorial settlements acceptable to the parties."},{title:"Yom Kippur / October War",role:"This event",detail:"Egypt and Syria launched coordinated attacks on October 6, 1973."} ]},
   "1982 Lebanon War":{note:"The invasion followed years of regional instability, PLO activity from Lebanon, Israeli cross-border attacks and a disputed immediate pretext.",steps:[{title:"Palestinian armed groups relocate to Lebanon",role:"Background",detail:"PLO organizations developed a major presence in Lebanon after their expulsion from Jordan."},{title:"Lebanese Civil War",role:"Regional background",detail:"Lebanon's civil war and foreign interventions destabilized the border region."},{title:"Israel–PLO cross-border violence",role:"Escalation",detail:"Attacks and reprisals persisted despite a 1981 ceasefire."},{title:"Attempted assassination of Israeli ambassador in London",role:"Immediate pretext",detail:"The Abu Nidal Organization carried out the attempt; it was not the PLO, though Israel cited the attack before invading."},{title:"1982 Lebanon War",role:"This event",detail:"Israel invaded Lebanon in June 1982."} ]},
