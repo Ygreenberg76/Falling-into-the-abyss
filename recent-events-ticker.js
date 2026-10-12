@@ -22,13 +22,13 @@ const style=document.createElement("style");style.textContent=`
 @media(prefers-reduced-motion:reduce){.recent-feed .rf-track{transition:none}}
 `;document.head.appendChild(style);
 const labels={
-en:{heading:"ADDED IN THE LAST 10 DAYS",none:"No new events added in the last 10 days",prev:"Previous event",next:"Next event",added:"Added",kinds:{jewish:"Jewish",christian:"Christian",islamic:"Islamic"}},
-he:{heading:"נוספו ב־10 הימים האחרונים",none:"לא נוספו אירועים בעשרת הימים האחרונים",prev:"לאירוע הקודם",next:"לאירוע הבא",added:"נוסף",kinds:{jewish:"יהדות",christian:"נצרות",islamic:"אסלאם"}},
-ar:{heading:"أُضيفت خلال آخر 10 أيام",none:"لم تُضف أحداث خلال الأيام العشرة الماضية",prev:"الحدث السابق",next:"الحدث التالي",added:"أُضيف",kinds:{jewish:"اليهودية",christian:"المسيحية",islamic:"الإسلام"}}};
+en:{heading:"ADDED IN THE LAST 5 DAYS",none:"No new events added in the last 5 days",prev:"Previous event",next:"Next event",added:"Event",kinds:{jewish:"Jewish",christian:"Christian",islamic:"Islamic"}},
+he:{heading:"נוספו ב־5 הימים האחרונים",none:"לא נוספו אירועים בחמשת הימים האחרונים",prev:"לאירוע הקודם",next:"לאירוע הבא",added:"אירוע",kinds:{jewish:"יהדות",christian:"נצרות",islamic:"אסלאם"}},
+ar:{heading:"أُضيفت خلال آخر 5 أيام",none:"لم تُضف أحداث خلال الأيام الخمسة الماضية",prev:"الحدث السابق",next:"الحدث التالي",added:"حدث",kinds:{jewish:"اليهودية",christian:"المسيحية",islamic:"الإسلام"}}};
 function language(){const query=new URLSearchParams(location.search).get("lang");if(labels[query])return query;const v=document.documentElement.dataset.language;return labels[v]?v:"en"}
 function dayValue(s){return /^\d{4}-\d{2}-\d{2}$/.test(s)?Date.parse(s+"T00:00:00Z"):NaN}
 const now=new Date();const today=Date.UTC(now.getFullYear(),now.getMonth(),now.getDate());
-const items=(window.FALLING_RECENT_EVENTS||[]).filter(e=>{const diff=(today-dayValue(e.addedOn))/86400000;return Number.isInteger(diff)&&diff>=0&&diff<10&&labels.en.kinds[e.timeline]&&e.title&&e.title.en&&Number.isFinite(Number(e.year))}).sort((a,b)=>b.addedOn.localeCompare(a.addedOn)).slice(0,10);
+const items=(window.FALLING_RECENT_EVENTS||[]).filter(e=>{const diff=(today-dayValue(e.eventDate))/86400000;return Number.isInteger(diff)&&diff>=0&&diff<5&&labels.en.kinds[e.timeline]&&e.title&&e.title.en&&Number.isFinite(Number(e.year))}).sort((a,b)=>b.eventDate.localeCompare(a.eventDate)).slice(0,10);
 const feed=document.createElement("aside");feed.className="recent-feed";feed.setAttribute("aria-label","Recently added historical events");feed.innerHTML='<div class="rf-viewport"><div class="rf-track"></div></div><div class="rf-controls"><button type="button" class="rf-prev">‹</button><button type="button" class="rf-next">›</button></div>';
 const track=feed.querySelector(".rf-track"),controls=feed.querySelector(".rf-controls");let index=0;
 for(const e of items){const slide=document.createElement("div");slide.className="rf-slide";const link=document.createElement("a");link.className="rf-link";const meta=document.createElement("div");meta.className="rf-meta";slide.append(link,meta);track.appendChild(slide)}
@@ -36,7 +36,7 @@ if(!items.length){const slide=document.createElement("div");slide.className="rf-
 function urlFor(e,lang){const pages={jewish:"index.html",christian:"christianity.html",islamic:"islam.html"};const match=encodeURIComponent(e.title.en.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));return pages[e.timeline]+"?year="+encodeURIComponent(e.year)+"&match="+match+"&lang="+lang}
 function render(){const lang=language(),w=labels[lang];feed.dir=lang==="en"?"ltr":"rtl";feed.lang=lang;track.dir="ltr";feed.setAttribute("aria-label",w.heading);controls.hidden=items.length<2;
 if(!items.length){track.querySelector(".rf-link").textContent=w.none;return}
-items.forEach((e,i)=>{const slide=track.children[i],link=slide.querySelector(".rf-link"),meta=slide.querySelector(".rf-meta");link.href=urlFor(e,lang);link.textContent=e.title[lang]||e.title.en;meta.textContent=w.kinds[e.timeline]+" · "+w.added+" "+new Intl.DateTimeFormat(lang==="he"?"he-IL":lang==="ar"?"ar":"en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}).format(new Date(e.addedOn+"T12:00:00Z"))+" · "+(i+1)+"/"+items.length});
+items.forEach((e,i)=>{const slide=track.children[i],link=slide.querySelector(".rf-link"),meta=slide.querySelector(".rf-meta");link.href=urlFor(e,lang);link.textContent=e.title[lang]||e.title.en;meta.textContent=w.kinds[e.timeline]+" · "+w.added+" "+new Intl.DateTimeFormat(lang==="he"?"he-IL":lang==="ar"?"ar":"en-US",{month:"short",day:"numeric",year:"numeric",timeZone:"UTC"}).format(new Date(e.eventDate+"T12:00:00Z"))+" · "+(i+1)+"/"+items.length});
 track.style.transform="translateX(-"+index*100+"%)"}
 function move(n){if(items.length<2)return;index=(index+n+items.length)%items.length;render()}
 feed.querySelector(".rf-prev").addEventListener("click",()=>move(-1));feed.querySelector(".rf-next").addEventListener("click",()=>move(1));
