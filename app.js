@@ -1505,6 +1505,7 @@ const events = [
     aftermath:"The war created the State of Israel, reshaped Jerusalem and the region's borders, displaced large populations and left unresolved refugee, territorial and political disputes that continued into later Arab–Israeli and Israeli–Palestinian conflicts.",
     stats:{Type:"Statehood / war transition",Evidence:"The declaration and immediate military transition are directly documented."},
     sourceStatus:"The declaration and immediate military transition are directly documented.",
+    localized:{"he":{"title":"הכרזת הקמת מדינת ישראל","location":"תל אביב","story":"ב־14 במאי 1948 הכריז דוד בן־גוריון על הקמת מדינת ישראל עם סיום המנדט הבריטי. ההכרזה התרחשה במהלך מלחמת האזרחים בארץ ישראל, והעימות התרחב למלחמה בין מדינות עם כניסת צבאות ערב השכנים לשטח המנדט לשעבר.","context":"האירוע הוא חלק ממלחמת 1947–1949 בארץ ישראל ומהקמת מדינת ישראל. ציר הזמן מציג גם אלימות, פעולות צבאיות ועקירה שהשפיעו על יהודים ועל ערבים פלסטינים.","aftermath":"המלחמה ביססה את מדינת ישראל, שינתה את השליטה בירושלים ובגבולות האזור, הביאה לעקירת אוכלוסיות גדולות והותירה מחלוקות על פליטים, שטחים ופוליטיקה.","sourceStatus":"ההכרזה והמעבר המיידי למלחמה בין מדינות מתועדים ישירות."},"ar":{"title":"إعلان قيام دولة إسرائيل","location":"تل أبيب","story":"في 14 مايو 1948 أعلن دافيد بن غوريون قيام دولة إسرائيل مع انتهاء الانتداب البريطاني. وقع الإعلان خلال الحرب الأهلية في فلسطين، واتسع النزاع إلى حرب بين دول مع دخول جيوش عربية مجاورة إلى أراضي الانتداب السابق.","context":"يشكل هذا الحدث جزءًا من حرب فلسطين 1947–1949 وقيام إسرائيل. ويعرض الخط الزمني العنف والعمليات العسكرية والتهجير التي طالت المجتمعات اليهودية والعربية الفلسطينية.","aftermath":"أدت الحرب إلى قيام دولة إسرائيل وتغيير السيطرة على القدس وحدود المنطقة وتهجير أعداد كبيرة من السكان، وتركت نزاعات مستمرة بشأن اللاجئين والأراضي والسياسة.","sourceStatus":"الإعلان والانتقال المباشر إلى حرب بين دول موثقان بمصادر مباشرة."}},
     sources:[{label:"Israel State Archives — Declaration of Independence",url:"https://catalog.archives.gov.il/en/chapter/the-declaration-of-independence/"}]
   },
   {
@@ -3041,7 +3042,7 @@ function renderConflictChain(event){
   let box=document.getElementById("conflictChainBox");
   if(!box){box=document.createElement("section");box.id="conflictChainBox";box.className="conflict-chain";const sourceCard=document.querySelector(".sources-card");if(sourceCard)sourceCard.before(box);}
   const chain=CONFLICT_CHAINS[event.title];
-  const lang=(window.FALLING_I18N&&window.FALLING_I18N.currentLanguage?window.FALLING_I18N.currentLanguage():"en");
+  const lang=(new URLSearchParams(location.search).get("lang")||document.documentElement.dataset.language||(window.FALLING_I18N&&window.FALLING_I18N.currentLanguage?window.FALLING_I18N.currentLanguage():"en"));
   const localizedChain=event.title==="Declaration of the State of Israel"?CONFLICT_CHAIN_TRANSLATIONS_1948[lang]:null;
   box.setAttribute("dir",localizedChain?"rtl":"ltr");
   box.classList.toggle("hidden",!chain);box.innerHTML="";if(!chain)return;
