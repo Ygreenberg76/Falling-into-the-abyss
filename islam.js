@@ -671,13 +671,41 @@ const CONFLICT_CHAINS={
   "ISIS declares a caliphate":{note:"This chain shows chronology and documented historical context. An earlier event is not presented as justification, and chronological connection does not by itself prove a single cause.",steps:[{title:"Iraq War and sectarian breakdown",role:"Earlier context",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"Syrian civil war begins",role:"Escalation / development",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"ISIS declares a caliphate",role:"This event",detail:"This is the event currently open in the timeline."},{title:"ISIS attacks Yazidis at Sinjar",role:"Escalation / development",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"ISIS territorial caliphate collapses",role:"What followed",detail:"Open this timeline event to see its evidence, context, aftermath and sources."}]},
   "October 7 attack and Gaza war":{note:"This chain shows chronology and documented historical context. An earlier event is not presented as justification, and chronological connection does not by itself prove a single cause.",steps:[{title:"First Intifada",role:"Earlier context",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"Hamas founded",role:"Escalation / development",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"Oslo Accords establish Palestinian self-government framework",role:"Escalation / development",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"Second Intifada begins",role:"Escalation / development",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"October 7 attack and Gaza war",role:"This event",detail:"This is the event currently open in the timeline."},{title:"Gaza war and regional escalation",role:"What followed",detail:"Open this timeline event to see its evidence, context, aftermath and sources."}]}
 };
+function conflictChainLanguage(){const q=new URLSearchParams(location.search).get("lang");return ["en","he","ar"].includes(q)?q:(["en","he","ar"].includes(document.documentElement.dataset.language)?document.documentElement.dataset.language:"en");}
+function conflictChainText(lang,key){const words={en:{heading:"What led to this?",label:"Conflict chain",note:"These events provide historical context. Chronology alone does not establish causation or justify violence.",context:"Historical context — no separate timeline entry",earlier:"Earlier context",development:"Escalation / development",current:"This event",after:"What followed",key:"Earlier events do not justify violence. Links open existing timeline entries; contextual milestones without a dedicated event are informational."},he:{heading:"מה הוביל לכך?",label:"שרשרת אירועים",note:"האירועים מציגים הקשר היסטורי. רצף כרונולוגי לבדו אינו מוכיח סיבתיות ואינו מצדיק אלימות.",context:"רקע היסטורי — אין אירוע נפרד בציר הזמן",earlier:"רקע קודם",development:"התפתחות / הסלמה",current:"האירוע הנוכחי",after:"מה קרה בהמשך",key:"אירועים קודמים אינם מצדיקים אלימות. קישורים פותחים אירועים קיימים; שלבי רקע ללא אירוע נפרד הם למידע בלבד."},ar:{heading:"ما الذي أدى إلى ذلك؟",label:"تسلسل الأحداث",note:"تقدم هذه الأحداث سياقًا تاريخيًا. التسلسل الزمني وحده لا يثبت السببية ولا يبرر العنف.",context:"سياق تاريخي — لا يوجد حدث مستقل في الخط الزمني",earlier:"سياق سابق",development:"تطور / تصعيد",current:"هذا الحدث",after:"ما تلا ذلك",key:"الأحداث السابقة لا تبرر العنف. تفتح الروابط أحداثًا موجودة، أما المحطات التي لا تملك حدثًا مستقلًا فهي معلومات سياقية فقط."}};return (words[lang]||words.en)[key];}
+function conflictChainRole(role,lang){if(lang==="en")return role;const s=String(role||"").toLowerCase();return conflictChainText(lang,s.includes("this event")||s.includes("current")?"current":s.includes("follow")||s.includes("later")?"after":s.includes("earlier")||s.includes("origin")||s.includes("background")?"earlier":"development");}
 function renderConflictChain(event){
-  let box=document.getElementById("conflictChainBox");
-  if(!box){box=document.createElement("section");box.id="conflictChainBox";box.className="conflict-chain";const sourceCard=document.querySelector(".sources-card");if(sourceCard)sourceCard.before(box);}
-  const chain=CONFLICT_CHAINS[event.title];box.classList.toggle("hidden",!chain);box.innerHTML="";if(!chain)return;
-  box.innerHTML='<div class="conflict-chain-heading"><small>Conflict chain</small><h3>What led to this?</h3><p>'+chain.note+'</p></div>';
-  const rail=document.createElement("div");rail.className="conflict-chain-rail";
-  chain.steps.forEach((step,i)=>{const linked=events.find(e=>e.title===step.title),el=document.createElement(linked?"button":"div");if(linked)el.type="button";el.className="conflict-chain-step"+(step.title===event.title?" current":"")+(linked?" clickable":"");const num=document.createElement("span");num.className="conflict-chain-number";num.textContent=String(i+1).padStart(2,"0");const body=document.createElement("div");body.className="conflict-chain-body";const role=document.createElement("small");role.textContent=step.role+(linked?" · "+sameTimeYearLabel(linked.year):"");const title=document.createElement("strong");title.textContent=step.title;const detail=document.createElement("p");detail.textContent=step.detail;body.append(role,title,detail);el.append(num,body);if(linked&&linked!==event)el.addEventListener("click",()=>openEvent(linked));rail.appendChild(el);});box.appendChild(rail);const key=document.createElement("p");key.className="conflict-chain-key";key.textContent="Earlier event ≠ justification. The labels describe chronology and documented context; where motives are disputed, the timeline identifies them as claims rather than established causes.";box.appendChild(key);
+ let box=document.getElementById("conflictChainBox");
+ if(!box){box=document.createElement("section");box.id="conflictChainBox";box.className="conflict-chain";const sourceCard=document.querySelector(".sources-card");if(sourceCard)sourceCard.before(box);}
+ const chain=CONFLICT_CHAINS[event.title],lang=conflictChainLanguage();
+ box.classList.toggle("hidden",!chain);box.innerHTML="";if(!chain)return;
+ const special=typeof CONFLICT_CHAIN_TRANSLATIONS_1948!=="undefined"&&event.title==="Declaration of the State of Israel"?CONFLICT_CHAIN_TRANSLATIONS_1948[lang]:null;
+ box.dir=lang==="en"?"ltr":"rtl";
+ const heading=document.createElement("div");heading.className="conflict-chain-heading";
+ const small=document.createElement("small");small.textContent=conflictChainText(lang,"label");
+ const h3=document.createElement("h3");h3.textContent=conflictChainText(lang,"heading");
+ const intro=document.createElement("p");intro.textContent=special?special.note:(lang==="en"?chain.note:conflictChainText(lang,"note"));
+ heading.append(small,h3,intro);box.appendChild(heading);
+ const rail=document.createElement("div");rail.className="conflict-chain-rail";
+ chain.steps.forEach((step,i)=>{
+  const linked=events.find(e=>e.title===step.title);
+  const current=linked===event||step.title===event.title;
+  const el=document.createElement(linked&&!current?"button":"div");
+  if(el.tagName==="BUTTON")el.type="button";
+  el.className="conflict-chain-step"+(current?" current":"")+(linked&&!current?" clickable":"")+(linked?"":" context-only");
+  const num=document.createElement("span");num.className="conflict-chain-number";num.textContent=String(i+1).padStart(2,"0");
+  const body=document.createElement("div");body.className="conflict-chain-body";
+  const localizedStep=special&&special.steps[i];
+  const localizedEvent=linked&&window.FALLING_I18N&&window.FALLING_I18N.localizeEvent?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,linked):linked;
+  const role=document.createElement("small");role.textContent=(localizedStep?localizedStep[1]:conflictChainRole(step.role,lang))+(linked?" · "+sameTimeYearLabel(linked.year):" · "+conflictChainText(lang,"context"));
+  const title=document.createElement("strong");title.textContent=localizedStep?localizedStep[0]:(localizedEvent&&localizedEvent.title||step.title);
+  const detail=document.createElement("p");detail.textContent=localizedStep?localizedStep[2]:(lang==="en"?step.detail:(linked&&localizedEvent&&localizedEvent._translationLanguage===lang?(localizedEvent.context||localizedEvent.story||conflictChainText(lang,"note")):conflictChainText(lang,"note")));
+  body.append(role,title,detail);el.append(num,body);
+  if(linked&&!current)el.addEventListener("click",()=>openEvent(linked));
+  rail.appendChild(el);
+ });
+ box.appendChild(rail);
+ const key=document.createElement("p");key.className="conflict-chain-key";key.textContent=conflictChainText(lang,"key");box.appendChild(key);
 }
 function renderHistoryTrail(event,connected){
   let box=document.getElementById("historyTrailBox");
