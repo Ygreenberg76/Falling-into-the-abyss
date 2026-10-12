@@ -3067,7 +3067,7 @@ function renderConflictChain(event){
   const localizedEvent=linked&&window.FALLING_I18N&&window.FALLING_I18N.localizeEvent?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,linked):linked;
   const role=document.createElement("small");role.textContent=(localizedStep?localizedStep[1]:conflictChainRole(step.role,lang))+(linked?" · "+sameTimeYearLabel(linked.year):" · "+conflictChainText(lang,"context"));
   const title=document.createElement("strong");title.textContent=localizedStep?localizedStep[0]:(localizedEvent&&localizedEvent.title||step.title);
-  const detail=document.createElement("p");detail.textContent=localizedStep?localizedStep[2]:(lang==="en"?step.detail:(linked&&localizedEvent&&localizedEvent._translationLanguage===lang?(localizedEvent.context||localizedEvent.story||conflictChainText(lang,"note")):conflictChainText(lang,"note")));
+  const detail=document.createElement("p");detail.textContent=localizedStep?localizedStep[2]:(lang==="en"?step.detail:((lang==="he"?"הסבר השרשרת המקורי באנגלית (תרגום ייעודי טרם אומת): ": "شرح التسلسل الأصلي بالإنجليزية (لم تُراجع ترجمة مخصصة بعد): ")+step.detail));
   body.append(role,title,detail);el.append(num,body);
   if(linked&&!current)el.addEventListener("click",()=>openEvent(linked));
   rail.appendChild(el);
