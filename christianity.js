@@ -2769,6 +2769,48 @@ const CONFLICT_CHAINS={
   "ISIS conquest devastates Christian communities in Iraq and Syria":{note:"This chain shows chronology and documented historical context. An earlier event is not presented as justification, and chronological connection does not by itself prove a single cause.",steps:[{title:"Iraq War and collapse of security accelerate Christian displacement",role:"Earlier context",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"Iraq church bombings signal escalating attacks on Christians",role:"Escalation / development",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"ISIS conquest devastates Christian communities in Iraq and Syria",role:"This event",detail:"This is the event currently open in the timeline."},{title:"ISIS murders 21 Coptic Christians in Libya",role:"What followed",detail:"Open this timeline event to see its evidence, context, aftermath and sources."}]},
   "Gaza war devastates historic Palestinian Christian community":{note:"This chain shows chronology and documented historical context. An earlier event is not presented as justification, and chronological connection does not by itself prove a single cause.",steps:[{title:"Creation of Israel transforms ancient Christian communities in the Holy Land",role:"Earlier context",detail:"Open this timeline event to see its evidence, context, aftermath and sources."},{title:"Gaza war devastates historic Palestinian Christian community",role:"This event",detail:"This is the event currently open in the timeline."},{title:"Gaza and regional war continue to affect Christian holy sites and communities",role:"What followed",detail:"Open this timeline event to see its evidence, context, aftermath and sources."}]}
 };
+const VERIFIED_CHAIN_STEP_TRANSLATIONS={
+ "Great Persecution under Diocletian and Galerius":{
+  he:[
+   ["רדיפות הנוצרים בימי דקיוס","תקדים מוקדם","בשנת 250 דרש הקיסר דקיוס מתושבים להשתתף בפולחן קורבנות ממלכתי; נוצרים שסירבו היו נתונים לענישה. מדובר בגל רדיפות נפרד."],
+   ["רדיפות הנוצרים בימי ולריאנוס","תקדים נוסף","בשנים 257–260 כוונו גזירות נגד אנשי כמורה ונוצרים בולטים. הרדיפות קדמו בעשרות שנים לגזירות דיוקלטיאנוס."],
+   ["הרדיפה הגדולה בימי דיוקלטיאנוס וגלריוס","האירוע הנוכחי","משנת 303 פרסמו השלטונות הקיסריים גזירות נגד התכנסויות נוצריות, כתבי קודש ואנשי כמורה; היישום השתנה בין אזורים."]
+  ],
+  ar:[
+   ["اضطهاد المسيحيين في عهد ديسيوس","سابقة أقدم","طلب الإمبراطور ديسيوس عام 250 المشاركة في تقديم قرابين رسمية، وتعرض مسيحيون رفضوا ذلك للعقوبة. وكانت هذه موجة اضطهاد منفصلة."],
+   ["اضطهاد المسيحيين في عهد فاليريان","سابقة أخرى","استهدفت مراسيم 257–260 رجال الدين ومسيحيين بارزين؛ وسبقت مراسيم دقلديانوس بعقود."],
+   ["الاضطهاد الكبير في عهد دقلديانوس وغاليريوس","الحدث الحالي","أصدرت السلطات الإمبراطورية منذ 303 مراسيم ضد اجتماعات المسيحيين وكتبهم المقدسة ورجال دينهم؛ واختلف تنفيذها بين الأقاليم."]
+  ]
+ },
+ "East–West Schism":{
+  he:[
+   ["ועידת כלקדון ופילוגים נוצריים מוקדמים","רקע מובחן","החלטות ועידת כלקדון בשנת 451 תרמו לפילוג עם כנסיות אורתודוקסיות אוריינטליות; אין לבלבל פילוג זה עם הקרע המאוחר בין רומא לקונסטנטינופול."],
+   ["הקרע בין הכנסייה המזרחית למערבית","האירוע הנוכחי","בשנת 1054 הוחלפו חרמות בין נציגי רומא וקונסטנטינופול על רקע מחלוקות ממושכות על סמכות, תאולוגיה ופולחן. ההיפרדות העמיקה בהדרגה."],
+   ["ביזת קונסטנטינופול במסע הצלב הרביעי","התפתחות מאוחרת","ב־1204 כבשו צלבנים לטינים את קונסטנטינופול ובזזו אותה; האירוע העמיק את הקרע אך לא גרם בדיעבד למחלוקת של 1054."]
+  ],
+  ar:[
+   ["مجمع خلقيدونية والانقسامات المسيحية المبكرة","خلفية مختلفة","أسهمت قرارات مجمع خلقيدونية عام 451 في الانقسام مع الكنائس الأرثوذكسية المشرقية؛ ولا ينبغي الخلط بينه وبين الانقسام اللاحق بين روما والقسطنطينية."],
+   ["الانشقاق بين الكنيستين الشرقية والغربية","الحدث الحالي","تبادل ممثلو روما والقسطنطينية قرارات الحرمان عام 1054 بعد خلافات طويلة حول السلطة واللاهوت والطقوس. وتعمق الانفصال تدريجيًا."],
+   ["نهب القسطنطينية في الحملة الصليبية الرابعة","تطور لاحق","استولى صليبيون لاتينيون على القسطنطينية ونهبوها عام 1204؛ وعمّق ذلك الانقسام لكنه لم يكن سببًا سابقًا لخلافات 1054."]
+  ]
+ },
+ "Pope Urban II calls the First Crusade":{
+  he:[
+   ["הריסת כנסיית הקבר","רקע מוקדם","בשנת 1009 הורה הח׳ליף הפאטמי אל־חאכם להרוס חלקים מכנסיית הקבר בירושלים. האירוע קדם למסע הצלב בכמעט מאה שנה ואינו מסביר לבדו את הקריאה אליו."],
+   ["קריאת האפיפיור אורבנוס השני למסע הצלב הראשון","האירוע הנוכחי","בוועידת קלרמון בשנת 1095 קרא אורבנוס השני למסע חמוש למזרח, לאחר בקשת סיוע ביזנטית ובהקשר של מטרות דתיות ופוליטיות במערב."],
+   ["מעשי הטבח ביהודים במסע הצלב הראשון","התפתחות מאוחרת","בשנת 1096 תקפו קבוצות צלבנים קהילות יהודיות בחבל הריין; הפגיעה באזרחים לא הייתה תוצאה הכרחית של בקשת הסיוע הביזנטית."],
+   ["המצור על אנטיוכיה במסע הצלב הראשון","התפתחות מאוחרת","הצלבנים צרו על אנטיוכיה בשנים 1097–1098 וכבשו אותה בדרך לירושלים."],
+   ["כיבוש ירושלים בידי הצלבנים","מה קרה בהמשך","ביולי 1099 כבשו הצלבנים את ירושלים והרגו רבים מתושביה, מוסלמים ויהודים."]
+  ],
+  ar:[
+   ["تدمير كنيسة القيامة","خلفية مبكرة","أمر الخليفة الفاطمي الحاكم بتدمير أجزاء من كنيسة القيامة في القدس عام 1009. وسبق ذلك الحملة الصليبية بنحو قرن، ولا يفسر الدعوة إليها وحده."],
+   ["دعوة البابا أوربان الثاني إلى الحملة الصليبية الأولى","الحدث الحالي","دعا أوربان الثاني في مجمع كليرمون عام 1095 إلى حملة مسلحة نحو الشرق بعد طلب المساعدة البيزنطي، وفي سياق أهداف دينية وسياسية غربية."],
+   ["مذابح اليهود خلال الحملة الصليبية الأولى","تطور لاحق","هاجمت مجموعات صليبية جماعات يهودية في منطقة الراين عام 1096؛ ولم يكن استهداف المدنيين نتيجة حتمية لطلب المساعدة البيزنطي."],
+   ["حصار أنطاكية خلال الحملة الصليبية الأولى","تطور لاحق","حاصر الصليبيون أنطاكية بين 1097 و1098 واستولوا عليها في طريقهم إلى القدس."],
+   ["استيلاء الصليبيين على القدس","ما تلا ذلك","استولى الصليبيون على القدس في يوليو 1099 وقتلوا كثيرًا من سكانها المسلمين واليهود."]
+  ]
+ }
+};
 const VERIFIED_CHAIN_NOTES={
  "ISIS conquest devastates Christian communities in Iraq and Syria":{he:"לאחר הפלישה לעיראק בשנת 2003 הידרדר הביטחון וקהילות נוצריות סבלו מאלימות ומעקירה. פיגועים בכנסיות המחישו את הסכנה עוד לפני כיבושי דאעש בשנת 2014, שבמהלכם נרדפו נוצרים וקבוצות נוספות בעיראק ובסוריה. רצח הקופטים בלוב בשנת 2015 היה פשע מאוחר ונפרד, ולא סיבה לכיבושים הקודמים.",ar:"بعد غزو العراق عام 2003 تدهور الأمن وتعرضت مجتمعات مسيحية للعنف والنزوح. وأظهرت تفجيرات الكنائس الخطر قبل اجتياحات تنظيم داعش عام 2014، التي شهدت اضطهاد المسيحيين وجماعات أخرى في العراق وسوريا. وكان قتل الأقباط في ليبيا عام 2015 جريمة لاحقة منفصلة، لا سببًا للاجتياحات السابقة."},
  "Gaza war devastates historic Palestinian Christian community":{he:"קהילות נוצריות פלסטיניות חיו בארץ הקודש מאות שנים ושינויים מדיניים ומלחמות השפיעו על גודלן ותפוצתן. המלחמה בעזה מאז אוקטובר 2023 פגעה גם בקהילה הנוצרית הקטנה ברצועה, במוסדותיה ובאתרי דת. ההתפתחויות המאוחרות הן המשך של המשבר, לא הסבר סיבתי בלעדי.",ar:"عاشت مجتمعات مسيحية فلسطينية في الأرض المقدسة قرونًا، وأثرت التحولات السياسية والحروب في حجمها وانتشارها. وألحقت الحرب في غزة منذ أكتوبر 2023 أضرارًا أيضًا بالمجتمع المسيحي الصغير في القطاع ومؤسساته ومواقعه الدينية. والتطورات اللاحقة استمرار للأزمة وليست تفسيرًا سببيًا وحيدًا."},
@@ -2797,7 +2839,7 @@ function renderConflictChain(event){
   el.className="conflict-chain-step"+(current?" current":"")+(linked&&!current?" clickable":"")+(linked?"":" context-only");
   const num=document.createElement("span");num.className="conflict-chain-number";num.textContent=String(i+1).padStart(2,"0");
   const body=document.createElement("div");body.className="conflict-chain-body";
-  const localizedStep=special&&special.steps[i];
+  const localizedStep=(special&&special.steps[i])||(VERIFIED_CHAIN_STEP_TRANSLATIONS[event.title]&&VERIFIED_CHAIN_STEP_TRANSLATIONS[event.title][lang]&&VERIFIED_CHAIN_STEP_TRANSLATIONS[event.title][lang][i]);
   const localizedEvent=linked&&window.FALLING_I18N&&window.FALLING_I18N.localizeEvent?window.FALLING_I18N.localizeEvent(TIMELINE_KIND,linked):linked;
   const role=document.createElement("small");role.textContent=(localizedStep?localizedStep[1]:conflictChainRole(step.role,lang))+(linked?" · "+sameTimeYearLabel(linked.year):" · "+conflictChainText(lang,"context"));
   const title=document.createElement("strong");title.textContent=localizedStep?localizedStep[0]:(localizedEvent&&localizedEvent.title||step.title);
