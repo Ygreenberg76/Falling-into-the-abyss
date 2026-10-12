@@ -1,5 +1,45 @@
 window.FALLING_RECENT_EVENTS = [
   {
+    "addedOn": "2026-10-12",
+    "timeline": "jewish",
+    "year": 1897,
+    "title": {
+      "en": "First Zionist Congress",
+      "he": "First Zionist Congress",
+      "ar": "First Zionist Congress"
+    }
+  },
+  {
+    "addedOn": "2026-10-12",
+    "timeline": "jewish",
+    "year": 1917,
+    "title": {
+      "en": "Balfour Declaration",
+      "he": "Balfour Declaration",
+      "ar": "Balfour Declaration"
+    }
+  },
+  {
+    "addedOn": "2026-10-12",
+    "timeline": "jewish",
+    "year": 1922,
+    "title": {
+      "en": "League of Nations approves British Mandate for Palestine",
+      "he": "League of Nations approves British Mandate for Palestine",
+      "ar": "League of Nations approves British Mandate for Palestine"
+    }
+  },
+  {
+    "addedOn": "2026-10-12",
+    "timeline": "jewish",
+    "year": 1947,
+    "title": {
+      "en": "Civil war in Mandatory Palestine begins",
+      "he": "Civil war in Mandatory Palestine begins",
+      "ar": "Civil war in Mandatory Palestine begins"
+    }
+  },
+  {
     "addedOn": "2026-10-11",
     "timeline": "christian",
     "year": 2026,
