@@ -40,6 +40,17 @@ window.FALLING_RECENT_EVENTS = [
     }
   },
   {
+    "addedOn": "2026-10-12",
+    "timeline": "islamic",
+    "year": 2026,
+    "title": {
+      "en": "Renewed Yemen War: Repeated Riyadh Airport Attacks and Regional Response",
+      "he": "מלחמת תימן מתרחבת: תקיפות חוזרות בנמל התעופה בריאד ותגובה אזורית",
+      "ar": "تصاعد حرب اليمن: هجمات متكررة على مطار الرياض ورد إقليمي"
+    },
+    "eventDate": "2026-10-11"
+  },
+  {
     "addedOn": "2026-10-11",
     "timeline": "christian",
     "year": 2026,
@@ -71,17 +82,6 @@ window.FALLING_RECENT_EVENTS = [
       "ar": "9 أكتوبر 2026: هجوم على تجمع صلاة مسيحي في البنغال الغربية"
     },
     "eventDate": "2026-10-09"
-  },
-  {
-    "addedOn": "2026-10-12",
-    "timeline": "islamic",
-    "year": 2026,
-    "title": {
-      "en": "Renewed Yemen War: Repeated Riyadh Airport Attacks and Regional Response",
-      "he": "מלחמת תימן מתרחבת: תקיפות חוזרות בנמל התעופה בריאד ותגובה אזורית",
-      "ar": "تصاعد حرب اليمن: هجمات متكررة على مطار الرياض ورد إقليمي"
-    },
-    "eventDate": "2026-10-11"
   },
   {
     "addedOn": "2026-10-11",
