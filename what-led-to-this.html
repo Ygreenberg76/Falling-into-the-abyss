@@ -680,7 +680,7 @@ const note=lang==="en"?item.chain.note:(item.notes?.[item.title]?.[lang]||specia
 if(term&&!([item.title,translatedTitle,note,...item.chain.steps.map(s=>s.title)].join(" ").toLocaleLowerCase().includes(term)))continue;
 shown++;
 const details=el("details");details.dataset.religion=item.religion;const summary=el("summary");const summaryCopy=el("span","summary-copy");summaryCopy.append(el("span","pill",c[item.religion]),el("span","summary-title",translatedTitle),el("span","summary-meta",c.stepCount(item.chain.steps.length)));summary.append(summaryCopy,el("span","expand-icon","+"));details.append(summary);const body=el("div","detail-body");body.append(el("p","note",note));
-const ol=el("ol");item.chain.steps.forEach((step,i)=>{const localized=lang==="en"?null:(tr?.[i]||special?.steps?.[i]);const li=el("li");li.append(el("strong","",localized?.[0]||step.title),el("span","role",localized?.[1]||step.role),el("p","",localized?.[2]||step.detail));ol.append(li)});body.append(ol);
+const ol=el("ol");item.chain.steps.forEach((step,i)=>{const localized=lang==="en"?null:(tr?.[i]||special?.steps?.[i]);const li=el("li");li.append(el("strong","",localized?.[0]||step.title),el("span","role",localized?.[1]||step.role),el("p","",(() => { const detail=localized?.[2]||step.detail; const generic=/^Open this timeline event to see its evidence, context, aftermath and sources\.?$/i; return detail && !generic.test(detail.trim()) ? detail : (step.detail && !generic.test(step.detail.trim()) ? step.detail : item.chain.note); })()));ol.append(li)});body.append(ol);
 const a=el("a","timeline-link",c.open);a.href=item.href;body.append(a);details.append(body);root.append(details);
 }
 $("chain-count").textContent=c.results(shown);if(!shown)root.append(el("p","empty",c.empty));
