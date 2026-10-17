@@ -2519,7 +2519,8 @@ const events = [
     aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
     stats:{Type:"Iran–Israel direct conflict",Evidence:"The attacks and interceptions are extensively documented. Attribution for the Damascus strike was widely reported as Israeli although Israel did not publicly claim it at the time."},
     sourceStatus:"The attacks and interceptions are extensively documented. Attribution for the Damascus strike was widely reported as Israeli although Israel did not publicly claim it at the time.",
-    sources:[{label:"United Nations — Security Council on Iran-Israel escalation",url:"https://press.un.org/en/2024/sc15660.doc.htm"}]
+    sources:[{label:"United Nations — Security Council on Iran-Israel escalation",url:"https://press.un.org/en/2024/sc15660.doc.htm"}],
+    localized:{he:{"title":"איראן וישראל מחליפות תקיפות ישירות","location":"ישראל ואיראן","story":"באפריל 2024 שיגרה איראן מאות כטב״מים וטילים לעבר ישראל לאחר תקיפה ישראלית במתחם דיפלומטי איראני בדמשק שבה נהרגו מפקדים איראנים בכירים. ישראל ובעלות בריתה יירטו את רוב האיומים, ובהמשך ביצעה ישראל תקיפה מוגבלת באיראן. חילופי התקיפות סימנו מעבר חסר תקדים ממלחמת הצללים ארוכת השנים לעימות ישיר בין המדינות.","context":"האירוע הרחיב את העימות האזורי מעבר לזירות השליחים והפך את ישראל ואיראן למשתתפות ישירות בתקיפות זו נגד זו.","aftermath":"חילופי התקיפות יצרו תקדים להסלמה ישירה נוספת בין שתי המדינות.","sourceStatus":"התקיפות והיירוטים מתועדים בהרחבה. התקיפה בדמשק יוחסה באופן נרחב לישראל, אף שישראל לא קיבלה עליה אחריות פומבית באותה עת"}}
   },
   {
     year:2024, depth:46080, title:"Israel–Hezbollah war escalates in Lebanon", location:"Lebanon and northern Israel",
@@ -2528,7 +2529,8 @@ const events = [
     aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
     stats:{Type:"Israel–Hezbollah war",Evidence:"The escalation, strikes, ground fighting and displacement are extensively documented. Assessments of individual attacks and compliance with international humanitarian law remain contested."},
     sourceStatus:"The escalation, strikes, ground fighting and displacement are extensively documented. Assessments of individual attacks and compliance with international humanitarian law remain contested.",
-    sources:[{label:"United Nations — Lebanon crisis",url:"https://news.un.org/en/tags/lebanon"}]
+    sources:[{label:"United Nations — Lebanon crisis",url:"https://news.un.org/en/tags/lebanon"}],
+    localized:{he:{"title":"מלחמת ישראל–חזבאללה מסלימה בלבנון","location":"לבנון וצפון ישראל","story":"העימות בין ישראל לחזבאללה החריף באופן דרמטי ב־2024 וכלל תקיפות ישראליות ברחבי לבנון, ירי רקטות וטילים של חזבאללה לעבר ישראל, הריגת בכירים בחזבאללה ופעולות קרקעיות ישראליות בדרום לבנון. אוכלוסיות אזרחיות גדולות נעקרו ומספר הנפגעים עלה בחדות.","context":"המלחמה התפתחה מן העימות הגבולי שהחל לאחר 7 באוקטובר לעימות צבאי רחב יותר.","aftermath":"ההסלמה שינתה את מאזן הכוחות בלבנון והובילה בסופו של דבר להסדרי הפסקת אש שבריריים.","sourceStatus":"ההסלמה, התקיפות, הלחימה הקרקעית והעקירה מתועדות בהרחבה. הערכות של תקיפות בודדות והעמידה במשפט ההומניטרי הבינלאומי נותרו שנויות במחלוקת"}}
   },
   {
     year:2024, depth:46250, title:"ICJ advisory opinion on Israel's occupation and settlement policies", location:"International Court of Justice, The Hague",
@@ -2537,7 +2539,8 @@ const events = [
     aftermath:"Its significance is best understood together with the surrounding events in the same period rather than as an isolated episode.",
     stats:{Type:"International legal ruling / occupation",Evidence:"The advisory opinion is an authoritative court document, but it is advisory rather than a judgment resolving a contentious case between consenting states."},
     sourceStatus:"The advisory opinion is an authoritative court document, but it is advisory rather than a judgment resolving a contentious case between consenting states.",
-    sources:[{label:"International Court of Justice — Advisory Opinion",url:"https://www.icj-cij.org/case/186"}]
+    sources:[{label:"International Court of Justice — Advisory Opinion",url:"https://www.icj-cij.org/case/186"}],
+    localized:{he:{"title":"חוות הדעת המייעצת של בית הדין הבינלאומי לצדק על הכיבוש ומדיניות ההתנחלויות של ישראל","location":"בית הדין הבינלאומי לצדק, האג","story":"ביולי 2024 פרסם בית הדין הבינלאומי לצדק חוות דעת מייעצת שקבעה כי המשך נוכחותה של ישראל בשטח הפלסטיני הכבוש אינו חוקי והתייחסה להשלכות של מדיניות ההתנחלויות והסיפוח. ישראל דחתה את מסקנות חוות הדעת ומתחה ביקורת על ההליך.","context":"האירוע הוא התפתחות משפטית בינלאומית ולא אירוע צבאי, והוא מוצג בנפרד כדי להבחין בין פסיקה משפטית, מדיניות ואלימות.","aftermath":"חוות הדעת הפכה לנקודת ייחוס מרכזית בדיון המשפטי והדיפלומטי על הכיבוש וההתנחלויות.","sourceStatus":"חוות הדעת היא מסמך סמכותי של בית הדין, אך היא מייעצת ואינה פסק דין המכריע בסכסוך בין מדינות שהסכימו להתדיין בפניו"}}
   },
   {
     year:2025, depth:46420, title:"Gaza ceasefire and hostage-prisoner exchanges", location:"Gaza Strip and Israel",
@@ -2546,7 +2549,8 @@ const events = [
     aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
     stats:{Type:"Ceasefire / hostage and prisoner exchange",Evidence:"The ceasefire and exchanges are documented. Implementation remained incomplete and the agreement did not produce a comprehensive political settlement or fully end violence."},
     sourceStatus:"The ceasefire and exchanges are documented. Implementation remained incomplete and the agreement did not produce a comprehensive political settlement or fully end violence.",
-    sources:[{label:"Reuters — Gaza ceasefire context, 2026",url:"https://www.reuters.com/world/middle-east/evacuated-an-incubator-now-back-gaza-getting-know-mama-2026-10-02/"}]
+    sources:[{label:"Reuters — Gaza ceasefire context, 2026",url:"https://www.reuters.com/world/middle-east/evacuated-an-incubator-now-back-gaza-getting-know-mama-2026-10-02/"}],
+    localized:{he:{"title":"הפסקת האש בעזה וחילופי חטופים–אסירים","location":"רצועת עזה וישראל","story":"הסדרי הפסקת אש במהלך המלחמה שלאחר 7 באוקטובר הובילו לעסקאות שבהן שוחררו חטופים ישראלים שהוחזקו בעזה בתמורה לאסירים ולעצורים פלסטינים. הפסקת אש מאוחרת יותר בתיווך אמריקאי, שהוסכמה באוקטובר 2025, סיימה את הלחימה בהיקף מלא, אף שתקיפות ישראליות נמשכו וסוגיות פוליטיות, הומניטריות וביטחוניות מרכזיות נותרו בלתי פתורות.","context":"ההסדרים שילבו סוגיית חטופים ואסירים עם ניסיון לעצור את המלחמה בלי להגיע להסדר מדיני כולל.","aftermath":"הפסקת האש הפחיתה את היקף הלחימה אך לא יצרה שלום יציב ולא פתרה את שאלת שלטון חמאס, ביטחון ישראל ושיקום עזה.","sourceStatus":"הפסקת האש והחילופים מתועדים. היישום נותר חלקי וההסכם לא יצר הסדר פוליטי כולל ולא הפסיק לחלוטין את האלימות"}}
   },
   {
     year:2026, depth:46590, title:"Gaza after the 2025 ceasefire: continuing strikes and humanitarian crisis", location:"Gaza Strip",
@@ -2555,7 +2559,8 @@ const events = [
     aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
     stats:{Type:"Post-ceasefire conflict / humanitarian crisis",Evidence:"Current as of October 2026. Reuters reports that strikes continued despite the ceasefire and that Gaza's humanitarian and energy crises remained severe. Because conditions continue to change, this marker should be treated as an evolving record."},
     sourceStatus:"Current as of October 2026. Reuters reports that strikes continued despite the ceasefire and that Gaza's humanitarian and energy crises remained severe. Because conditions continue to change, this marker should be treated as an evolving record.",
-    sources:[{label:"Reuters — Gaza conditions, September 2026",url:"https://www.reuters.com/business/energy/gazas-hospitals-homes-struggle-keep-generators-running-oil-shortages-bite-2026-09-10/"}]
+    sources:[{label:"Reuters — Gaza conditions, September 2026",url:"https://www.reuters.com/business/energy/gazas-hospitals-homes-struggle-keep-generators-running-oil-shortages-bite-2026-09-10/"}],
+    localized:{he:{"title":"עזה לאחר הפסקת האש של 2025: תקיפות נמשכות ומשבר הומניטרי","location":"רצועת עזה","story":"עד 2026 הפסקת האש מאוקטובר 2025 סיימה את המלחמה בהיקף מלא אך לא יצרה שלום יציב. תקיפות ישראליות נמשכו, חמאס לא פורק מנשקו ועזה נותרה הרוסה משנות מלחמה. מחסור חמור, תשתיות פגועות ועקירה המשיכו להשפיע על אזרחים.","context":"הסמן מתייחס למצב כאל היסטוריה מתפתחת ולא כאל סיום מוסכם של המלחמה.","aftermath":"המצב ההומניטרי והביטחוני נותר בלתי יציב ותלוי בהמשך יישום הפסקת האש ובהסדרים פוליטיים עתידיים.","sourceStatus":"נכון לאוקטובר 2026. דיווחי רויטרס מצביעים על המשך תקיפות למרות הפסקת האש ועל משברי אנרגיה והומניטריים חמורים בעזה. מאחר שהתנאים ממשיכים להשתנות, יש לראות בסמן זה רשומה מתפתחת"}}
   },
   {
     year:2026, depth:46760, title:"U.S.–Israel campaign against Iran", location:"Iran and wider Middle East",
@@ -2564,7 +2569,8 @@ const events = [
     aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
     stats:{Type:"Regional interstate war",Evidence:"Current as of October 2026. Reuters reporting confirms the U.S.–Israel campaign against Iran. Operational details and consequences remain developing and should be updated as stronger official and archival records become available."},
     sourceStatus:"Current as of October 2026. Reuters reporting confirms the U.S.–Israel campaign against Iran. Operational details and consequences remain developing and should be updated as stronger official and archival records become available.",
-    sources:[{label:"Reuters — U.S.–Israel campaign against Iran",url:"https://www.reuters.com/world/africa/us-waives-rights-conditions-320-million-military-aid-egypt-letter-shows-2026-10-01/"}]
+    sources:[{label:"Reuters — U.S.–Israel campaign against Iran",url:"https://www.reuters.com/world/africa/us-waives-rights-conditions-320-million-military-aid-egypt-letter-shows-2026-10-01/"}],
+    localized:{he:{"title":"המערכה האמריקאית–ישראלית נגד איראן","location":"איראן והמזרח התיכון הרחב","story":"ב־2026 התרחב העימות האזורי למערכה צבאית ישירה של ארצות הברית וישראל נגד איראן, שתוארה בידי גורמים אמריקאים כמבצע Epic Fury. המלחמה יצרה השלכות אזוריות גדולות והשפיעה על דיפלומטיה, ביטחון אנרגיה ומדינות שכנות.","context":"האירוע מסמן שלב חדש שבו העימות עם איראן הפך ממלחמת צללים וחילופי תקיפות מוגבלים למערכה צבאית ישירה ורחבה יותר.","aftermath":"השלכות המערכה על איראן, ישראל, מדינות המפרץ, לבנון והסדר האזורי עדיין מתפתחות.","sourceStatus":"נכון לאוקטובר 2026. דיווחי רויטרס מאשרים את המערכה האמריקאית–ישראלית נגד איראן. פרטי המבצעים וההשלכות עדיין מתפתחים ויש לעדכנם ככל שיהיו זמינים תיעוד רשמי וארכיוני חזקים יותר"}}
   },
   {
     year:2026, depth:46930, title:"Israel–Hezbollah ceasefire after renewed Lebanon escalation", location:"Israel and Lebanon",
@@ -2573,7 +2579,8 @@ const events = [
     aftermath:"The consequences remain ongoing. This section is intentionally treated as a living historical record and should be updated as ceasefires, wars, investigations, hostage issues and regional political arrangements develop.",
     stats:{Type:"Ceasefire / Israel–Hezbollah conflict",Evidence:"Current as of October 2026. Reuters reported confirmation of the ceasefire by a U.S. official, an Israeli official and Hezbollah sources. Its durability remains an evolving question."},
     sourceStatus:"Current as of October 2026. Reuters reported confirmation of the ceasefire by a U.S. official, an Israeli official and Hezbollah sources. Its durability remains an evolving question.",
-    sources:[{label:"Reuters — Israel–Hezbollah ceasefire, June 2026",url:"https://www.investing.com/news/world-news/israeli-hezbollah-agree-to-ceasefire-starting-on-friday-us-official-4751504"}]
+    sources:[{label:"Reuters — Israel–Hezbollah ceasefire, June 2026",url:"https://www.investing.com/news/world-news/israeli-hezbollah-agree-to-ceasefire-starting-on-friday-us-official-4751504"}],
+    localized:{he:{"title":"הפסקת אש בין ישראל לחזבאללה לאחר הסלמה מחודשת בלבנון","location":"ישראל ולבנון","story":"לאחר לחימה מחודשת הקשורה לעימות האזורי הרחב הסכימו ישראל וחזבאללה להפסקת אש שעליה הודיעה ארצות הברית ביוני 2026. כוחות ישראליים נותרו בדרום לבנון ותקיפות מוקדמות התרחשו סביב תחילת הפסקת האש, דבר שהדגיש את שבריריות ההסדר.","context":"הפסקת האש הגיעה לאחר שלב נוסף של הסלמה והייתה חלק מן הניסיון לבלום את המלחמה האזורית הרחבה.","aftermath":"עמידות ההסדר, שאלת הנוכחות הצבאית והסדרי הגבול נותרו פתוחים.","sourceStatus":"נכון לאוקטובר 2026. רויטרס דיווחה כי גורם אמריקאי, גורם ישראלי ומקורות בחזבאללה אישרו את הפסקת האש. עמידותה נותרה שאלה מתפתחת"}}
   },
   {
     "id": "jewish-2026-manchester-alleged-bomb-plot",
@@ -3792,6 +3799,7 @@ makeParticles();render();rafId=requestAnimationFrame(tick);
 if(window.location.hash==="#descent"){
   window.addEventListener("load",()=>{
     window.setTimeout(centerAbyss,120);
-    window.setTimeout(centerAbyss,650);
+    window.setTimeout(centerAbyss,650);,
+    localized:{he:{"title":"2026 — אתם כאן","location":"ההווה","story":"ציר הזמן מגיע להווה באוקטובר 2026. התיעוד ההיסטורי נשאר פתוח: עזה נמצאת בסביבה שברירית שלאחר מלחמה והפסקת אש, האלימות והעקירה הישראלית–פלסטינית לא נפתרו, והעימות האזורי הרחב הכולל את ישראל, איראן וחזבאללה יצר מלחמות והפסקות אש חדשות.","context":"זהו קצה חי של ציר הזמן ולא מסקנה היסטורית סופית. אירועים בני זמננו מוצגים בזהירות ובהפרדה בין עובדות מתועדות, טענות משפטיות ותוצאות שעדיין מתפתחות.","aftermath":"הפרק הבא עדיין נכתב, ולכן יש לעדכן את הסמן כאשר הסדרי הפסקת אש, חטופים, מלחמות, חקירות והסדרים מדיניים משתנים.","sourceStatus":"זוהי נקודת קצה חיה ולא מסקנה היסטורית סופית. עובדות עכשוויות, מספרי נפגעים, ממצאים משפטיים והסדרים פוליטיים עשויים להשתנות עם הופעת ראיות ורשומות סמכותיות חדשות"}}
   },{once:true});
 }
