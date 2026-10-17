@@ -3744,6 +3744,7 @@ exploreToggle.addEventListener("click",()=>{
   if(open)eventSearch.focus();
 });
 [eventSearch,eraFilter,typeFilter].forEach(el=>el.addEventListener(el.tagName==="INPUT"?"input":"change",applyFilters));
+document.addEventListener("falling:languagechange",applyFilters);
 document.getElementById("yearJumpBtn").addEventListener("click",doYearJump);
 yearJump.addEventListener("keydown",e=>{if(e.key==="Enter")doYearJump()});
 document.getElementById("clearFilters").addEventListener("click",()=>{
