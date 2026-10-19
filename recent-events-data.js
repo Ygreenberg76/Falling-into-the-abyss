@@ -93,5 +93,17 @@ window.FALLING_RECENT_EVENTS = [
       "ar": "الحرب الأهلية السودانية: غارة بمسيّرة تقتل نازحين في ولاية النيل الأزرق"
     },
     "eventDate": "2026-10-09"
+  },
+  {
+    "addedOn": "2026-10-18",
+    "updatedOn": "2026-10-19",
+    "timeline": "christian",
+    "year": 2026,
+    "title": {
+      "en": "Attack on European diplomats and Catholic representatives near Taybeh",
+      "he": "תקיפת דיפלומטים אירופים ונציגים קתולים ליד טייבה",
+      "ar": "الاعتداء على دبلوماسيين أوروبيين وممثلين كاثوليك قرب الطيبة"
+    },
+    "eventDate": "2026-10-17"
   }
 ];
