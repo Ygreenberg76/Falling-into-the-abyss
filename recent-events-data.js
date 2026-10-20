@@ -105,5 +105,16 @@ window.FALLING_RECENT_EVENTS = [
       "ar": "الاعتداء على دبلوماسيين أوروبيين وممثلين كاثوليك قرب الطيبة"
     },
     "eventDate": "2026-10-17"
+  },
+  {
+    "addedOn": "2026-10-20",
+    "timeline": "christian",
+    "year": 2026,
+    "eventDate": "2026-10-19",
+    "title": {
+      "en": "October 19, 2026: Shakahola massacre murder convictions in Kenya",
+      "he": "19 באוקטובר 2026: הרשעות ברצח בפרשת שאקהולה בקניה",
+      "ar": "19 أكتوبر 2026: إدانات بالقتل في قضية شاكاهولا بكينيا"
+    }
   }
 ];
