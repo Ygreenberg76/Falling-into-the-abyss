@@ -1,4 +1,5 @@
 window.FALLING_RECENT_EVENTS = [
+  {"addedOn":"2026-10-21","timeline":"islamic","year":2026,"title":{"en":"October 18–19, 2026: Civilians Killed in Ménaka, Mali","he":"18–19 באוקטובר 2026: אזרחים נהרגו באזור מנאקה, מאלי","ar":"18–19 أكتوبر 2026: مقتل مدنيين في منطقة ميناكا بمالي"},"eventDate":"2026-10-18"},
   {
     "addedOn": "2026-10-12",
     "timeline": "jewish",
