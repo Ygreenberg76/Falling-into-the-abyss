@@ -41,7 +41,9 @@ window.FALLING_RECENT_EVENTS = [
     }
   },
   {
-    "addedOn": "2026-10-12",
+    "addedOn": "2026-10-22",
+    "updatedOn": "2026-10-22",
+    "updateType": "Updated",
     "timeline": "islamic",
     "year": 2026,
     "title": {
