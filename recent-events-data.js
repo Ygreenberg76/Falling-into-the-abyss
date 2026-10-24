@@ -1,4 +1,5 @@
 window.FALLING_RECENT_EVENTS = [
+  {"addedOn":"2026-10-24","timeline":"christian","year":2026,"eventDate":"2026-10-23","title":{"en":"October 23, 2026: Deadly Attack on Greek Orthodox Church in Jordan","he":"23 באוקטובר 2026: מתקפה קטלנית על כנסייה יוונית־אורתודוקסית בירדן","ar":"23 أكتوبر 2026: هجوم مميت على كنيسة للروم الأرثوذكس في الأردن"}},
   {"addedOn":"2026-10-23","timeline":"jewish","year":2026,"eventDate":"2026-10-23","title":{"en":"October 23, 2026: Hebron checkpoint shooting and West Bank closure order","he":"23 באוקטובר 2026: ירי ליד חברון והיערכות לסגר בגדה המערבית","ar":"23 أكتوبر 2026: إطلاق نار قرب الخليل والاستعداد لإغلاق الضفة الغربية"}},
   {"addedOn":"2026-10-21","timeline":"islamic","year":2026,"title":{"en":"October 18–19, 2026: Civilians Killed in Ménaka, Mali","he":"18–19 באוקטובר 2026: אזרחים נהרגו באזור מנאקה, מאלי","ar":"18–19 أكتوبر 2026: مقتل مدنيين في منطقة ميناكا بمالي"},"eventDate":"2026-10-18"},
   {
