@@ -1,132 +1,46 @@
 window.FALLING_RECENT_EVENTS = [
-  {"addedOn":"2026-11-10","timeline":"christian","year":2026,"eventDate":"2026-11-09","title":{"en":"November 9, 2026: German Evangelical Alliance Expands Nazi-Era Confession of Guilt Toward Jewish People","he":"9 בנובמבר 2026: הברית האוונגליסטית בגרמניה מרחיבה את הודאתה באשמה כלפי העם היהודי","ar":"9 نوفمبر 2026: التحالف الإنجيلي الألماني يوسع اعترافه بالذنب تجاه اليهود"}},
-  {"addedOn":"2026-11-05","timeline":"islamic","year":2026,"eventDate":"2026-11-03","title":{"en":"November 3, 2026: Abdul El-Sayed Projected First Muslim Elected to U.S. Senate","he":"3 בנובמבר 2026: עבדול א־סייד צפוי להיות המוסלמי הראשון שנבחר לסנאט האמריקאי","ar":"3 نوفمبر 2026: فوز متوقع لعبد السيد كأول مسلم يُنتخب لمجلس الشيوخ الأمريكي"}},
-  {"addedOn":"2026-11-02","timeline":"islamic","year":2025,"eventDate":"2025-11-04","title":{"en":"November 4–5, 2025: Foiled Terrorist Plot Against Maryam Mosque in Galway","he":"4–5 בנובמבר 2025: סיכול מזימת טרור נגד מסגד מרים בגולוויי, אירלנד","ar":"4–5 نوفمبر 2025: إحباط مخطط إرهابي لاستهداف مسجد مريم في غالواي بأيرلندا"}},
-  {"addedOn":"2026-11-01","timeline":"christian","year":2025,"eventDate":"2025-05-08","title":{"en":"May 8, 2025: Election of Leo XIV, First American-Born Pope","he":"8 במאי 2025: בחירת לאו הארבעה־עשר, האפיפיור הראשון שנולד בארצות הברית","ar":"8 مايو 2025: انتخاب لاون الرابع عشر أول بابا مولود في الولايات المتحدة"}},
-  {"addedOn":"2026-10-31","timeline":"islamic","year":2026,"eventDate":"2026-10-23","title":{"en":"October 23, 2026: Shooting Targeting Perceived Muslims and Africans in France","he":"23 באוקטובר 2026: ירי בצרפת נגד אנשים שנתפסו כמוסלמים או ממוצא אפריקאי","ar":"23 أكتوبر 2026: إطلاق نار في فرنسا استهدف أشخاصًا اعتُبروا مسلمين أو من أصول أفريقية"}},
-  {"addedOn":"2026-10-30","timeline":"jewish","year":2025,"eventDate":"2025-06-01","title":{"en":"June 1, 2025: Antisemitic Firebombing at Boulder Hostage Solidarity Gathering","he":"1 ביוני 2025: מתקפת בקבוקי תבערה אנטישמית במפגן תמיכה בחטופים בבולדר","ar":"1 يونيو 2025: هجوم حارق معادٍ للسامية على تجمع لدعم الرهائن في بولدر"}},
-  {"addedOn":"2026-10-27","timeline":"christian","year":2026,"eventDate":"2026-10-24","title":{"en":"October 20–24, 2026: Deadly Attacks in Ethiopia's Arsi Zone","he":"20–24 באוקטובר 2026: מתקפות קטלניות באזור ארסי שבאתיופיה","ar":"20–24 أكتوبر 2026: هجمات دامية في منطقة أرسي بإثيوبيا"}},
-  {"addedOn":"2026-10-28","updatedOn":"2026-10-28","updateType":"Updated","timeline":"christian","year":2026,"eventDate":"2026-10-23","title":{"en":"October 23, 2026: Deadly Attack on Greek Orthodox Church in Jordan","he":"23 באוקטובר 2026: מתקפה קטלנית על כנסייה יוונית־אורתודוקסית בירדן","ar":"23 أكتوبر 2026: هجوم مميت على كنيسة للروم الأرثوذكس في الأردن"}},
-  {"addedOn":"2026-10-23","timeline":"jewish","year":2026,"eventDate":"2026-10-23","title":{"en":"October 23, 2026: Hebron checkpoint shooting and West Bank closure order","he":"23 באוקטובר 2026: ירי ליד חברון והיערכות לסגר בגדה המערבית","ar":"23 أكتوبر 2026: إطلاق نار قرب الخليل والاستعداد لإغلاق الضفة الغربية"}},
-  {"addedOn":"2026-10-21","timeline":"islamic","year":2026,"title":{"en":"October 18–19, 2026: Civilians Killed in Ménaka, Mali","he":"18–19 באוקטובר 2026: אזרחים נהרגו באזור מנאקה, מאלי","ar":"18–19 أكتوبر 2026: مقتل مدنيين في منطقة ميناكا بمالي"},"eventDate":"2026-10-18"},
   {
-    "addedOn": "2026-10-12",
-    "timeline": "jewish",
-    "year": 1897,
+    "addedOn": "2026-11-10",
+    "timeline": "christian",
+    "year": 2026,
+    "eventDate": "2026-11-09",
     "title": {
-      "en": "First Zionist Congress",
-      "he": "First Zionist Congress",
-      "ar": "First Zionist Congress"
+      "en": "November 9, 2026: German Evangelical Alliance Expands Nazi-Era Confession of Guilt Toward Jewish People",
+      "he": "9 בנובמבר 2026: הברית האוונגליסטית בגרמניה מרחיבה את הודאתה באשמה כלפי העם היהודי",
+      "ar": "9 نوفمبر 2026: التحالف الإنجيلي الألماني يوسع اعترافه بالذنب تجاه اليهود"
     }
   },
   {
-    "addedOn": "2026-10-12",
-    "timeline": "jewish",
-    "year": 1917,
-    "title": {
-      "en": "Balfour Declaration",
-      "he": "Balfour Declaration",
-      "ar": "Balfour Declaration"
-    }
-  },
-  {
-    "addedOn": "2026-10-12",
-    "timeline": "jewish",
-    "year": 1922,
-    "title": {
-      "en": "League of Nations approves British Mandate for Palestine",
-      "he": "League of Nations approves British Mandate for Palestine",
-      "ar": "League of Nations approves British Mandate for Palestine"
-    }
-  },
-  {
-    "addedOn": "2026-10-12",
-    "timeline": "jewish",
-    "year": 1947,
-    "title": {
-      "en": "Civil war in Mandatory Palestine begins",
-      "he": "Civil war in Mandatory Palestine begins",
-      "ar": "Civil war in Mandatory Palestine begins"
-    }
-  },
-  {
-    "addedOn": "2026-10-22",
-    "updatedOn": "2026-10-22",
-    "updateType": "Updated",
+    "addedOn": "2026-11-05",
     "timeline": "islamic",
     "year": 2026,
+    "eventDate": "2026-11-03",
     "title": {
-      "en": "Renewed Yemen War: Repeated Riyadh Airport Attacks and Regional Response",
-      "he": "מלחמת תימן מתרחבת: תקיפות חוזרות בנמל התעופה בריאד ותגובה אזורית",
-      "ar": "تصاعد حرب اليمن: هجمات متكررة على مطار الرياض ورد إقليمي"
-    },
-    "eventDate": "2026-10-11"
+      "en": "November 3, 2026: Abdul El-Sayed Projected First Muslim Elected to U.S. Senate",
+      "he": "3 בנובמבר 2026: עבדול א־סייד צפוי להיות המוסלמי הראשון שנבחר לסנאט האמריקאי",
+      "ar": "3 نوفمبر 2026: فوز متوقع لعبد السيد كأول مسلم يُنتخب لمجلس الشيوخ الأمريكي"
+    }
   },
   {
-    "addedOn": "2026-10-11",
-    "timeline": "christian",
-    "year": 2026,
-    "title": {
-      "en": "October 4, 2026: Two Christians Killed in Mangor, Plateau State",
-      "he": "4 באוקטובר 2026: שני נוצרים נהרגו במנגור שבניגריה",
-      "ar": "4 أكتوبر 2026: مقتل مسيحيين اثنين في مانغور بنيجيريا"
-    },
-    "eventDate": "2026-10-04"
-  },
-  {
-    "addedOn": "2026-10-11",
-    "timeline": "christian",
-    "year": 2026,
-    "title": {
-      "en": "October 8, 2026: Bombing at St. John's Cathedral in Bauchi",
-      "he": "8 באוקטובר 2026: פיצוץ בקתדרלת סנט ג'ון בבאוצ'י",
-      "ar": "8 أكتوبر 2026: تفجير عند كاتدرائية القديس يوحنا في باوتشي"
-    },
-    "eventDate": "2026-10-08"
-  },
-  {
-    "addedOn": "2026-10-11",
-    "timeline": "christian",
-    "year": 2026,
-    "title": {
-      "en": "October 9, 2026: Christian Prayer Gathering Attacked in West Bengal",
-      "he": "9 באוקטובר 2026: תקיפת כינוס תפילה נוצרי במערב בנגל",
-      "ar": "9 أكتوبر 2026: هجوم على تجمع صلاة مسيحي في البنغال الغربية"
-    },
-    "eventDate": "2026-10-09"
-  },
-  {
-    "addedOn": "2026-10-11",
+    "addedOn": "2026-11-02",
     "timeline": "islamic",
-    "year": 2026,
+    "year": 2025,
+    "eventDate": "2025-11-04",
     "title": {
-      "en": "Sudan Civil War: Drone Strike Kills Displaced Civilians in Blue Nile",
-      "he": "מלחמת האזרחים בסודאן: תקיפת כטב״ם הרגה עקורים במדינת הנילוס הכחול",
-      "ar": "الحرب الأهلية السودانية: غارة بمسيّرة تقتل نازحين في ولاية النيل الأزرق"
-    },
-    "eventDate": "2026-10-09"
+      "en": "November 4–5, 2025: Foiled Terrorist Plot Against Maryam Mosque in Galway",
+      "he": "4–5 בנובמבר 2025: סיכול מזימת טרור נגד מסגד מרים בגולוויי, אירלנד",
+      "ar": "4–5 نوفمبر 2025: إحباط مخطط إرهابي لاستهداف مسجد مريم في غالواي بأيرلندا"
+    }
   },
   {
-    "addedOn": "2026-10-18",
-    "updatedOn": "2026-10-19",
+    "addedOn": "2026-11-01",
     "timeline": "christian",
-    "year": 2026,
+    "year": 2025,
+    "eventDate": "2025-05-08",
     "title": {
-      "en": "Attack on European diplomats and Catholic representatives near Taybeh",
-      "he": "תקיפת דיפלומטים אירופים ונציגים קתולים ליד טייבה",
-      "ar": "الاعتداء على دبلوماسيين أوروبيين وممثلين كاثوليك قرب الطيبة"
-    },
-    "eventDate": "2026-10-17"
-  },
-  {
-    "addedOn": "2026-10-20",
-    "timeline": "christian",
-    "year": 2026,
-    "eventDate": "2026-10-19",
-    "title": {
-      "en": "October 19, 2026: Shakahola massacre murder convictions in Kenya",
-      "he": "19 באוקטובר 2026: הרשעות ברצח בפרשת שאקהולה בקניה",
-      "ar": "19 أكتوبر 2026: إدانات بالقتل في قضية شاكاهولا بكينيا"
+      "en": "May 8, 2025: Election of Leo XIV, First American-Born Pope",
+      "he": "8 במאי 2025: בחירת לאו הארבעה־עשר, האפיפיור הראשון שנולד בארצות הברית",
+      "ar": "8 مايو 2025: انتخاب لاون الرابع عشر أول بابا مولود في الولايات المتحدة"
     }
   }
 ];
