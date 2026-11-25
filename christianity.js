@@ -2410,7 +2410,27 @@ const eras = [
   {name:"Present Era",range:"2020–2026 CE",start:43190,end:46000}
 ];
 
-const MAX_DEPTH=46450;
+// Enforce readable vertical separation, including newly appended events.
+const MIN_EVENT_SPACING=180;
+const originalEventDepths=events.map(event=>event.depth);
+for(let i=1;i<events.length;i++){
+  events[i].depth=Math.max(events[i].depth,events[i-1].depth+MIN_EVENT_SPACING);
+}
+// Move era boundaries with the expanded timeline rather than changing historical dates.
+function expandedTimelineDepth(value){
+  let previousOriginal=0,previousExpanded=0;
+  for(let i=0;i<events.length;i++){
+    const original=originalEventDepths[i],expanded=events[i].depth;
+    if(value<=original&&original>previousOriginal){
+      return Math.round(previousExpanded+(value-previousOriginal)*(expanded-previousExpanded)/(original-previousOriginal));
+    }
+    previousOriginal=original;previousExpanded=expanded;
+  }
+  return value+previousExpanded-previousOriginal;
+}
+eras.forEach(era=>{era.start=expandedTimelineDepth(era.start);era.end=expandedTimelineDepth(era.end);});
+const MAX_DEPTH=Math.max(expandedTimelineDepth(46450),events[events.length-1].depth+450);
+eras[eras.length-1].end=MAX_DEPTH+1;
 let depth=0, velocity=0, paused=false, rafId=0;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const abyss=document.getElementById("abyss");
